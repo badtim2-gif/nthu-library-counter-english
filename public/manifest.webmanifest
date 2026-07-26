@@ -1,0 +1,21 @@
+{
+  "name": "清大圖書館英語情境練習室",
+  "short_name": "清大櫃台英語",
+  "description": "清大圖書館櫃台館員英語情境教學與角色扮演練習",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f0e8",
+  "theme_color": "#5a294f",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "./img_20260726120102.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,3328 @@
+{
+  "voices": {
+    "english": {
+      "reader": "en-US-BrianMultilingualNeural",
+      "librarian": "en-US-AvaMultilingualNeural",
+      "explainer": "en-US-AndrewMultilingualNeural"
+    },
+    "chinese": {
+      "reader": "zh-TW-YunJheNeural",
+      "librarian": "zh-TW-HsiaoChenNeural",
+      "explainer": "zh-TW-YunJheNeural"
+    }
+  },
+  "entries": [
+    {
+      "file": "s01-t01-en.mp3",
+      "text": "This is my first time borrowing books at the N, T, H, U Library.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s01-t01-zh.mp3",
+      "text": "這是我第一次在清華大學圖書館借書。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s01-t02-en.mp3",
+      "text": "Before you use the service, please sign the Statement of Patron's Privileges online.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s01-t02-zh.mp3",
+      "text": "使用服務前，請先在線上簽署讀者權益聲明。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s01-t03-en.mp3",
+      "text": "Why do I need to complete the statement?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s01-t03-zh.mp3",
+      "text": "我為什麼需要完成這份聲明？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s01-t04-en.mp3",
+      "text": "It confirms that you understand the borrowing regulations and that your contact information is current.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s01-t04-zh.mp3",
+      "text": "它用來確認您了解借閱規定，而且聯絡資料是最新的。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s01-t05-en.mp3",
+      "text": "Will my borrowing privileges become active immediately ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s01-t05-zh.mp3",
+      "text": "我的借閱權限會立刻啟用嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s01-t06-en.mp3",
+      "text": "Yes, after signing in with your N, T, H, U account and submitting the statement, you may borrow materials.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s01-t06-zh.mp3",
+      "text": "會的，使用清華大學帳號登入並送出聲明後，您就可以借閱資料。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s01-p01-en.mp3",
+      "text": "This is my first time using this library card.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-p01-zh.mp3",
+      "text": "用來表示第一次進行某項活動，後面接動名詞。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-p02-en.mp3",
+      "text": "Before you borrow the book, please check your account.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-p02-zh.mp3",
+      "text": "用來有禮貌地說明先後順序，先完成前項條件，再進行後項。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-p03-en.mp3",
+      "text": "Will my account become active immediately?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-p03-zh.mp3",
+      "text": "用來詢問權限或服務是否會立即生效。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-g01-zh.mp3",
+      "text": "動名詞作為補語。表示第一次做某事時，第一次之後可接動名詞，描述正在談論的活動。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-g02-zh.mp3",
+      "text": "時間副詞子句。表示在某動作之前時，時間子句使用現在式，主要子句再表達請求或結果。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v01-word.mp3",
+      "text": "statement",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v01-meaning.mp3",
+      "text": "聲明，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v02-word.mp3",
+      "text": "patron",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v02-meaning.mp3",
+      "text": "讀者、使用者，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v03-word.mp3",
+      "text": "privilege",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v03-meaning.mp3",
+      "text": "權益、權限，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v04-word.mp3",
+      "text": "complete",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v04-meaning.mp3",
+      "text": "完成，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v05-word.mp3",
+      "text": "confirm",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v05-meaning.mp3",
+      "text": "確認，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v06-word.mp3",
+      "text": "regulation",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v06-meaning.mp3",
+      "text": "規定、規章，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v07-word.mp3",
+      "text": "submit",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s01-v07-meaning.mp3",
+      "text": "提交、送出，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-t01-en.mp3",
+      "text": "I received a recall notice for a book that is not due yet.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s02-t01-zh.mp3",
+      "text": "我收到一本尚未到期書籍的召回通知。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s02-t02-en.mp3",
+      "text": "Another reader has placed a hold, so the due date has been shortened .",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s02-t02-zh.mp3",
+      "text": "另一位讀者已預約這本書，所以到期日縮短了。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s02-t03-en.mp3",
+      "text": "How is the revised due date calculated ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s02-t03-zh.mp3",
+      "text": "新的到期日是如何計算的？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s02-t04-en.mp3",
+      "text": "If more than fourteen days remained , the new due date is fourteen days from the recall request.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s02-t04-zh.mp3",
+      "text": "如果原本剩餘超過十四天，新到期日就是從召回申請日起算十四天。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s02-t05-en.mp3",
+      "text": "What happens if fewer than fourteen days remain?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s02-t05-zh.mp3",
+      "text": "如果剩不到十四天，會怎麼處理？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s02-t06-en.mp3",
+      "text": "The original due date stays the same, so please check your account and email regularly .",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s02-t06-zh.mp3",
+      "text": "原到期日會維持不變，因此請定期查看帳戶與電子郵件。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s02-p01-en.mp3",
+      "text": "I received a notice for this borrowed book.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-p01-zh.mp3",
+      "text": "用來說明收到與特定館藏或服務有關的通知。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-p02-en.mp3",
+      "text": "How is the new due date calculated?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-p02-zh.mp3",
+      "text": "用被動語態詢問日期、費用或數量的計算方式。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-p03-en.mp3",
+      "text": "What happens if I return it tomorrow?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-p03-zh.mp3",
+      "text": "用來詢問某個條件發生時會有什麼結果。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-g01-zh.mp3",
+      "text": "現在完成式。表示已經完成而且影響目前狀態的動作，例如他人已經預約館藏。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-g02-zh.mp3",
+      "text": "條件句。說明實際可能發生的條件時，條件子句使用現在式，主要子句說明其結果。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v01-word.mp3",
+      "text": "receive",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v01-meaning.mp3",
+      "text": "收到，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v02-word.mp3",
+      "text": "recall",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v02-meaning.mp3",
+      "text": "召回，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v03-word.mp3",
+      "text": "shorten",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v03-meaning.mp3",
+      "text": "縮短，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v04-word.mp3",
+      "text": "revised",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v04-meaning.mp3",
+      "text": "修訂後的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v05-word.mp3",
+      "text": "calculate",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v05-meaning.mp3",
+      "text": "計算，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v06-word.mp3",
+      "text": "remain",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v06-meaning.mp3",
+      "text": "剩餘、維持，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v07-word.mp3",
+      "text": "regularly",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s02-v07-meaning.mp3",
+      "text": "定期地，副詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-t01-en.mp3",
+      "text": "I am an alumnus , and I cannot access an electronic journal from home.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s03-t01-zh.mp3",
+      "text": "我是校友，目前無法從家中使用電子期刊。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s03-t02-en.mp3",
+      "text": "Remote access to licensed resources is limited to current N, T, H, U faculty, staff, and students.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s03-t02-zh.mp3",
+      "text": "授權資源的校外使用僅限清華大學現職教職員生。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s03-t03-en.mp3",
+      "text": "Is there another way for alumni to use these resources?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s03-t03-zh.mp3",
+      "text": "校友還有其他方式可以使用這些資源嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s03-t04-en.mp3",
+      "text": "You are welcome to use the public computers inside the library.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s03-t04-zh.mp3",
+      "text": "歡迎您到館內使用公共電腦。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s03-t05-en.mp3",
+      "text": "How do current students connect from off campus?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s03-t05-zh.mp3",
+      "text": "在校學生要如何從校外連線？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s03-t06-en.mp3",
+      "text": "They may use the university V, P, N or sign in to their library account through e Search.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s03-t06-zh.mp3",
+      "text": "他們可以使用學校虛擬私人網路，或從電子資源整合查詢登入圖書館帳戶。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s03-p01-en.mp3",
+      "text": "I cannot access the full text from home.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-p01-zh.mp3",
+      "text": "用來說明無法開啟特定系統、資料庫或全文。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-p02-en.mp3",
+      "text": "Remote access is limited to current students.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-p02-zh.mp3",
+      "text": "用來清楚說明服務的適用資格或限制範圍。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-p03-en.mp3",
+      "text": "Is there another way to read this article?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-p03-zh.mp3",
+      "text": "在原方法不可行時，用來詢問替代方案。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-g01-zh.mp3",
+      "text": "被動語態表達限制。說明服務受到規定限制時，使用被動語態能將焦點放在服務本身。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-g02-zh.mp3",
+      "text": "情態動詞表達可行方法。說明使用者可以採取的選項時，可使用情態動詞加原形動詞。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v01-word.mp3",
+      "text": "alumnus",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v01-meaning.mp3",
+      "text": "男性校友，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v02-word.mp3",
+      "text": "alumni",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v02-meaning.mp3",
+      "text": "校友們，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v03-word.mp3",
+      "text": "access",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v03-meaning.mp3",
+      "text": "使用、存取，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v04-word.mp3",
+      "text": "remote",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v04-meaning.mp3",
+      "text": "遠端的、校外的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v05-word.mp3",
+      "text": "licensed",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v05-meaning.mp3",
+      "text": "經授權的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v06-word.mp3",
+      "text": "electronic",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v06-meaning.mp3",
+      "text": "電子的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v07-word.mp3",
+      "text": "connect",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s03-v07-meaning.mp3",
+      "text": "連線，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-t01-en.mp3",
+      "text": "I received a pickup notice for an interlibrary loan.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s04-t01-zh.mp3",
+      "text": "我收到館際借書的取件通知。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s04-t02-en.mp3",
+      "text": "Please collect it at the appointed information desk during service hours.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s04-t02-zh.mp3",
+      "text": "請在服務時間內到指定的服務櫃檯領取。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s04-t03-en.mp3",
+      "text": "May I return the book through the self service machine or the book drop?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s04-t03-zh.mp3",
+      "text": "我可以透過自助還書機或還書箱歸還嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s04-t04-en.mp3",
+      "text": "No, loaned materials from another library must be returned to the information desk before the expiration date.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s04-t04-zh.mp3",
+      "text": "不可以，向他館借來的資料必須在期限前歸還服務櫃檯。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s04-t05-en.mp3",
+      "text": "Do I also need to return a photocopy ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s04-t05-zh.mp3",
+      "text": "影印本也需要歸還嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s04-t06-en.mp3",
+      "text": "You may keep the copy, but the borrowed book must be returned on time to avoid overdue charges .",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s04-t06-zh.mp3",
+      "text": "影印本可以保留，但借來的書必須準時歸還，以免產生逾期費用。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s04-p01-en.mp3",
+      "text": "I received a pickup notice for my requested article.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-p01-zh.mp3",
+      "text": "用來向櫃台說明已收到可領取資料的通知。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-p02-en.mp3",
+      "text": "May I return this item through the book drop?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-p02-zh.mp3",
+      "text": "用來有禮貌地確認某種歸還方式是否可行。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-p03-en.mp3",
+      "text": "The book must be returned to the information desk.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-p03-zh.mp3",
+      "text": "用來強調資料必須歸還至指定地點。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-g01-zh.mp3",
+      "text": "情態動詞表達禮貌詢問。向櫃台確認是否獲准進行某事時，可用較正式的情態動詞開頭。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-g02-zh.mp3",
+      "text": "被動語態表達必要規定。規定物品必須被歸還到特定地點時，可用被動語態搭配表示義務的情態動詞。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v01-word.mp3",
+      "text": "pickup",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v01-meaning.mp3",
+      "text": "取件、領取，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v02-word.mp3",
+      "text": "interlibrary",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v02-meaning.mp3",
+      "text": "圖書館際的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v03-word.mp3",
+      "text": "collect",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v03-meaning.mp3",
+      "text": "領取、收集，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v04-word.mp3",
+      "text": "appointed",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v04-meaning.mp3",
+      "text": "指定的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v05-word.mp3",
+      "text": "loaned",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v05-meaning.mp3",
+      "text": "借出的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v06-word.mp3",
+      "text": "expiration",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v06-meaning.mp3",
+      "text": "到期、期限屆滿，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v07-word.mp3",
+      "text": "photocopy",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v07-meaning.mp3",
+      "text": "影印本，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v08-word.mp3",
+      "text": "charge",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s04-v08-meaning.mp3",
+      "text": "費用，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-t01-en.mp3",
+      "text": "My professor assigned a book that is on course reserve .",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s05-t01-zh.mp3",
+      "text": "我的教授指定了一本列為課程指定參考書的書。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s05-t02-en.mp3",
+      "text": "You can search for reserve materials by department, instructor , or course name.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s05-t02-zh.mp3",
+      "text": "您可以依系所、教師或課程名稱查詢指定參考資料。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s05-t03-en.mp3",
+      "text": "Where can I locate the book after I find the record?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s05-t03-zh.mp3",
+      "text": "找到紀錄後，我可以到哪裡找到這本書？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s05-t04-en.mp3",
+      "text": "Approved reserve items are placed on the Smart Bookshelf at the designated library location.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s05-t04-zh.mp3",
+      "text": "核准的指定參考書會放在指定館舍的智慧書架。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s05-t05-en.mp3",
+      "text": "Can every type of library material be placed on reserve?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s05-t05-zh.mp3",
+      "text": "所有類型的圖書館資料都可以列為指定參考資料嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s05-t06-en.mp3",
+      "text": "Current journals, theses, and dissertations cannot be placed on reserve.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s05-t06-zh.mp3",
+      "text": "當期期刊、碩士論文與博士論文不能列為指定參考資料。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s05-p01-en.mp3",
+      "text": "This textbook is on course reserve.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-p01-zh.mp3",
+      "text": "用來說明某項資料已列入課程指定參考書。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-p02-en.mp3",
+      "text": "You can search by instructor or course name.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-p02-zh.mp3",
+      "text": "用來說明查詢系統可使用的檢索欄位。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-p03-en.mp3",
+      "text": "Can every type of material be borrowed?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-p03-zh.mp3",
+      "text": "用來確認某項規則是否適用於全部類型。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-g01-zh.mp3",
+      "text": "介系詞表示資料狀態。表示資料被列為課程指定參考書時，可使用介系詞片語描述其服務狀態。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-g02-zh.mp3",
+      "text": "被動語態表示館方處理。強調資料被放置或被指定的結果時，可使用被動語態，不必特別指出執行者。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v01-word.mp3",
+      "text": "assign",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v01-meaning.mp3",
+      "text": "指定、指派，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v02-word.mp3",
+      "text": "reserve",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v02-meaning.mp3",
+      "text": "保留、指定參考，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v03-word.mp3",
+      "text": "instructor",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v03-meaning.mp3",
+      "text": "授課教師，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v04-word.mp3",
+      "text": "locate",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v04-meaning.mp3",
+      "text": "找到位置，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v05-word.mp3",
+      "text": "approved",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v05-meaning.mp3",
+      "text": "經核准的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v06-word.mp3",
+      "text": "designated",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v06-meaning.mp3",
+      "text": "指定的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v07-word.mp3",
+      "text": "dissertation",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s05-v07-meaning.mp3",
+      "text": "博士論文，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-t01-en.mp3",
+      "text": "I would like to recommend an electronic book that is not in the collection .",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s06-t01-zh.mp3",
+      "text": "我想薦購一本館藏目前沒有的電子書。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s06-t02-en.mp3",
+      "text": "Please sign in to the library system and provide complete publication information.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s06-t02-zh.mp3",
+      "text": "請登入圖書館系統，並提供完整的出版資訊。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s06-t03-en.mp3",
+      "text": "Is there a monthly limit on recommendations ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s06-t03-zh.mp3",
+      "text": "每月的薦購數量有限制嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s06-t04-en.mp3",
+      "text": "Each person may recommend up to five items per month.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s06-t04-zh.mp3",
+      "text": "每人每月最多可以薦購五項資料。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s06-t05-en.mp3",
+      "text": "How can I track the progress and know whether it is approved?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s06-t05-zh.mp3",
+      "text": "我要如何追蹤進度並確認是否獲得核准？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s06-t06-en.mp3",
+      "text": "Check your library account, and watch for email notifications because an approved item will be placed on hold for you.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s06-t06-zh.mp3",
+      "text": "請查看圖書館帳戶並留意電子郵件通知，獲准採購的資料會為您辦理預約。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s06-p01-en.mp3",
+      "text": "I would like to recommend a new database.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-p01-zh.mp3",
+      "text": "用來有禮貌地提出薦購某項館藏或資源。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-p02-en.mp3",
+      "text": "Is there a limit on monthly requests?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-p02-zh.mp3",
+      "text": "用來詢問數量、次數或資格是否有限制。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-p03-en.mp3",
+      "text": "How can I track the progress of my request?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-p03-zh.mp3",
+      "text": "用來詢問如何查詢申請或服務的處理進度。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-g01-zh.mp3",
+      "text": "較委婉的意願表達。向櫃台提出需求時，使用較委婉的說法，比直接使用現在式更有禮貌。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-g02-zh.mp3",
+      "text": "數量上限的表達。表示最多可申請的數量時，可使用表示上限的片語加數字。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v01-word.mp3",
+      "text": "recommend",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v01-meaning.mp3",
+      "text": "推薦、薦購，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v02-word.mp3",
+      "text": "collection",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v02-meaning.mp3",
+      "text": "館藏，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v03-word.mp3",
+      "text": "publication",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v03-meaning.mp3",
+      "text": "出版物、出版資訊，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v04-word.mp3",
+      "text": "monthly",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v04-meaning.mp3",
+      "text": "每月的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v05-word.mp3",
+      "text": "recommendation",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v05-meaning.mp3",
+      "text": "薦購、推薦，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v06-word.mp3",
+      "text": "track",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v06-meaning.mp3",
+      "text": "追蹤，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v07-word.mp3",
+      "text": "notification",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s06-v07-meaning.mp3",
+      "text": "通知，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-t01-en.mp3",
+      "text": "I am completing my graduation clearance and need to confirm my library status.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s07-t01-zh.mp3",
+      "text": "我正在辦理畢業離校，想確認圖書館狀態。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s07-t02-en.mp3",
+      "text": "Please return all materials borrowed from N, T, H, U, U, S, T, and reciprocal libraries, and settle all charges.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s07-t02-zh.mp3",
+      "text": "請歸還向清華大學、台灣聯大及互惠館借閱的所有資料，並結清全部費用。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s07-t03-en.mp3",
+      "text": "What should I check for interlibrary loan and document delivery requests?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s07-t03-zh.mp3",
+      "text": "館際借書與文件傳遞申請需要確認哪些事項？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s07-t04-en.mp3",
+      "text": "Make sure every requested item has been collected, returned, and fully paid for.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s07-t04-zh.mp3",
+      "text": "請確認所有申請資料都已領取、歸還並完成繳費。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s07-t05-en.mp3",
+      "text": "Can I still enter the library after the procedure is complete?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s07-t05-zh.mp3",
+      "text": "完成離校程序後，我還可以進入圖書館嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s07-t06-en.mp3",
+      "text": "Your student card allows entry for thirty days, but borrowing and reservations for equipment or spaces are no longer available.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s07-t06-zh.mp3",
+      "text": "您的學生證仍可在三十天內入館，但不再具有借閱以及預約設備或空間的權限。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s07-p01-en.mp3",
+      "text": "I am completing my clearance and need to confirm my status.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-p01-zh.mp3",
+      "text": "用來說明目前正在辦理的程序及希望櫃台確認的事項。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-p02-en.mp3",
+      "text": "Make sure every item has been returned.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-p02-zh.mp3",
+      "text": "用來提醒對方確認某項必要程序已經完成。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-p03-en.mp3",
+      "text": "The borrowing service is no longer available.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-p03-zh.mp3",
+      "text": "用來說明某項服務或權限已經停止。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-g01-zh.mp3",
+      "text": "現在進行式描述辦理中的程序。說明目前正在進行的離校或申請程序時，可使用現在進行式。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-g02-zh.mp3",
+      "text": "現在完成式被動語態。確認物品已被歸還或費用已被繳清時，可使用現在完成式的被動語態。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v01-word.mp3",
+      "text": "clearance",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v01-meaning.mp3",
+      "text": "離校查核、結清手續，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v02-word.mp3",
+      "text": "reciprocal",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v02-meaning.mp3",
+      "text": "互惠的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v03-word.mp3",
+      "text": "settle",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v03-meaning.mp3",
+      "text": "結清、處理完畢，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v04-word.mp3",
+      "text": "delivery",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v04-meaning.mp3",
+      "text": "傳遞、交付，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v05-word.mp3",
+      "text": "procedure",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v05-meaning.mp3",
+      "text": "程序、手續，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v06-word.mp3",
+      "text": "reservation",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v06-meaning.mp3",
+      "text": "預約，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v07-word.mp3",
+      "text": "equipment",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s07-v07-meaning.mp3",
+      "text": "設備，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-t01-en.mp3",
+      "text": "My thesis has been accepted by the electronic submission system.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s08-t01-zh.mp3",
+      "text": "我的論文已經通過電子論文系統的審核。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s08-t02-en.mp3",
+      "text": "Please follow the latest graduation notice and bring the required printed copy and signed authorization documents to the designated desk.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s08-t02-zh.mp3",
+      "text": "請依最新畢業公告，將規定的紙本論文與簽名授權文件帶到指定櫃檯。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s08-t03-en.mp3",
+      "text": "I may apply for a patent , so can I request an embargo ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s08-t03-zh.mp3",
+      "text": "我可能會申請專利，可以申請延後公開嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s08-t04-en.mp3",
+      "text": "You may request a delayed release, but you must use the current form and provide supporting documents.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s08-t04-zh.mp3",
+      "text": "您可以申請延後公開，但必須使用現行表格並提供證明文件。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s08-t05-en.mp3",
+      "text": "What should I do if I discover an error after graduation?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s08-t05-zh.mp3",
+      "text": "如果畢業後發現錯誤，我應該怎麼辦？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s08-t06-en.mp3",
+      "text": "Contact the library before making any revision , because the requirements differ after the graduation procedure is complete.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s08-t06-zh.mp3",
+      "text": "修改前請先聯絡圖書館，因為完成畢業程序後的規定會有所不同。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s08-p01-en.mp3",
+      "text": "My thesis has been accepted by the system.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-p01-zh.mp3",
+      "text": "用來說明申請或文件已經通過某個系統或單位的審核。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-p02-en.mp3",
+      "text": "Can I request a delayed release?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-p02-zh.mp3",
+      "text": "用來直接而有禮貌地詢問是否可以提出特定申請。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-p03-en.mp3",
+      "text": "What should I do if I find an error?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-p03-zh.mp3",
+      "text": "用來詢問遇到特定狀況時應採取的處理方式。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-g01-zh.mp3",
+      "text": "現在完成式被動語態。表達文件已經被系統審核通過，而且結果與目前程序相關。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-g02-zh.mp3",
+      "text": "條件子句與建議。詢問假設狀況下的建議時，條件子句使用現在式，主要子句使用表示建議的情態動詞。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v01-word.mp3",
+      "text": "thesis",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v01-meaning.mp3",
+      "text": "碩士論文、學位論文，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v02-word.mp3",
+      "text": "submission",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v02-meaning.mp3",
+      "text": "提交、送審，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v03-word.mp3",
+      "text": "authorization",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v03-meaning.mp3",
+      "text": "授權，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v04-word.mp3",
+      "text": "patent",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v04-meaning.mp3",
+      "text": "專利，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v05-word.mp3",
+      "text": "embargo",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v05-meaning.mp3",
+      "text": "延後公開、禁制，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v06-word.mp3",
+      "text": "supporting",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v06-meaning.mp3",
+      "text": "作為證明的、補充的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v07-word.mp3",
+      "text": "revision",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s08-v07-meaning.mp3",
+      "text": "修訂、修改，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-t01-en.mp3",
+      "text": "I need to borrow a large number of books for a research project .",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s09-t01-zh.mp3",
+      "text": "我的研究計畫需要借閱大量圖書。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s09-t02-en.mp3",
+      "text": "Eligible N, T, H, U researchers and students may apply for a project borrowing card.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s09-t02-zh.mp3",
+      "text": "符合資格的清華大學研究人員與學生可以申請專案借書證。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s09-t03-en.mp3",
+      "text": "What is the maximum number of books I may borrow?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s09-t03-zh.mp3",
+      "text": "我最多可以借多少本書？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s09-t04-en.mp3",
+      "text": "The project card allows up to two hundred books, subject to the fixed return date and applicable conditions.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s09-t04-zh.mp3",
+      "text": "專案借書證最多可借兩百冊，但須遵守固定還書日及適用規定。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s09-t05-en.mp3",
+      "text": "Can I use the project card to enter the library?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s09-t05-zh.mp3",
+      "text": "我可以使用專案借書證進入圖書館嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s09-t06-en.mp3",
+      "text": "No, it is valid only for borrowing books, and you must also present your regular N, T, H, U identification .",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s09-t06-zh.mp3",
+      "text": "不可以，它僅供借書使用，而且借書時還必須出示一般清華大學身分證件。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s09-p01-en.mp3",
+      "text": "I need to borrow a large number of research books.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-p01-zh.mp3",
+      "text": "用來說明因研究或計畫需要大量借閱資料。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-p02-en.mp3",
+      "text": "What is the maximum number of items I may borrow?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-p02-zh.mp3",
+      "text": "用來詢問借閱、預約或申請數量的最高上限。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-p03-en.mp3",
+      "text": "This card is valid only for borrowing books.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-p03-zh.mp3",
+      "text": "用來清楚限定證件或服務的有效用途。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-g01-zh.mp3",
+      "text": "表示資格的形容詞。說明哪些人符合申請資格時，可用形容詞直接修飾使用者身分。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-g02-zh.mp3",
+      "text": "表示用途限制的片語。說明證件僅限特定用途時，可用表示有效的形容詞搭配表示用途的介系詞。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v01-word.mp3",
+      "text": "project",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v01-meaning.mp3",
+      "text": "專案、研究計畫，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v02-word.mp3",
+      "text": "eligible",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v02-meaning.mp3",
+      "text": "符合資格的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v03-word.mp3",
+      "text": "researcher",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v03-meaning.mp3",
+      "text": "研究人員，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v04-word.mp3",
+      "text": "maximum",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v04-meaning.mp3",
+      "text": "最高的、最大值，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v05-word.mp3",
+      "text": "applicable",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v05-meaning.mp3",
+      "text": "適用的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v06-word.mp3",
+      "text": "valid",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v06-meaning.mp3",
+      "text": "有效的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v07-word.mp3",
+      "text": "identification",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s09-v07-meaning.mp3",
+      "text": "身分證明，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-t01-en.mp3",
+      "text": "I am an N, T, H, U exchange student, and I would like to visit another U, S, T library.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s10-t01-zh.mp3",
+      "text": "我是清華大學交換生，想前往另一所台灣聯大圖書館。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s10-t02-en.mp3",
+      "text": "You may visit another U, S, T library by presenting your N, T, H, U student identification card.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s10-t02-zh.mp3",
+      "text": "您可以出示清華大學學生證進入其他台灣聯大圖書館。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s10-t03-en.mp3",
+      "text": "May I borrow books there or submit an All Four U, S, T request?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s10-t03-zh.mp3",
+      "text": "我可以在那裡借書，或提出台灣聯大代借申請嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s10-t04-en.mp3",
+      "text": "Exchange students may visit, but they are not eligible for cross campus borrowing or the interlibrary circulation service.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s10-t04-zh.mp3",
+      "text": "交換生可以入館，但不具跨校借閱或館際流通服務的資格。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s10-t05-en.mp3",
+      "text": "What should I do if I need material that N, T, H, U does not own?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s10-t05-zh.mp3",
+      "text": "如果清華大學沒有我需要的資料，我該怎麼辦？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s10-t06-en.mp3",
+      "text": "Search the N, T, H, U collection first, and then ask us about available interlibrary loan or document delivery options.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s10-t06-zh.mp3",
+      "text": "請先查詢清華大學館藏，再向我們詢問可使用的館際借書或文件傳遞方案。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s10-p01-en.mp3",
+      "text": "I would like to visit another university library.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-p01-zh.mp3",
+      "text": "用來禮貌表達想前往某個館舍或地點。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-p02-en.mp3",
+      "text": "May I borrow books or submit a request?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-p02-zh.mp3",
+      "text": "用來同時確認兩種服務是否可使用。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-p03-en.mp3",
+      "text": "Exchange students are not eligible for this service.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-p03-zh.mp3",
+      "text": "用來說明特定身分不符合某項服務資格。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-g01-zh.mp3",
+      "text": "情態動詞表達許可。詢問是否允許使用服務時，可使用較正式且有禮貌的情態動詞。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-g02-zh.mp3",
+      "text": "轉折連接詞。前後兩項權益不同時，可使用轉折連接詞，先說明可入館，再補充不能借閱。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v01-word.mp3",
+      "text": "exchange",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v01-meaning.mp3",
+      "text": "交換、交流，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v02-word.mp3",
+      "text": "present",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v02-meaning.mp3",
+      "text": "出示、呈交，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v03-word.mp3",
+      "text": "submit",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v03-meaning.mp3",
+      "text": "提交，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v04-word.mp3",
+      "text": "eligible",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v04-meaning.mp3",
+      "text": "符合資格的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v05-word.mp3",
+      "text": "cross campus",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v05-meaning.mp3",
+      "text": "跨校的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v06-word.mp3",
+      "text": "circulation",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v06-meaning.mp3",
+      "text": "流通、借閱服務，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v07-word.mp3",
+      "text": "available",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s10-v07-meaning.mp3",
+      "text": "可使用的、可取得的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-a.mp3",
+      "text": "A",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-b.mp3",
+      "text": "B",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-c.mp3",
+      "text": "C",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-d.mp3",
+      "text": "D",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-e.mp3",
+      "text": "E",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-f.mp3",
+      "text": "F",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-g.mp3",
+      "text": "G",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-h.mp3",
+      "text": "H",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-i.mp3",
+      "text": "I",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-j.mp3",
+      "text": "J",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-k.mp3",
+      "text": "K",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-l.mp3",
+      "text": "L",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-m.mp3",
+      "text": "M",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-n.mp3",
+      "text": "N",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-o.mp3",
+      "text": "O",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-p.mp3",
+      "text": "P",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-q.mp3",
+      "text": "Q",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-r.mp3",
+      "text": "R",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-s.mp3",
+      "text": "S",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-t.mp3",
+      "text": "T",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-u.mp3",
+      "text": "U",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-v.mp3",
+      "text": "V",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-w.mp3",
+      "text": "W",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-x.mp3",
+      "text": "X",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-y.mp3",
+      "text": "Y",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    },
+    {
+      "file": "alphabet-z.mp3",
+      "text": "Z",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -35,
+      "language": "en",
+      "kind": "letter",
+      "role": "explainer"
+    }
+  ]
+}
