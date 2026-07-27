@@ -17,15 +17,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "清大圖書館英語情境練習室",
-    description: "十個櫃台服務情境，120 WPM 中英朗讀、句型文法與角色扮演。",
+    description: "二十個櫃台服務情境，120 WPM 中英朗讀、句型文法與角色扮演。",
     type: "website",
-    images: [assetPath("/img_20260726121722.png")],
+    images: [assetPath("/og.png")],
   },
   twitter: {
     card: "summary_large_image",
     title: "清大圖書館英語情境練習室",
-    description: "十個櫃台服務情境，120 WPM 中英朗讀、句型文法與角色扮演。",
-    images: [assetPath("/img_20260726121722.png")],
+    description: "二十個櫃台服務情境，120 WPM 中英朗讀、句型文法與角色扮演。",
+    images: [assetPath("/og.png")],
   },
 };
 

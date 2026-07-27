@@ -6,7 +6,8 @@ async function render() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
-  return worker.fetch(
+  const fetch = typeof worker === "function" ? worker : worker.fetch.bind(worker);
+  return fetch(
     new Request("http://localhost/", { headers: { accept: "text/html" } }),
     { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
     { waitUntil() {}, passThroughOnException() {} },
@@ -21,8 +22,9 @@ test("server-renders the course shell and PWA metadata", async () => {
   assert.match(html, /<html lang="zh-Hant"/i);
   assert.match(html, /清大圖書館英語情境練習室/);
   assert.match(html, /Counter English Lab/);
+  assert.match(html, /二十個真實服務情境/);
   assert.match(html, /manifest\.webmanifest/);
-  assert.match(html, /img_20260726121722\.png/);
+  assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
@@ -38,11 +40,12 @@ test("keeps the final app free of starter preview code", async () => {
   assert.match(page, /下載全部離線語音/);
   assert.match(page, /setHiddenRole\("reader"\)/);
   assert.match(page, /setHiddenRole\("librarian"\)/);
-  assert.match(layout, /img_20260726121722\.png/);
+  assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);
-  assert.match(serviceWorker, /nthu-library-shell-v3/);
+  assert.match(serviceWorker, /nthu-library-shell-v4/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
   await access(new URL("../public/img_20260726120102.png", import.meta.url));
   await access(new URL("../public/img_20260726121722.png", import.meta.url));
+  await access(new URL("../public/og.png", import.meta.url));
 });

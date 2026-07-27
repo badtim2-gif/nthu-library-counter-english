@@ -26,8 +26,8 @@ const report = JSON.parse(
   fs.readFileSync(path.join(project, "public", "audio", "audio-report.json"), "utf8"),
 );
 
-assert.equal(allAudioPaths.length, 368);
-assert.equal(new Set(allAudioPaths).size, 368);
+assert.equal(allAudioPaths.length, 708);
+assert.equal(new Set(allAudioPaths).size, 708);
 for (const publicPath of allAudioPaths) {
   const file = path.join(project, "public", publicPath.replace(/^\//, ""));
   assert.ok(fs.existsSync(file), `Missing audio: ${publicPath}`);
@@ -46,9 +46,9 @@ assert.deepEqual(manifest.voices, {
     explainer: "zh-TW-YunJheNeural",
   },
 });
-assert.equal(manifest.entries.length, 368);
-assert.equal(report.clip_count, 368);
-assert.equal(report.english_long_count, 90);
+assert.equal(manifest.entries.length, 708);
+assert.equal(report.clip_count, 708);
+assert.equal(report.english_long_count, 180);
 assert.equal(report.english_wpm_target, 120);
 assert.ok(report.english_wpm_min >= 115);
 assert.ok(report.english_wpm_max <= 125);
