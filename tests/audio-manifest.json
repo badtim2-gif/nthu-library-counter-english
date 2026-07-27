@@ -3091,6 +3091,3066 @@
       "role": "explainer"
     },
     {
+      "file": "s11-t01-en.mp3",
+      "text": "I am a visitor , and I would like to use the Main Library this afternoon.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s11-t01-zh.mp3",
+      "text": "我是校外訪客，今天下午想進入總圖書館使用。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s11-t02-en.mp3",
+      "text": "Visitors over eighteen may present a national identification card in exchange for a temporary library card.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s11-t02-zh.mp3",
+      "text": "年滿十八歲的訪客可以出示身分證，換取臨時閱覽證。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s11-t03-en.mp3",
+      "text": "Is there a daily quota for temporary cards?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s11-t03-zh.mp3",
+      "text": "臨時閱覽證每天有人數限制嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s11-t04-en.mp3",
+      "text": "Yes, cards are issued within the daily quota, so arriving earlier is recommended.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s11-t04-zh.mp3",
+      "text": "有，臨時閱覽證依每日限額發放，因此建議提早到館。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s11-t05-en.mp3",
+      "text": "May I borrow books with this card, and when should I return it?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s11-t05-zh.mp3",
+      "text": "我可以用這張證借書嗎？又應該何時歸還？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s11-t06-en.mp3",
+      "text": "The card is for entry and reading only, and you must return it on the same day to avoid a late fee or handling charge.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s11-t06-zh.mp3",
+      "text": "這張證只供入館閱覽，必須當天歸還，以免產生逾期費用或遺失處理費。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s11-p01-en.mp3",
+      "text": "I would like to use the library this afternoon.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-p01-zh.mp3",
+      "text": "用來禮貌說明想使用某項空間或服務。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-p02-en.mp3",
+      "text": "Visitors may present identification in exchange for a temporary card.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-p02-zh.mp3",
+      "text": "用來說明出示某項證件後可以換取另一項物品。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-p03-en.mp3",
+      "text": "Is there a daily quota for visitor cards?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-p03-zh.mp3",
+      "text": "用來詢問某項服務是否設有每日人數或數量限制。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-g01-zh.mp3",
+      "text": "表達目的的不定詞。使用不定詞說明到館或申請服務的目的，語氣直接且自然。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-g02-zh.mp3",
+      "text": "義務與期限。使用表示義務的情態動詞，清楚說明證件必須在何時歸還。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v01-word.mp3",
+      "text": "visitor",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v01-meaning.mp3",
+      "text": "訪客，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v02-word.mp3",
+      "text": "temporary",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v02-meaning.mp3",
+      "text": "臨時的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v03-word.mp3",
+      "text": "present",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v03-meaning.mp3",
+      "text": "出示，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v04-word.mp3",
+      "text": "exchange",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v04-meaning.mp3",
+      "text": "交換、換取，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v05-word.mp3",
+      "text": "quota",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v05-meaning.mp3",
+      "text": "限額、配額，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v06-word.mp3",
+      "text": "eligible",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v06-meaning.mp3",
+      "text": "符合資格的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v07-word.mp3",
+      "text": "handling",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s11-v07-meaning.mp3",
+      "text": "處理、經辦，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-t01-en.mp3",
+      "text": "I would like to renew a book without coming to the library.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s12-t01-zh.mp3",
+      "text": "我想續借一本書，但不方便親自到圖書館。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s12-t02-en.mp3",
+      "text": "You can sign in to My Account , open your loan list, and select the renewal option.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s12-t02-zh.mp3",
+      "text": "您可以登入個人借閱狀況，開啟借閱清單後選擇續借。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s12-t03-en.mp3",
+      "text": "Why is the renewal option unavailable for this title?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s12-t03-zh.mp3",
+      "text": "為什麼這本書無法選擇續借？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s12-t04-en.mp3",
+      "text": "An item cannot be renewed if another reader has reserved it or if it is already overdue .",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s12-t04-zh.mp3",
+      "text": "館藏若已被其他讀者預約，或本身已經逾期，就無法續借。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s12-t05-en.mp3",
+      "text": "How is the new due date calculated after a successful renewal?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s12-t05-zh.mp3",
+      "text": "成功續借後，新的到期日如何計算？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s12-t06-en.mp3",
+      "text": "The new period starts on the renewal date and cannot extend beyond the maximum loan period for your status.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s12-t06-zh.mp3",
+      "text": "新借期從續借當天起算，而且不得超過您身分別適用的最大借期。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s12-p01-en.mp3",
+      "text": "I would like to renew this book online.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-p01-zh.mp3",
+      "text": "用來禮貌表達希望延長借閱期限。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-p02-en.mp3",
+      "text": "The book cannot be renewed if another reader has reserved it.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-p02-zh.mp3",
+      "text": "用來說明無法續借的條件或原因。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-p03-en.mp3",
+      "text": "How is the new due date calculated after renewal?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-p03-zh.mp3",
+      "text": "用來詢問日期、費用或期限的計算方式。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-g01-zh.mp3",
+      "text": "條件子句。使用條件子句說明預約或逾期時，續借功能會受到限制。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-g02-zh.mp3",
+      "text": "被動語態。強調館藏是否能被續借，而不必特別指出執行續借的人。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v01-word.mp3",
+      "text": "renew",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v01-meaning.mp3",
+      "text": "續借、更新，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v02-word.mp3",
+      "text": "account",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v02-meaning.mp3",
+      "text": "帳戶，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v03-word.mp3",
+      "text": "extend",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v03-meaning.mp3",
+      "text": "延長，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v04-word.mp3",
+      "text": "reserved",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v04-meaning.mp3",
+      "text": "已被預約的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v05-word.mp3",
+      "text": "maximum",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v05-meaning.mp3",
+      "text": "最大的、最高的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v06-word.mp3",
+      "text": "overdue",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v06-meaning.mp3",
+      "text": "逾期的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v07-word.mp3",
+      "text": "period",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s12-v07-meaning.mp3",
+      "text": "期間、期限，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-t01-en.mp3",
+      "text": "I returned a book five days late and received an overdue notice.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s13-t01-zh.mp3",
+      "text": "我晚了五天還書，而且收到逾期通知。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s13-t02-en.mp3",
+      "text": "The overdue fee is five New Taiwan dollars per item for each day after the due date.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s13-t02-zh.mp3",
+      "text": "超過到期日後，每冊每天會產生新臺幣五元的逾期處理費。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s13-t03-en.mp3",
+      "text": "Can I renew the item now to stop the fee from accumulating ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s13-t03-zh.mp3",
+      "text": "我現在可以續借，讓費用不要繼續累積嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s13-t04-en.mp3",
+      "text": "No, overdue items cannot be renewed, and your borrowing privileges may be suspended .",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s13-t04-zh.mp3",
+      "text": "不可以，逾期館藏無法續借，而且您的借閱權可能會暫停。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s13-t05-en.mp3",
+      "text": "How can I check the amount and restore my borrowing privileges?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s13-t05-zh.mp3",
+      "text": "我要如何查詢金額並恢復借閱權？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s13-t06-en.mp3",
+      "text": "Check the charges in My Account, return all overdue items, and settle the required fees.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s13-t06-zh.mp3",
+      "text": "請在個人借閱狀況查詢費用，歸還所有逾期館藏，並結清應繳款項。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s13-p01-en.mp3",
+      "text": "I returned the book three days late.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-p01-zh.mp3",
+      "text": "用來清楚說明歸還物品時已經逾期幾天。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-p02-en.mp3",
+      "text": "Can I pay now to stop the fee from increasing?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-p02-zh.mp3",
+      "text": "用來詢問某項行動是否能阻止後續影響。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-p03-en.mp3",
+      "text": "How can I restore my borrowing privileges?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-p03-zh.mp3",
+      "text": "用來詢問恢復權益、功能或資格的方法。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-g01-zh.mp3",
+      "text": "時間長度的表達。數字加上時間單位可放在形容詞前，表示某項行為延遲了多久。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-g02-zh.mp3",
+      "text": "阻止持續發生。使用表示阻止的動詞搭配動名詞，說明希望停止費用繼續增加。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v01-word.mp3",
+      "text": "overdue",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v01-meaning.mp3",
+      "text": "逾期的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v02-word.mp3",
+      "text": "fee",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v02-meaning.mp3",
+      "text": "費用，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v03-word.mp3",
+      "text": "accumulate",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v03-meaning.mp3",
+      "text": "累積，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v04-word.mp3",
+      "text": "suspend",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v04-meaning.mp3",
+      "text": "暫停，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v05-word.mp3",
+      "text": "privilege",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v05-meaning.mp3",
+      "text": "權益、權限，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v06-word.mp3",
+      "text": "settle",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v06-meaning.mp3",
+      "text": "結清、處理妥當，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v07-word.mp3",
+      "text": "charge",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s13-v07-meaning.mp3",
+      "text": "應繳費用，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-t01-en.mp3",
+      "text": "I may have lost a borrowed book, and its due date is next week.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s14-t01-zh.mp3",
+      "text": "我可能遺失了一本借來的書，下星期就到期了。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s14-t02-en.mp3",
+      "text": "Please notify the library before the due date so we can begin the compensation procedure.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s14-t02-zh.mp3",
+      "text": "請在到期日前通知圖書館，以便開始辦理賠償程序。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s14-t03-en.mp3",
+      "text": "May I purchase a replacement copy?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s14-t03-zh.mp3",
+      "text": "我可以購買一本書來抵賠嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s14-t04-en.mp3",
+      "text": "Yes, it should match the original book, although a newer edition may be accepted with approval.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s14-t04-zh.mp3",
+      "text": "可以，原則上應與原書相同；經館員同意後，也可能接受新版。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s14-t05-en.mp3",
+      "text": "Is there a deadline or an additional processing fee?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s14-t05-zh.mp3",
+      "text": "賠償有完成期限或額外處理費嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s14-t06-en.mp3",
+      "text": "Complete the procedure within sixty days and pay the processing fee, or overdue charges may continue.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s14-t06-zh.mp3",
+      "text": "請在六十天內完成程序並繳交處理費，否則逾期費用可能繼續計算。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s14-p01-en.mp3",
+      "text": "I may have lost a borrowed book.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-p01-zh.mp3",
+      "text": "用來委婉說明目前尚未完全確定的遺失狀況。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-p02-en.mp3",
+      "text": "May I purchase a replacement copy?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-p02-zh.mp3",
+      "text": "用來詢問是否可以購買替代品作為賠償。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-p03-en.mp3",
+      "text": "A newer edition may be accepted with approval.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-p03-zh.mp3",
+      "text": "用來說明某個替代方案必須取得同意後才可能被接受。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-g01-zh.mp3",
+      "text": "推測已發生的事情。使用情態動詞搭配完成式，表達對過去事件的不確定推測。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-g02-zh.mp3",
+      "text": "條件式被動語態。強調替代版本在取得核准後才可能被接受。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v01-word.mp3",
+      "text": "damaged",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v01-meaning.mp3",
+      "text": "損壞的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v02-word.mp3",
+      "text": "compensation",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v02-meaning.mp3",
+      "text": "賠償，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v03-word.mp3",
+      "text": "replacement",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v03-meaning.mp3",
+      "text": "替代品、補發品，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v04-word.mp3",
+      "text": "edition",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v04-meaning.mp3",
+      "text": "版本，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v05-word.mp3",
+      "text": "notify",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v05-meaning.mp3",
+      "text": "通知，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v06-word.mp3",
+      "text": "processing",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v06-meaning.mp3",
+      "text": "處理、辦理，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v07-word.mp3",
+      "text": "out of print",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s14-v07-meaning.mp3",
+      "text": "已絕版，片語",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-t01-en.mp3",
+      "text": "The catalog says this book is on shelf, but I cannot locate it.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s15-t01-zh.mp3",
+      "text": "館藏目錄顯示這本書在架上，但我找不到。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s15-t02-en.mp3",
+      "text": "Please check the nearby shelves, book carts, and reading tables first.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s15-t02-zh.mp3",
+      "text": "請先查看附近書架、書車及閱覽桌。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s15-t03-en.mp3",
+      "text": "I have checked those places. Can the library search for the missing item?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s15-t03-zh.mp3",
+      "text": "那些地方我都找過了，圖書館可以協尋這本書嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s15-t04-en.mp3",
+      "text": "Yes, please complete a Missing Items Search form at the Information Desk.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s15-t04-zh.mp3",
+      "text": "可以，請到服務櫃檯填寫館藏協尋申請。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s15-t05-en.mp3",
+      "text": "How long will the search take, and how will I receive the result?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s15-t05-zh.mp3",
+      "text": "協尋需要多久？結果會如何通知我？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s15-t06-en.mp3",
+      "text": "We will search several times during one month and inform you by email whether or not the item is found.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s15-t06-zh.mp3",
+      "text": "我們會在一個月內進行多次協尋，無論是否找到都會以電子郵件通知您。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s15-p01-en.mp3",
+      "text": "The catalog says the book is available, but I cannot find it.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-p01-zh.mp3",
+      "text": "用來對照系統顯示的資訊與現場實際狀況。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-p02-en.mp3",
+      "text": "Can the library search for the missing item?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-p02-zh.mp3",
+      "text": "用來詢問館員是否能協助尋找館藏。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-p03-en.mp3",
+      "text": "How will I receive the search result?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-p03-zh.mp3",
+      "text": "用來詢問後續結果會透過何種方式通知。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-g01-zh.mp3",
+      "text": "轉折連接。使用轉折連接詞對照目錄狀態與實際找不到館藏的情況。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-g02-zh.mp3",
+      "text": "無論是否。用來表示兩種相反結果都不會改變後續通知的安排。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v01-word.mp3",
+      "text": "catalog",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v01-meaning.mp3",
+      "text": "館藏目錄，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v02-word.mp3",
+      "text": "on shelf",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v02-meaning.mp3",
+      "text": "顯示在架，片語",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v03-word.mp3",
+      "text": "locate",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v03-meaning.mp3",
+      "text": "找到位置，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v04-word.mp3",
+      "text": "missing",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v04-meaning.mp3",
+      "text": "找不到的、遺失的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v05-word.mp3",
+      "text": "nearby",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v05-meaning.mp3",
+      "text": "附近的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v06-word.mp3",
+      "text": "search form",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v06-meaning.mp3",
+      "text": "協尋申請表，片語",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v07-word.mp3",
+      "text": "inform",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s15-v07-meaning.mp3",
+      "text": "通知、告知，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-t01-en.mp3",
+      "text": "I received a pickup notice for a book I reserved .",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s16-t01-zh.mp3",
+      "text": "我收到預約書到館的取件通知。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s16-t02-en.mp3",
+      "text": "Books requested from the Main Library are available at the Smart Bookshelf on the first floor.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s16-t02-zh.mp3",
+      "text": "總圖的預約書可在一樓預約自助取書區領取。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s16-t03-en.mp3",
+      "text": "How long will the reservation be retained for me?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s16-t03-zh.mp3",
+      "text": "這筆預約會為我保留多久？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s16-t04-en.mp3",
+      "text": "It is normally held for three days, with weekends and official holidays excluded from the count.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s16-t04-zh.mp3",
+      "text": "一般會保留三天，星期六、星期日及學校規定的假日不列入計算。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s16-t05-en.mp3",
+      "text": "What should I do if I cannot arrive before the deadline ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s16-t05-zh.mp3",
+      "text": "如果我無法在期限前到館，應該怎麼辦？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s16-t06-en.mp3",
+      "text": "Cancel the request in My Account before it expires to avoid a pickup penalty .",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s16-t06-zh.mp3",
+      "text": "請在到期前於個人借閱狀況取消預約，以免產生未取書記點。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s16-p01-en.mp3",
+      "text": "I received a pickup notice for my reserved book.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-p01-zh.mp3",
+      "text": "用來說明已收到預約資料可領取的通知。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-p02-en.mp3",
+      "text": "How long will the book be retained for me?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-p02-zh.mp3",
+      "text": "用來詢問物品或申請會保留多長時間。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-p03-en.mp3",
+      "text": "Cancel the request before it expires to avoid a penalty.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-p03-zh.mp3",
+      "text": "用來提醒在期限前採取行動，以避免不利結果。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-g01-zh.mp3",
+      "text": "未來式被動語態。用來詢問預約物品在未來會被保留多久。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-g02-zh.mp3",
+      "text": "表示避免的目的。使用不定詞說明及時取消預約是為了避免產生記點。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v01-word.mp3",
+      "text": "pickup",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v01-meaning.mp3",
+      "text": "取件、領取，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v02-word.mp3",
+      "text": "reservation",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v02-meaning.mp3",
+      "text": "預約，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v03-word.mp3",
+      "text": "retain",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v03-meaning.mp3",
+      "text": "保留，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v04-word.mp3",
+      "text": "deadline",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v04-meaning.mp3",
+      "text": "截止期限，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v05-word.mp3",
+      "text": "cancel",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v05-meaning.mp3",
+      "text": "取消，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v06-word.mp3",
+      "text": "penalty",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v06-meaning.mp3",
+      "text": "處罰、記點，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v07-word.mp3",
+      "text": "available",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s16-v07-meaning.mp3",
+      "text": "可以領取的、可用的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-t01-en.mp3",
+      "text": "My classmates and I would like to reserve a discussion room.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s17-t01-zh.mp3",
+      "text": "我和同學想預約一間討論室。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s17-t02-en.mp3",
+      "text": "You may reserve one through the library booking system within the next fourteen days.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s17-t02-zh.mp3",
+      "text": "您可以透過圖書館空間系統，預約未來十四天內的時段。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s17-t03-en.mp3",
+      "text": "How many participants are required, and how long may we use the room?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s17-t03-zh.mp3",
+      "text": "需要幾位使用者？一次可以使用多久？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s17-t04-en.mp3",
+      "text": "A Main Library room requires three valid cards, and one reservation may last up to two hours.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s17-t04-zh.mp3",
+      "text": "總圖討論室需要三張有效證件，一次預約最長兩小時。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s17-t05-en.mp3",
+      "text": "What happens if one participant is late to check in?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s17-t05-zh.mp3",
+      "text": "如果其中一位使用者來不及報到，會怎麼樣？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s17-t06-en.mp3",
+      "text": "All participants must check in within fifteen minutes, or the room will be released and a no show may be recorded.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s17-t06-zh.mp3",
+      "text": "所有使用者必須在十五分鐘內完成報到，否則空間會被釋出，並可能留下未到紀錄。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s17-p01-en.mp3",
+      "text": "We would like to reserve a discussion room.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-p01-zh.mp3",
+      "text": "用來禮貌表達團體希望預約某個空間。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-p02-en.mp3",
+      "text": "How many participants are required?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-p02-zh.mp3",
+      "text": "用來詢問服務所要求的最低人數或數量。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-p03-en.mp3",
+      "text": "All participants must check in within fifteen minutes.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-p03-zh.mp3",
+      "text": "用來說明必須在指定時間內完成報到。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-g01-zh.mp3",
+      "text": "團體主詞與一致性。多人共同預約時使用複數主詞，動詞形式也要配合複數。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-g02-zh.mp3",
+      "text": "否則的結果。先說明必要條件，再接續未遵守條件時會發生的結果。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v01-word.mp3",
+      "text": "discussion",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v01-meaning.mp3",
+      "text": "討論，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v02-word.mp3",
+      "text": "reserve",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v02-meaning.mp3",
+      "text": "預約，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v03-word.mp3",
+      "text": "participant",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v03-meaning.mp3",
+      "text": "參與者、使用者，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v04-word.mp3",
+      "text": "check in",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v04-meaning.mp3",
+      "text": "報到，片語",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v05-word.mp3",
+      "text": "release",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v05-meaning.mp3",
+      "text": "釋出，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v06-word.mp3",
+      "text": "extend",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v06-meaning.mp3",
+      "text": "延長，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v07-word.mp3",
+      "text": "no show",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s17-v07-meaning.mp3",
+      "text": "預約未到，片語",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-t01-en.mp3",
+      "text": "I am not an N, T, H, U user. How can I access the wireless network?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s18-t01-zh.mp3",
+      "text": "我不是清華大學的使用者，要如何連接無線網路？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s18-t02-en.mp3",
+      "text": "Please apply for a temporary wireless account at the library service counter.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s18-t02-zh.mp3",
+      "text": "請到圖書館服務櫃檯申請臨時無線網路帳號。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s18-t03-en.mp3",
+      "text": "I signed in, but the authentication page still will not connect.",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s18-t03-zh.mp3",
+      "text": "我已經登入，但驗證頁面仍然無法連線。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s18-t04-en.mp3",
+      "text": "Confirm that you selected the correct network, disconnect any unintended network, and reconnect .",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s18-t04-zh.mp3",
+      "text": "請確認選擇正確的網路，先中斷其他不需要的連線，再重新連接。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s18-t05-en.mp3",
+      "text": "Can I use the same account on more than one device ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s18-t05-zh.mp3",
+      "text": "同一個帳號可以在多個裝置上使用嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s18-t06-en.mp3",
+      "text": "Yes, and the connection will end automatically after the account has been idle for ten minutes.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s18-t06-zh.mp3",
+      "text": "可以，帳號閒置十分鐘後，系統會自動中斷連線。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s18-p01-en.mp3",
+      "text": "How can I access the wireless network?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-p01-zh.mp3",
+      "text": "用來詢問取得網路、資源或服務的方法。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-p02-en.mp3",
+      "text": "Confirm that you selected the correct network.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-p02-zh.mp3",
+      "text": "用來提醒使用者再次確認先前選擇是否正確。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-p03-en.mp3",
+      "text": "Can I use the same account on two devices?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-p03-zh.mp3",
+      "text": "用來詢問同一帳號或服務能否在不同設備上使用。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-g01-zh.mp3",
+      "text": "間接問句。詢問方法時，疑問詞後接一般直述語序，使句子自然有禮。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-g02-zh.mp3",
+      "text": "現在完成式被動語態。強調帳號持續處於閒置狀態，而且狀態與自動斷線有關。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v01-word.mp3",
+      "text": "wireless",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v01-meaning.mp3",
+      "text": "無線的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v02-word.mp3",
+      "text": "temporary",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v02-meaning.mp3",
+      "text": "臨時的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v03-word.mp3",
+      "text": "authentication",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v03-meaning.mp3",
+      "text": "身分驗證，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v04-word.mp3",
+      "text": "device",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v04-meaning.mp3",
+      "text": "裝置，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v05-word.mp3",
+      "text": "idle",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v05-meaning.mp3",
+      "text": "閒置的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v06-word.mp3",
+      "text": "reconnect",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v06-meaning.mp3",
+      "text": "重新連接，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v07-word.mp3",
+      "text": "signal",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s18-v07-meaning.mp3",
+      "text": "訊號，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-t01-en.mp3",
+      "text": "I need to print a color document. Can I send it from my personal laptop?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s19-t01-zh.mp3",
+      "text": "我需要彩色列印，可以從自己的筆記型電腦傳送嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s19-t02-en.mp3",
+      "text": "Personal laptop printing is unavailable because of driver compatibility and data security concerns.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s19-t02-zh.mp3",
+      "text": "基於驅動程式相容性與資料安全考量，目前不提供個人電腦列印。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s19-t03-en.mp3",
+      "text": "How can I pay for a printout or photocopy ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s19-t03-zh.mp3",
+      "text": "列印或影印要如何付費？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s19-t04-en.mp3",
+      "text": "You can pay with an EasyCard or coins, and remember to select the color option before printing.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s19-t04-zh.mp3",
+      "text": "可以使用悠遊卡或硬幣付款，彩色列印前請記得選擇彩色選項。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s19-t05-en.mp3",
+      "text": "Will I be charged if a paper jam occurs?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s19-t05-zh.mp3",
+      "text": "如果發生卡紙，我還會被收費嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s19-t06-en.mp3",
+      "text": "No, follow the instructions on the screen, and report the machine location if the problem continues. You may also request a receipt at the desk.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s19-t06-zh.mp3",
+      "text": "不會，請依螢幕指示處理；若問題持續，請回報設備位置。您也可以到櫃檯申請收據。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s19-p01-en.mp3",
+      "text": "Can I send the document from my laptop?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-p01-zh.mp3",
+      "text": "用來詢問是否能從特定設備傳送檔案或工作。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-p02-en.mp3",
+      "text": "How can I pay for a color printout?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-p02-zh.mp3",
+      "text": "用來詢問某項服務接受哪些付款方式。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-p03-en.mp3",
+      "text": "Will I be charged if a paper jam occurs?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-p03-zh.mp3",
+      "text": "用來確認發生異常狀況時是否仍會被收費。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-g01-zh.mp3",
+      "text": "原因介系詞。用來說明服務因相容性或安全考量而受到限制。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-g02-zh.mp3",
+      "text": "未來式被動語態。詢問未來發生特定狀況時，使用者是否會被收取費用。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v01-word.mp3",
+      "text": "printout",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v01-meaning.mp3",
+      "text": "列印文件，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v02-word.mp3",
+      "text": "photocopy",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v02-meaning.mp3",
+      "text": "影印本、影印，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v03-word.mp3",
+      "text": "compatibility",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v03-meaning.mp3",
+      "text": "相容性，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v04-word.mp3",
+      "text": "select",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v04-meaning.mp3",
+      "text": "選擇，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v05-word.mp3",
+      "text": "paper jam",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v05-meaning.mp3",
+      "text": "卡紙，片語",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v06-word.mp3",
+      "text": "receipt",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v06-meaning.mp3",
+      "text": "收據，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v07-word.mp3",
+      "text": "coin",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s19-v07-meaning.mp3",
+      "text": "硬幣，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-t01-en.mp3",
+      "text": "I cannot come to the library regularly. May I authorize someone to borrow books for me?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s20-t01-zh.mp3",
+      "text": "我無法經常親自到館，可以委託他人代借圖書嗎？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s20-t02-en.mp3",
+      "text": "Yes, complete the proxy borrowing form and present it at the service desk with your valid library card.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s20-t02-zh.mp3",
+      "text": "可以，請填寫委託代借申請表，並持有效借書證到服務櫃檯辦理。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s20-t03-en.mp3",
+      "text": "When will the authorization become effective ?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s20-t03-zh.mp3",
+      "text": "委託代借何時會生效？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s20-t04-en.mp3",
+      "text": "It becomes effective one day after the application is completed.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s20-t04-zh.mp3",
+      "text": "申請完成後的次日生效。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s20-t05-en.mp3",
+      "text": "What must the proxy borrower do when checking out materials?",
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "reader"
+    },
+    {
+      "file": "s20-t05-zh.mp3",
+      "text": "受託人代借館藏時需要做什麼？",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "reader"
+    },
+    {
+      "file": "s20-t06-en.mp3",
+      "text": "The trustee must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate the authorization at the desk.",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "librarian"
+    },
+    {
+      "file": "s20-t06-zh.mp3",
+      "text": "受託人必須是有效讀者，借書時主動說明是委託代借並出示自己的證件；您也可以到櫃檯終止委託。",
+      "voice": "zh-TW-HsiaoChenNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "librarian"
+    },
+    {
+      "file": "s20-p01-en.mp3",
+      "text": "May I authorize someone to borrow books for me?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-p01-zh.mp3",
+      "text": "用來詢問是否能正式授權他人代為處理事情。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-p02-en.mp3",
+      "text": "When will the authorization become effective?",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-p02-zh.mp3",
+      "text": "用來詢問申請或授權從何時開始生效。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-p03-en.mp3",
+      "text": "The proxy borrower must state that this is an authorized transaction.",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -60,
+      "language": "en",
+      "kind": "english_long",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-p03-zh.mp3",
+      "text": "用來說明辦理服務時必須主動告知的重要資訊。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-g01-zh.mp3",
+      "text": "授權他人做某事。使用授權動詞搭配受詞及不定詞，表達正式委託關係。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-g02-zh.mp3",
+      "text": "間接陳述內容。使用連接詞帶出受託人必須向館員說明的完整內容。",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v01-word.mp3",
+      "text": "authorize",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v01-meaning.mp3",
+      "text": "授權、委託，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v02-word.mp3",
+      "text": "proxy",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v02-meaning.mp3",
+      "text": "代理人、代理的，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v03-word.mp3",
+      "text": "trustee",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v03-meaning.mp3",
+      "text": "受託人，名詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v04-word.mp3",
+      "text": "valid",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v04-meaning.mp3",
+      "text": "有效的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v05-word.mp3",
+      "text": "submit",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v05-meaning.mp3",
+      "text": "提交，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v06-word.mp3",
+      "text": "effective",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v06-meaning.mp3",
+      "text": "生效的，形容詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v07-word.mp3",
+      "text": "terminate",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": -40,
+      "language": "en",
+      "kind": "word",
+      "role": "explainer"
+    },
+    {
+      "file": "s20-v07-meaning.mp3",
+      "text": "終止，動詞",
+      "voice": "zh-TW-YunJheNeural",
+      "rate": -15,
+      "language": "zh",
+      "kind": "chinese",
+      "role": "explainer"
+    },
+    {
       "file": "alphabet-a.mp3",
       "text": "A",
       "voice": "en-US-AndrewMultilingualNeural",

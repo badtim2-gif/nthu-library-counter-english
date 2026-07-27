@@ -286,7 +286,7 @@ export default function Home() {
             <p className="kicker">櫃台英語，一句一句練到能用</p>
             <h1>清大圖書館<br />英語情境練習室</h1>
             <p className="hero__copy">
-              十個真實服務情境，從權益聲明、館際合作到論文繳交。
+              二十個真實服務情境，從權益聲明、借還館藏到空間與網路服務。
               跟著三位角色慢速聽、逐句看，再關掉提示親自說一次。
             </p>
             <div className="hero__actions">
@@ -305,8 +305,8 @@ export default function Home() {
 
       <section className="scenario-strip" aria-labelledby="scenario-heading">
         <div className="section-heading">
-          <div><p className="section-label">SCENARIO MAP</p><h2 id="scenario-heading">十個櫃台任務</h2></div>
-          <span className="section-count">已選 {scenario.id} / 10</span>
+          <div><p className="section-label">SCENARIO MAP</p><h2 id="scenario-heading">二十個櫃台任務</h2></div>
+          <span className="section-count">已選 {scenario.id} / {scenarios.length}</span>
         </div>
         <div className="scenario-list">
           {scenarios.map((item) => (

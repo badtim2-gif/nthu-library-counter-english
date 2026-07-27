@@ -37,7 +37,7 @@ export type Scenario = {
   vocabulary: VocabularyItem[];
 };
 
-export const CHECKED_AT = "2026-07-26";
+export const CHECKED_AT = "2026-07-27";
 
 export const scenarios: Scenario[] = [
   {
@@ -578,8 +578,8 @@ export const scenarios: Scenario[] = [
     shortTitle: "論文繳交",
     title: "學位論文上傳、授權及延後公開諮詢",
     summary: "回應研究生對論文上傳、授權文件、延後公開與後續修改的疑問。",
-    sourceLabel: "畢業提醒與論文繳交",
-    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/graduation_reminders.html",
+    sourceLabel: "二〇二六年論文授權新制公告",
+    sourceUrl: "https://www.lib.nthu.edu.tw/news/list_en.html",
     dialogue: [
       {
         role: "reader",
@@ -799,6 +799,555 @@ export const scenarios: Scenario[] = [
       { word: "cross campus", kk: "͵krɔsˋkæmpəs", meaning: "跨校的", pos: "adj." },
       { word: "circulation", kk: "͵sɝkjəˋleʃən", meaning: "流通、借閱服務", pos: "n." },
       { word: "available", kk: "əˋveləb!", meaning: "可使用的、可取得的", pos: "adj." },
+    ],
+  },
+  {
+    id: 11,
+    shortTitle: "訪客入館",
+    title: "訪客換證與臨時閱覽證使用規定",
+    summary: "協助校外訪客了解換證入館、每日名額、使用限制與歸還規定。",
+    sourceLabel: "入館須知",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/in_lib_service.html",
+    dialogue: [
+      {
+        role: "reader",
+        en: "I am a visitor [ˋvɪzɪtɚ], and I would like to use the Main Library this afternoon.",
+        zh: "我是校外訪客，今天下午想進入總圖書館使用。",
+      },
+      {
+        role: "librarian",
+        en: "Visitors over eighteen may present [prɪˋzɛnt] a national identification card in exchange [ɪksˋtʃendʒ] for a temporary [ˋtɛmpə͵rɛrɪ] library card.",
+        zh: "年滿十八歲的訪客可以出示身分證，換取臨時閱覽證。",
+      },
+      {
+        role: "reader",
+        en: "Is there a daily quota [ˋkwotə] for temporary cards?",
+        zh: "臨時閱覽證每天有人數限制嗎？",
+      },
+      {
+        role: "librarian",
+        en: "Yes, cards are issued within the daily quota, so arriving earlier is recommended.",
+        zh: "有，臨時閱覽證依每日限額發放，因此建議提早到館。",
+      },
+      {
+        role: "reader",
+        en: "May I borrow books with this card, and when should I return it?",
+        zh: "我可以用這張證借書嗎？又應該何時歸還？",
+      },
+      {
+        role: "librarian",
+        en: "The card is for entry and reading only, and you must return it on the same day to avoid a late fee or handling [ˋhændlɪŋ] charge.",
+        zh: "這張證只供入館閱覽，必須當天歸還，以免產生逾期費用或遺失處理費。",
+      },
+    ],
+    patterns: [
+      {
+        form: "I would like to use...",
+        example: "I would like to use the library this afternoon.",
+        explanation: "用來禮貌說明想使用某項空間或服務。",
+      },
+      {
+        form: "... may present ... in exchange for...",
+        example: "Visitors may present identification in exchange for a temporary card.",
+        explanation: "用來說明出示某項證件後可以換取另一項物品。",
+      },
+      {
+        form: "Is there a daily quota for...?",
+        example: "Is there a daily quota for visitor cards?",
+        explanation: "用來詢問某項服務是否設有每日人數或數量限制。",
+      },
+    ],
+    grammar: [
+      {
+        title: "表達目的的不定詞",
+        explanation: "使用不定詞說明到館或申請服務的目的，語氣直接且自然。",
+      },
+      {
+        title: "義務與期限",
+        explanation: "使用表示義務的情態動詞，清楚說明證件必須在何時歸還。",
+      },
+    ],
+    vocabulary: [
+      { word: "visitor", kk: "ˋvɪzɪtɚ", meaning: "訪客", pos: "n." },
+      { word: "temporary", kk: "ˋtɛmpə͵rɛrɪ", meaning: "臨時的", pos: "adj." },
+      { word: "present", kk: "prɪˋzɛnt", meaning: "出示", pos: "v." },
+      { word: "exchange", kk: "ɪksˋtʃendʒ", meaning: "交換、換取", pos: "v." },
+      { word: "quota", kk: "ˋkwotə", meaning: "限額、配額", pos: "n." },
+      { word: "eligible", kk: "ˋɛlɪdʒəb!", meaning: "符合資格的", pos: "adj." },
+      { word: "handling", kk: "ˋhændlɪŋ", meaning: "處理、經辦", pos: "n." },
+    ],
+  },
+  {
+    id: 12,
+    shortTitle: "線上續借",
+    title: "線上續借、預約限制與新到期日",
+    summary: "說明個人借閱狀況中的續借流程、預約限制及最大借期。",
+    sourceLabel: "圖書資料借還常問問題",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/faq/q_a2.html",
+    dialogue: [
+      {
+        role: "reader",
+        en: "I would like to renew [rɪˋnu] a book without coming to the library.",
+        zh: "我想續借一本書，但不方便親自到圖書館。",
+      },
+      {
+        role: "librarian",
+        en: "You can sign in to My Account [əˋkaʊnt], open your loan list, and select the renewal option.",
+        zh: "您可以登入個人借閱狀況，開啟借閱清單後選擇續借。",
+      },
+      {
+        role: "reader",
+        en: "Why is the renewal option unavailable for this title?",
+        zh: "為什麼這本書無法選擇續借？",
+      },
+      {
+        role: "librarian",
+        en: "An item cannot be renewed if another reader has reserved [rɪˋzɝvd] it or if it is already overdue [ˋovɚˋdu].",
+        zh: "館藏若已被其他讀者預約，或本身已經逾期，就無法續借。",
+      },
+      {
+        role: "reader",
+        en: "How is the new due date calculated after a successful renewal?",
+        zh: "成功續借後，新的到期日如何計算？",
+      },
+      {
+        role: "librarian",
+        en: "The new period starts on the renewal date and cannot extend [ɪkˋstɛnd] beyond the maximum [ˋmæksəməm] loan period for your status.",
+        zh: "新借期從續借當天起算，而且不得超過您身分別適用的最大借期。",
+      },
+    ],
+    patterns: [
+      {
+        form: "I would like to renew...",
+        example: "I would like to renew this book online.",
+        explanation: "用來禮貌表達希望延長借閱期限。",
+      },
+      {
+        form: "... cannot be renewed if...",
+        example: "The book cannot be renewed if another reader has reserved it.",
+        explanation: "用來說明無法續借的條件或原因。",
+      },
+      {
+        form: "How is the new due date calculated?",
+        example: "How is the new due date calculated after renewal?",
+        explanation: "用來詢問日期、費用或期限的計算方式。",
+      },
+    ],
+    grammar: [
+      {
+        title: "條件子句",
+        explanation: "使用條件子句說明預約或逾期時，續借功能會受到限制。",
+      },
+      {
+        title: "被動語態",
+        explanation: "強調館藏是否能被續借，而不必特別指出執行續借的人。",
+      },
+    ],
+    vocabulary: [
+      { word: "renew", kk: "rɪˋnu", meaning: "續借、更新", pos: "v." },
+      { word: "account", kk: "əˋkaʊnt", meaning: "帳戶", pos: "n." },
+      { word: "extend", kk: "ɪkˋstɛnd", meaning: "延長", pos: "v." },
+      { word: "reserved", kk: "rɪˋzɝvd", meaning: "已被預約的", pos: "adj." },
+      { word: "maximum", kk: "ˋmæksəməm", meaning: "最大的、最高的", pos: "adj." },
+      { word: "overdue", kk: "ˋovɚˋdu", meaning: "逾期的", pos: "adj." },
+      { word: "period", kk: "ˋpɪrɪəd", meaning: "期間、期限", pos: "n." },
+    ],
+  },
+  {
+    id: 13,
+    shortTitle: "逾期停借",
+    title: "圖書逾期、處理費與借閱權限制",
+    summary: "協助讀者確認逾期費用、續借限制與恢復借閱權的方法。",
+    sourceLabel: "圖書資料借還常問問題",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/faq/q_a2.html",
+    dialogue: [
+      {
+        role: "reader",
+        en: "I returned a book five days late and received an overdue [ˋovɚˋdu] notice.",
+        zh: "我晚了五天還書，而且收到逾期通知。",
+      },
+      {
+        role: "librarian",
+        en: "The overdue fee [fi] is five New Taiwan dollars per item for each day after the due date.",
+        zh: "超過到期日後，每冊每天會產生新臺幣五元的逾期處理費。",
+      },
+      {
+        role: "reader",
+        en: "Can I renew the item now to stop the fee from accumulating [əˋkjumjə͵letɪŋ]?",
+        zh: "我現在可以續借，讓費用不要繼續累積嗎？",
+      },
+      {
+        role: "librarian",
+        en: "No, overdue items cannot be renewed, and your borrowing privileges [ˋprɪvəlɪdʒɪz] may be suspended [səˋspɛndɪd].",
+        zh: "不可以，逾期館藏無法續借，而且您的借閱權可能會暫停。",
+      },
+      {
+        role: "reader",
+        en: "How can I check the amount and restore my borrowing privileges?",
+        zh: "我要如何查詢金額並恢復借閱權？",
+      },
+      {
+        role: "librarian",
+        en: "Check the charges [tʃɑrdʒɪz] in My Account, return all overdue items, and settle [ˋsɛt!] the required fees.",
+        zh: "請在個人借閱狀況查詢費用，歸還所有逾期館藏，並結清應繳款項。",
+      },
+    ],
+    patterns: [
+      {
+        form: "I returned ... days late.",
+        example: "I returned the book three days late.",
+        explanation: "用來清楚說明歸還物品時已經逾期幾天。",
+      },
+      {
+        form: "Can I ... to stop ... from...?",
+        example: "Can I pay now to stop the fee from increasing?",
+        explanation: "用來詢問某項行動是否能阻止後續影響。",
+      },
+      {
+        form: "How can I restore...?",
+        example: "How can I restore my borrowing privileges?",
+        explanation: "用來詢問恢復權益、功能或資格的方法。",
+      },
+    ],
+    grammar: [
+      {
+        title: "時間長度的表達",
+        explanation: "數字加上時間單位可放在形容詞前，表示某項行為延遲了多久。",
+      },
+      {
+        title: "阻止持續發生",
+        explanation: "使用表示阻止的動詞搭配動名詞，說明希望停止費用繼續增加。",
+      },
+    ],
+    vocabulary: [
+      { word: "overdue", kk: "ˋovɚˋdu", meaning: "逾期的", pos: "adj." },
+      { word: "fee", kk: "fi", meaning: "費用", pos: "n." },
+      { word: "accumulate", kk: "əˋkjumjə͵let", meaning: "累積", pos: "v." },
+      { word: "suspend", kk: "səˋspɛnd", meaning: "暫停", pos: "v." },
+      { word: "privilege", kk: "ˋprɪvəlɪdʒ", meaning: "權益、權限", pos: "n." },
+      { word: "settle", kk: "ˋsɛt!", meaning: "結清、處理妥當", pos: "v." },
+      { word: "charge", kk: "tʃɑrdʒ", meaning: "應繳費用", pos: "n." },
+    ],
+  },
+  {
+    id: 14,
+    shortTitle: "遺失賠償",
+    title: "遺失或損壞館藏的通報與賠償",
+    summary: "說明館藏遺失後的通報期限、替代版本、處理費與完成期限。",
+    sourceLabel: "借還書服務說明",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/borrow_n_return.html",
+    dialogue: [
+      {
+        role: "reader",
+        en: "I may have lost a borrowed book, and its due date is next week.",
+        zh: "我可能遺失了一本借來的書，下星期就到期了。",
+      },
+      {
+        role: "librarian",
+        en: "Please notify [ˋnotə͵faɪ] the library before the due date so we can begin the compensation [͵kɑmpɛnˋseʃən] procedure.",
+        zh: "請在到期日前通知圖書館，以便開始辦理賠償程序。",
+      },
+      {
+        role: "reader",
+        en: "May I purchase a replacement [rɪˋplesmənt] copy?",
+        zh: "我可以購買一本書來抵賠嗎？",
+      },
+      {
+        role: "librarian",
+        en: "Yes, it should match the original book, although a newer edition [ɪˋdɪʃən] may be accepted with approval.",
+        zh: "可以，原則上應與原書相同；經館員同意後，也可能接受新版。",
+      },
+      {
+        role: "reader",
+        en: "Is there a deadline or an additional processing [ˋprɑsɛsɪŋ] fee?",
+        zh: "賠償有完成期限或額外處理費嗎？",
+      },
+      {
+        role: "librarian",
+        en: "Complete the procedure within sixty days and pay the processing fee, or overdue charges may continue.",
+        zh: "請在六十天內完成程序並繳交處理費，否則逾期費用可能繼續計算。",
+      },
+    ],
+    patterns: [
+      {
+        form: "I may have lost...",
+        example: "I may have lost a borrowed book.",
+        explanation: "用來委婉說明目前尚未完全確定的遺失狀況。",
+      },
+      {
+        form: "May I purchase a replacement...?",
+        example: "May I purchase a replacement copy?",
+        explanation: "用來詢問是否可以購買替代品作為賠償。",
+      },
+      {
+        form: "... may be accepted with approval.",
+        example: "A newer edition may be accepted with approval.",
+        explanation: "用來說明某個替代方案必須取得同意後才可能被接受。",
+      },
+    ],
+    grammar: [
+      {
+        title: "推測已發生的事情",
+        explanation: "使用情態動詞搭配完成式，表達對過去事件的不確定推測。",
+      },
+      {
+        title: "條件式被動語態",
+        explanation: "強調替代版本在取得核准後才可能被接受。",
+      },
+    ],
+    vocabulary: [
+      { word: "damaged", kk: "ˋdæmɪdʒd", meaning: "損壞的", pos: "adj." },
+      { word: "compensation", kk: "͵kɑmpɛnˋseʃən", meaning: "賠償", pos: "n." },
+      { word: "replacement", kk: "rɪˋplesmənt", meaning: "替代品、補發品", pos: "n." },
+      { word: "edition", kk: "ɪˋdɪʃən", meaning: "版本", pos: "n." },
+      { word: "notify", kk: "ˋnotə͵faɪ", meaning: "通知", pos: "v." },
+      { word: "processing", kk: "ˋprɑsɛsɪŋ", meaning: "處理、辦理", pos: "n." },
+      { word: "out of print", kk: "aʊt əv prɪnt", meaning: "已絕版", pos: "phr." },
+    ],
+  },
+  {
+    id: 15,
+    shortTitle: "架上協尋",
+    title: "館藏顯示在架卻無法找到的協尋流程",
+    summary: "引導讀者確認館藏位置、尋找鄰近區域並提出館藏協尋申請。",
+    sourceLabel: "館藏狀態常問問題",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/faq/q_a3.html",
+    dialogue: [
+      {
+        role: "reader",
+        en: "The catalog [ˋkæt!͵ɔg] says this book is on shelf, but I cannot locate [ˋlo͵ket] it.",
+        zh: "館藏目錄顯示這本書在架上，但我找不到。",
+      },
+      {
+        role: "librarian",
+        en: "Please check the nearby [ˋnɪrˋbaɪ] shelves, book carts, and reading tables first.",
+        zh: "請先查看附近書架、書車及閱覽桌。",
+      },
+      {
+        role: "reader",
+        en: "I have checked those places. Can the library search for the missing [ˋmɪsɪŋ] item?",
+        zh: "那些地方我都找過了，圖書館可以協尋這本書嗎？",
+      },
+      {
+        role: "librarian",
+        en: "Yes, please complete a Missing Items Search form at the Information Desk.",
+        zh: "可以，請到服務櫃檯填寫館藏協尋申請。",
+      },
+      {
+        role: "reader",
+        en: "How long will the search take, and how will I receive the result?",
+        zh: "協尋需要多久？結果會如何通知我？",
+      },
+      {
+        role: "librarian",
+        en: "We will search several times during one month and inform [ɪnˋfɔrm] you by email whether or not the item is found.",
+        zh: "我們會在一個月內進行多次協尋，無論是否找到都會以電子郵件通知您。",
+      },
+    ],
+    patterns: [
+      {
+        form: "The catalog says..., but...",
+        example: "The catalog says the book is available, but I cannot find it.",
+        explanation: "用來對照系統顯示的資訊與現場實際狀況。",
+      },
+      {
+        form: "Can the library search for...?",
+        example: "Can the library search for the missing item?",
+        explanation: "用來詢問館員是否能協助尋找館藏。",
+      },
+      {
+        form: "How will I receive the result?",
+        example: "How will I receive the search result?",
+        explanation: "用來詢問後續結果會透過何種方式通知。",
+      },
+    ],
+    grammar: [
+      {
+        title: "轉折連接",
+        explanation: "使用轉折連接詞對照目錄狀態與實際找不到館藏的情況。",
+      },
+      {
+        title: "無論是否",
+        explanation: "用來表示兩種相反結果都不會改變後續通知的安排。",
+      },
+    ],
+    vocabulary: [
+      { word: "catalog", kk: "ˋkæt!͵ɔg", meaning: "館藏目錄", pos: "n." },
+      { word: "on shelf", kk: "ɑn ʃɛlf", meaning: "顯示在架", pos: "phr." },
+      { word: "locate", kk: "ˋlo͵ket", meaning: "找到位置", pos: "v." },
+      { word: "missing", kk: "ˋmɪsɪŋ", meaning: "找不到的、遺失的", pos: "adj." },
+      { word: "nearby", kk: "ˋnɪrˋbaɪ", meaning: "附近的", pos: "adj." },
+      { word: "search form", kk: "sɝtʃ fɔrm", meaning: "協尋申請表", pos: "phr." },
+      { word: "inform", kk: "ɪnˋfɔrm", meaning: "通知、告知", pos: "v." },
+    ],
+  },
+  {
+    id: 16,
+    shortTitle: "預約取書",
+    title: "預約書取件、保留期限與取消申請",
+    summary: "說明預約書到館通知、自助取書位置、保留期限與取消方式。",
+    sourceLabel: "圖書資料借還常問問題",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/faq/q_a2.html",
+    dialogue: [
+      { role: "reader", en: "I received a pickup [ˋpɪk͵ʌp] notice for a book I reserved [rɪˋzɝvd].", zh: "我收到預約書到館的取件通知。" },
+      { role: "librarian", en: "Books requested from the Main Library are available [əˋveləb!] at the Smart Bookshelf on the first floor.", zh: "總圖的預約書可在一樓預約自助取書區領取。" },
+      { role: "reader", en: "How long will the reservation [͵rɛzɚˋveʃən] be retained [rɪˋtend] for me?", zh: "這筆預約會為我保留多久？" },
+      { role: "librarian", en: "It is normally held for three days, with weekends and official holidays excluded from the count.", zh: "一般會保留三天，星期六、星期日及學校規定的假日不列入計算。" },
+      { role: "reader", en: "What should I do if I cannot arrive before the deadline [ˋdɛd͵laɪn]?", zh: "如果我無法在期限前到館，應該怎麼辦？" },
+      { role: "librarian", en: "Cancel [ˋkæns!] the request in My Account before it expires to avoid a pickup penalty [ˋpɛn!tɪ].", zh: "請在到期前於個人借閱狀況取消預約，以免產生未取書記點。" },
+    ],
+    patterns: [
+      { form: "I received a pickup notice for...", example: "I received a pickup notice for my reserved book.", explanation: "用來說明已收到預約資料可領取的通知。" },
+      { form: "How long will ... be retained?", example: "How long will the book be retained for me?", explanation: "用來詢問物品或申請會保留多長時間。" },
+      { form: "... before it expires to avoid...", example: "Cancel the request before it expires to avoid a penalty.", explanation: "用來提醒在期限前採取行動，以避免不利結果。" },
+    ],
+    grammar: [
+      { title: "未來式被動語態", explanation: "用來詢問預約物品在未來會被保留多久。" },
+      { title: "表示避免的目的", explanation: "使用不定詞說明及時取消預約是為了避免產生記點。" },
+    ],
+    vocabulary: [
+      { word: "pickup", kk: "ˋpɪk͵ʌp", meaning: "取件、領取", pos: "n." },
+      { word: "reservation", kk: "͵rɛzɚˋveʃən", meaning: "預約", pos: "n." },
+      { word: "retain", kk: "rɪˋten", meaning: "保留", pos: "v." },
+      { word: "deadline", kk: "ˋdɛd͵laɪn", meaning: "截止期限", pos: "n." },
+      { word: "cancel", kk: "ˋkæns!", meaning: "取消", pos: "v." },
+      { word: "penalty", kk: "ˋpɛn!tɪ", meaning: "處罰、記點", pos: "n." },
+      { word: "available", kk: "əˋveləb!", meaning: "可以領取的、可用的", pos: "adj." },
+    ],
+  },
+  {
+    id: 17,
+    shortTitle: "討論室預約",
+    title: "討論室預約、報到與逾時釋出",
+    summary: "協助學生了解討論室人數、預約時數、報到及未到記點規定。",
+    sourceLabel: "讀者討論室使用須知",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/policies/policy18.html",
+    dialogue: [
+      { role: "reader", en: "My classmates and I would like to reserve [rɪˋzɝv] a discussion [dɪˋskʌʃən] room.", zh: "我和同學想預約一間討論室。" },
+      { role: "librarian", en: "You may reserve one through the library booking system within the next fourteen days.", zh: "您可以透過圖書館空間系統，預約未來十四天內的時段。" },
+      { role: "reader", en: "How many participants [pɑrˋtɪsəpənts] are required, and how long may we use the room?", zh: "需要幾位使用者？一次可以使用多久？" },
+      { role: "librarian", en: "A Main Library room requires three valid cards, and one reservation may last up to two hours.", zh: "總圖討論室需要三張有效證件，一次預約最長兩小時。" },
+      { role: "reader", en: "What happens if one participant is late to check in?", zh: "如果其中一位使用者來不及報到，會怎麼樣？" },
+      { role: "librarian", en: "All participants must check in within fifteen minutes, or the room will be released [rɪˋlist] and a no show may be recorded.", zh: "所有使用者必須在十五分鐘內完成報到，否則空間會被釋出，並可能留下未到紀錄。" },
+    ],
+    patterns: [
+      { form: "We would like to reserve...", example: "We would like to reserve a discussion room.", explanation: "用來禮貌表達團體希望預約某個空間。" },
+      { form: "How many ... are required?", example: "How many participants are required?", explanation: "用來詢問服務所要求的最低人數或數量。" },
+      { form: "... must check in within...", example: "All participants must check in within fifteen minutes.", explanation: "用來說明必須在指定時間內完成報到。" },
+    ],
+    grammar: [
+      { title: "團體主詞與一致性", explanation: "多人共同預約時使用複數主詞，動詞形式也要配合複數。" },
+      { title: "否則的結果", explanation: "先說明必要條件，再接續未遵守條件時會發生的結果。" },
+    ],
+    vocabulary: [
+      { word: "discussion", kk: "dɪˋskʌʃən", meaning: "討論", pos: "n." },
+      { word: "reserve", kk: "rɪˋzɝv", meaning: "預約", pos: "v." },
+      { word: "participant", kk: "pɑrˋtɪsəpənt", meaning: "參與者、使用者", pos: "n." },
+      { word: "check in", kk: "tʃɛk ɪn", meaning: "報到", pos: "phr." },
+      { word: "release", kk: "rɪˋlis", meaning: "釋出", pos: "v." },
+      { word: "extend", kk: "ɪkˋstɛnd", meaning: "延長", pos: "v." },
+      { word: "no show", kk: "no ʃo", meaning: "預約未到", pos: "phr." },
+    ],
+  },  {
+    id: 18,
+    shortTitle: "訪客無線網路",
+    title: "訪客申請臨時無線網路帳號與連線排除",
+    summary: "協助校外訪客申請臨時帳號、選擇正確網路及處理驗證問題。",
+    sourceLabel: "無線網路常問問題",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/faq/q_a8.html",
+    dialogue: [
+      { role: "reader", en: "I am not an NTHU user. How can I access the wireless [ˋwaɪrlɪs] network?", zh: "我不是清華大學的使用者，要如何連接無線網路？" },
+      { role: "librarian", en: "Please apply for a temporary [ˋtɛmpə͵rɛrɪ] wireless account at the library service counter.", zh: "請到圖書館服務櫃檯申請臨時無線網路帳號。" },
+      { role: "reader", en: "I signed in, but the authentication [ɔ͵θɛntəˋkeʃən] page still will not connect.", zh: "我已經登入，但驗證頁面仍然無法連線。" },
+      { role: "librarian", en: "Confirm that you selected the correct network, disconnect any unintended network, and reconnect [͵rikəˋnɛkt].", zh: "請確認選擇正確的網路，先中斷其他不需要的連線，再重新連接。" },
+      { role: "reader", en: "Can I use the same account on more than one device [dɪˋvaɪs]?", zh: "同一個帳號可以在多個裝置上使用嗎？" },
+      { role: "librarian", en: "Yes, and the connection will end automatically after the account has been idle [ˋaɪd!] for ten minutes.", zh: "可以，帳號閒置十分鐘後，系統會自動中斷連線。" },
+    ],
+    patterns: [
+      { form: "How can I access...?", example: "How can I access the wireless network?", explanation: "用來詢問取得網路、資源或服務的方法。" },
+      { form: "Confirm that you selected...", example: "Confirm that you selected the correct network.", explanation: "用來提醒使用者再次確認先前選擇是否正確。" },
+      { form: "Can I use the same ... on...?", example: "Can I use the same account on two devices?", explanation: "用來詢問同一帳號或服務能否在不同設備上使用。" },
+    ],
+    grammar: [
+      { title: "間接問句", explanation: "詢問方法時，疑問詞後接一般直述語序，使句子自然有禮。" },
+      { title: "現在完成式被動語態", explanation: "強調帳號持續處於閒置狀態，而且狀態與自動斷線有關。" },
+    ],
+    vocabulary: [
+      { word: "wireless", kk: "ˋwaɪrlɪs", meaning: "無線的", pos: "adj." },
+      { word: "temporary", kk: "ˋtɛmpə͵rɛrɪ", meaning: "臨時的", pos: "adj." },
+      { word: "authentication", kk: "ɔ͵θɛntəˋkeʃən", meaning: "身分驗證", pos: "n." },
+      { word: "device", kk: "dɪˋvaɪs", meaning: "裝置", pos: "n." },
+      { word: "idle", kk: "ˋaɪd!", meaning: "閒置的", pos: "adj." },
+      { word: "reconnect", kk: "͵rikəˋnɛkt", meaning: "重新連接", pos: "v." },
+      { word: "signal", kk: "ˋsɪgn!", meaning: "訊號", pos: "n." },
+    ],
+  },
+  {
+    id: 19,
+    shortTitle: "列印影印",
+    title: "列印付款、彩色輸出與卡紙處理",
+    summary: "說明列印設備的付款方式、個人電腦限制、卡紙排除及收據申請。",
+    sourceLabel: "影印服務常問問題",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/faq/q_a12.html",
+    dialogue: [
+      { role: "reader", en: "I need to print a color document. Can I send it from my personal laptop?", zh: "我需要彩色列印，可以從自己的筆記型電腦傳送嗎？" },
+      { role: "librarian", en: "Personal laptop printing is unavailable because of driver compatibility [kəm͵pætəˋbɪlətɪ] and data security concerns.", zh: "基於驅動程式相容性與資料安全考量，目前不提供個人電腦列印。" },
+      { role: "reader", en: "How can I pay for a printout [ˋprɪnt͵aʊt] or photocopy [ˋfoto͵kɑpɪ]?", zh: "列印或影印要如何付費？" },
+      { role: "librarian", en: "You can pay with an EasyCard or coins, and remember to select [səˋlɛkt] the color option before printing.", zh: "可以使用悠遊卡或硬幣付款，彩色列印前請記得選擇彩色選項。" },
+      { role: "reader", en: "Will I be charged if a paper jam [ˋpepɚ dʒæm] occurs?", zh: "如果發生卡紙，我還會被收費嗎？" },
+      { role: "librarian", en: "No, follow the instructions on the screen, and report the machine location if the problem continues. You may also request a receipt [rɪˋsit] at the desk.", zh: "不會，請依螢幕指示處理；若問題持續，請回報設備位置。您也可以到櫃檯申請收據。" },
+    ],
+    patterns: [
+      { form: "Can I send it from...?", example: "Can I send the document from my laptop?", explanation: "用來詢問是否能從特定設備傳送檔案或工作。" },
+      { form: "How can I pay for...?", example: "How can I pay for a color printout?", explanation: "用來詢問某項服務接受哪些付款方式。" },
+      { form: "Will I be charged if...?", example: "Will I be charged if a paper jam occurs?", explanation: "用來確認發生異常狀況時是否仍會被收費。" },
+    ],
+    grammar: [
+      { title: "原因介系詞", explanation: "用來說明服務因相容性或安全考量而受到限制。" },
+      { title: "未來式被動語態", explanation: "詢問未來發生特定狀況時，使用者是否會被收取費用。" },
+    ],
+    vocabulary: [
+      { word: "printout", kk: "ˋprɪnt͵aʊt", meaning: "列印文件", pos: "n." },
+      { word: "photocopy", kk: "ˋfoto͵kɑpɪ", meaning: "影印本、影印", pos: "n." },
+      { word: "compatibility", kk: "kəm͵pætəˋbɪlətɪ", meaning: "相容性", pos: "n." },
+      { word: "select", kk: "səˋlɛkt", meaning: "選擇", pos: "v." },
+      { word: "paper jam", kk: "ˋpepɚ dʒæm", meaning: "卡紙", pos: "phr." },
+      { word: "receipt", kk: "rɪˋsit", meaning: "收據", pos: "n." },
+      { word: "coin", kk: "kɔɪn", meaning: "硬幣", pos: "n." },
+    ],
+  },
+  {
+    id: 20,
+    shortTitle: "委託代借",
+    title: "委託他人代借館藏的申請與使用",
+    summary: "說明委託代借的申請、啟用時間、受託人資格與終止方式。",
+    sourceLabel: "委託代借圖書資料規定",
+    sourceUrl: "https://www.lib.nthu.edu.tw/en/use/policies/policy20.html",
+    dialogue: [
+      { role: "reader", en: "I cannot come to the library regularly. May I authorize [ˋɔθə͵raɪz] someone to borrow books for me?", zh: "我無法經常親自到館，可以委託他人代借圖書嗎？" },
+      { role: "librarian", en: "Yes, complete the proxy [ˋprɑksɪ] borrowing form and present it at the service desk with your valid [ˋvælɪd] library card.", zh: "可以，請填寫委託代借申請表，並持有效借書證到服務櫃檯辦理。" },
+      { role: "reader", en: "When will the authorization become effective [ɪˋfɛktɪv]?", zh: "委託代借何時會生效？" },
+      { role: "librarian", en: "It becomes effective one day after the application is completed.", zh: "申請完成後的次日生效。" },
+      { role: "reader", en: "What must the proxy borrower do when checking out materials?", zh: "受託人代借館藏時需要做什麼？" },
+      { role: "librarian", en: "The trustee [trʌsˋti] must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate [ˋtɝmə͵net] the authorization at the desk.", zh: "受託人必須是有效讀者，借書時主動說明是委託代借並出示自己的證件；您也可以到櫃檯終止委託。" },
+    ],
+    patterns: [
+      { form: "May I authorize someone to...?", example: "May I authorize someone to borrow books for me?", explanation: "用來詢問是否能正式授權他人代為處理事情。" },
+      { form: "When will ... become effective?", example: "When will the authorization become effective?", explanation: "用來詢問申請或授權從何時開始生效。" },
+      { form: "... must state that...", example: "The proxy borrower must state that this is an authorized transaction.", explanation: "用來說明辦理服務時必須主動告知的重要資訊。" },
+    ],
+    grammar: [
+      { title: "授權他人做某事", explanation: "使用授權動詞搭配受詞及不定詞，表達正式委託關係。" },
+      { title: "間接陳述內容", explanation: "使用連接詞帶出受託人必須向館員說明的完整內容。" },
+    ],
+    vocabulary: [
+      { word: "authorize", kk: "ˋɔθə͵raɪz", meaning: "授權、委託", pos: "v." },
+      { word: "proxy", kk: "ˋprɑksɪ", meaning: "代理人、代理的", pos: "n." },
+      { word: "trustee", kk: "trʌsˋti", meaning: "受託人", pos: "n." },
+      { word: "valid", kk: "ˋvælɪd", meaning: "有效的", pos: "adj." },
+      { word: "submit", kk: "səbˋmɪt", meaning: "提交", pos: "v." },
+      { word: "effective", kk: "ɪˋfɛktɪv", meaning: "生效的", pos: "adj." },
+      { word: "terminate", kk: "ˋtɝmə͵net", meaning: "終止", pos: "v." },
     ],
   },
 ];
