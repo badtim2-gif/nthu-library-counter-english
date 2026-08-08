@@ -204,6 +204,193 @@ a { color: inherit; }
 .scenario-chip.is-active { border-color: var(--plum); background: var(--plum); color: #fff; box-shadow: 0 10px 22px rgba(90,41,79,0.22); }
 .scenario-chip.is-active span { color: #f4dba8; }
 
+.settings-trigger {
+  padding: 9px 14px;
+  border: 1px solid var(--plum);
+  border-radius: 999px;
+  background: var(--plum-soft);
+  color: var(--plum-dark);
+  font-weight: 850;
+}
+
+.progress-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.progress-overview > div {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fbf8f3;
+}
+
+.progress-overview strong { color: var(--plum); font-family: Georgia, serif; font-size: 1.65rem; }
+.progress-overview span { color: var(--muted); font-size: 0.8rem; font-weight: 800; }
+.progress-overview .has-overdue { border-color: #d89186; background: #fff2ef; }
+.progress-overview .has-overdue strong { color: #a7392a; }
+
+.overdue-reminder {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2.2fr);
+  gap: 20px;
+  align-items: center;
+  margin-top: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #faf7f1;
+}
+
+.overdue-reminder.has-items { border-color: #d89186; background: #fff5f2; }
+.overdue-reminder h3 { margin: 2px 0 0; color: var(--plum-dark); font-family: serif; font-size: 1.05rem; }
+.overdue-reminder ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
+.overdue-reminder li button {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 8px;
+  width: 100%;
+  min-height: 62px;
+  padding: 9px;
+  border: 1px solid #e3b4ac;
+  border-radius: 13px;
+  background: #fff;
+  color: var(--plum-dark);
+  text-align: left;
+}
+.overdue-reminder li button:hover { border-color: #a7392a; transform: translateY(-1px); }
+.overdue-reminder li button > span:nth-child(2) { min-width: 0; }
+.overdue-reminder li strong, .overdue-reminder li small { display: block; }
+.overdue-reminder li strong { overflow: hidden; font-size: 0.78rem; text-overflow: ellipsis; white-space: nowrap; }
+.overdue-reminder li small { margin-top: 2px; color: var(--muted); font-size: 0.68rem; }
+.overdue-reminder li em { grid-column: 2; color: #a7392a; font-size: 0.7rem; font-style: normal; font-weight: 900; }
+.overdue-rank { display: grid; place-items: center; width: 27px; height: 27px; border-radius: 50%; background: #a7392a; color: #fff; font-weight: 900; }
+.overdue-empty { margin: 0; color: var(--muted); font-size: 0.86rem; }
+
+.scenario-list { grid-template-columns: repeat(5, minmax(150px, 1fr)); gap: 10px; }
+.scenario-tile {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  transition: 150ms ease;
+}
+.scenario-tile:focus-within { box-shadow: 0 0 0 3px rgba(225,170,68,0.24); }
+.scenario-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 96px;
+  padding: 12px;
+  border: 0;
+  border-radius: 0;
+  text-align: left;
+}
+.scenario-chip .scenario-number { margin: 0 0 4px; color: var(--plum); font-family: Georgia, serif; font-size: 1.2rem; }
+.scenario-chip .scenario-title { margin: 0; color: var(--plum-dark); font-family: inherit; font-size: 0.82rem; font-weight: 850; }
+.scenario-chip.is-active .scenario-title { color: #fff; }
+.scenario-status {
+  display: inline-flex;
+  margin-top: auto;
+  padding: 3px 7px;
+  border-radius: 999px;
+  font-size: 0.67rem;
+  font-weight: 900;
+}
+.scenario-status.is-unlearned { background: #eee9e4; color: #766d72; }
+.scenario-status.is-upcoming { background: #e8eff6; color: #315b75; }
+.scenario-status.is-due { background: #fff0c9; color: #7b5610; }
+.scenario-status.is-overdue { background: #ffe1dc; color: #a7392a; }
+.scenario-status.is-completed { background: #dff3e7; color: #22623e; }
+.scenario-chip.is-active .scenario-status { background: rgba(255,255,255,0.18); color: #fff; }
+.scenario-learned {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 11px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.73rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.scenario-learned input, .learned-toggle input { width: 17px; height: 17px; accent-color: var(--plum); }
+
+.progress-card {
+  margin-top: 22px;
+  padding: 17px;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.09);
+}
+.progress-card__heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.review-badge { padding: 4px 8px; border-radius: 999px; font-size: 0.67rem; font-weight: 900; }
+.review-badge.is-unlearned { background: rgba(255,255,255,0.14); color: #eee5eb; }
+.review-badge.is-upcoming { background: #dfeaf3; color: #315b75; }
+.review-badge.is-due { background: #f4dba8; color: #66480c; }
+.review-badge.is-overdue { background: #ffd8d0; color: #962f21; }
+.review-badge.is-completed { background: #dff3e7; color: #22623e; }
+.learned-toggle { display: flex; align-items: center; gap: 8px; margin-top: 13px; color: #fff; font-size: 0.82rem; font-weight: 850; cursor: pointer; }
+.progress-card > p { margin: 10px 0 0; color: #d9cad4; font-size: 0.78rem; }
+.progress-card dl { display: grid; gap: 7px; margin: 13px 0 0; }
+.progress-card dl div { display: flex; justify-content: space-between; gap: 8px; }
+.progress-card dt { color: #cdbdc8; font-size: 0.7rem; }
+.progress-card dd { margin: 0; color: #fff; font-size: 0.72rem; font-weight: 800; text-align: right; }
+.review-complete-button {
+  width: 100%;
+  margin-top: 13px;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 11px;
+  background: #f4dba8;
+  color: var(--plum-dark);
+  font-weight: 900;
+}
+.progress-complete { color: #bde8cc !important; font-weight: 800; }
+
+.settings-backdrop {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(31,15,28,0.72);
+}
+.settings-modal {
+  width: min(760px, 100%);
+  max-height: min(88vh, 820px);
+  overflow-y: auto;
+  padding: 28px;
+  border-radius: 24px;
+  background: #fffdf9;
+  box-shadow: 0 28px 80px rgba(26,12,23,0.38);
+}
+.settings-modal__heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.settings-modal__heading h2 { margin: 2px 0 0; color: var(--plum-dark); font-family: serif; }
+.settings-modal__heading > button { width: 38px; height: 38px; border: 1px solid var(--line); border-radius: 50%; background: #fff; color: var(--plum); font-size: 1.5rem; }
+.settings-note { margin: 14px 0 20px; color: var(--muted); font-size: 0.84rem; }
+.max-reviews-field { display: grid; grid-template-columns: 1fr minmax(180px, 0.6fr); align-items: center; gap: 12px; font-weight: 850; }
+.max-reviews-field select { padding: 10px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.settings-modal fieldset { margin: 22px 0 0; padding: 0; border: 0; }
+.settings-modal legend { margin-bottom: 12px; font-weight: 900; }
+.interval-grid { display: grid; grid-template-columns: repeat(5, minmax(92px, 1fr)); gap: 10px; }
+.interval-grid > label { padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: #faf7f2; }
+.interval-grid > label > span { color: var(--muted); font-size: 0.72rem; font-weight: 850; }
+.interval-grid > label > div { display: flex; align-items: center; gap: 5px; margin-top: 5px; }
+.interval-grid input { min-width: 0; width: 100%; padding: 7px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.interval-grid > label > div > span { color: var(--muted); font-size: 0.75rem; }
+.settings-error { margin: 12px 0 0; color: #a7392a; font-size: 0.82rem; font-weight: 850; }
+.settings-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 22px; }
+.settings-actions > button { padding: 10px 15px; border: 1px solid var(--line); border-radius: 10px; font-weight: 850; }
+.settings-actions .button--primary { border-color: var(--plum); }
+
 .lesson-layout {
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
@@ -379,6 +566,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid #e1aa44; outline-offs
   .scenario-chip { flex: 0 0 105px; }
   .lesson-layout { grid-template-columns: 270px minmax(0,1fr); gap: 20px; }
   .pattern-grid { grid-template-columns: 1fr; }
+  .scenario-tile { flex: 0 0 180px; }
+  .scenario-chip { flex: none; }
+  .overdue-reminder { grid-template-columns: 1fr; }
+  .overdue-reminder ol { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 760px) {
@@ -390,6 +581,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid #e1aa44; outline-offs
   .lesson-layout { grid-template-columns: 1fr; margin-top: 28px; padding: 0 14px; }
   .lesson-aside { position: static; }
   .lesson-main { border-radius: 22px; }
+  .scenario-tile { flex: 0 0 180px; }
+  .scenario-chip { flex: none; }
+  .overdue-reminder { grid-template-columns: 1fr; }
+  .overdue-reminder ol { grid-template-columns: 1fr; }
   .tab-panel { padding: 18px 14px; }
   .panel-toolbar { align-items: flex-start; }
   .toolbar-actions span { display: none; }
@@ -399,6 +594,14 @@ button:focus-visible, a:focus-visible { outline: 3px solid #e1aa44; outline-offs
   .vocab-row > button { grid-column: 3; grid-row: 1 / span 2; }
   .lesson-source, .site-footer { flex-direction: column; }
   .lesson-source p { text-align: left; }
+  .section-heading { align-items: center; }
+  .progress-overview { grid-template-columns: 1fr; }
+  .progress-overview > div { justify-content: space-between; }
+  .overdue-reminder { padding: 14px; }
+  .interval-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .settings-modal { padding: 20px 16px; border-radius: 18px; }
+  .max-reviews-field { grid-template-columns: 1fr; }
+  .settings-actions { flex-direction: column-reverse; }
 }
 
 @media (prefers-reduced-motion: reduce) {

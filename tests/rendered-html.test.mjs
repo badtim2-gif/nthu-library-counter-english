@@ -35,13 +35,17 @@ test("keeps the final app free of starter preview code", async () => {
     readFile(new URL("../public/sw.js", import.meta.url), "utf8"),
   ]);
   assert.match(page, /角色扮演/);
+  assert.match(page, /LEARNING_PROGRESS_STORAGE_KEY/);
+  assert.match(page, /逾期最久、應優先複習的情境/);
+  assert.match(page, /複習排程設定/);
+  assert.match(page, /這個情境我已學過/);
   assert.match(page, /下載全部離線語音/);
   assert.match(page, /setHiddenRole\("reader"\)/);
   assert.match(page, /setHiddenRole\("librarian"\)/);
   assert.match(layout, /img_20260726121722\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);
-  assert.match(serviceWorker, /nthu-library-shell-v3/);
+  assert.match(serviceWorker, /nthu-library-shell-v4/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
   await access(new URL("../public/img_20260726120102.png", import.meta.url));
   await access(new URL("../public/img_20260726121722.png", import.meta.url));
