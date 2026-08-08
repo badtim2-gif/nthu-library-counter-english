@@ -100,6 +100,11 @@ export default function Home() {
   const [settingsError, setSettingsError] = useState("");
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const audioSourceRef = useRef<AudioBufferSourceNode | null>(null);
+  const audioFinishRef = useRef<(() => void) | null>(null);
+  const audioModeRef = useRef<"webaudio" | "html" | null>(null);
+  const audioBufferCacheRef = useRef<Map<string, Promise<AudioBuffer>>>(new Map());
   const runRef = useRef(0);
   const pausedRef = useRef(false);
   const scenario = useMemo(
@@ -185,18 +190,73 @@ export default function Home() {
     return () => window.removeEventListener("keydown", closeOnEscape);
   }, [settingsOpen]);
 
+  const ensureAudioContext = useCallback(() => {
+    if (audioContextRef.current && audioContextRef.current.state !== "closed") {
+      return audioContextRef.current;
+    }
+    const AudioContextClass = window.AudioContext ??
+      (window as typeof window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+    if (!AudioContextClass) return null;
+    try {
+      const context = new AudioContextClass();
+      audioContextRef.current = context;
+      return context;
+    } catch {
+      return null;
+    }
+  }, []);
+
+  const unlockAudio = useCallback(() => {
+    const context = ensureAudioContext();
+    if (!context || context.state === "closed") return Promise.resolve();
+    try {
+      const silentBuffer = context.createBuffer(1, 1, 22050);
+      const silentSource = context.createBufferSource();
+      silentSource.buffer = silentBuffer;
+      silentSource.connect(context.destination);
+      silentSource.start(0);
+    } catch {
+      // Resuming the context below is sufficient on browsers that reject a silent buffer.
+    }
+    return context.state === "running" ? Promise.resolve() : context.resume();
+  }, [ensureAudioContext]);
+
   const stop = useCallback((label = "已停止") => {
     runRef.current += 1;
     pausedRef.current = false;
-    audioRef.current?.pause();
-    audioRef.current = null;
+    const source = audioSourceRef.current;
+    const finish = audioFinishRef.current;
+    audioFinishRef.current = null;
+    finish?.();
+    try {
+      source?.stop(0);
+    } catch {
+      // The source may already have ended.
+    }
+    try {
+      source?.disconnect();
+    } catch {
+      // The source may already have been disconnected by its finish handler.
+    }
+    audioSourceRef.current = null;
+    audioModeRef.current = null;
+    const audio = audioRef.current;
+    audio?.pause();
+    if (audio) {
+      try { audio.currentTime = 0; } catch { /* The element may not have loaded yet. */ }
+    }
     setIsPlaying(false);
     setIsPaused(false);
     setActiveTurn(null);
     setPlaybackLabel(label);
   }, []);
 
-  useEffect(() => () => stop(), [stop]);
+  useEffect(() => () => {
+    stop();
+    const context = audioContextRef.current;
+    audioContextRef.current = null;
+    if (context && context.state !== "closed") void context.close();
+  }, [stop]);
 
   const wait = useCallback(async (duration: number, run: number) => {
     let remaining = duration;
@@ -209,28 +269,94 @@ export default function Home() {
     }
   }, []);
 
-  const playAudio = useCallback(async (src: string, run: number) => {
+  const playHtmlAudio = useCallback(async (src: string, run: number) => {
     if (run !== runRef.current) return;
     await new Promise<void>((resolve) => {
-      const audio = new Audio(src);
+      const audio = audioRef.current ?? new Audio();
       audio.preload = "auto";
       audioRef.current = audio;
+      audioModeRef.current = "html";
+      audio.src = src;
+      audio.load();
       const finish = () => {
         audio.removeEventListener("ended", finish);
         audio.removeEventListener("error", finish);
+        if (audioFinishRef.current === finish) audioFinishRef.current = null;
+        if (audioModeRef.current === "html") audioModeRef.current = null;
         resolve();
       };
+      audioFinishRef.current = finish;
       audio.addEventListener("ended", finish);
       audio.addEventListener("error", finish);
       audio.play().catch(finish);
     });
   }, []);
 
+  const playAudio = useCallback(async (src: string, run: number) => {
+    if (run !== runRef.current) return;
+    const context = ensureAudioContext();
+    if (!context || context.state === "closed") {
+      await playHtmlAudio(src, run);
+      return;
+    }
+
+    try {
+      if (context.state !== "running" && !pausedRef.current) await context.resume();
+      let bufferPromise = audioBufferCacheRef.current.get(src);
+      if (!bufferPromise) {
+        if (audioBufferCacheRef.current.size >= 24) {
+          const oldest = audioBufferCacheRef.current.keys().next().value;
+          if (oldest) audioBufferCacheRef.current.delete(oldest);
+        }
+        bufferPromise = fetch(src, { cache: "force-cache" })
+          .then((response) => {
+            if (!response.ok) throw new Error(`Audio request failed: ${response.status}`);
+            return response.arrayBuffer();
+          })
+          .then((data) => context.decodeAudioData(data))
+          .catch((error) => {
+            audioBufferCacheRef.current.delete(src);
+            throw error;
+          });
+        audioBufferCacheRef.current.set(src, bufferPromise);
+      }
+
+      const buffer = await bufferPromise;
+      if (run !== runRef.current) return;
+      await new Promise<void>((resolve) => {
+        const source = context.createBufferSource();
+        source.buffer = buffer;
+        source.connect(context.destination);
+        audioSourceRef.current = source;
+        audioModeRef.current = "webaudio";
+        const finish = () => {
+          source.onended = null;
+          try {
+            source.disconnect();
+          } catch {
+            // A simultaneous stop may already have disconnected this source.
+          }
+          if (audioSourceRef.current === source) audioSourceRef.current = null;
+          if (audioFinishRef.current === finish) audioFinishRef.current = null;
+          if (audioModeRef.current === "webaudio") audioModeRef.current = null;
+          resolve();
+        };
+        audioFinishRef.current = finish;
+        source.onended = finish;
+        source.start(0);
+      });
+    } catch {
+      if (run === runRef.current) await playHtmlAudio(src, run);
+    }
+  }, [ensureAudioContext, playHtmlAudio]);
+
   const playSteps = useCallback(
     async (steps: PlaybackStep[]) => {
       stop("準備播放");
       const run = runRef.current;
+      const unlockPromise = unlockAudio();
       setIsPlaying(true);
+      await unlockPromise.catch(() => undefined);
       for (const step of steps) {
         if (run !== runRef.current) return;
         setActiveTurn(step.turn ?? null);
@@ -245,7 +371,7 @@ export default function Home() {
         setPlaybackLabel("播放完畢");
       }
     },
-    [playAudio, stop, wait],
+    [playAudio, stop, unlockAudio, wait],
   );
 
   const dialogueSteps = useCallback(
@@ -338,12 +464,22 @@ export default function Home() {
     if (pausedRef.current) {
       pausedRef.current = false;
       setIsPaused(false);
-      audioRef.current?.play().catch(() => undefined);
+      if (audioModeRef.current === "webaudio") {
+        const context = audioContextRef.current;
+        if (context && context.state !== "running") void context.resume().catch(() => undefined);
+      } else if (audioModeRef.current === "html") {
+        audioRef.current?.play().catch(() => undefined);
+      }
       setPlaybackLabel("繼續播放");
     } else {
       pausedRef.current = true;
       setIsPaused(true);
-      audioRef.current?.pause();
+      if (audioModeRef.current === "webaudio") {
+        const context = audioContextRef.current;
+        if (context && context.state === "running") void context.suspend().catch(() => undefined);
+      } else if (audioModeRef.current === "html") {
+        audioRef.current?.pause();
+      }
       setPlaybackLabel("已暫停");
     }
   };
