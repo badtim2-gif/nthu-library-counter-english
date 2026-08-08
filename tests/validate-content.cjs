@@ -18,7 +18,8 @@ const assert = (condition, message) => {
   if (!condition) errors.push(message);
 };
 
-assert(scenarios.length === 10, `應有 10 個情境，實際為 ${scenarios.length}`);
+assert(scenarios.length === 20, `應有 20 個情境，實際為 ${scenarios.length}`);
+assert(scenarios.every((scenario, index) => scenario.id === index + 1), "情境編號不是 1 至 20 的連續值");
 
 for (const scenario of scenarios) {
   const prefix = `情境 ${scenario.id}`;
@@ -55,4 +56,4 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log("Content validation passed: 10 scenarios, 60 alternating dialogue turns, notes and vocabulary complete.");
+console.log("Content validation passed: 20 scenarios, 120 alternating dialogue turns, notes and vocabulary complete.");

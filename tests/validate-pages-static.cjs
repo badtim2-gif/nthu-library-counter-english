@@ -13,8 +13,10 @@ for (const relative of [
   ".nojekyll",
   "img_20260726120102.png",
   "img_20260726121722.png",
+  "og.png",
   "audio/s01-t01-en.mp3",
   "audio/s10-v07-meaning.mp3",
+  "audio/s20-v07-meaning.mp3",
 ]) {
   assert.ok(fs.existsSync(path.join(output, relative)), `Missing Pages file: ${relative}`);
 }
@@ -29,6 +31,7 @@ const serviceWorker = fs.readFileSync(path.join(output, "sw.js"), "utf8");
 assert.match(serviceWorker, /self\.registration\.scope/);
 assert.match(serviceWorker, /nthu-library-shell-v4/);
 assert.match(serviceWorker, /nthu-library-audio-v3/);
+assert.match(serviceWorker, /nthu-library-shell-v4/);
 
 const manifest = JSON.parse(
   fs.readFileSync(path.join(output, "manifest.webmanifest"), "utf8"),

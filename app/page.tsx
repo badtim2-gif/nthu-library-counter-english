@@ -463,7 +463,7 @@ export default function Home() {
             <p className="kicker">櫃台英語，一句一句練到能用</p>
             <h1>清大圖書館<br />英語情境練習室</h1>
             <p className="hero__copy">
-              十個真實服務情境，從權益聲明、館際合作到論文繳交。
+              二十個真實服務情境，從權益聲明、借還館藏到空間與網路服務。
               跟著三位角色慢速聽、逐句看，再關掉提示親自說一次。
             </p>
             <div className="hero__actions">
@@ -482,12 +482,12 @@ export default function Home() {
 
       <section className="scenario-strip" aria-labelledby="scenario-heading">
         <div className="section-heading">
-          <div><p className="section-label">LEARNING MAP</p><h2 id="scenario-heading">十個櫃台任務</h2></div>
+          <div><p className="section-label">LEARNING MAP</p><h2 id="scenario-heading">二十個櫃台任務</h2></div>
           <button className="settings-trigger" onClick={openReviewSettings}>⚙ 複習設定</button>
         </div>
 
         <div className="progress-overview" aria-label="學習進度摘要">
-          <div><strong>{learnedCount}</strong><span>已學習／10</span></div>
+          <div><strong>{learnedCount}</strong><span>已學習／{scenarios.length}</span></div>
           <div><strong>{dueCount}</strong><span>今日待複習</span></div>
           <div className={overdueCount > 0 ? "has-overdue" : ""}><strong>{overdueCount}</strong><span>逾期未複習</span></div>
         </div>
@@ -759,7 +759,7 @@ export default function Home() {
               <button autoFocus onClick={() => setSettingsOpen(false)} aria-label="關閉複習設定">×</button>
             </div>
             <p id="review-settings-note" className="settings-note">
-              此設定套用全部 10 個情境。修改後會保留完成紀錄，並立即重新計算下一次日期。
+              此設定套用全部 {scenarios.length} 個情境。修改後會保留完成紀錄，並立即重新計算下一次日期。
             </p>
             <form onSubmit={(event) => { event.preventDefault(); saveReviewSettings(); }}>
               <label className="max-reviews-field">
