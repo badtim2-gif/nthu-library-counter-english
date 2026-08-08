@@ -475,7 +475,7 @@ a { color: inherit; }
 .live-dot.is-live { background: #c94e45; box-shadow: 0 0 0 5px rgba(201,78,69,0.13); animation: pulse 1.4s infinite; }
 @keyframes pulse { 50% { transform: scale(0.7); } }
 
-.toolbar-actions { display: flex; gap: 6px; }
+.toolbar-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
 .toolbar-actions button, .line-actions button, .pattern-card button, .grammar-list button, .vocab-row button {
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -483,7 +483,13 @@ a { color: inherit; }
   color: var(--plum);
   font-weight: 800;
 }
-.toolbar-actions button { padding: 7px 10px; font-size: 0.78rem; }
+.toolbar-actions button { min-height: 36px; padding: 7px 10px; font-size: 0.78rem; }
+.toolbar-actions button.is-looping, .line-actions button.is-looping {
+  border-color: var(--plum);
+  background: var(--plum);
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(111, 44, 95, 0.12);
+}
 
 .dialogue-list { display: grid; gap: 14px; }
 .dialogue-card {
@@ -516,8 +522,8 @@ a { color: inherit; }
 .hidden-line p { margin: 0; color: var(--plum); font-weight: 850; }
 .hidden-line span { color: var(--muted); font-size: 0.82rem; }
 
-.line-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
-.line-actions button, .pattern-card button { padding: 6px 11px; font-size: 0.75rem; }
+.line-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+.line-actions button, .pattern-card button { min-height: 36px; padding: 6px 11px; font-size: 0.75rem; }
 
 .content-title { margin: 5px 0 22px; }
 .content-title h3 { font-size: 1.65rem; }

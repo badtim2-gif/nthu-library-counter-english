@@ -11,8 +11,9 @@
     "build:pages": "node scripts/build-pages.mjs",
     "test:review": "node --test tests/review-progress.test.mjs",
     "test:audio-player": "node --test tests/mobile-audio-playback.test.mjs",
+    "test:playback-loop": "node --test tests/playback-loop.test.mjs",
     "start": "vinext start",
-    "test": "node tests/validate-content.cjs && node tests/validate-audio.cjs && node --test tests/review-progress.test.mjs tests/mobile-audio-playback.test.mjs && vinext build && node --test tests/rendered-html.test.mjs",
+    "test": "node tests/validate-content.cjs && node tests/validate-audio.cjs && node --test tests/review-progress.test.mjs tests/mobile-audio-playback.test.mjs tests/playback-loop.test.mjs && vinext build && node --test tests/rendered-html.test.mjs",
     "test:pages": "pnpm run build:pages && node tests/validate-pages-static.cjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"

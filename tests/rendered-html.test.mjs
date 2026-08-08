@@ -24,6 +24,8 @@ test("server-renders the course shell and PWA metadata", async () => {
   assert.match(html, /Counter English Lab/);
   assert.match(html, /二十個真實服務情境/);
   assert.match(html, /manifest\.webmanifest/);
+  assert.match(html, /循環播放整個情境/);
+  assert.match(html, /循環播放第 1 句/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
@@ -47,7 +49,7 @@ test("keeps the final app free of starter preview code", async () => {
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);
-  assert.match(serviceWorker, /nthu-library-shell-v5/);
+  assert.match(serviceWorker, /nthu-library-shell-v6/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
   await access(new URL("../public/img_20260726120102.png", import.meta.url));
   await access(new URL("../public/img_20260726121722.png", import.meta.url));
