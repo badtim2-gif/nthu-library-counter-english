@@ -29,9 +29,8 @@ assert.doesNotMatch(html, /(?:href|src)="\/_next\//);
 
 const serviceWorker = fs.readFileSync(path.join(output, "sw.js"), "utf8");
 assert.match(serviceWorker, /self\.registration\.scope/);
-assert.match(serviceWorker, /nthu-library-shell-v4/);
+assert.match(serviceWorker, /nthu-library-shell-v5/);
 assert.match(serviceWorker, /nthu-library-audio-v3/);
-assert.match(serviceWorker, /nthu-library-shell-v4/);
 
 const manifest = JSON.parse(
   fs.readFileSync(path.join(output, "manifest.webmanifest"), "utf8"),
