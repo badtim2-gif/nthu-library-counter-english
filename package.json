@@ -9,6 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "build:pages": "node scripts/build-pages.mjs",
+    "test:review": "node --test tests/review-progress.test.mjs",
     "start": "vinext start",
     "test": "node tests/validate-content.cjs && node tests/validate-audio.cjs && vinext build && node --test tests/rendered-html.test.mjs",
     "test:pages": "pnpm run build:pages && node tests/validate-pages-static.cjs",

@@ -11,8 +11,26 @@ import {
   type Scenario,
 } from "./scenarios";
 import { assetPath } from "./paths";
+import {
+  clearScenarioProgress,
+  completeScenarioReview,
+  createDefaultLearningProgress,
+  createDefaultReviewSettings,
+  getMostOverdueScenarios,
+  getReviewStatus,
+  LEARNING_PROGRESS_STORAGE_KEY,
+  loadLearningProgress,
+  markScenarioLearned,
+  updateReviewSettings,
+  type LearningProgressStore,
+  type ReviewSettings,
+  type ReviewState,
+  type ReviewStatus,
+} from "./review-progress";
+
 
 type LessonTab = "dialogue" | "language" | "vocabulary";
+type ReviewSettingsDraft = { maxReviews: number; intervalsDays: string[] };
 type InstallPromptEvent = Event & {
   prompt: () => Promise<void>;
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
@@ -29,6 +47,33 @@ const roleName: Record<Role, { en: string; zh: string }> = {
 const wordCount = (text: string) =>
   text.replace(/\[[^\]]*]/g, "").trim().split(/\s+/).filter(Boolean).length;
 
+const formatDateTime = (value: string | null) =>
+  value
+    ? new Intl.DateTimeFormat("zh-TW", {
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit",
+      }).format(new Date(value))
+    : "尚無紀錄";
+
+const formatDateKey = (value: string | null) => {
+  if (!value) return "—";
+  const [year, month, day] = value.split("-");
+  return `${year}/${month}/${day}`;
+};
+
+const statusLabel = (status: ReviewStatus) => {
+  if (status.state === "unlearned") return "未學習";
+  if (status.state === "completed") return "已完成";
+  if (status.state === "due") return "今日複習";
+  if (status.state === "overdue") return `逾期 ${status.overdueDays} 日`;
+  return `${status.daysUntilDue} 日後`;
+};
+
+const statusClass: Record<ReviewState, string> = {
+  unlearned: "is-unlearned", upcoming: "is-upcoming", due: "is-due",
+  overdue: "is-overdue", completed: "is-completed",
+};
+
 export default function Home() {
   const [scenarioId, setScenarioId] = useState(1);
   const [tab, setTab] = useState<LessonTab>("dialogue");
@@ -42,6 +87,18 @@ export default function Home() {
   const [offlineProgress, setOfflineProgress] = useState<number | null>(null);
   const [offlineReady, setOfflineReady] = useState(false);
 
+  const [learningStore, setLearningStore] = useState<LearningProgressStore>(
+    createDefaultLearningProgress,
+  );
+  const [learningReady, setLearningReady] = useState(false);
+  const [currentTime, setCurrentTime] = useState(() => new Date());
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [settingsDraft, setSettingsDraft] = useState<ReviewSettingsDraft>(() => ({
+    maxReviews: 10,
+    intervalsDays: createDefaultReviewSettings().intervalsDays.map(String),
+  }));
+  const [settingsError, setSettingsError] = useState("");
+
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const runRef = useRef(0);
   const pausedRef = useRef(false);
@@ -49,6 +106,37 @@ export default function Home() {
     () => scenarios.find((item) => item.id === scenarioId) ?? scenarios[0],
     [scenarioId],
   );
+
+  const reviewStatuses = useMemo(
+    () => new Map(scenarios.map((item) => [item.id, getReviewStatus(learningStore, item.id, currentTime)])),
+    [currentTime, learningStore],
+  );
+  const currentReviewStatus = reviewStatuses.get(scenario.id) ??
+    getReviewStatus(learningStore, scenario.id, currentTime);
+  const learnedCount = [...reviewStatuses.values()].filter((status) => status.state !== "unlearned").length;
+  const dueCount = [...reviewStatuses.values()].filter((status) => status.state === "due").length;
+  const overdueCount = [...reviewStatuses.values()].filter((status) => status.state === "overdue").length;
+  const mostOverdue = useMemo(
+    () => getMostOverdueScenarios(learningStore, scenarios.map((item) => item.id), currentTime, 3),
+    [currentTime, learningStore],
+  );
+
+  useEffect(() => {
+    try {
+      setLearningStore(loadLearningProgress(window.localStorage.getItem(LEARNING_PROGRESS_STORAGE_KEY)));
+    } catch {
+      setLearningStore(createDefaultLearningProgress());
+    } finally {
+      setLearningReady(true);
+    }
+    const sync = (event: StorageEvent) => {
+      if (event.key === LEARNING_PROGRESS_STORAGE_KEY) {
+        setLearningStore(loadLearningProgress(event.newValue));
+      }
+    };
+    window.addEventListener("storage", sync);
+    return () => window.removeEventListener("storage", sync);
+  }, []);
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
@@ -68,6 +156,34 @@ export default function Home() {
     }
     return () => window.removeEventListener("beforeinstallprompt", beforeInstall);
   }, []);
+
+  useEffect(() => {
+    if (!learningReady) return;
+    try {
+      window.localStorage.setItem(LEARNING_PROGRESS_STORAGE_KEY, JSON.stringify(learningStore));
+    } catch {
+      // Storage limits or private mode must not block the course.
+    }
+  }, [learningReady, learningStore]);
+
+  useEffect(() => {
+    const refreshTime = () => setCurrentTime(new Date());
+    const timer = window.setInterval(refreshTime, 60_000);
+    document.addEventListener("visibilitychange", refreshTime);
+    return () => {
+      window.clearInterval(timer);
+      document.removeEventListener("visibilitychange", refreshTime);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!settingsOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setSettingsOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [settingsOpen]);
 
   const stop = useCallback((label = "已停止") => {
     runRef.current += 1;
@@ -240,6 +356,67 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const toggleScenarioLearned = (id: number, checked: boolean) => {
+    if (!checked && !window.confirm("取消後會清除此情境的首次學習與全部複習紀錄，確定要繼續嗎？")) {
+      return;
+    }
+    const now = new Date();
+    setLearningStore((current) =>
+      checked ? markScenarioLearned(current, id, now) : clearScenarioProgress(current, id),
+    );
+    setCurrentTime(now);
+  };
+
+  const completeReview = (id: number) => {
+    const now = new Date();
+    const status = getReviewStatus(learningStore, id, now);
+    if (status.state === "upcoming" && !window.confirm(
+      `第 ${status.nextReviewNumber} 次複習尚未到期。若提前完成，下一次會從今天重新起算，確定要繼續嗎？`,
+    )) {
+      return;
+    }
+    setLearningStore((current) => completeScenarioReview(current, id, now));
+    setCurrentTime(now);
+  };
+
+  const openReviewSettings = () => {
+    setSettingsDraft({
+      maxReviews: learningStore.settings.maxReviews,
+      intervalsDays: learningStore.settings.intervalsDays.map(String),
+    });
+    setSettingsError("");
+    setSettingsOpen(true);
+  };
+
+  const restoreDefaultSettings = () => {
+    const defaults = createDefaultReviewSettings();
+    setSettingsDraft({
+      maxReviews: defaults.maxReviews,
+      intervalsDays: defaults.intervalsDays.map(String),
+    });
+    setSettingsError("");
+  };
+
+  const saveReviewSettings = () => {
+    const intervalsDays = settingsDraft.intervalsDays.map((value) => Number(value));
+    const validIntervals =
+      intervalsDays.length === 10 &&
+      settingsDraft.intervalsDays.every((value) => /^\d+$/.test(value.trim())) &&
+      intervalsDays.every((value) => Number.isSafeInteger(value) && value > 0);
+    if (!validIntervals) {
+      setSettingsError("10 次等待天數都必須是大於 0 的整數。");
+      return;
+    }
+    const settings: ReviewSettings = {
+      maxReviews: settingsDraft.maxReviews,
+      intervalsDays,
+    };
+    setLearningStore((current) => updateReviewSettings(current, settings));
+    setCurrentTime(new Date());
+    setSettingsOpen(false);
+    setSettingsError("");
+  };
+
   const toggleReveal = (index: number) => {
     setRevealed((current) => {
       const next = new Set(current);
@@ -305,20 +482,70 @@ export default function Home() {
 
       <section className="scenario-strip" aria-labelledby="scenario-heading">
         <div className="section-heading">
-          <div><p className="section-label">SCENARIO MAP</p><h2 id="scenario-heading">二十個櫃台任務</h2></div>
-          <span className="section-count">已選 {scenario.id} / {scenarios.length}</span>
+          <div><p className="section-label">LEARNING MAP</p><h2 id="scenario-heading">二十個櫃台任務</h2></div>
+          <button className="settings-trigger" onClick={openReviewSettings}>⚙ 複習設定</button>
         </div>
+
+        <div className="progress-overview" aria-label="學習進度摘要">
+          <div><strong>{learnedCount}</strong><span>已學習／{scenarios.length}</span></div>
+          <div><strong>{dueCount}</strong><span>今日待複習</span></div>
+          <div className={overdueCount > 0 ? "has-overdue" : ""}><strong>{overdueCount}</strong><span>逾期未複習</span></div>
+        </div>
+
+        <section className={`overdue-reminder ${mostOverdue.length > 0 ? "has-items" : ""}`} aria-labelledby="overdue-heading">
+          <div>
+            <p className="section-label">REVIEW PRIORITY</p>
+            <h3 id="overdue-heading">逾期最久、應優先複習的情境</h3>
+          </div>
+          {mostOverdue.length > 0 ? (
+            <ol>
+              {mostOverdue.map(({ scenarioId: overdueId, status }, index) => {
+                const item = scenarios.find((candidate) => candidate.id === overdueId);
+                if (!item) return null;
+                return (
+                  <li key={overdueId}>
+                    <button onClick={() => changeScenario(overdueId)}>
+                      <span className="overdue-rank">{index + 1}</span>
+                      <span><strong>{String(overdueId).padStart(2, "0")} {item.shortTitle}</strong><small>第 {status.nextReviewNumber} 次複習</small></span>
+                      <em>逾期 {status.overdueDays} 日</em>
+                    </button>
+                  </li>
+                );
+              })}
+            </ol>
+          ) : (
+            <p className="overdue-empty">目前沒有逾期複習，請繼續保持。</p>
+          )}
+        </section>
+
         <div className="scenario-list">
-          {scenarios.map((item) => (
-            <button
-              key={item.id}
-              className={`scenario-chip ${item.id === scenario.id ? "is-active" : ""}`}
-              onClick={() => changeScenario(item.id)}
-              aria-current={item.id === scenario.id ? "step" : undefined}
-            >
-              <span>{String(item.id).padStart(2, "0")}</span>{item.shortTitle}
-            </button>
-          ))}
+          {scenarios.map((item) => {
+            const status = reviewStatuses.get(item.id) ??
+              getReviewStatus(learningStore, item.id, currentTime);
+            const learned = status.state !== "unlearned";
+            return (
+              <div className="scenario-tile" key={item.id}>
+                <button
+                  className={`scenario-chip ${item.id === scenario.id ? "is-active" : ""}`}
+                  onClick={() => changeScenario(item.id)}
+                  aria-current={item.id === scenario.id ? "step" : undefined}
+                >
+                  <span className="scenario-number">{String(item.id).padStart(2, "0")}</span>
+                  <span className="scenario-title">{item.shortTitle}</span>
+                  <small className={`scenario-status ${statusClass[status.state]}`}>{statusLabel(status)}</small>
+                </button>
+                <label className="scenario-learned">
+                  <input
+                    type="checkbox"
+                    checked={learned}
+                    onChange={(event) => toggleScenarioLearned(item.id, event.target.checked)}
+                    aria-label={`將情境 ${item.id} ${item.shortTitle}標記為已學過`}
+                  />
+                  <span>已學過</span>
+                </label>
+              </div>
+            );
+          })}
         </div>
       </section>
 
@@ -328,6 +555,45 @@ export default function Home() {
           <div className="lesson-number">{String(scenario.id).padStart(2, "0")}</div>
           <h2>{scenario.title}</h2>
           <p>{scenario.summary}</p>
+          <div className="progress-card">
+            <div className="progress-card__heading">
+              <strong>學習與複習紀錄</strong>
+              <span className={`review-badge ${statusClass[currentReviewStatus.state]}`}>
+                {statusLabel(currentReviewStatus)}
+              </span>
+            </div>
+            <label className="learned-toggle">
+              <input
+                type="checkbox"
+                checked={currentReviewStatus.state !== "unlearned"}
+                onChange={(event) => toggleScenarioLearned(scenario.id, event.target.checked)}
+              />
+              <span>這個情境我已學過</span>
+            </label>
+            {currentReviewStatus.state === "unlearned" ? (
+              <p>勾選後會記錄目前時間，並依設定安排第一次複習。</p>
+            ) : (
+              <>
+                <dl>
+                  <div><dt>首次學習</dt><dd>{formatDateTime(currentReviewStatus.learnedAt)}</dd></div>
+                  <div><dt>已完成複習</dt><dd>{currentReviewStatus.completedReviews} 次</dd></div>
+                  <div><dt>最近一次複習</dt><dd>{formatDateTime(currentReviewStatus.lastReviewedAt)}</dd></div>
+                  <div><dt>下一次日期</dt><dd>{formatDateKey(currentReviewStatus.dueDate)}</dd></div>
+                </dl>
+                {currentReviewStatus.state === "completed" ? (
+                  <p className="progress-complete">
+                    {currentReviewStatus.maxReviews === 0
+                      ? "目前設定為不安排複習。"
+                      : `已達目前設定的 ${currentReviewStatus.maxReviews} 次複習上限。`}
+                  </p>
+                ) : (
+                  <button className="review-complete-button" onClick={() => completeReview(scenario.id)}>
+                    {currentReviewStatus.state === "upcoming" ? "提前完成" : "完成"}第 {currentReviewStatus.nextReviewNumber} 次複習
+                  </button>
+                )}
+              </>
+            )}
+          </div>
           <div className="mode-card">
             <div className="mode-card__title"><span aria-hidden="true">◎</span>角色扮演</div>
             <p>隱藏一方台詞，播放時會留出相同長度讓你開口。</p>
@@ -470,6 +736,78 @@ export default function Home() {
           </footer>
         </article>
       </section>
+
+      {settingsOpen && (
+        <div
+          className="settings-backdrop"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setSettingsOpen(false);
+          }}
+        >
+          <section
+            className="settings-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="review-settings-title"
+            aria-describedby="review-settings-note"
+          >
+            <div className="settings-modal__heading">
+              <div>
+                <p className="section-label">REVIEW SETTINGS</p>
+                <h2 id="review-settings-title">複習排程設定</h2>
+              </div>
+              <button autoFocus onClick={() => setSettingsOpen(false)} aria-label="關閉複習設定">×</button>
+            </div>
+            <p id="review-settings-note" className="settings-note">
+              此設定套用全部 {scenarios.length} 個情境。修改後會保留完成紀錄，並立即重新計算下一次日期。
+            </p>
+            <form onSubmit={(event) => { event.preventDefault(); saveReviewSettings(); }}>
+              <label className="max-reviews-field">
+                <span>完成幾次後不再複習</span>
+                <select
+                  value={settingsDraft.maxReviews}
+                  onChange={(event) => setSettingsDraft((current) => ({
+                    ...current, maxReviews: Number(event.target.value),
+                  }))}
+                >
+                  {Array.from({ length: 11 }, (_, count) => (
+                    <option key={count} value={count}>{count} 次{count === 0 ? "（不安排複習）" : ""}</option>
+                  ))}
+                </select>
+              </label>
+              <fieldset>
+                <legend>每次複習前的等待天數</legend>
+                <div className="interval-grid">
+                  {settingsDraft.intervalsDays.map((value, index) => (
+                    <label key={index}>
+                      <span>第 {index + 1} 次</span>
+                      <div><input
+                        type="number"
+                        min="1"
+                        step="1"
+                        inputMode="numeric"
+                        value={value}
+                        onChange={(event) => setSettingsDraft((current) => ({
+                          ...current,
+                          intervalsDays: current.intervalsDays.map((entry, entryIndex) =>
+                            entryIndex === index ? event.target.value : entry
+                          ),
+                        }))}
+                        aria-label={`第 ${index + 1} 次複習等待天數`}
+                      /><span>日</span></div>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+              {settingsError && <p className="settings-error" role="alert">{settingsError}</p>}
+              <div className="settings-actions">
+                <button type="button" onClick={restoreDefaultSettings}>恢復預設值</button>
+                <button type="submit" className="button button--primary">儲存並重新計算</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      )}
 
       <footer className="site-footer">
         <div><strong>NTHU Library Counter English Lab</strong><p>國立清華大學圖書館櫃台英語教學練習</p></div>
