@@ -34,3 +34,9 @@ test("tracks scenario and turn loops without relocking mobile audio", () => {
   assert.match(pageSource, /aria-pressed=\{turnLooping\}/);
   assert.match(pageSource, /if \(loopTarget && nextTab !== "dialogue"\) stop\("循環已停止"\)/);
 });
+
+test("stops queued playback when the sleep deadline expires", () => {
+  assert.match(pageSource, /sleepDeadlineRef\.current/);
+  assert.match(pageSource, /window\.setTimeout\(checkDeadline/);
+  assert.match(pageSource, /Date\.now\(\) < sleepDeadlineRef\.current/);
+});
