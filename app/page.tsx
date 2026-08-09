@@ -28,6 +28,20 @@ import {
   type ReviewState,
   type ReviewStatus,
 } from "./review-progress";
+import {
+  cancelSleepTimer,
+  createDefaultSleepTimerStore,
+  formatSleepTimerRemaining,
+  getSleepTimerRemainingSeconds,
+  loadSleepTimer,
+  MAX_SLEEP_TIMER_MINUTES,
+  MIN_SLEEP_TIMER_MINUTES,
+  parseSleepTimerMinutes,
+  SLEEP_TIMER_PRESETS,
+  SLEEP_TIMER_STORAGE_KEY,
+  startSleepTimer,
+  type SleepTimerStore,
+} from "./sleep-timer";
 
 
 type LessonTab = "dialogue" | "language" | "vocabulary";
@@ -91,6 +105,12 @@ export default function Home() {
   const [installPrompt, setInstallPrompt] = useState<InstallPromptEvent | null>(null);
   const [offlineProgress, setOfflineProgress] = useState<number | null>(null);
   const [offlineReady, setOfflineReady] = useState(false);
+  const [sleepTimer, setSleepTimer] = useState<SleepTimerStore>(createDefaultSleepTimerStore);
+  const [sleepTimerReady, setSleepTimerReady] = useState(false);
+  const [sleepTimerDraft, setSleepTimerDraft] = useState("30");
+  const [sleepTimerError, setSleepTimerError] = useState("");
+  const [sleepNow, setSleepNow] = useState(() => Date.now());
+  const [sleepAnnouncement, setSleepAnnouncement] = useState("");
 
   const [learningStore, setLearningStore] = useState<LearningProgressStore>(
     createDefaultLearningProgress,
@@ -112,10 +132,18 @@ export default function Home() {
   const audioBufferCacheRef = useRef<Map<string, Promise<AudioBuffer>>>(new Map());
   const runRef = useRef(0);
   const pausedRef = useRef(false);
+  const sleepDeadlineRef = useRef<number | null>(null);
   const scenario = useMemo(
     () => scenarios.find((item) => item.id === scenarioId) ?? scenarios[0],
     [scenarioId],
   );
+
+  const sleepRemainingSeconds = getSleepTimerRemainingSeconds(sleepTimer, sleepNow);
+  const sleepTimerActive = sleepRemainingSeconds > 0;
+  const sleepRemainingLabel = formatSleepTimerRemaining(sleepRemainingSeconds);
+  const sleepStopTimeLabel = sleepTimer.expiresAt
+    ? new Intl.DateTimeFormat("zh-TW", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(sleepTimer.expiresAt))
+    : "";
 
   const reviewStatuses = useMemo(
     () => new Map(scenarios.map((item) => [item.id, getReviewStatus(learningStore, item.id, currentTime)])),
@@ -143,6 +171,25 @@ export default function Home() {
       if (event.key === LEARNING_PROGRESS_STORAGE_KEY) {
         setLearningStore(loadLearningProgress(event.newValue));
       }
+    };
+    window.addEventListener("storage", sync);
+    return () => window.removeEventListener("storage", sync);
+  }, []);
+
+  useEffect(() => {
+    const applySleepTimer = (store: SleepTimerStore) => {
+      setSleepTimer(store);
+      setSleepTimerDraft(String(store.preferredMinutes));
+      sleepDeadlineRef.current = store.expiresAt ? Date.parse(store.expiresAt) : null;
+      setSleepNow(Date.now());
+    };
+    try {
+      applySleepTimer(loadSleepTimer(window.localStorage.getItem(SLEEP_TIMER_STORAGE_KEY)));
+    } finally {
+      setSleepTimerReady(true);
+    }
+    const sync = (event: StorageEvent) => {
+      if (event.key === SLEEP_TIMER_STORAGE_KEY) applySleepTimer(loadSleepTimer(event.newValue));
     };
     window.addEventListener("storage", sync);
     return () => window.removeEventListener("storage", sync);
@@ -257,6 +304,35 @@ export default function Home() {
     setLoopTarget(null);
   }, []);
 
+  const expireSleepTimer = useCallback(() => {
+    const deadline = sleepDeadlineRef.current;
+    if (!deadline || Date.now() < deadline) return;
+    sleepDeadlineRef.current = null;
+    setSleepTimer((current) => current.expiresAt ? cancelSleepTimer(current) : current);
+    setSleepNow(Date.now());
+    setSleepAnnouncement("\u7761\u7720\u8a08\u6642\u7d50\u675f\uff0c\u5df2\u505c\u6b62\u6240\u6709\u64ad\u653e\u3002");
+    stop("\u7761\u7720\u8a08\u6642\u7d50\u675f\uff0c\u5df2\u505c\u6b62\u64ad\u653e");
+  }, [stop]);
+
+  useEffect(() => {
+    if (!sleepTimerReady) return;
+    const deadline = sleepDeadlineRef.current;
+    if (!deadline || !Number.isFinite(deadline)) return;
+    const checkDeadline = () => {
+      setSleepNow(Date.now());
+      if (Date.now() >= deadline) expireSleepTimer();
+    };
+    checkDeadline();
+    const countdown = window.setInterval(checkDeadline, 1000);
+    const deadlineTimer = window.setTimeout(checkDeadline, Math.max(0, deadline - Date.now()));
+    document.addEventListener("visibilitychange", checkDeadline);
+    return () => {
+      window.clearInterval(countdown);
+      window.clearTimeout(deadlineTimer);
+      document.removeEventListener("visibilitychange", checkDeadline);
+    };
+  }, [expireSleepTimer, sleepTimer.expiresAt, sleepTimerReady]);
+
   useEffect(() => () => {
     stop();
     const context = audioContextRef.current;
@@ -358,7 +434,11 @@ export default function Home() {
 
   const playSteps = useCallback(
     async (steps: PlaybackStep[], options: PlaybackOptions = {}) => {
-      stop("準備播放");
+      if (sleepDeadlineRef.current && Date.now() >= sleepDeadlineRef.current) {
+        expireSleepTimer();
+        return;
+      }
+      stop("\u6e96\u5099\u64ad\u653e");
       if (steps.length === 0) return;
       const run = runRef.current;
       const requestedLoop = options.loopTarget ?? null;
@@ -368,7 +448,8 @@ export default function Home() {
       await unlockPromise.catch(() => undefined);
       await runPlaybackQueue(steps, {
         repeat: requestedLoop !== null,
-        shouldContinue: () => run === runRef.current,
+        shouldContinue: () => run === runRef.current &&
+          (!sleepDeadlineRef.current || Date.now() < sleepDeadlineRef.current),
         playStep: async (step) => {
           setActiveTurn(step.turn ?? null);
           if (step.label) {
@@ -378,6 +459,10 @@ export default function Home() {
           else await wait(step.duration, run);
         },
       });
+      if (run === runRef.current && sleepDeadlineRef.current && Date.now() >= sleepDeadlineRef.current) {
+        expireSleepTimer();
+        return;
+      }
       if (run === runRef.current) {
         setIsPlaying(false);
         setIsPaused(false);
@@ -386,7 +471,7 @@ export default function Home() {
         setPlaybackLabel("播放完畢");
       }
     },
-    [playAudio, stop, unlockAudio, wait],
+    [expireSleepTimer, playAudio, stop, unlockAudio, wait],
   );
 
   const dialogueSteps = useCallback(
@@ -531,6 +616,39 @@ export default function Home() {
     setTab("dialogue");
     setRevealed(new Set());
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const activateSleepTimer = () => {
+    const minutes = parseSleepTimerMinutes(sleepTimerDraft);
+    if (minutes === null) {
+      setSleepTimerError("\u8acb\u8f38\u5165 " + MIN_SLEEP_TIMER_MINUTES + "\u2013" + MAX_SLEEP_TIMER_MINUTES + " \u4e4b\u9593\u7684\u6b63\u6574\u6578\u5206\u9418\u3002");
+      return;
+    }
+    const next = startSleepTimer(minutes);
+    sleepDeadlineRef.current = Date.parse(next.expiresAt ?? "");
+    setSleepTimer(next);
+    setSleepTimerDraft(String(minutes));
+    setSleepTimerError("");
+    setSleepNow(Date.now());
+    setSleepAnnouncement("\u7761\u7720\u8a08\u6642\u5df2\u555f\u52d5\uff0c" + minutes + " \u5206\u9418\u5f8c\u505c\u6b62\u6240\u6709\u64ad\u653e\u3002");
+    try {
+      window.localStorage.setItem(SLEEP_TIMER_STORAGE_KEY, JSON.stringify(next));
+    } catch {
+      // Private mode must not prevent the active timer in this page.
+    }
+  };
+
+  const cancelActiveSleepTimer = () => {
+    const next = cancelSleepTimer(sleepTimer);
+    sleepDeadlineRef.current = null;
+    setSleepTimer(next);
+    setSleepNow(Date.now());
+    setSleepAnnouncement("\u7761\u7720\u8a08\u6642\u5df2\u53d6\u6d88\uff0c\u76ee\u524d\u64ad\u653e\u4e0d\u6703\u4e2d\u65b7\u3002");
+    try {
+      window.localStorage.setItem(SLEEP_TIMER_STORAGE_KEY, JSON.stringify(next));
+    } catch {
+      // Private mode must not prevent cancelling the timer in this page.
+    }
   };
 
   const toggleScenarioLearned = (id: number, checked: boolean) => {
@@ -780,6 +898,43 @@ export default function Home() {
               <button className={hiddenRole === "librarian" ? "is-active" : ""} onClick={() => setHiddenRole("librarian")}>我當館員</button>
             </div>
           </div>
+          <section className={sleepTimerActive ? "sleep-card is-active" : "sleep-card"} aria-labelledby="sleep-timer-heading">
+            <div className="sleep-card__heading">
+              <strong id="sleep-timer-heading"><span aria-hidden="true">{"\u263e"}</span> {"\u7761\u7720\u524d\u6536\u807d"}</strong>
+              {sleepTimerActive && <span className="sleep-card__active">{"\u8a08\u6642\u4e2d"}</span>}
+            </div>
+            <p>{"\u555f\u52d5\u5f8c\uff0c\u4e0d\u8ad6\u66ab\u505c\u6216\u5207\u63db\u756b\u9762\uff0c\u5230\u671f\u90fd\u6703\u505c\u6b62\u6240\u6709\u64ad\u653e\u3002"}</p>
+            <div className="sleep-presets" role="group" aria-label="\u9078\u64c7\u7761\u7720\u8a08\u6642\u6642\u9593">
+              {SLEEP_TIMER_PRESETS.map((minutes) => (
+                <button type="button" key={minutes}
+                  className={Number(sleepTimerDraft) === minutes ? "is-selected" : undefined}
+                  aria-pressed={Number(sleepTimerDraft) === minutes}
+                  onClick={() => { setSleepTimerDraft(String(minutes)); setSleepTimerError(""); }}
+                >{minutes} {"\u5206\u9418"}</button>
+              ))}
+            </div>
+            <label className="sleep-custom-input">
+              <span>{"\u81ea\u8a02\u5206\u9418"}</span>
+              <input type="number" inputMode="numeric" min={MIN_SLEEP_TIMER_MINUTES} max={MAX_SLEEP_TIMER_MINUTES} step="1"
+                value={sleepTimerDraft}
+                onChange={(event) => { setSleepTimerDraft(event.target.value); setSleepTimerError(""); }}
+                aria-describedby={sleepTimerError ? "sleep-timer-error" : undefined}
+              />
+            </label>
+            {sleepTimerError && <p id="sleep-timer-error" className="sleep-timer-error" role="alert">{sleepTimerError}</p>}
+            {sleepTimerActive && (
+              <div className="sleep-countdown">
+                <strong>{"\u5269\u9918 "}{sleepRemainingLabel}</strong>
+                <small>{"\u9810\u8a08\u505c\u6b62 "}{sleepStopTimeLabel}</small>
+              </div>
+            )}
+            <div className="sleep-actions">
+              <button type="button" className="sleep-start" onClick={activateSleepTimer} disabled={!sleepTimerReady}>
+                {sleepTimerActive ? "\u91cd\u65b0\u8a08\u6642" : "\u958b\u59cb\u8a08\u6642"}
+              </button>
+              {sleepTimerActive && <button type="button" className="sleep-cancel" onClick={cancelActiveSleepTimer}>{"\u53d6\u6d88\u8a08\u6642"}</button>}
+            </div>
+          </section>
           <div className="offline-card">
             <div>
               <strong>{offlineReady ? "離線語音已備妥" : "下載離線語音"}</strong>
@@ -807,7 +962,12 @@ export default function Home() {
           {tab === "dialogue" && (
             <div className="tab-panel">
               <div className="panel-toolbar">
-                <div><span className={`live-dot ${isPlaying ? "is-live" : ""}`} /><strong>{playbackLabel}</strong></div>
+                <div className="playback-status">
+                  <span className={isPlaying ? "live-dot is-live" : "live-dot"} />
+                  <strong>{playbackLabel}</strong>
+                  {sleepTimerActive && <span className="sleep-toolbar-status" aria-label={"\u7761\u7720\u8a08\u6642\u5269\u9918 " + sleepRemainingLabel}>{"\u263e"} {sleepRemainingLabel}</span>}
+                  <span className="sr-only" role="status" aria-live="polite">{sleepAnnouncement}</span>
+                </div>
                 <div className="toolbar-actions">
                   <button onClick={playDialogue}>▶ <span>全文</span></button>
                   <button onClick={togglePause} disabled={!isPlaying}>{isPaused ? "▶" : "Ⅱ"} <span>{isPaused ? "繼續" : "暫停"}</span></button>

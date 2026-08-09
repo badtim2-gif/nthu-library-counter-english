@@ -49,9 +49,20 @@ test("keeps the final app free of starter preview code", async () => {
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);
-  assert.match(serviceWorker, /nthu-library-shell-v6/);
+  assert.match(serviceWorker, /nthu-library-shell-v7/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
   await access(new URL("../public/img_20260726120102.png", import.meta.url));
   await access(new URL("../public/img_20260726121722.png", import.meta.url));
   await access(new URL("../public/og.png", import.meta.url));
+});
+
+test("renders sleep timer controls and accessible status", async () => {
+  const response = await render();
+  const html = await response.text();
+  assert.match(html, /sleep-timer-heading/);
+  const page = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+  assert.match(page, /SLEEP_TIMER_STORAGE_KEY/);
+  assert.match(page, /sleepDeadlineRef/);
+  assert.match(page, /aria-live="polite"/);
+  assert.match(page, /sleep-toolbar-status/);
 });
