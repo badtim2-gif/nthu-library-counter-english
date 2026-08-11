@@ -570,7 +570,7 @@ export default function Home() {
         : item.vocabulary.map((entry, index) => [entry, index] as const);
     return entries.flatMap(([entry, index]) => [
       { kind: "audio", src: audioPaths.vocabWord(item.id, index), label: `單字 ${entry.word}` },
-      { kind: "silence", duration: 2000 },
+      { kind: "silence", duration: 1000 },
       ...entry.word.toLowerCase().split("").filter((letter) => /[a-z]/.test(letter)).flatMap((letter) => [
         { kind: "audio" as const, src: audioPaths.alphabet(letter), label: `拼寫 ${entry.word}` },
         { kind: "silence" as const, duration: 280 },
@@ -891,7 +891,7 @@ export default function Home() {
           </div>
           <div className="mode-card">
             <div className="mode-card__title"><span aria-hidden="true">◎</span>角色扮演</div>
-            <p>隱藏一方台詞，播放時會留出相同長度讓你開口。</p>
+            <p>只隱藏所選角色的英文，中文提示會保持顯示；播放時會留出相同長度讓你開口。</p>
             <div className="segmented" role="group" aria-label="選擇角色扮演模式">
               <button className={hiddenRole === null ? "is-active" : ""} onClick={() => setHiddenRole(null)}>完整</button>
               <button className={hiddenRole === "reader" ? "is-active" : ""} onClick={() => setHiddenRole("reader")}>我當讀者</button>
@@ -993,14 +993,14 @@ export default function Home() {
                         <div><strong>{roleName[turn.role].en}</strong><small>{roleName[turn.role].zh}</small></div>
                         <span className="turn-number">0{index + 1}</span>
                       </div>
-                      {hidden ? (
-                        <div className="hidden-line"><p>輪到你說這一句</p><span>先試著說，再顯示答案或聽示範。</span></div>
-                      ) : (
-                        <div className="line-copy">
+                      <div className="line-copy">
+                        {hidden ? (
+                          <div className="hidden-line"><p>輪到你說這一句</p><span>先試著說，再顯示英文答案或聽示範。</span></div>
+                        ) : (
                           <p className="english">{turn.en}</p>
-                          <p className="chinese">（{roleName[turn.role].zh}：{turn.zh}）</p>
-                        </div>
-                      )}
+                        )}
+                        <p className="chinese">（{roleName[turn.role].zh}：{turn.zh}）</p>
+                      </div>
                       <div className="line-actions">
                         {hiddenRole === turn.role && <button onClick={() => toggleReveal(index)}>{hidden ? "顯示答案" : "再次隱藏"}</button>}
                         <button onClick={() => playTurn(index)}>◉ 聽本句示範</button>

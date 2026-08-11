@@ -40,3 +40,20 @@ test("stops queued playback when the sleep deadline expires", () => {
   assert.match(pageSource, /window\.setTimeout\(checkDeadline/);
   assert.match(pageSource, /Date\.now\(\) < sleepDeadlineRef\.current/);
 });
+test("waits one second after each vocabulary word before spelling", () => {
+  assert.match(
+    pageSource,
+    /src: audioPaths\.vocabWord\(item\.id, index\)[\s\S]{0,160}kind: "silence", duration: 1000/,
+  );
+  assert.doesNotMatch(
+    pageSource,
+    /src: audioPaths\.vocabWord\(item\.id, index\)[\s\S]{0,160}kind: "silence", duration: 2000/,
+  );
+});
+
+test("role play hides only English and keeps the Chinese translation visible", () => {
+  assert.match(
+    pageSource,
+    /<div className="line-copy">[\s\S]{0,500}\{hidden \? \([\s\S]{0,500}<p className="english">\{turn\.en\}<\/p>[\s\S]{0,300}<p className="chinese">/,
+  );
+});

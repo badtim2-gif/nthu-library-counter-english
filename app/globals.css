@@ -518,7 +518,7 @@ a { color: inherit; }
 .english { color: #211d24; font-family: Georgia, "Times New Roman", serif; font-size: 1.12rem; line-height: 1.7; }
 .chinese { margin-top: 7px !important; color: var(--muted); font-size: 0.92rem; }
 
-.hidden-line { margin: 16px 0 0 46px; padding: 15px; border: 1px dashed var(--plum); border-radius: 13px; background: var(--plum-soft); }
+.hidden-line { margin: 0 0 10px; padding: 15px; border: 1px dashed var(--plum); border-radius: 13px; background: var(--plum-soft); }
 .hidden-line p { margin: 0; color: var(--plum); font-weight: 850; }
 .hidden-line span { color: var(--muted); font-size: 0.82rem; }
 
