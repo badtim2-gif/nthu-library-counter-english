@@ -35,6 +35,33 @@ test("tracks scenario and turn loops without relocking mobile audio", () => {
   assert.match(pageSource, /if \(loopTarget && nextTab !== "dialogue"\) stop\("循環已停止"\)/);
 });
 
+test("scrolls each new dialogue turn into view before its audio starts", () => {
+  const queueStart = pageSource.indexOf("const playSteps = useCallback");
+  const scrollStart = pageSource.indexOf("card.scrollIntoView", queueStart);
+  const audioStart = pageSource.indexOf('if (step.kind === "audio") await playAudio', queueStart);
+  assert.ok(queueStart >= 0);
+  assert.ok(scrollStart > queueStart && scrollStart < audioStart);
+  assert.match(pageSource, /nextTurn !== null && nextTurn !== lastScrolledTurnRef\.current/);
+  assert.match(pageSource, /window\.matchMedia\?\.\("\(prefers-reduced-motion: reduce\)"\)/);
+  assert.match(pageSource, /if \(!prefersReducedMotion\) await wait\(350, run\)/);
+  assert.match(pageSource, /ref=\{\(element\) => \{ dialogueCardRefs\.current\[index\] = element; \}\}/);
+});
+
+test("opens the dialogue tab before hero playback and exposes a synced loop button", () => {
+  const prepareStart = pageSource.indexOf("const prepareDialoguePlayback = useCallback");
+  const unlockStart = pageSource.indexOf("const unlockPromise = unlockAudio()", prepareStart);
+  const tabStart = pageSource.indexOf('setTab("dialogue")', prepareStart);
+  const renderWaitStart = pageSource.indexOf("window.requestAnimationFrame", prepareStart);
+  const playStart = pageSource.indexOf("await playSteps(dialogueSteps(scenario))", prepareStart);
+  assert.ok(prepareStart >= 0);
+  assert.ok(unlockStart > prepareStart && unlockStart < tabStart);
+  assert.ok(tabStart > prepareStart && renderWaitStart > tabStart && playStart > renderWaitStart);
+  assert.match(
+    pageSource,
+    /className=\{`button button--quiet \$\{loopTarget\?\.kind === "scenario" \? "is-looping" : ""\}`\}[\s\S]{0,400}onClick=\{toggleDialogueLoop\}/,
+  );
+  assert.match(pageSource, /\{loopTarget\?\.kind === "scenario" \? "■ 停止循環" : "↻ 循環播放"\}/);
+});
 test("stops queued playback when the sleep deadline expires", () => {
   assert.match(pageSource, /sleepDeadlineRef\.current/);
   assert.match(pageSource, /window\.setTimeout\(checkDeadline/);

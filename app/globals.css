@@ -134,6 +134,12 @@ a { color: inherit; }
 .button:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.12); }
 .button--primary { border-color: #f5dba7; background: #f5dba7; color: #3a1735; }
 .button--quiet { border-color: rgba(255,255,255,0.28); background: rgba(255,255,255,0.08); color: #fff; }
+.hero__actions .button.is-looping {
+  border-color: #f5dba7;
+  background: #f5dba7;
+  color: #3a1735;
+  box-shadow: 0 0 0 3px rgba(245, 219, 167, 0.22);
+}
 .button--small { min-height: 38px; padding: 8px 14px; background: var(--plum); color: #fff; font-size: 0.88rem; }
 
 .hero-card {

@@ -133,6 +133,8 @@ export default function Home() {
   const runRef = useRef(0);
   const pausedRef = useRef(false);
   const sleepDeadlineRef = useRef<number | null>(null);
+  const dialogueCardRefs = useRef<Array<HTMLElement | null>>([]);
+  const lastScrolledTurnRef = useRef<number | null>(null);
   const scenario = useMemo(
     () => scenarios.find((item) => item.id === scenarioId) ?? scenarios[0],
     [scenarioId],
@@ -276,6 +278,7 @@ export default function Home() {
   const stop = useCallback((label = "已停止") => {
     runRef.current += 1;
     pausedRef.current = false;
+    lastScrolledTurnRef.current = null;
     const source = audioSourceRef.current;
     const finish = audioFinishRef.current;
     audioFinishRef.current = null;
@@ -451,9 +454,19 @@ export default function Home() {
         shouldContinue: () => run === runRef.current &&
           (!sleepDeadlineRef.current || Date.now() < sleepDeadlineRef.current),
         playStep: async (step) => {
-          setActiveTurn(step.turn ?? null);
+          const nextTurn = step.turn ?? null;
+          setActiveTurn(nextTurn);
           if (step.label) {
             setPlaybackLabel(requestedLoop ? `循環播放｜${step.label}` : step.label);
+          }
+          if (nextTurn !== null && nextTurn !== lastScrolledTurnRef.current) {
+            lastScrolledTurnRef.current = nextTurn;
+            const card = dialogueCardRefs.current[nextTurn];
+            if (card) {
+              const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+              card.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "center" });
+              if (!prefersReducedMotion) await wait(350, run);
+            }
           }
           if (step.kind === "audio") await playAudio(step.src, run);
           else await wait(step.duration, run);
@@ -505,18 +518,34 @@ export default function Home() {
     [hiddenRole],
   );
 
-  const playDialogue = useCallback(
-    () => void playSteps(dialogueSteps(scenario)),
-    [dialogueSteps, playSteps, scenario],
-  );
+  const prepareDialoguePlayback = useCallback(async () => {
+    const unlockPromise = unlockAudio();
+    if (tab !== "dialogue") {
+      setTab("dialogue");
+      await new Promise<void>((resolve) => {
+        window.requestAnimationFrame(() => window.requestAnimationFrame(() => resolve()));
+      });
+    }
+    await unlockPromise.catch(() => undefined);
+  }, [tab, unlockAudio]);
+
+  const playDialogue = useCallback(() => {
+    void (async () => {
+      await prepareDialoguePlayback();
+      await playSteps(dialogueSteps(scenario));
+    })();
+  }, [dialogueSteps, playSteps, prepareDialoguePlayback, scenario]);
 
   const toggleDialogueLoop = useCallback(() => {
     if (loopTarget?.kind === "scenario") {
       stop("循環已停止");
       return;
     }
-    void playSteps(dialogueSteps(scenario), { loopTarget: { kind: "scenario" } });
-  }, [dialogueSteps, loopTarget, playSteps, scenario, stop]);
+    void (async () => {
+      await prepareDialoguePlayback();
+      await playSteps(dialogueSteps(scenario), { loopTarget: { kind: "scenario" } });
+    })();
+  }, [dialogueSteps, loopTarget, playSteps, prepareDialoguePlayback, scenario, stop]);
 
   const turnSteps = useCallback((index: number, includeLoopGap = false): PlaybackStep[] => {
     const turn = scenario.dialogue[index];
@@ -763,6 +792,14 @@ export default function Home() {
             </p>
             <div className="hero__actions">
               <button className="button button--primary" onClick={playDialogue}>▶ 開始本課示範</button>
+              <button
+                className={`button button--quiet ${loopTarget?.kind === "scenario" ? "is-looping" : ""}`}
+                aria-pressed={loopTarget?.kind === "scenario"}
+                aria-label={loopTarget?.kind === "scenario" ? "停止整個情境循環播放" : "循環播放整個情境"}
+                onClick={toggleDialogueLoop}
+              >
+                {loopTarget?.kind === "scenario" ? "■ 停止循環" : "↻ 循環播放"}
+              </button>
               <button className="button button--quiet" onClick={install} disabled={!installPrompt}>↓ 安裝 APP</button>
             </div>
           </div>
@@ -987,7 +1024,11 @@ export default function Home() {
                   const hidden = hiddenRole === turn.role && !revealed.has(index);
                   const turnLooping = loopTarget?.kind === "turn" && loopTarget.index === index;
                   return (
-                    <section key={`${scenario.id}-${index}`} className={`dialogue-card dialogue-card--${turn.role} ${activeTurn === index ? "is-speaking" : ""}`}>
+                    <section
+                      key={`${scenario.id}-${index}`}
+                      ref={(element) => { dialogueCardRefs.current[index] = element; }}
+                      className={`dialogue-card dialogue-card--${turn.role} ${activeTurn === index ? "is-speaking" : ""}`}
+                    >
                       <div className="speaker-row">
                         <span className={`speaker-avatar speaker-avatar--${turn.role}`}>{turn.role === "reader" ? "讀" : "館"}</span>
                         <div><strong>{roleName[turn.role].en}</strong><small>{roleName[turn.role].zh}</small></div>
