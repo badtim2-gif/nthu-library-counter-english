@@ -53,7 +53,14 @@ type InstallPromptEvent = Event & {
 type PlaybackStep =
   | { kind: "audio"; src: string; turn?: number; label?: string }
   | { kind: "silence"; duration: number; turn?: number; label?: string };
-type LoopTarget = { kind: "scenario" } | { kind: "turn"; index: number };
+type LoopTarget =
+  | { kind: "scenario" }
+  | { kind: "turn"; index: number }
+  | { kind: "language" }
+  | { kind: "pattern"; index: number }
+  | { kind: "grammar"; index: number }
+  | { kind: "vocabulary" }
+  | { kind: "vocabulary-item"; index: number };
 type PlaybackOptions = { loopTarget?: LoopTarget };
 type RolePlayMode = Role | "all" | null;
 
@@ -591,15 +598,33 @@ export default function Home() {
     void playSteps(turnSteps(index, true), { loopTarget: { kind: "turn", index } });
   };
 
+  const patternSteps = (
+    item: Scenario,
+    index: number,
+    includeLoopGap = false,
+  ): PlaybackStep[] => [
+    { kind: "audio", src: audioPaths.pattern(item.id, index, "en"), label: `句型 ${index + 1} 英文` },
+    { kind: "silence", duration: 1000 },
+    { kind: "audio", src: audioPaths.pattern(item.id, index, "zh"), label: `句型 ${index + 1} 中文解說` },
+    ...(includeLoopGap ? [{ kind: "silence" as const, duration: 1000 }] : []),
+  ];
+
+  const grammarSteps = (
+    item: Scenario,
+    index: number,
+    includeLoopGap = false,
+  ): PlaybackStep[] => [
+    { kind: "audio", src: audioPaths.grammar(item.id, index), label: `文法重點 ${index + 1}` },
+    ...(includeLoopGap ? [{ kind: "silence" as const, duration: 1000 }] : []),
+  ];
+
   const noteSteps = (item: Scenario): PlaybackStep[] => [
     ...item.patterns.flatMap((_, index) => [
-      { kind: "audio" as const, src: audioPaths.pattern(item.id, index, "en"), label: `句型 ${index + 1} 英文` },
-      { kind: "silence" as const, duration: 1000 },
-      { kind: "audio" as const, src: audioPaths.pattern(item.id, index, "zh"), label: `句型 ${index + 1} 中文解說` },
+      ...patternSteps(item, index),
       { kind: "silence" as const, duration: 1000 },
     ]),
     ...item.grammar.flatMap((_, index) => [
-      { kind: "audio" as const, src: audioPaths.grammar(item.id, index), label: `文法重點 ${index + 1}` },
+      ...grammarSteps(item, index),
       { kind: "silence" as const, duration: 1000 },
     ]),
   ];
@@ -619,6 +644,46 @@ export default function Home() {
       { kind: "audio", src: audioPaths.vocabMeaning(item.id, index), label: `${entry.word} 中文解說` },
       { kind: "silence", duration: 2000 },
     ]);
+  };
+
+  const toggleLanguageLoop = () => {
+    if (loopTarget?.kind === "language") {
+      stop("循環已停止");
+      return;
+    }
+    void playSteps(noteSteps(scenario), { loopTarget: { kind: "language" } });
+  };
+
+  const togglePatternLoop = (index: number) => {
+    if (loopTarget?.kind === "pattern" && loopTarget.index === index) {
+      stop("循環已停止");
+      return;
+    }
+    void playSteps(patternSteps(scenario, index, true), { loopTarget: { kind: "pattern", index } });
+  };
+
+  const toggleGrammarLoop = (index: number) => {
+    if (loopTarget?.kind === "grammar" && loopTarget.index === index) {
+      stop("循環已停止");
+      return;
+    }
+    void playSteps(grammarSteps(scenario, index, true), { loopTarget: { kind: "grammar", index } });
+  };
+
+  const toggleVocabularyLoop = () => {
+    if (loopTarget?.kind === "vocabulary") {
+      stop("循環已停止");
+      return;
+    }
+    void playSteps(vocabSteps(scenario), { loopTarget: { kind: "vocabulary" } });
+  };
+
+  const toggleVocabularyItemLoop = (index: number) => {
+    if (loopTarget?.kind === "vocabulary-item" && loopTarget.index === index) {
+      stop("循環已停止");
+      return;
+    }
+    void playSteps(vocabSteps(scenario, index), { loopTarget: { kind: "vocabulary-item", index } });
   };
 
   const togglePause = () => {
@@ -647,7 +712,7 @@ export default function Home() {
   };
 
   const changeTab = (nextTab: LessonTab) => {
-    if (loopTarget && nextTab !== "dialogue") stop("循環已停止");
+    if (loopTarget && nextTab !== tab) stop("循環已停止");
     setTab(nextTab);
   };
 
@@ -1083,34 +1148,58 @@ export default function Home() {
             <div className="tab-panel">
               <div className="content-title">
                 <div><p className="section-label">USEFUL LANGUAGE</p><h3>實用句型</h3></div>
-                <button className="button button--small" onClick={() => void playSteps(noteSteps(scenario))}>▶ 播放本區解說</button>
+                <div className="content-actions">
+                  <button className="button button--small" onClick={() => void playSteps(noteSteps(scenario))}>▶ 播放本區解說</button>
+                  <button
+                    className={`button button--small ${loopTarget?.kind === "language" ? "is-looping" : ""}`}
+                    aria-pressed={loopTarget?.kind === "language"}
+                    aria-label={loopTarget?.kind === "language" ? "停止句型與文法循環播放" : "循環播放句型與文法"}
+                    onClick={toggleLanguageLoop}
+                  >{loopTarget?.kind === "language" ? "■ 停止循環" : "↻ 循環播放"}</button>
+                </div>
               </div>
               <div className="pattern-grid">
-                {scenario.patterns.map((pattern, index) => (
-                  <section className="pattern-card" key={pattern.form}>
-                    <span className="index-pill">句型 {index + 1}</span>
-                    <h4>{pattern.form}</h4>
-                    <p className="example">{pattern.example}</p>
-                    <p>{pattern.explanation}</p>
-                    <button onClick={() => void playSteps([
-                      { kind: "audio", src: audioPaths.pattern(scenario.id, index, "en"), label: `句型 ${index + 1} 英文` },
-                      { kind: "silence", duration: 1000 },
-                      { kind: "audio", src: audioPaths.pattern(scenario.id, index, "zh"), label: `句型 ${index + 1} 中文解說` },
-                    ])}>◉ 聽句型</button>
-                  </section>
-                ))}
+                {scenario.patterns.map((pattern, index) => {
+                  const patternLooping = loopTarget?.kind === "pattern" && loopTarget.index === index;
+                  return (
+                    <section className="pattern-card" key={pattern.form}>
+                      <span className="index-pill">句型 {index + 1}</span>
+                      <h4>{pattern.form}</h4>
+                      <p className="example">{pattern.example}</p>
+                      <p>{pattern.explanation}</p>
+                      <div className="item-actions">
+                        <button onClick={() => void playSteps(patternSteps(scenario, index))}>◉ 聽句型</button>
+                        <button
+                          className={patternLooping ? "is-looping" : undefined}
+                          aria-pressed={patternLooping}
+                          aria-label={patternLooping ? `停止循環句型 ${index + 1}` : `循環播放句型 ${index + 1}`}
+                          onClick={() => togglePatternLoop(index)}
+                        >{patternLooping ? "■ 停止循環" : "↻ 循環句型"}</button>
+                      </div>
+                    </section>
+                  );
+                })}
               </div>
               <div className="content-title grammar-title"><div><p className="section-label">GRAMMAR FOCUS</p><h3>文法重點</h3></div></div>
               <div className="grammar-list">
-                {scenario.grammar.map((point, index) => (
-                  <section key={point.title}>
-                    <span>{index + 1}</span>
-                    <div><h4>{point.title}</h4><p>{point.explanation}</p></div>
-                    <button aria-label={`播放${point.title}`} onClick={() => void playSteps([
-                      { kind: "audio", src: audioPaths.grammar(scenario.id, index), label: `文法重點 ${index + 1}` },
-                    ])}>◉</button>
-                  </section>
-                ))}
+                {scenario.grammar.map((point, index) => {
+                  const grammarLooping = loopTarget?.kind === "grammar" && loopTarget.index === index;
+                  return (
+                    <section key={point.title}>
+                      <span>{index + 1}</span>
+                      <div><h4>{point.title}</h4><p>{point.explanation}</p></div>
+                      <div className="item-actions">
+                        <button aria-label={`播放${point.title}`} onClick={() => void playSteps(grammarSteps(scenario, index))}>◉</button>
+                        <button
+                          className={grammarLooping ? "is-looping" : undefined}
+                          aria-pressed={grammarLooping}
+                          aria-label={grammarLooping ? `停止循環${point.title}` : `循環播放${point.title}`}
+                          onClick={() => toggleGrammarLoop(index)}
+                        >{grammarLooping ? "■" : "↻"}</button>
+                      </div>
+                    </section>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -1123,17 +1212,36 @@ export default function Home() {
                   <h3>本課單字</h3>
                   <p className="content-subtitle">先聽單字，停兩秒，再聽逐字母拼寫與中文解說。</p>
                 </div>
-                <button className="button button--small" onClick={() => void playSteps(vocabSteps(scenario))}>▶ 依序播放</button>
+                <div className="content-actions">
+                  <button className="button button--small" onClick={() => void playSteps(vocabSteps(scenario))}>▶ 依序播放</button>
+                  <button
+                    className={`button button--small ${loopTarget?.kind === "vocabulary" ? "is-looping" : ""}`}
+                    aria-pressed={loopTarget?.kind === "vocabulary"}
+                    aria-label={loopTarget?.kind === "vocabulary" ? "停止全部單字循環播放" : "循環播放全部單字"}
+                    onClick={toggleVocabularyLoop}
+                  >{loopTarget?.kind === "vocabulary" ? "■ 停止循環" : "↻ 循環播放"}</button>
+                </div>
               </div>
               <div className="vocabulary-list">
-                {scenario.vocabulary.map((entry, index) => (
-                  <section className="vocab-row" key={`${entry.word}-${index}`}>
-                    <span className="vocab-index">{String(index + 1).padStart(2, "0")}</span>
-                    <div className="vocab-word"><strong>{entry.word}</strong><span>[{entry.kk}]</span></div>
-                    <div className="vocab-meaning"><span>{entry.meaning}</span><small>{entry.pos}</small></div>
-                    <button onClick={() => void playSteps(vocabSteps(scenario, index))} aria-label={`播放單字 ${entry.word}`}>◉</button>
-                  </section>
-                ))}
+                {scenario.vocabulary.map((entry, index) => {
+                  const vocabularyItemLooping = loopTarget?.kind === "vocabulary-item" && loopTarget.index === index;
+                  return (
+                    <section className="vocab-row" key={`${entry.word}-${index}`}>
+                      <span className="vocab-index">{String(index + 1).padStart(2, "0")}</span>
+                      <div className="vocab-word"><strong>{entry.word}</strong><span>[{entry.kk}]</span></div>
+                      <div className="vocab-meaning"><span>{entry.meaning}</span><small>{entry.pos}</small></div>
+                      <div className="item-actions">
+                        <button onClick={() => void playSteps(vocabSteps(scenario, index))} aria-label={`播放單字 ${entry.word}`}>◉</button>
+                        <button
+                          className={vocabularyItemLooping ? "is-looping" : undefined}
+                          aria-pressed={vocabularyItemLooping}
+                          aria-label={vocabularyItemLooping ? `停止循環單字 ${entry.word}` : `循環播放單字 ${entry.word}`}
+                          onClick={() => toggleVocabularyItemLoop(index)}
+                        >{vocabularyItemLooping ? "■" : "↻"}</button>
+                      </div>
+                    </section>
+                  );
+                })}
               </div>
               <div className="speech-rule">
                 <span aria-hidden="true">i</span>

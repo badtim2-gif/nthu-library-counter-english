@@ -490,7 +490,8 @@ a { color: inherit; }
   font-weight: 800;
 }
 .toolbar-actions button { min-height: 36px; padding: 7px 10px; font-size: 0.78rem; }
-.toolbar-actions button.is-looping, .line-actions button.is-looping {
+.toolbar-actions button.is-looping, .line-actions button.is-looping,
+.content-actions button.is-looping, .item-actions button.is-looping {
   border-color: var(--plum);
   background: var(--plum);
   color: #fff;
@@ -533,6 +534,7 @@ a { color: inherit; }
 
 .content-title { margin: 5px 0 22px; }
 .content-title h3 { font-size: 1.65rem; }
+.content-actions, .item-actions { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
 .content-subtitle { margin: 6px 0 0; color: var(--muted); font-size: 0.86rem; }
 .pattern-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .pattern-card { display: flex; flex-direction: column; padding: 19px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
@@ -541,17 +543,19 @@ a { color: inherit; }
 .pattern-card p { color: var(--muted); font-size: 0.84rem; }
 .pattern-card .example { padding-left: 10px; border-left: 2px solid var(--librarian); color: var(--ink); font-family: Georgia, serif; }
 .pattern-card button { align-self: flex-start; margin-top: auto; }
+.pattern-card .item-actions { align-self: stretch; justify-content: flex-start; margin-top: auto; }
+.pattern-card .item-actions button { margin-top: 0; }
 
 .grammar-title { margin-top: 36px; }
 .grammar-list { display: grid; gap: 10px; }
-.grammar-list section { display: grid; grid-template-columns: 38px 1fr 34px; align-items: center; gap: 12px; padding: 15px; border-radius: 16px; background: #f2ece4; }
+.grammar-list section { display: grid; grid-template-columns: 38px 1fr auto; align-items: center; gap: 12px; padding: 15px; border-radius: 16px; background: #f2ece4; }
 .grammar-list section > span { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--plum); color: #fff; font-family: Georgia, serif; }
 .grammar-list h4, .grammar-list p { margin: 0; }
 .grammar-list p { color: var(--muted); font-size: 0.84rem; }
 .grammar-list button, .vocab-row button { width: 34px; height: 34px; padding: 0; }
 
 .vocabulary-list { border-top: 1px solid var(--line); }
-.vocab-row { display: grid; grid-template-columns: 40px 1.2fr 1fr 38px; align-items: center; gap: 12px; min-height: 70px; border-bottom: 1px solid var(--line); }
+.vocab-row { display: grid; grid-template-columns: 40px 1.2fr 1fr auto; align-items: center; gap: 12px; min-height: 70px; border-bottom: 1px solid var(--line); }
 .vocab-index { color: #b4a7b1; font-family: Georgia, serif; }
 .vocab-word strong { margin-right: 10px; font-family: Georgia, serif; font-size: 1.1rem; }
 .vocab-word span { color: var(--plum); font-size: 0.86rem; }
@@ -601,9 +605,11 @@ button:focus-visible, a:focus-visible { outline: 3px solid #e1aa44; outline-offs
   .panel-toolbar { align-items: flex-start; }
   .toolbar-actions span { display: none; }
   .line-copy, .hidden-line { margin-left: 0; }
-  .vocab-row { grid-template-columns: 34px 1fr 38px; padding: 10px 0; }
+  .content-title { align-items: flex-start; flex-direction: column; }
+  .content-actions { width: 100%; justify-content: flex-start; }
+  .vocab-row { grid-template-columns: 34px 1fr auto; padding: 10px 0; }
   .vocab-meaning { grid-column: 2; }
-  .vocab-row > button { grid-column: 3; grid-row: 1 / span 2; }
+  .vocab-row > .item-actions { grid-column: 3; grid-row: 1 / span 2; flex-wrap: nowrap; }
   .lesson-source, .site-footer { flex-direction: column; }
   .lesson-source p { text-align: left; }
   .section-heading { align-items: center; }

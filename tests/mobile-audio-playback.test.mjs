@@ -27,12 +27,16 @@ test("keeps pause, resume, and mobile memory limits in the player", () => {
 });
 
 test("tracks scenario and turn loops without relocking mobile audio", () => {
-  assert.match(pageSource, /type LoopTarget = \{ kind: "scenario" \} \| \{ kind: "turn"; index: number \}/);
+  assert.match(pageSource, /\| \{ kind: "language" \}/);
+  assert.match(pageSource, /\| \{ kind: "pattern"; index: number \}/);
+  assert.match(pageSource, /\| \{ kind: "grammar"; index: number \}/);
+  assert.match(pageSource, /\| \{ kind: "vocabulary" \}/);
+  assert.match(pageSource, /\| \{ kind: "vocabulary-item"; index: number \}/);
   assert.match(pageSource, /repeat: requestedLoop !== null/);
   assert.match(pageSource, /includeLoopGap \? \[\{ kind: "silence" as const, duration: 1000/);
   assert.match(pageSource, /aria-pressed=\{loopTarget\?\.kind === "scenario"\}/);
   assert.match(pageSource, /aria-pressed=\{turnLooping\}/);
-  assert.match(pageSource, /if \(loopTarget && nextTab !== "dialogue"\) stop\("循環已停止"\)/);
+  assert.match(pageSource, /if \(loopTarget && nextTab !== tab\) stop\("循環已停止"\)/);
 });
 
 test("scrolls each new dialogue turn into view before its audio starts", () => {
@@ -76,6 +80,30 @@ test("waits one second after each vocabulary word before spelling", () => {
     pageSource,
     /src: audioPaths\.vocabWord\(item\.id, index\)[\s\S]{0,160}kind: "silence", duration: 2000/,
   );
+});
+
+test("loops the full language and vocabulary sections with synced controls", () => {
+  assert.match(pageSource, /playSteps\(noteSteps\(scenario\), \{ loopTarget: \{ kind: "language" \} \}\)/);
+  assert.match(pageSource, /playSteps\(vocabSteps\(scenario\), \{ loopTarget: \{ kind: "vocabulary" \} \}\)/);
+  assert.match(pageSource, /aria-pressed=\{loopTarget\?\.kind === "language"\}/);
+  assert.match(pageSource, /aria-pressed=\{loopTarget\?\.kind === "vocabulary"\}/);
+  assert.match(pageSource, /停止句型與文法循環播放/);
+  assert.match(pageSource, /停止全部單字循環播放/);
+});
+
+test("loops individual patterns, grammar points, and vocabulary items", () => {
+  assert.match(pageSource, /patternSteps\(scenario, index, true\)[\s\S]{0,100}kind: "pattern", index/);
+  assert.match(pageSource, /grammarSteps\(scenario, index, true\)[\s\S]{0,100}kind: "grammar", index/);
+  assert.match(pageSource, /vocabSteps\(scenario, index\)[\s\S]{0,120}kind: "vocabulary-item", index/);
+  assert.match(pageSource, /aria-pressed=\{patternLooping\}/);
+  assert.match(pageSource, /aria-pressed=\{grammarLooping\}/);
+  assert.match(pageSource, /aria-pressed=\{vocabularyItemLooping\}/);
+});
+
+test("keeps the requested gaps between repeated learning items", () => {
+  assert.match(pageSource, /const patternSteps =[\s\S]{0,700}includeLoopGap \? \[\{ kind: "silence" as const, duration: 1000 \}\]/);
+  assert.match(pageSource, /const grammarSteps =[\s\S]{0,450}includeLoopGap \? \[\{ kind: "silence" as const, duration: 1000 \}\]/);
+  assert.match(pageSource, /src: audioPaths\.vocabMeaning\(item\.id, index\)[\s\S]{0,160}kind: "silence", duration: 2000/);
 });
 
 test("role play hides only English and keeps the Chinese translation visible", () => {
