@@ -30,7 +30,15 @@ assert.doesNotMatch(html, /(?:href|src)="\/_next\//);
 const serviceWorker = fs.readFileSync(path.join(output, "sw.js"), "utf8");
 assert.match(serviceWorker, /self\.registration\.scope/);
 assert.match(serviceWorker, /nthu-library-shell-v7/);
-assert.match(serviceWorker, /nthu-library-audio-v4/);
+assert.match(serviceWorker, /nthu-library-audio-v5/);
+assert.doesNotMatch(serviceWorker, /nthu-library-audio-v[1-4]/);
+
+const pageSource = fs.readFileSync(path.join(root, "app", "page.tsx"), "utf8");
+assert.match(pageSource, /const AUDIO_CACHE_NAME = "nthu-library-audio-v5"/);
+assert.match(pageSource, /caches\.open\(AUDIO_CACHE_NAME\)/);
+for (const version of [1, 2, 3, 4]) {
+  assert.match(pageSource, new RegExp(`nthu-library-audio-v${version}`));
+}
 
 const manifest = JSON.parse(
   fs.readFileSync(path.join(output, "manifest.webmanifest"), "utf8"),

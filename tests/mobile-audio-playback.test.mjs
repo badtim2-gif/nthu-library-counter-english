@@ -79,8 +79,35 @@ test("waits one second after each vocabulary word before spelling", () => {
 });
 
 test("role play hides only English and keeps the Chinese translation visible", () => {
+  assert.match(pageSource, /type RolePlayMode = Role \| "all" \| null/);
   assert.match(
     pageSource,
-    /<div className="line-copy">[\s\S]{0,500}\{hidden \? \([\s\S]{0,500}<p className="english">\{turn\.en\}<\/p>[\s\S]{0,300}<p className="chinese">/,
+    /const roleIsHidden = \(mode: RolePlayMode, role: Role\) => mode === "all" \|\| mode === role/,
   );
+  assert.match(pageSource, /\{hidden \? \(hiddenRole === "all" \? null : \(/);
+  assert.match(pageSource, /<p className="english">\{turn\.en\}<\/p>/);
+  assert.match(pageSource, /<p className="chinese">/);
+  assert.match(pageSource, /const turnHiddenByMode = roleIsHidden\(hiddenRole, turn\.role\)/);
+  assert.match(pageSource, /turnHiddenByMode && <button onClick=\{\(\) => toggleReveal\(index\)\}>/);
+});
+
+test("all-hidden role play pauses every turn while single-turn demos remain available", () => {
+  assert.match(
+    pageSource,
+    /if \(!forceAll && roleIsHidden\(hiddenRole, turn\.role\)\) \{[\s\S]{0,300}kind: "silence"/,
+  );
+  assert.match(pageSource, /onClick=\{\(\) => changeRolePlayMode\("all"\)\}>都隱藏<\/button>/);
+  assert.match(
+    pageSource,
+    /const turnSteps = useCallback[\s\S]{0,900}audioPaths\.dialogue\(scenario\.id, index, "en"\)[\s\S]{0,500}audioPaths\.dialogue\(scenario\.id, index, "zh"\)/,
+  );
+});
+
+test("switching role-play mode stops playback and hides revealed answers again", () => {
+  const modeStart = pageSource.indexOf("const changeRolePlayMode =");
+  const stopStart = pageSource.indexOf('stop("尚未播放")', modeStart);
+  const setModeStart = pageSource.indexOf("setHiddenRole(mode)", modeStart);
+  const clearAnswersStart = pageSource.indexOf("setRevealed(new Set())", modeStart);
+  assert.ok(modeStart >= 0);
+  assert.ok(stopStart > modeStart && setModeStart > stopStart && clearAnswersStart > setModeStart);
 });
