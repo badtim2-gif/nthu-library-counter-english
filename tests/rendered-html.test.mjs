@@ -44,8 +44,10 @@ test("keeps the final app free of starter preview code", async () => {
   assert.match(page, /複習排程設定/);
   assert.match(page, /這個情境我已學過/);
   assert.match(page, /下載全部離線語音/);
-  assert.match(page, /setHiddenRole\("reader"\)/);
-  assert.match(page, /setHiddenRole\("librarian"\)/);
+  assert.match(page, /changeRolePlayMode\("reader"\)/);
+  assert.match(page, /changeRolePlayMode\("librarian"\)/);
+  assert.match(page, /changeRolePlayMode\("all"\)/);
+  assert.match(page, /都隱藏/);
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);

@@ -55,6 +55,17 @@ type PlaybackStep =
   | { kind: "silence"; duration: number; turn?: number; label?: string };
 type LoopTarget = { kind: "scenario" } | { kind: "turn"; index: number };
 type PlaybackOptions = { loopTarget?: LoopTarget };
+type RolePlayMode = Role | "all" | null;
+
+const roleIsHidden = (mode: RolePlayMode, role: Role) => mode === "all" || mode === role;
+
+const AUDIO_CACHE_NAME = "nthu-library-audio-v5";
+const LEGACY_AUDIO_CACHE_NAMES = [
+  "nthu-library-audio-v1",
+  "nthu-library-audio-v2",
+  "nthu-library-audio-v3",
+  "nthu-library-audio-v4",
+];
 
 
 const roleName: Record<Role, { en: string; zh: string }> = {
@@ -95,7 +106,7 @@ const statusClass: Record<ReviewState, string> = {
 export default function Home() {
   const [scenarioId, setScenarioId] = useState(1);
   const [tab, setTab] = useState<LessonTab>("dialogue");
-  const [hiddenRole, setHiddenRole] = useState<Role | null>(null);
+  const [hiddenRole, setHiddenRole] = useState<RolePlayMode>(null);
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
   const [isPlaying, setIsPlaying] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
@@ -209,9 +220,10 @@ export default function Home() {
     };
     window.addEventListener("beforeinstallprompt", beforeInstall);
     if ("caches" in window) {
-      caches.delete("nthu-library-audio-v1").catch(() => undefined);
-      caches.delete("nthu-library-audio-v2").catch(() => undefined);
-      caches.has("nthu-library-audio-v3").then(setOfflineReady).catch(() => undefined);
+      for (const cacheName of LEGACY_AUDIO_CACHE_NAMES) {
+        caches.delete(cacheName).catch(() => undefined);
+      }
+      caches.has(AUDIO_CACHE_NAME).then(setOfflineReady).catch(() => undefined);
     }
     return () => window.removeEventListener("beforeinstallprompt", beforeInstall);
   }, []);
@@ -490,7 +502,7 @@ export default function Home() {
   const dialogueSteps = useCallback(
     (item: Scenario, forceAll = false): PlaybackStep[] =>
       item.dialogue.flatMap<PlaybackStep>((turn, index) => {
-        if (!forceAll && hiddenRole === turn.role) {
+        if (!forceAll && roleIsHidden(hiddenRole, turn.role)) {
           return [{
             kind: "silence",
             duration: Math.max(4500, wordCount(turn.en) * 500 + 2500),
@@ -647,6 +659,12 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const changeRolePlayMode = (mode: RolePlayMode) => {
+    stop("尚未播放");
+    setHiddenRole(mode);
+    setRevealed(new Set());
+  };
+
   const activateSleepTimer = () => {
     const minutes = parseSleepTimerMinutes(sleepTimerDraft);
     if (minutes === null) {
@@ -760,7 +778,7 @@ export default function Home() {
   const downloadOffline = async () => {
     if (!("caches" in window)) return;
     setOfflineProgress(0);
-    const cache = await caches.open("nthu-library-audio-v3");
+    const cache = await caches.open(AUDIO_CACHE_NAME);
     for (let index = 0; index < allAudioPaths.length; index += 1) {
       const path = allAudioPaths[index];
       try {
@@ -928,11 +946,12 @@ export default function Home() {
           </div>
           <div className="mode-card">
             <div className="mode-card__title"><span aria-hidden="true">◎</span>角色扮演</div>
-            <p>只隱藏所選角色的英文，中文提示會保持顯示；播放時會留出相同長度讓你開口。</p>
+            <p>可隱藏所選角色或全部英文，中文提示會保持顯示；播放時會留出相同長度讓你開口。</p>
             <div className="segmented" role="group" aria-label="選擇角色扮演模式">
-              <button className={hiddenRole === null ? "is-active" : ""} onClick={() => setHiddenRole(null)}>完整</button>
-              <button className={hiddenRole === "reader" ? "is-active" : ""} onClick={() => setHiddenRole("reader")}>我當讀者</button>
-              <button className={hiddenRole === "librarian" ? "is-active" : ""} onClick={() => setHiddenRole("librarian")}>我當館員</button>
+              <button className={hiddenRole === null ? "is-active" : ""} aria-pressed={hiddenRole === null} onClick={() => changeRolePlayMode(null)}>完整</button>
+              <button className={hiddenRole === "reader" ? "is-active" : ""} aria-pressed={hiddenRole === "reader"} onClick={() => changeRolePlayMode("reader")}>我當讀者</button>
+              <button className={hiddenRole === "librarian" ? "is-active" : ""} aria-pressed={hiddenRole === "librarian"} onClick={() => changeRolePlayMode("librarian")}>我當館員</button>
+              <button className={hiddenRole === "all" ? "is-active" : ""} aria-pressed={hiddenRole === "all"} onClick={() => changeRolePlayMode("all")}>都隱藏</button>
             </div>
           </div>
           <section className={sleepTimerActive ? "sleep-card is-active" : "sleep-card"} aria-labelledby="sleep-timer-heading">
@@ -1021,7 +1040,8 @@ export default function Home() {
               </div>
               <div className="dialogue-list">
                 {scenario.dialogue.map((turn, index) => {
-                  const hidden = hiddenRole === turn.role && !revealed.has(index);
+                  const turnHiddenByMode = roleIsHidden(hiddenRole, turn.role);
+                  const hidden = turnHiddenByMode && !revealed.has(index);
                   const turnLooping = loopTarget?.kind === "turn" && loopTarget.index === index;
                   return (
                     <section
@@ -1035,15 +1055,15 @@ export default function Home() {
                         <span className="turn-number">0{index + 1}</span>
                       </div>
                       <div className="line-copy">
-                        {hidden ? (
+                        {hidden ? (hiddenRole === "all" ? null : (
                           <div className="hidden-line"><p>輪到你說這一句</p><span>先試著說，再顯示英文答案或聽示範。</span></div>
-                        ) : (
+                        )) : (
                           <p className="english">{turn.en}</p>
                         )}
                         <p className="chinese">（{roleName[turn.role].zh}：{turn.zh}）</p>
                       </div>
                       <div className="line-actions">
-                        {hiddenRole === turn.role && <button onClick={() => toggleReveal(index)}>{hidden ? "顯示答案" : "再次隱藏"}</button>}
+                        {turnHiddenByMode && <button onClick={() => toggleReveal(index)}>{hidden ? "顯示答案" : "再次隱藏"}</button>}
                         <button onClick={() => playTurn(index)}>◉ 聽本句示範</button>
                         <button
                           className={turnLooping ? "is-looping" : undefined}

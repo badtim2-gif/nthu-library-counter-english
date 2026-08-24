@@ -1,4 +1,5 @@
 const assert = require("node:assert/strict");
+const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
 const ts = require("typescript");
@@ -24,6 +25,12 @@ const manifest = JSON.parse(
 );
 const report = JSON.parse(
   fs.readFileSync(path.join(project, "public", "audio", "audio-report.json"), "utf8"),
+);
+const alphabetSources = JSON.parse(
+  fs.readFileSync(
+    path.join(project, "public", "audio", "alphabet-audio-sources.json"),
+    "utf8",
+  ),
 );
 
 assert.equal(allAudioPaths.length, 708);
@@ -54,6 +61,30 @@ assert.ok(report.english_wpm_min >= 115);
 assert.ok(report.english_wpm_max <= 125);
 assert.deepEqual(report.outside_115_125, []);
 
+assert.equal(alphabetSources.status, "approved-production");
+assert.equal(alphabetSources.speaker_policy, "single speaker only");
+assert.equal(alphabetSources.author, "Brannon Wyndesor");
+assert.equal(alphabetSources.license, "CC BY-SA 3.0");
+assert.equal(alphabetSources.records.length, 26);
+assert.equal(new Set(alphabetSources.records.map((record) => record.candidate_sha256)).size, 26);
+
+const letterEntries = manifest.entries.filter((entry) => entry.kind === "letter");
+assert.equal(letterEntries.length, 26);
+for (let index = 0; index < 26; index += 1) {
+  const letter = String.fromCharCode(65 + index);
+  const entry = letterEntries[index];
+  const sourceRecord = alphabetSources.records[index];
+  assert.equal(entry.file, `alphabet-${letter.toLowerCase()}.mp3`);
+  assert.equal(entry.text, letter);
+  assert.equal(entry.voice, "human-Brannon-Wyndesor");
+  assert.equal(entry.rate, 0);
+  assert.equal(sourceRecord.letter, letter);
+  assert.equal(sourceRecord.candidate_file, entry.file);
+  const file = path.join(project, "public", "audio", entry.file);
+  const digest = crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+  assert.equal(digest, sourceRecord.candidate_sha256, `Unapproved alphabet audio: ${entry.file}`);
+}
+
 for (const entry of manifest.entries) {
   assert.doesNotMatch(entry.text, /\[[^\]]*]/, `KK entered speech: ${entry.file}`);
   assert.doesNotMatch(entry.text, /[*\/-]/, `Forbidden symbol entered speech: ${entry.file}`);
@@ -65,11 +96,13 @@ for (const entry of manifest.entries) {
   );
 
   const language = entry.language === "zh" ? "chinese" : "english";
-  assert.equal(
-    entry.voice,
-    manifest.voices[language][entry.role],
-    `Wrong ${language} voice: ${entry.file}`,
-  );
+  if (entry.kind !== "letter") {
+    assert.equal(
+      entry.voice,
+      manifest.voices[language][entry.role],
+      `Wrong ${language} voice: ${entry.file}`,
+    );
+  }
   if (entry.language === "zh") {
     assert.match(entry.voice, /^zh-TW-/, `Chinese voice is not Taiwan Mandarin: ${entry.file}`);
   }
