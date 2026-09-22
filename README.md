@@ -15,3 +15,12 @@ https://badtim2-gif.github.io/nthu-library-counter-english/
 - 支援 PWA 安裝與離線語音下載
 
 政策資訊附官方來源與查核日期；實際服務資格與規定仍以清大圖書館最新公告為準。
+
+## 素材來源與授權
+
+- 網站頁尾提供「素材來源、第三方授權及著作權聲明」。
+- 二十個情境均列出清大圖書館官方資料來源。
+- 真人 A–Z 字母錄音依 CC BY-SA 3.0 授權使用，作者、修改內容及成品雜湊均有記錄。
+- 682 段教學合成語音以 Apache-2.0 授權的 Kokoro 模型在本機產生；逐檔文字、固定模型版本、聲線與成品雜湊均有記錄。
+- 開源套件、圖像與完整授權說明見 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+- 執行 `pnpm licenses:report` 可依鎖定版本重建 `public/third-party-packages.json` 完整套件清單。

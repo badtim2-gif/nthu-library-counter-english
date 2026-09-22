@@ -32,6 +32,12 @@ const alphabetSources = JSON.parse(
     "utf8",
   ),
 );
+const kokoroSources = JSON.parse(
+  fs.readFileSync(
+    path.join(project, "public", "audio", "kokoro-audio-sources.json"),
+    "utf8",
+  ),
+);
 
 assert.equal(allAudioPaths.length, 708);
 assert.equal(new Set(allAudioPaths).size, 708);
@@ -43,14 +49,14 @@ for (const publicPath of allAudioPaths) {
 
 assert.deepEqual(manifest.voices, {
   english: {
-    reader: "en-US-BrianMultilingualNeural",
-    librarian: "en-US-AvaMultilingualNeural",
-    explainer: "en-US-AndrewMultilingualNeural",
+    reader: "kokoro-v1.0/am_fenrir",
+    librarian: "kokoro-v1.1-zh/af_maple",
+    explainer: "kokoro-v1.0/am_puck",
   },
   chinese: {
-    reader: "zh-TW-YunJheNeural",
-    librarian: "zh-TW-HsiaoChenNeural",
-    explainer: "zh-TW-YunJheNeural",
+    reader: "kokoro-v1.1-zh/zm_010",
+    librarian: "kokoro-v1.1-zh/zm_010",
+    explainer: "kokoro-v1.1-zh/zm_010",
   },
 });
 assert.equal(manifest.entries.length, 708);
@@ -60,6 +66,39 @@ assert.equal(report.english_wpm_target, 120);
 assert.ok(report.english_wpm_min >= 115);
 assert.ok(report.english_wpm_max <= 125);
 assert.deepEqual(report.outside_115_125, []);
+assert.equal(report.synthetic_clip_count, 682);
+assert.equal(report.alphabet_clip_count, 26);
+assert.ok(report.loudness_min_lufs >= -23.3);
+assert.ok(report.loudness_max_lufs <= -21.3);
+assert.ok(report.maximum_true_peak_dbfs <= -3);
+
+assert.equal(kokoroSources.status, "approved-production");
+assert.equal(kokoroSources.license, "Apache-2.0");
+assert.equal(kokoroSources.clip_count, 682);
+assert.equal(kokoroSources.unique_sha256_count, 682);
+assert.equal(kokoroSources.records.length, 682);
+assert.equal(kokoroSources.models["v1.0"].revision, "f3ff3571791e39611d31c381e3a41a3af07b4987");
+assert.equal(kokoroSources.models["v1.1-zh"].revision, "8913be6a3a2d1b410c83c24fb7b8821a8843b0c5");
+assert.equal(new Set(kokoroSources.records.map((record) => record.sha256)).size, 682);
+
+const kokoroRecords = new Map(
+  kokoroSources.records.map((record) => [record.file, record]),
+);
+for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
+  const record = kokoroRecords.get(entry.file);
+  assert.ok(record, `Missing Kokoro source record: ${entry.file}`);
+  assert.equal(entry.voice, `kokoro-${record.model}/${record.voice}`);
+  assert.equal(entry.speed, record.speed);
+  assert.equal(entry.model, record.model);
+  assert.equal(record.technical.codec, "mp3");
+  assert.equal(record.technical.sample_rate, 24000);
+  assert.equal(record.technical.channels, 1);
+  assert.ok(Math.abs(record.loudness.integrated_lufs - -22.3) <= 1);
+  assert.ok(record.loudness.true_peak_dbfs <= -3);
+  const file = path.join(project, "public", "audio", entry.file);
+  const digest = crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+  assert.equal(digest, record.sha256, `Unapproved Kokoro audio: ${entry.file}`);
+}
 
 assert.equal(alphabetSources.status, "approved-production");
 assert.equal(alphabetSources.speaker_policy, "single speaker only");
@@ -104,7 +143,7 @@ for (const entry of manifest.entries) {
     );
   }
   if (entry.language === "zh") {
-    assert.match(entry.voice, /^zh-TW-/, `Chinese voice is not Taiwan Mandarin: ${entry.file}`);
+    assert.equal(entry.voice, "kokoro-v1.1-zh/zm_010", `Wrong Chinese voice: ${entry.file}`);
   }
 }
 
@@ -112,5 +151,5 @@ console.log(
   `Audio validation passed: ${report.clip_count} clips, ` +
     `${report.english_long_count} English clips at ` +
     `${report.english_wpm_min}-${report.english_wpm_max} WPM; ` +
-    `all Chinese clips use zh-TW voices.`,
+    `all 682 synthetic clips match the approved Kokoro hashes.`,
 );

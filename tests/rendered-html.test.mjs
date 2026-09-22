@@ -14,6 +14,18 @@ async function render() {
   );
 }
 
+async function renderCredits() {
+  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+  workerUrl.searchParams.set("credits-test", `${process.pid}-${Date.now()}`);
+  const { default: worker } = await import(workerUrl.href);
+  const fetch = typeof worker === "function" ? worker : worker.fetch.bind(worker);
+  return fetch(
+    new Request("http://localhost/credits", { headers: { accept: "text/html" } }),
+    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
+    { waitUntil() {}, passThroughOnException() {} },
+  );
+}
+
 test("server-renders the course shell and PWA metadata", async () => {
   const response = await render();
   assert.equal(response.status, 200);
@@ -26,8 +38,24 @@ test("server-renders the course shell and PWA metadata", async () => {
   assert.match(html, /manifest\.webmanifest/);
   assert.match(html, /循環播放整個情境/);
   assert.match(html, /循環播放第 1 句/);
+  assert.match(html, /素材來源、第三方授權及著作權聲明/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
+});
+
+test("server-renders material sources and license notices", async () => {
+  const response = await renderCredits();
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /© 2026 國立清華大學圖書館/);
+  assert.match(html, /Brannon Wyndesor/);
+  assert.match(html, /CC BY-SA 3\.0/);
+  assert.match(html, /am_fenrir/);
+  assert.match(html, /Apache License 2\.0/);
+  assert.match(html, /KOKORO-APACHE-2\.0\.txt/);
+  assert.match(html, /權益聲明與召回政策/);
+  assert.match(html, /THIRD_PARTY_NOTICES\.md/);
+  assert.match(html, /third-party-packages\.json/);
 });
 
 test("keeps the final app free of starter preview code", async () => {
@@ -51,7 +79,8 @@ test("keeps the final app free of starter preview code", async () => {
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);
-  assert.match(serviceWorker, /nthu-library-shell-v7/);
+  assert.match(serviceWorker, /nthu-library-shell-v8/);
+  assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
   await access(new URL("../public/img_20260726120102.png", import.meta.url));
   await access(new URL("../public/img_20260726121722.png", import.meta.url));

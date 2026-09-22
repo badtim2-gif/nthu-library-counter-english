@@ -1,10 +1,12 @@
-const SHELL_CACHE = "nthu-library-shell-v7";
-const AUDIO_CACHE = "nthu-library-audio-v5";
+const SHELL_CACHE = "nthu-library-shell-v8";
+const AUDIO_CACHE = "nthu-library-audio-v6";
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const withBase = (path) => `${BASE_PATH}${path}`;
 const SHELL_FILES = [
   withBase("/"),
+  withBase("/credits/"),
   withBase("/manifest.webmanifest"),
+  withBase("/third-party-packages.json"),
   withBase("/img_20260726120102.png")
 ];
 
