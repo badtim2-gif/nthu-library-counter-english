@@ -1333,7 +1333,7 @@ export default function Home() {
       <footer className="site-footer">
         <div><strong>NTHU Library Counter English Lab</strong><p>國立清華大學圖書館櫃台英語教學練習</p></div>
         <div className="site-footer__legal">
-          <span>© 2026 國立清華大學圖書館 · 教學練習用 · 政策資訊請以官方網站為準</span>
+          <span>圖書館英語教學練習專案 · 非校方政策發布頁面 · 政策資訊請以官方網站為準</span>
           <a href={assetPath("/credits/")}>素材來源、第三方授權及著作權聲明</a>
         </div>
       </footer>

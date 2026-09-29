@@ -24,3 +24,9 @@ https://badtim2-gif.github.io/nthu-library-counter-english/
 - 682 段教學合成語音以 Apache-2.0 授權的 Kokoro 模型在本機產生；逐檔文字、固定模型版本、聲線與成品雜湊均有記錄。
 - 開源套件、圖像與完整授權說明見 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 - 執行 `pnpm licenses:report` 可依鎖定版本重建 `public/third-party-packages.json` 完整套件清單。
+
+## 專案授權狀態
+
+- 本儲存庫雖公開可閱覽，但目前未授予專案整體的開源或開放內容授權；除另有標示者外，原創部分保留權利。
+- A–Z 字母錄音仍依 CC BY-SA 3.0 授權；姓名標示與相同方式分享義務只適用於該錄音及其改作，不會自動將整個網站改授權為 CC BY-SA。
+- 授權邊界、第三方例外與名稱使用說明見 [LICENSE](LICENSE) 及 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

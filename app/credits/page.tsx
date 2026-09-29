@@ -38,12 +38,13 @@ export default function CreditsPage() {
 
       <div className="credits-content">
         <section className="credits-card" aria-labelledby="copyright-heading">
-          <h2 id="copyright-heading">著作權聲明</h2>
-          <p><strong>© 2026 國立清華大學圖書館。除另有標示外，保留所有權利。</strong></p>
+          <h2 id="copyright-heading">專案權利狀態</h2>
           <p>
-            本專案原創的程式、教學對話、翻譯、文法與單字編排及專案視覺，
-            僅供圖書館英語教育與服務訓練使用。第三方素材依各自授權條款利用，
-            不因收錄於本網站而改變其權利歸屬。
+            本專案目前未授予專案整體的開源或開放內容授權。除另有標示的第三方素材外，原創程式、教學對話、翻譯、文法與單字編排及視覺設計，由各自適法權利人保留權利。公開放置於 GitHub 不等於授權他人重製、散布、改作或商業利用。
+          </p>
+          <p className="credits-note">
+            本網站目前發布於個人 GitHub Pages 網域，並非清大官方網域。該部署位置本身不證明校方已核定為官方網站，也不代表校方已對著作權或商標作出授權。職務著作的權利歸屬，應依法、契約與校方核定判斷。
+            {" "}<a href="https://github.com/badtim2-gif/nthu-library-counter-english/blob/main/LICENSE" target="_blank" rel="noreferrer">閱讀專案 LICENSE ↗</a>
           </p>
         </section>
 
@@ -94,6 +95,10 @@ export default function CreditsPage() {
             並將 B 額外降低 2 dB。加工後的字母音檔依相同 CC BY-SA 3.0 條件提供；
             完整雜湊及加工參數記錄於公開專案的 <code>alphabet-audio-sources.json</code>。
           </p>
+          <p className="credits-note">
+            若再散布字母音檔或其改作，應保留作者與來源標示、連結授權、說明修改，並對改作採相同授權。這些義務適用於字母錄音及其改作，不會自動將整個網站或獨立程式碼改授權為 CC BY-SA。
+          </p>
+
         </section>
 
         <section className="credits-card" aria-labelledby="software-heading">
@@ -115,12 +120,13 @@ export default function CreditsPage() {
         <section className="credits-card" aria-labelledby="visual-heading">
           <h2 id="visual-heading">圖像、名稱與聲明</h2>
           <p>
-            應用程式圖示與社群分享圖為本專案製作的識別圖像；網站未使用第三方攝影作品或圖庫照片。
-            「國立清華大學」、「清大」、「NTHU」及圖書館名稱僅用於標示服務與教學情境，
-            不授權第三人另行使用相關名稱、標誌或識別。
+            應用程式圖示與社群分享圖為本專案製作的識別圖像；網站未使用第三方攝影作品或圖庫照片。校名、圖書館名稱、校徽與標準字的權利由校方依法管理；本專案無權且不嘗試對第三人授予任何校方商標權利。
           </p>
           <p>
-            本網站為教學練習工具，不取代正式規章、個案審查或館員答覆。
+            如欲將相關名稱或標誌用於其他專案、宣傳或商業活動，應依
+            {" "}<a href="https://www.nthu.edu.tw/files/cis/trademarkofnthu.pdf" target="_blank" rel="noreferrer">《國立清華大學商標使用管理要點》↗</a>
+            {" "}向校方確認授權，或自行確認是否符合適用法律之合理使用；不得暗示校方授權、贊助、推薦或背書。
+            本網站並非校方政策或規章的正式發布頁面，不取代正式規章、個案審查或館員答覆。
             發現來源、授權或內容標示有誤時，請透過清大圖書館官方聯絡管道反映，以便查核及修正。
           </p>
         </section>
@@ -128,7 +134,7 @@ export default function CreditsPage() {
 
       <footer className="credits-footer">
         <a href={assetPath("/")}>返回首頁</a>
-        <span>最後更新：2026-09-21</span>
+        <span>最後更新：2026-09-26</span>
       </footer>
     </main>
   );

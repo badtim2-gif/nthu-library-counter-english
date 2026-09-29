@@ -47,7 +47,11 @@ test("server-renders material sources and license notices", async () => {
   const response = await renderCredits();
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /© 2026 國立清華大學圖書館/);
+  assert.match(html, /未授予專案整體的開源或開放內容授權/);
+  assert.match(html, /並非清大官方網域/);
+  assert.match(html, /不會自動將整個網站或獨立程式碼改授權為 CC BY-SA/);
+  assert.match(html, /國立清華大學商標使用管理要點/);
+  assert.doesNotMatch(html, /© 2026 國立清華大學圖書館/);
   assert.match(html, /Brannon Wyndesor/);
   assert.match(html, /CC BY-SA 3\.0/);
   assert.match(html, /am_fenrir/);
@@ -56,6 +60,17 @@ test("server-renders material sources and license notices", async () => {
   assert.match(html, /權益聲明與召回政策/);
   assert.match(html, /THIRD_PARTY_NOTICES\.md/);
   assert.match(html, /third-party-packages\.json/);
+});
+
+test("keeps the repository license boundary explicit", async () => {
+  const [license, packageJson] = await Promise.all([
+    readFile(new URL("../LICENSE", import.meta.url), "utf8"),
+    readFile(new URL("../package.json", import.meta.url), "utf8"),
+  ]);
+  assert.match(license, /does not grant a project-wide open-source/);
+  assert.match(license, /Creative Commons Attribution-ShareAlike 3\.0/);
+  assert.match(license, /do not\s+automatically relicense independent files/);
+  assert.equal(JSON.parse(packageJson).license, "UNLICENSED");
 });
 
 test("keeps the final app free of starter preview code", async () => {

@@ -1,0 +1,41 @@
+# Project License Notice
+
+This repository does not grant a project-wide open-source or open-content
+license.
+
+Unless a file or component is expressly identified below or in
+`THIRD_PARTY_NOTICES.md` as being subject to another license, the original
+source code, teaching text, translations, visual design, and other original
+project materials are all rights reserved by their respective rightsholders.
+Public availability on GitHub does not by itself grant permission to reproduce,
+distribute, modify, sublicense, or commercially exploit those materials, except
+to the extent permitted by applicable law, the GitHub Terms of Service, or a
+separate written authorization from the relevant rightsholder.
+
+The authorship and ownership of materials created in the course of employment
+are determined by applicable law, employment agreements, and institutional
+decisions. This notice does not purport to decide those matters on behalf of
+National Tsing Hua University or its Library.
+
+## Separately licensed material
+
+- `public/audio/alphabet-a.mp3` through `public/audio/alphabet-z.mp3` are
+  adaptations of Brannon Wyndesor's "A-Z Male Voice" and are provided under
+  Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0). The
+  required attribution, source, modifications, and hashes are recorded in
+  `public/audio/alphabet-audio-attribution.txt` and
+  `public/audio/alphabet-audio-sources.json`. The attribution and ShareAlike
+  requirements apply to these recordings and adaptations of them; they do not
+  automatically relicense independent files in this repository.
+- Third-party software dependencies remain under their respective licenses.
+  See `THIRD_PARTY_NOTICES.md` and `public/third-party-packages.json`.
+- The Kokoro model provenance and Apache License 2.0 notice are recorded in
+  `THIRD_PARTY_NOTICES.md` and `public/audio/KOKORO-APACHE-2.0.txt`. That model
+  notice does not grant a project-wide license to this repository.
+
+Names, trademarks, and logos of National Tsing Hua University are not licensed
+by this notice. Their use is subject to the University's rules and applicable
+law. Nothing in this repository may be used to imply University authorization,
+sponsorship, or endorsement without the University's approval.
+
+Last updated: 2026-09-26
