@@ -55,6 +55,7 @@
 
 - 作品：A-Z Male Voice
 - 作者：Brannon Wyndesor
+- 作者指定署名：Brannon Wyndesor，www.wyndesor.com
 - 來源：https://opengameart.org/content/a-z-male-voice
 - 授權：[Creative Commons Attribution-ShareAlike 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 - 修改：轉換為 24 kHz 單聲道 MP3、響度正規化、加入首尾安全靜音，並將 B 額外降低 2 dB。

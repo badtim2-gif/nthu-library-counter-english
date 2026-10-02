@@ -1,5 +1,5 @@
 A-Z Male Voice
-Author: Brannon Wyndesor
+Author: Brannon Wyndesor (www.wyndesor.com)
 Source: https://opengameart.org/content/a-z-male-voice
 License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
 Changes: converted to mono 24 kHz MP3, loudness-normalized, safety silence added, and B attenuated for the candidate preview.

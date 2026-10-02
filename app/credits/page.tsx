@@ -86,7 +86,7 @@ export default function CreditsPage() {
 
           <h3>真人 A–Z 字母錄音</h3>
           <p>
-            字母 A–Z 使用 Brannon Wyndesor 的
+            字母 A–Z 使用 <a href="https://www.wyndesor.com" target="_blank" rel="noreferrer">Brannon Wyndesor</a> 的
             {" "}<a href="https://opengameart.org/content/a-z-male-voice" target="_blank" rel="noreferrer">A-Z Male Voice</a>，
             依 <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a> 授權。
           </p>
