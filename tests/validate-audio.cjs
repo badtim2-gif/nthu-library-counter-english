@@ -89,6 +89,7 @@ for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
   assert.ok(record, `Missing Kokoro source record: ${entry.file}`);
   assert.equal(entry.voice, `kokoro-${record.model}/${record.voice}`);
   assert.equal(entry.speed, record.speed);
+  assert.equal(entry.phonemes, record.phonemes);
   assert.equal(entry.model, record.model);
   assert.equal(record.technical.codec, "mp3");
   assert.equal(record.technical.sample_rate, 24000);

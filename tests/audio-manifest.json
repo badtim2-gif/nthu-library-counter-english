@@ -259,7 +259,8 @@
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.8,
+      "speed": 0.75,
+      "phonemes": "pɹˈɪvəlɪʤ.",
       "model": "v1.0"
     },
     {

@@ -1,6 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
+  "updated_at": "2026-10-07",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -1010,20 +1011,28 @@
       "file": "s01-v03-word.mp3",
       "model": "v1.0",
       "voice": "am_puck",
-      "speed": 0.8,
-      "sha256": "7fc35873b411a1a7a161276e68cfda1c07cb9574603315fbff4bcb0d5834ddb2",
+      "speed": 0.75,
+      "phonemes": "pɹˈɪvəlɪʤ.",
+      "pronunciation_reference": "https://dictionary.cambridge.org/us/pronunciation/english/privilege",
+      "approval": {
+        "approved_on": "2026-10-07",
+        "candidate": "A",
+        "reason": "Clearer ending of privilege, using the same Puck voice",
+        "previous_sha256": "7fc35873b411a1a7a161276e68cfda1c07cb9574603315fbff4bcb0d5834ddb2"
+      },
+      "sha256": "74a25846cc26e03f5041ba5a41c5b5828386038692c634ff792a1fe6d64c7c29",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.8
+        "duration_seconds": 2.025
       },
       "loudness": {
-        "integrated_lufs": -22.76,
-        "true_peak_dbfs": -6.71,
+        "integrated_lufs": -22.77,
+        "true_peak_dbfs": -6.73,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.13
+        "threshold_lufs": -34.35
       },
       "boundary_peaks": {
         "leading_40ms": 4e-08,

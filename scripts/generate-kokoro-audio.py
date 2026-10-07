@@ -240,9 +240,16 @@ def select_voice(entry: dict[str, object]) -> str:
     return "explainer-en"
 
 
-def synthesize(pipeline: KPipeline, text: str, voice_pack: torch.Tensor, speed: float) -> np.ndarray:
+def synthesize(
+    pipeline: KPipeline, text: str, voice_pack: torch.Tensor, speed: float,
+    phonemes: str | None = None,
+) -> np.ndarray:
     parts: list[np.ndarray] = []
-    for result in pipeline(text, voice=voice_pack, speed=speed):
+    results = (
+        pipeline.generate_from_tokens(phonemes, voice=voice_pack, speed=speed)
+        if phonemes else pipeline(text, voice=voice_pack, speed=speed)
+    )
+    for result in results:
         audio = result.audio
         if audio is None:
             continue
@@ -339,12 +346,16 @@ def main() -> int:
             filename = entry["file"]
             raw_path = raw_dir / filename.replace(".mp3", ".wav")
             output_path = audio_dir / filename
-            if not raw_path.exists():
+            speed = float(entry.get("speed", spec["speed"]))
+            phonemes = entry.get("phonemes")
+            # Overrides must not reuse WAVs generated with the default pronunciation.
+            if not raw_path.exists() or phonemes or speed != spec["speed"]:
                 audio = synthesize(
                     pipelines[spec["lang_code"]],
                     entry["text"],
                     voice_packs[voice_key],
-                    spec["speed"],
+                    speed,
+                    phonemes,
                 )
                 sf.write(raw_path, audio, SAMPLE_RATE, subtype="PCM_16")
             normalization_input = raw_path
@@ -377,7 +388,7 @@ def main() -> int:
                 "kind": entry["kind"],
                 "model": model_key,
                 "voice": spec["voice"],
-                "speed": spec["speed"],
+                "speed": speed,
                 "applied_target_lufs": round(applied_target, 2),
                 "sha256": sha256(output_path),
                 "technical": technical,
@@ -385,10 +396,12 @@ def main() -> int:
                 "boundary_peaks": boundaries,
                 "checks": checks,
             }
+            if phonemes:
+                record["phonemes"] = phonemes
             if tempo is not None and words is not None:
                 effective_duration = max(0.05, technical["duration_seconds"] - LEAD_SECONDS - TAIL_SECONDS)
                 record["timing"] = {
-                    "base_kokoro_speed": spec["speed"],
+                    "base_kokoro_speed": speed,
                     "postprocess_atempo": round(tempo, 8),
                     "word_count": words,
                     "verified_wpm": round(words / effective_duration * 60.0, 1),
