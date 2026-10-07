@@ -10,7 +10,7 @@ import {
   type Role,
   type Scenario,
 } from "./scenarios";
-import { assetPath } from "./paths";
+import { assetPath, versionedAudioPath } from "./paths";
 import { runPlaybackQueue } from "./playback-loop";
 import {
   clearScenarioProgress,
@@ -66,7 +66,7 @@ type RolePlayMode = Role | "all" | null;
 
 const roleIsHidden = (mode: RolePlayMode, role: Role) => mode === "all" || mode === role;
 
-const AUDIO_CACHE_NAME = "nthu-library-audio-v7";
+const AUDIO_CACHE_NAME = "nthu-library-audio-v8";
 const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v1",
   "nthu-library-audio-v2",
@@ -74,6 +74,7 @@ const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v4",
   "nthu-library-audio-v5",
   "nthu-library-audio-v6",
+  "nthu-library-audio-v7",
 ];
 
 
@@ -382,7 +383,7 @@ export default function Home() {
       audio.preload = "auto";
       audioRef.current = audio;
       audioModeRef.current = "html";
-      audio.src = src;
+      audio.src = versionedAudioPath(src, AUDIO_CACHE_NAME);
       audio.load();
       const finish = () => {
         audio.removeEventListener("ended", finish);
@@ -414,7 +415,7 @@ export default function Home() {
           const oldest = audioBufferCacheRef.current.keys().next().value;
           if (oldest) audioBufferCacheRef.current.delete(oldest);
         }
-        bufferPromise = fetch(src, { cache: "force-cache" })
+        bufferPromise = fetch(versionedAudioPath(src, AUDIO_CACHE_NAME), { cache: "no-cache" })
           .then((response) => {
             if (!response.ok) throw new Error(`Audio request failed: ${response.status}`);
             return response.arrayBuffer();
@@ -847,9 +848,9 @@ export default function Home() {
     setOfflineProgress(0);
     const cache = await caches.open(AUDIO_CACHE_NAME);
     for (let index = 0; index < allAudioPaths.length; index += 1) {
-      const path = allAudioPaths[index];
+      const path = versionedAudioPath(allAudioPaths[index], AUDIO_CACHE_NAME);
       try {
-        const response = await fetch(path);
+        const response = await fetch(path, { cache: "no-cache" });
         if (response.ok) await cache.put(path, response);
       } catch {
         // Keep successful files and allow a later retry.

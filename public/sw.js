@@ -1,5 +1,5 @@
-const SHELL_CACHE = "nthu-library-shell-v9";
-const AUDIO_CACHE = "nthu-library-audio-v7";
+const SHELL_CACHE = "nthu-library-shell-v10";
+const AUDIO_CACHE = "nthu-library-audio-v8";
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const withBase = (path) => `${BASE_PATH}${path}`;
 const SHELL_FILES = [
@@ -40,8 +40,11 @@ self.addEventListener("fetch", (event) => {
       caches.open(AUDIO_CACHE).then(async (cache) => {
         const cached = await cache.match(event.request);
         if (cached) return cached;
-        const response = await fetch(event.request);
-        if (response.ok) cache.put(event.request, response.clone());
+        const response = await fetch(event.request, { cache: "reload" });
+        if (response.ok) {
+          // A storage failure must not interrupt a successfully downloaded clip.
+          await cache.put(event.request, response.clone()).catch(() => undefined);
+        }
         return response;
       })
     );
