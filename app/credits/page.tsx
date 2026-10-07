@@ -86,7 +86,7 @@ export default function CreditsPage() {
 
           <h3>真人 A–Z 字母錄音</h3>
           <p>
-            字母 A–Z 使用 <a href="https://www.wyndesor.com" target="_blank" rel="noreferrer">Brannon Wyndesor</a> 的
+            字母 A–Z 使用 <a href="https://opengameart.org/content/a-z-male-voice" target="_blank" rel="noreferrer">Brannon Wyndesor</a> 的
             {" "}<a href="https://opengameart.org/content/a-z-male-voice" target="_blank" rel="noreferrer">A-Z Male Voice</a>，
             依 <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a> 授權。
           </p>
@@ -96,6 +96,8 @@ export default function CreditsPage() {
             完整雜湊及加工參數記錄於公開專案的 <code>alphabet-audio-sources.json</code>。
           </p>
           <p className="credits-note">
+            作者指定署名：Brannon Wyndesor www.wyndesor.com。
+            {" "}
             若再散布字母音檔或其改作，應保留作者與來源標示、連結授權、說明修改，並對改作採相同授權。這些義務適用於字母錄音及其改作，不會自動將整個網站或獨立程式碼改授權為 CC BY-SA。
           </p>
 
@@ -134,7 +136,7 @@ export default function CreditsPage() {
 
       <footer className="credits-footer">
         <a href={assetPath("/")}>返回首頁</a>
-        <span>最後更新：2026-09-26</span>
+        <span>最後更新：2026-10-07</span>
       </footer>
     </main>
   );

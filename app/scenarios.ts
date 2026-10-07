@@ -70,7 +70,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "reader",
-        en: "Will my borrowing privileges become active [ˋæktɪv] immediately [ɪˋmidɪɪtlɪ]?",
+        en: "Will my borrowing privileges become active [ˋæktɪv] immediately [ɪˋmidɪətlɪ]?",
         zh: "我的借閱權限會立刻啟用嗎？",
       },
       {
