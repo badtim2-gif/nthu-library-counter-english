@@ -35,6 +35,8 @@ test("server-renders the course shell and PWA metadata", async () => {
   assert.match(html, /清大圖書館英語情境練習室/);
   assert.match(html, /Counter English Lab/);
   assert.match(html, /二十個真實服務情境/);
+  assert.match(html, /跟著讀者與館員的對話慢速聽、逐句看，再關掉英文提示親自說一次。/);
+  assert.doesNotMatch(html, /跟著三位角色/);
   assert.match(html, /manifest\.webmanifest/);
   assert.match(html, /循環播放整個情境/);
   assert.match(html, /循環播放第 1 句/);

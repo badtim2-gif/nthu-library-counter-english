@@ -875,7 +875,7 @@ export default function Home() {
             <h1>清大圖書館<br />英語情境練習室</h1>
             <p className="hero__copy">
               二十個真實服務情境，從權益聲明、借還館藏到空間與網路服務。
-              跟著三位角色慢速聽、逐句看，再關掉提示親自說一次。
+              跟著讀者與館員的對話慢速聽、逐句看，再關掉英文提示親自說一次。
             </p>
             <div className="hero__actions">
               <button className="button button--primary" onClick={playDialogue}>▶ 開始本課示範</button>
