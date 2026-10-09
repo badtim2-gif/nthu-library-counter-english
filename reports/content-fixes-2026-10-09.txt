@@ -1,0 +1,153 @@
+圖書館櫃台英語教材修正紀錄
+日期：2026-10-09
+基準版本：1542fd11b6b215ac6bcdd767adb3d2cd0cd1ecba
+範圍：前次檢查報告 B01–B09、C01–C07 已完成修正；D01、D02 保留待館員確認。
+狀態：本機專案已更新，未提交、推送或部署；線上網站不應視為已更新。
+
+一、教材修正
+1. 第1課：改正 before 句型的先後順序解說；第一次做某事的標題與解說更精確。
+2. 第9課 maximum：形容詞釋義統一為「最大的、最高的」。
+3. 第11課：訪客年齡改成 aged eighteen or older，包含恰好18歲，對應中文「年滿十八歲」；目的不定詞解說對應實際句子中的 to avoid。
+4. 第13課：第一句改成書尚未歸還、已逾期五天，修正與後續續借詢問的矛盾；中文、句型、文法同步更新。
+5. 第14課：文法標題改為「情態動詞搭配被動語態」，並說明核准條件。
+6. 第15課：on shelf 改為 on the shelf，對話、單字詞條及音標同步調整。
+7. 第16課：改問 How long will the book be held for me?，明確詢問預約書保留時間；中文、句型同步更新。
+8. 第17課 no-show：改標名詞，釋義「預約未到、未到者」，補齊重音標示。
+9. 第18課：How can I ... 是直接問句；has been idle 是現在完成式描述狀態，不是被動語態。
+10. 第20課：圖書代借使用 proxy borrower；原 trustee 單字改為 borrower，proxy 名詞釋義同步修正。
+11. 將舊式字型代碼「!」改為可直接閱讀的音標，共27處，包括 original、reciprocal、settle、eligible、applicable、available、catalog、cancel、penalty、idle、signal。此為標示統一，不是宣稱所有舊式寫法的發音錯誤。
+
+二、語音及快取
+重製25個受影響的音檔；保留既有角色聲音、模型及語速設定。
+逐檔通過MP3格式、24 kHz單聲道、音量、峰值與前後安全靜音檢查；25份SHA-256皆不同。
+更新 audio-manifest、Kokoro來源紀錄與音量／語速統計。
+音訊快取升至 nthu-library-audio-v9；網站快取升至 nthu-library-shell-v11。
+補上教材文字與682份合成音檔朗讀稿一致性的自動檢查。
+產製工具可用 --files 只重製指定音檔；字母A至Z的第三方錄音未更換。
+以上為產製與技術驗證；未聲稱已逐段人工聽音驗收。
+
+三、仍需館員確認
+D01 第7課：離校時文件傳遞的影印本是否應取件且繳清費用，而非歸還；與第4課可保留影印本的說明須對齊。
+D02 第6課：電子書薦購通過後是否也會自動預約，官方概括說明是否適用此情境。
+這兩項涉及實際服務規定，本次未自行決定政策，也未更改政策查核日期 CHECKED_AT。
+
+四、驗證
+已通過：20課教材完整性檢查。
+已通過：708個音檔路徑及682個合成音檔來源雜湊，朗讀稿與教材一致。
+已通過：33項播放器、快取、複習進度、睡眠計時等測試，以及5項伺服器呈現測試，共38項。
+已通過：vinext網站建置。
+已通過：Next.js Pages正式預設建置器的靜態匯出、TypeScript檢查及 validate-pages-static 驗證。
+Pages驗證於D槽暫存副本進行，僅在副本設定共用套件根目錄以容納套件連結；專案正式 next.config.ts 未更動。
+已核對：驗證套件副本的package.json與pnpm-lock.yaml皆與專案相同。
+已通過：git diff --check。
+限制：原有 npm run lint 缺少 eslint.config 設定檔，無法執行；不是已通過的檢查。
+未修改Google試算表，未確認線上部署版本。
+
+五、來源核對
+年滿18歲：https://www.lib.nthu.edu.tw/use/in_lib_service.html
+borrower 的美式發音與詞義：https://dictionary.cambridge.org/pronunciation/english/borrower
+no-show 的名詞詞性與重音：https://dictionary.cambridge.org/dictionary/english/no-show
+其餘檢查依據參閱 content-review-2026-10-09.txt。
+
+六、可供工讀生複測的25個音檔（先確認網站已部署本次版本）
+每段完整聽完，比對下列新朗讀文字是否相符，並注意漏讀、截斷及明顯發音疑義。
+
+s01-p02-zh.mp3
+修改前：用來有禮貌地說明先後順序，先完成前項條件，再進行後項。
+修改後：用來有禮貌地說明先後順序；先完成請求的動作，再進行時間子句所述的動作，例如先查看帳戶，再借書。
+
+s01-g01-zh.mp3
+修改前：動名詞作為補語。表示第一次做某事時，第一次之後可接動名詞，描述正在談論的活動。
+修改後：第一次做某事的表達。表示第一次做某事時，可在表示第一次的片語後接動名詞，說明正在談論的活動。
+
+s09-v04-meaning.mp3
+修改前：最高的、最大值，形容詞
+修改後：最大的、最高的，形容詞
+
+s11-t02-en.mp3
+修改前：Visitors over eighteen may present a national identification card in exchange for a temporary library card.
+修改後：Visitors aged eighteen or older may present a national identification card in exchange for a temporary library card.
+
+s11-g01-zh.mp3
+修改前：表達目的的不定詞。使用不定詞說明到館或申請服務的目的，語氣直接且自然。
+修改後：表示避免的目的。使用表示目的的不定詞，說明按時歸還證件是為了避免逾期費用。
+
+s13-t01-en.mp3
+修改前：I returned a book five days late and received an overdue notice.
+修改後：I have a book that is five days overdue , and I received an overdue notice.
+
+s13-t01-zh.mp3
+修改前：我晚了五天還書，而且收到逾期通知。
+修改後：我有一本書已經逾期五天，而且收到逾期通知。
+
+s13-p01-en.mp3
+修改前：I returned the book three days late.
+修改後：I have a book that is three days overdue.
+
+s13-p01-zh.mp3
+修改前：用來清楚說明歸還物品時已經逾期幾天。
+修改後：用來清楚說明尚未歸還的物品已經逾期幾天。
+
+s13-g01-zh.mp3
+修改前：時間長度的表達。數字加上時間單位可放在形容詞前，表示某項行為延遲了多久。
+修改後：逾期時間的表達。時間長度片語放在表示逾期的形容詞前，說明館藏已經超過到期日多久。
+
+s14-g02-zh.mp3
+修改前：條件式被動語態。強調替代版本在取得核准後才可能被接受。
+修改後：情態動詞搭配被動語態。情態動詞後接表示被動的結構，說明新版可能被接受；取得核准是接受新版的條件。
+
+s15-t01-en.mp3
+修改前：The catalog says this book is on shelf, but I cannot locate it.
+修改後：The catalog says this book is on the shelf, but I cannot locate it.
+
+s15-v02-word.mp3
+修改前：on shelf
+修改後：on the shelf
+
+s15-v02-meaning.mp3
+修改前：顯示在架，片語
+修改後：在書架上、在架，片語
+
+s16-t03-en.mp3
+修改前：How long will the reservation be retained for me?
+修改後：How long will the book be held for me?
+
+s16-t03-zh.mp3
+修改前：這筆預約會為我保留多久？
+修改後：這本預約書會為我保留多久？
+
+s16-p02-en.mp3
+修改前：How long will the book be retained for me?
+修改後：How long will the book be held for me?
+
+s16-p02-zh.mp3
+修改前：用來詢問物品或申請會保留多長時間。
+修改後：用來詢問預約物品會為讀者保留多長時間。
+
+s17-v07-meaning.mp3
+修改前：預約未到，片語
+修改後：預約未到、未到者，名詞
+
+s18-g01-zh.mp3
+修改前：間接問句。詢問方法時，疑問詞後接一般直述語序，使句子自然有禮。
+修改後：詢問方法的直接問句。詢問方法時，疑問詞後接情態動詞、主詞及原形動詞；本課用來詢問如何連接無線網路。
+
+s18-g02-zh.mp3
+修改前：現在完成式被動語態。強調帳號持續處於閒置狀態，而且狀態與自動斷線有關。
+修改後：現在完成式描述持續狀態。使用現在完成式搭配表示狀態的形容詞，說明帳號已經持續閒置一段時間；此處不是被動語態。
+
+s20-t06-en.mp3
+修改前：The trustee must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate the authorization at the desk.
+修改後：The proxy borrower must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate the authorization at the desk.
+
+s20-v02-meaning.mp3
+修改前：代理人、代理的，名詞
+修改後：代理人、受託代辦者，名詞
+
+s20-v03-word.mp3
+修改前：trustee
+修改後：borrower
+
+s20-v03-meaning.mp3
+修改前：受託人，名詞
+修改後：借閱者、借書人，名詞

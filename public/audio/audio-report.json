@@ -17,7 +17,7 @@
   "english_long_count": 180,
   "english_wpm_target": 120.0,
   "english_wpm_min": 119.3,
-  "english_wpm_max": 120.7,
+  "english_wpm_max": 120.8,
   "english_wpm_average": 120.2,
   "outside_115_125": [],
   "loudness_target_lufs": -22.3,
@@ -497,7 +497,7 @@
     ],
     [
       "s11-t02-en.mp3",
-      119.9,
+      119.8,
       "kokoro-v1.1-zh/af_maple"
     ],
     [
@@ -582,7 +582,7 @@
     ],
     [
       "s13-t01-en.mp3",
-      120.3,
+      120.0,
       "kokoro-v1.0/am_fenrir"
     ],
     [
@@ -672,7 +672,7 @@
     ],
     [
       "s15-t01-en.mp3",
-      120.3,
+      120.4,
       "kokoro-v1.0/am_fenrir"
     ],
     [
@@ -707,7 +707,7 @@
     ],
     [
       "s16-p02-en.mp3",
-      120.6,
+      120.7,
       "kokoro-v1.0/am_puck"
     ],
     [
@@ -727,7 +727,7 @@
     ],
     [
       "s16-t03-en.mp3",
-      120.2,
+      120.8,
       "kokoro-v1.0/am_fenrir"
     ],
     [
@@ -925,5 +925,6 @@
       120.1,
       "kokoro-v1.1-zh/af_maple"
     ]
-  ]
+  ],
+  "loudness_scope": "682 synthetic speech clips; alphabet recordings use their separately approved levels"
 }

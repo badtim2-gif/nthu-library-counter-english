@@ -66,7 +66,7 @@ type RolePlayMode = Role | "all" | null;
 
 const roleIsHidden = (mode: RolePlayMode, role: Role) => mode === "all" || mode === role;
 
-const AUDIO_CACHE_NAME = "nthu-library-audio-v8";
+const AUDIO_CACHE_NAME = "nthu-library-audio-v9";
 const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v1",
   "nthu-library-audio-v2",
@@ -75,6 +75,7 @@ const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v5",
   "nthu-library-audio-v6",
   "nthu-library-audio-v7",
+  "nthu-library-audio-v8",
 ];
 
 

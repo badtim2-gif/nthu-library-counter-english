@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-10-07",
+  "updated_at": "2026-10-09",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -80,25 +80,30 @@
   "records": [
     {
       "file": "s01-g01-zh.mp3",
+      "text": "第一次做某事的表達。表示第一次做某事時，可在表示第一次的片語後接動名詞，說明正在談論的活動。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "7bc0e472420a5767ecc45e241c333ce413c95fca8b01ca40dced60847489a08c",
+      "applied_target_lufs": -22.3,
+      "sha256": "cd1f1243d0247d90dd9ffa17bd136d9a236fd29e7a3f4d9d1f5bdbe33f660ac4",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 9.026
+        "duration_seconds": 10.6
       },
       "loudness": {
-        "integrated_lufs": -22.65,
-        "true_peak_dbfs": -3.85,
-        "lra_lu": 1.6,
-        "threshold_lufs": -32.86
+        "integrated_lufs": -23.29,
+        "true_peak_dbfs": -4.66,
+        "lra_lu": 1.8,
+        "threshold_lufs": -33.7
       },
       "boundary_peaks": {
-        "leading_40ms": 1.4e-07,
+        "leading_40ms": 1.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -267,25 +272,30 @@
     },
     {
       "file": "s01-p02-zh.mp3",
+      "text": "用來有禮貌地說明先後順序；先完成請求的動作，再進行時間子句所述的動作，例如先查看帳戶，再借書。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "28c0a7ae56b3100e7379f8136782d8a1e35b1be079c815842ad2451996bfbd1c",
+      "applied_target_lufs": -20.92,
+      "sha256": "034f56771d2890fadc27bac75198b7e260b88ea17189ed37e09ca02c87ecc023",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.825
+        "duration_seconds": 11.025
       },
       "loudness": {
-        "integrated_lufs": -22.49,
-        "true_peak_dbfs": -3.89,
-        "lra_lu": 3.9,
-        "threshold_lufs": -32.8
+        "integrated_lufs": -22.47,
+        "true_peak_dbfs": -3.81,
+        "lra_lu": 2.9,
+        "threshold_lufs": -32.79
       },
       "boundary_peaks": {
-        "leading_40ms": 3e-07,
+        "leading_40ms": 2.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -11074,25 +11084,30 @@
     },
     {
       "file": "s09-v04-meaning.mp3",
+      "text": "最大的、最高的，形容詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "c32422d4b4831168a233d897421c2ccf5f7b619512b618cb67d9fb13e57f402b",
+      "applied_target_lufs": -22.3,
+      "sha256": "aa6f452d204afe9090ceddb02e06866d75d4fc567601cb7d6b2b1ab38aff3da6",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.65
+        "duration_seconds": 3.7
       },
       "loudness": {
         "integrated_lufs": -23.02,
-        "true_peak_dbfs": -4.39,
+        "true_peak_dbfs": -3.95,
         "lra_lu": 2.7,
         "threshold_lufs": -33.43
       },
       "boundary_peaks": {
-        "leading_40ms": 1.6e-07,
+        "leading_40ms": 1.9e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -12598,25 +12613,30 @@
     },
     {
       "file": "s11-g01-zh.mp3",
+      "text": "表示避免的目的。使用表示目的的不定詞，說明按時歸還證件是為了避免逾期費用。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "a628271eb6d177cf71c68ebc9a33ed48144c45f558024be2b6414ceea723f30e",
+      "applied_target_lufs": -20.29,
+      "sha256": "adc78bdd036cb6d2ac1b586a9f104ec7fd40105ebbd7e17317ff4767c93bb0f6",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 8.125
+        "duration_seconds": 8.4
       },
       "loudness": {
-        "integrated_lufs": -22.53,
-        "true_peak_dbfs": -3.89,
-        "lra_lu": 3.5,
-        "threshold_lufs": -32.84
+        "integrated_lufs": -22.59,
+        "true_peak_dbfs": -3.73,
+        "lra_lu": 3.7,
+        "threshold_lufs": -32.89
       },
       "boundary_peaks": {
-        "leading_40ms": 1.7e-07,
+        "leading_40ms": 1.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -12972,22 +12992,27 @@
     },
     {
       "file": "s11-t02-en.mp3",
+      "text": "Visitors aged eighteen or older may present a national identification card in exchange for a temporary library card.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "8d6b054e82b1d65aa869088eb3fd953a84aa80f4bbb7cf25e695c97f4f7920f7",
+      "applied_target_lufs": -22.3,
+      "sha256": "8713c23a6442c1465eca1222794ca5dd04495320adc1f75c7b78d0314167920c",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 8.207
+        "duration_seconds": 9.214
       },
       "loudness": {
-        "integrated_lufs": -22.92,
-        "true_peak_dbfs": -3.95,
-        "lra_lu": 1.8,
-        "threshold_lufs": -33.19
+        "integrated_lufs": -22.49,
+        "true_peak_dbfs": -3.83,
+        "lra_lu": 2.0,
+        "threshold_lufs": -32.73
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -13006,9 +13031,9 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 1.115625,
-        "word_count": 16,
-        "verified_wpm": 119.9
+        "postprocess_atempo": 1.08888889,
+        "word_count": 18,
+        "verified_wpm": 119.8
       }
     },
     {
@@ -15086,25 +15111,30 @@
     },
     {
       "file": "s13-g01-zh.mp3",
+      "text": "逾期時間的表達。時間長度片語放在表示逾期的形容詞前，說明館藏已經超過到期日多久。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "686ef0511f5dedc6706de532d9a3a4c6dfa1e3ec10057a41ef863f11c12c929b",
+      "applied_target_lufs": -21.06,
+      "sha256": "1358a3b05d9bf947f6300e4b008c582f6b6869c10dba68429733197850d670cb",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 8.65
+        "duration_seconds": 9.725
       },
       "loudness": {
-        "integrated_lufs": -22.37,
-        "true_peak_dbfs": -3.86,
-        "lra_lu": 2.9,
-        "threshold_lufs": -32.76
+        "integrated_lufs": -22.3,
+        "true_peak_dbfs": -3.95,
+        "lra_lu": 2.8,
+        "threshold_lufs": -32.66
       },
       "boundary_peaks": {
-        "leading_40ms": 1.7e-07,
+        "leading_40ms": 1.2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -15156,22 +15186,27 @@
     },
     {
       "file": "s13-p01-en.mp3",
+      "text": "I have a book that is three days overdue.",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "bc74d9e1d720ab942d9960379bd54490fcc099663587df59a19323cc982638d3",
+      "applied_target_lufs": -21.05,
+      "sha256": "6694e1699224fe0388136026d84c22a43822174ee15b13285043ec208b878bf4",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.683
+        "duration_seconds": 4.676
       },
       "loudness": {
-        "integrated_lufs": -22.05,
-        "true_peak_dbfs": -6.08,
-        "lra_lu": 2.0,
-        "threshold_lufs": -32.8
+        "integrated_lufs": -22.33,
+        "true_peak_dbfs": -3.93,
+        "lra_lu": 4.9,
+        "threshold_lufs": -33.05
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -15190,32 +15225,37 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.77142857,
-        "word_count": 7,
+        "postprocess_atempo": 0.71111111,
+        "word_count": 9,
         "verified_wpm": 120.6
       }
     },
     {
       "file": "s13-p01-zh.mp3",
+      "text": "用來清楚說明尚未歸還的物品已經逾期幾天。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "536b8d756929d35aeb0c5e0c62c14af76c2b9a302779d1904417f7a50d8133a3",
+      "applied_target_lufs": -19.62,
+      "sha256": "79a1f67a2eca063190d91e2aa553666aa6236dcbe67dad393ed4acd54b28c283",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.4
+        "duration_seconds": 5.85
       },
       "loudness": {
-        "integrated_lufs": -22.6,
-        "true_peak_dbfs": -3.82,
-        "lra_lu": 6.3,
-        "threshold_lufs": -32.98
+        "integrated_lufs": -22.63,
+        "true_peak_dbfs": -3.85,
+        "lra_lu": 7.3,
+        "threshold_lufs": -33.11
       },
       "boundary_peaks": {
-        "leading_40ms": 2.8e-07,
+        "leading_40ms": 2.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -15384,22 +15424,27 @@
     },
     {
       "file": "s13-t01-en.mp3",
+      "text": "I have a book that is five days overdue , and I received an overdue notice.",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_fenrir",
       "speed": 0.8,
-      "sha256": "c94533ff3d24aeef6cc5bccb551ffa92247816d9994795485306b2858798898b",
+      "applied_target_lufs": -20.75,
+      "sha256": "ee6d294f3b88b556e0096fc5fc86609747f7682b718a765698c1930532524c0f",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.186
+        "duration_seconds": 7.703
       },
       "loudness": {
-        "integrated_lufs": -22.45,
-        "true_peak_dbfs": -3.88,
+        "integrated_lufs": -22.32,
+        "true_peak_dbfs": -3.58,
         "lra_lu": 4.0,
-        "threshold_lufs": -32.73
+        "threshold_lufs": -32.65
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -15418,29 +15463,34 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.87083333,
-        "word_count": 12,
-        "verified_wpm": 120.3
+        "postprocess_atempo": 0.81333333,
+        "word_count": 15,
+        "verified_wpm": 120.0
       }
     },
     {
       "file": "s13-t01-zh.mp3",
+      "text": "我有一本書已經逾期五天，而且收到逾期通知。",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "1aa2cf622483e3d46a9d3cbebeadbb5fd57bb5a4ee10db2632447fcdaf1c2af8",
+      "applied_target_lufs": -20.77,
+      "sha256": "2387e8e185a8ccbc773e9d77b0c73e43807137b0284a88d42bb3e8dfae853d43",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 4.875
+        "duration_seconds": 5.45
       },
       "loudness": {
-        "integrated_lufs": -22.58,
-        "true_peak_dbfs": -4.13,
-        "lra_lu": 3.4,
-        "threshold_lufs": -32.93
+        "integrated_lufs": -22.67,
+        "true_peak_dbfs": -3.66,
+        "lra_lu": 3.7,
+        "threshold_lufs": -33.0
       },
       "boundary_peaks": {
         "leading_40ms": 2.3e-07,
@@ -16365,25 +16415,30 @@
     },
     {
       "file": "s14-g02-zh.mp3",
+      "text": "情態動詞搭配被動語態。情態動詞後接表示被動的結構，說明新版可能被接受；取得核准是接受新版的條件。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "d294486a463805741ffcb3f3ee13e81a11a40c98f1507d6a1c2a9fac176836bb",
+      "applied_target_lufs": -22.3,
+      "sha256": "f6fd7bf7e1f5d72d1d5757d8b1e423110f6fbca6274ca3e69d6d7a4936ee742b",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.125
+        "duration_seconds": 11.7
       },
       "loudness": {
-        "integrated_lufs": -22.34,
-        "true_peak_dbfs": -4.06,
-        "lra_lu": 3.4,
-        "threshold_lufs": -32.59
+        "integrated_lufs": -23.15,
+        "true_peak_dbfs": -3.79,
+        "lra_lu": 2.8,
+        "threshold_lufs": -33.49
       },
       "boundary_peaks": {
-        "leading_40ms": 2.3e-07,
+        "leading_40ms": 2.2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -17872,22 +17927,27 @@
     },
     {
       "file": "s15-t01-en.mp3",
+      "text": "The catalog says this book is on the shelf, but I cannot locate it.",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_fenrir",
       "speed": 0.8,
-      "sha256": "c98bd064a6c982fed0a991e83b5d286fa7311e35e49446e2f1ed42c13f0f4fa0",
+      "applied_target_lufs": -21.26,
+      "sha256": "c63a06a84f487d89a936ff2d66196cfa687d6cfbff881a9e20ee8e5a5be26ffb",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.684
+        "duration_seconds": 7.175
       },
       "loudness": {
-        "integrated_lufs": -22.26,
-        "true_peak_dbfs": -4.15,
+        "integrated_lufs": -22.3,
+        "true_peak_dbfs": -4.01,
         "lra_lu": 3.5,
-        "threshold_lufs": -32.88
+        "threshold_lufs": -32.92
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -17906,9 +17966,9 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.80769231,
-        "word_count": 13,
-        "verified_wpm": 120.3
+        "postprocess_atempo": 0.775,
+        "word_count": 14,
+        "verified_wpm": 120.4
       }
     },
     {
@@ -18398,25 +18458,30 @@
     },
     {
       "file": "s15-v02-meaning.mp3",
+      "text": "在書架上、在架，片語",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "4bda43b791948955cf9e13066940bbecff54bd6f1b67c0dff508a90b048b5d76",
+      "applied_target_lufs": -22.3,
+      "sha256": "fc4c63b440e6a51c1bebac36ed8e08ff7d1671e222c1d7f92b50c315b2859c98",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.975
+        "duration_seconds": 3.45
       },
       "loudness": {
-        "integrated_lufs": -22.72,
-        "true_peak_dbfs": -5.08,
-        "lra_lu": 0.0,
-        "threshold_lufs": -33.8
+        "integrated_lufs": -22.11,
+        "true_peak_dbfs": -3.92,
+        "lra_lu": 1.3,
+        "threshold_lufs": -32.92
       },
       "boundary_peaks": {
-        "leading_40ms": 1.5e-07,
+        "leading_40ms": 1.9e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -18433,10 +18498,15 @@
     },
     {
       "file": "s15-v02-word.mp3",
+      "text": "on the shelf",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "3cc6b6dbcf35a41d47db8a42c0983b097b28dc9c75cce825774bd9e974258abc",
+      "applied_target_lufs": -22.3,
+      "sha256": "d5c44e2b94b5c04bdf9c8e26e974619f882bb1b89c723614778c35e3345d811e",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -18446,9 +18516,9 @@
       },
       "loudness": {
         "integrated_lufs": -22.75,
-        "true_peak_dbfs": -7.97,
+        "true_peak_dbfs": -7.76,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.48
+        "threshold_lufs": -33.98
       },
       "boundary_peaks": {
         "leading_40ms": 4e-08,
@@ -18964,22 +19034,27 @@
     },
     {
       "file": "s16-p02-en.mp3",
+      "text": "How long will the book be held for me?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "c21de2969d0761969eae0b0947fd4443ae5482b2334c9a39b585897d1b018bd9",
+      "applied_target_lufs": -20.81,
+      "sha256": "8af94865ba66ed3189c374969afbefed4b442812a83582331a09a3ba26bb281f",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 4.677
+        "duration_seconds": 4.675
       },
       "loudness": {
         "integrated_lufs": -22.31,
-        "true_peak_dbfs": -4.4,
-        "lra_lu": 6.4,
-        "threshold_lufs": -33.18
+        "true_peak_dbfs": -5.44,
+        "lra_lu": 7.0,
+        "threshold_lufs": -33.08
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -18998,32 +19073,37 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.66111111,
+        "postprocess_atempo": 0.62222222,
         "word_count": 9,
-        "verified_wpm": 120.6
+        "verified_wpm": 120.7
       }
     },
     {
       "file": "s16-p02-zh.mp3",
+      "text": "用來詢問預約物品會為讀者保留多長時間。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "fa707120be71c6f42bea516e3b769489a2612679ea5d71be5de78a92b03dfa46",
+      "applied_target_lufs": -20.84,
+      "sha256": "90514abc2a64f587b2f46d674a58dbfa541ff80ce359220cb51c21bc001e3627",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.4
+        "duration_seconds": 5.7
       },
       "loudness": {
-        "integrated_lufs": -22.53,
-        "true_peak_dbfs": -3.66,
-        "lra_lu": 3.3,
-        "threshold_lufs": -32.97
+        "integrated_lufs": -22.57,
+        "true_peak_dbfs": -3.94,
+        "lra_lu": 3.4,
+        "threshold_lufs": -33.12
       },
       "boundary_peaks": {
-        "leading_40ms": 2.3e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -19268,22 +19348,27 @@
     },
     {
       "file": "s16-t03-en.mp3",
+      "text": "How long will the book be held for me?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_fenrir",
       "speed": 0.8,
-      "sha256": "9daa93af4dc41d8902123ce721ad4ae0403c39697ed41598f6b7b4bf12479c86",
+      "applied_target_lufs": -21.06,
+      "sha256": "0a176a4e8cff5c5cdb4b160e4a41f2d20cc8623a2ed5feaf9a526a6057f2ebad",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 4.692
+        "duration_seconds": 4.672
       },
       "loudness": {
-        "integrated_lufs": -22.45,
-        "true_peak_dbfs": -3.98,
-        "lra_lu": 5.2,
-        "threshold_lufs": -33.09
+        "integrated_lufs": -22.41,
+        "true_peak_dbfs": -3.73,
+        "lra_lu": 4.8,
+        "threshold_lufs": -33.2
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -19302,32 +19387,37 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.85555556,
+        "postprocess_atempo": 0.62777778,
         "word_count": 9,
-        "verified_wpm": 120.2
+        "verified_wpm": 120.8
       }
     },
     {
       "file": "s16-t03-zh.mp3",
+      "text": "這本預約書會為我保留多久？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "a3a9509ccde1418a3a82b08f3177a2c7815029d5056ea73d41632cd34986c841",
+      "applied_target_lufs": -22.3,
+      "sha256": "65cc1876a7026e3613df4321718f5a9b3267ab6d6c9c48dbe8ff7d75598d0e35",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.95
+        "duration_seconds": 4.375
       },
       "loudness": {
-        "integrated_lufs": -23.03,
-        "true_peak_dbfs": -4.05,
-        "lra_lu": 2.3,
-        "threshold_lufs": -33.51
+        "integrated_lufs": -23.09,
+        "true_peak_dbfs": -3.8,
+        "lra_lu": 2.9,
+        "threshold_lufs": -33.84
       },
       "boundary_peaks": {
-        "leading_40ms": 1.9e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21236,25 +21326,30 @@
     },
     {
       "file": "s17-v07-meaning.mp3",
+      "text": "預約未到、未到者，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "c76567e446ee8dc5aad30d6beda1d2e1e3cdf92e22d538dbda41db906fd6900a",
+      "applied_target_lufs": -22.3,
+      "sha256": "f696b752a832b9690e53256f17453e4fc8b66af7b352febd1d0d03fa594de683",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.9
+        "duration_seconds": 3.6
       },
       "loudness": {
-        "integrated_lufs": -22.72,
-        "true_peak_dbfs": -4.84,
-        "lra_lu": 0.0,
-        "threshold_lufs": -33.81
+        "integrated_lufs": -21.98,
+        "true_peak_dbfs": -4.05,
+        "lra_lu": 0.9,
+        "threshold_lufs": -32.58
       },
       "boundary_peaks": {
-        "leading_40ms": 2.4e-07,
+        "leading_40ms": 2.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21306,25 +21401,30 @@
     },
     {
       "file": "s18-g01-zh.mp3",
+      "text": "詢問方法的直接問句。詢問方法時，疑問詞後接情態動詞、主詞及原形動詞；本課用來詢問如何連接無線網路。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "32ce1b22ebfb1fdf59163cf596516c31bf5b5cd0f38530004d0d48ffb1561509",
+      "applied_target_lufs": -21.15,
+      "sha256": "243687b17529db294d219672e302d70262d9546bbec9b9647ee09b4ca7737c04",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.425
+        "duration_seconds": 11.75
       },
       "loudness": {
-        "integrated_lufs": -22.49,
-        "true_peak_dbfs": -3.86,
-        "lra_lu": 4.5,
-        "threshold_lufs": -32.88
+        "integrated_lufs": -22.38,
+        "true_peak_dbfs": -3.82,
+        "lra_lu": 2.5,
+        "threshold_lufs": -32.72
       },
       "boundary_peaks": {
-        "leading_40ms": 1.4e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21341,25 +21441,30 @@
     },
     {
       "file": "s18-g02-zh.mp3",
+      "text": "現在完成式描述持續狀態。使用現在完成式搭配表示狀態的形容詞，說明帳號已經持續閒置一段時間；此處不是被動語態。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "34a992701e0909897c162ddcd43ceae6477e88cc4ff257a357fbe29c90b5bcc6",
+      "applied_target_lufs": -21.1,
+      "sha256": "8f960ebd400763af1380ac1fa7e854b2a5d03e99570e40c84d51fdf81d9926d0",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 8.75
+        "duration_seconds": 12.675
       },
       "loudness": {
-        "integrated_lufs": -22.39,
-        "true_peak_dbfs": -3.51,
-        "lra_lu": 2.1,
-        "threshold_lufs": -32.61
+        "integrated_lufs": -22.37,
+        "true_peak_dbfs": -3.76,
+        "lra_lu": 1.3,
+        "threshold_lufs": -32.7
       },
       "boundary_peaks": {
-        "leading_40ms": 1.1e-07,
+        "leading_40ms": 1.5e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -24472,22 +24577,27 @@
     },
     {
       "file": "s20-t06-en.mp3",
+      "text": "The proxy borrower must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate the authorization at the desk.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "718a74386efbae55ea15a30b2511c044955c611fd177955c49a30bc63cdd1cac",
+      "applied_target_lufs": -22.3,
+      "sha256": "0c791e85df95594565bfc725b6c1cef300c2a9b35c1e94162c2de2f571414870",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 14.186
+        "duration_seconds": 14.683
       },
       "loudness": {
-        "integrated_lufs": -22.35,
-        "true_peak_dbfs": -3.6,
+        "integrated_lufs": -23.25,
+        "true_peak_dbfs": -3.9,
         "lra_lu": 4.1,
-        "threshold_lufs": -32.88
+        "threshold_lufs": -33.71
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -24506,8 +24616,8 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.84642857,
-        "word_count": 28,
+        "postprocess_atempo": 0.84310345,
+        "word_count": 29,
         "verified_wpm": 120.1
       }
     },
@@ -24618,25 +24728,30 @@
     },
     {
       "file": "s20-v02-meaning.mp3",
+      "text": "代理人、受託代辦者，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "5bb199adf1eb17ca6fc4168893f2bc74c3274c4e8da407e8574d35eaea395c39",
+      "applied_target_lufs": -22.3,
+      "sha256": "a79a69b7df8dff31cb621dee7a3a5b81f9ab7ccad3cd13ead86b6f81843a12be",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.275
+        "duration_seconds": 3.825
       },
       "loudness": {
-        "integrated_lufs": -22.13,
-        "true_peak_dbfs": -3.71,
-        "lra_lu": 0.1,
-        "threshold_lufs": -32.31
+        "integrated_lufs": -23.06,
+        "true_peak_dbfs": -3.23,
+        "lra_lu": 2.6,
+        "threshold_lufs": -33.39
       },
       "boundary_peaks": {
-        "leading_40ms": 1.1e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -24688,25 +24803,30 @@
     },
     {
       "file": "s20-v03-meaning.mp3",
+      "text": "借閱者、借書人，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "a87d58605abc301c503b6c710f0638eb15c7146d2e71db4010aba2c9867b763c",
+      "applied_target_lufs": -22.3,
+      "sha256": "de449db3bb0cf1c47fe6ba5fe1a5cf98df01778e0e6384c6f9384efd856a4e0b",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.65
+        "duration_seconds": 3.5
       },
       "loudness": {
-        "integrated_lufs": -22.9,
-        "true_peak_dbfs": -4.06,
-        "lra_lu": 0.0,
-        "threshold_lufs": -33.62
+        "integrated_lufs": -22.64,
+        "true_peak_dbfs": -4.57,
+        "lra_lu": 2.0,
+        "threshold_lufs": -32.9
       },
       "boundary_peaks": {
-        "leading_40ms": 2.1e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -24723,25 +24843,30 @@
     },
     {
       "file": "s20-v03-word.mp3",
+      "text": "borrower",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "c1de927d46f835e01bf1b5bf402f4a3f562e45b57c53598153b313bfd183f1cc",
+      "applied_target_lufs": -22.3,
+      "sha256": "0e4c64663dbbf8604cf946c5d1f9d6fc42b0c07ac390f696240746ae099fc69a",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.875
+        "duration_seconds": 1.75
       },
       "loudness": {
-        "integrated_lufs": -22.73,
-        "true_peak_dbfs": -5.25,
+        "integrated_lufs": -22.74,
+        "true_peak_dbfs": -8.37,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.97
+        "threshold_lufs": -33.61
       },
       "boundary_peaks": {
-        "leading_40ms": 4e-08,
+        "leading_40ms": 6e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -25036,5 +25161,38 @@
         "trailing_safety_silence": true
       }
     }
-  ]
+  ],
+  "last_partial_regeneration": {
+    "generated_at": "2026-10-09T09:57:30+08:00",
+    "clip_count": 25,
+    "staging_manifest_sha256": "7d536803a813529d0bdbbb94b595989709c7b42c608851cc62524d4cf7776841",
+    "transcript_manifest_sha256": "238b1a283f1eb6aa20b779d0bd8165e01d1a92aceb8b19d576defeaa51310fa7",
+    "files": [
+      "s01-g01-zh.mp3",
+      "s01-p02-zh.mp3",
+      "s09-v04-meaning.mp3",
+      "s11-g01-zh.mp3",
+      "s11-t02-en.mp3",
+      "s13-g01-zh.mp3",
+      "s13-p01-en.mp3",
+      "s13-p01-zh.mp3",
+      "s13-t01-en.mp3",
+      "s13-t01-zh.mp3",
+      "s14-g02-zh.mp3",
+      "s15-t01-en.mp3",
+      "s15-v02-meaning.mp3",
+      "s15-v02-word.mp3",
+      "s16-p02-en.mp3",
+      "s16-p02-zh.mp3",
+      "s16-t03-en.mp3",
+      "s16-t03-zh.mp3",
+      "s17-v07-meaning.mp3",
+      "s18-g01-zh.mp3",
+      "s18-g02-zh.mp3",
+      "s20-t06-en.mp3",
+      "s20-v02-meaning.mp3",
+      "s20-v03-meaning.mp3",
+      "s20-v03-word.mp3"
+    ]
+  }
 }

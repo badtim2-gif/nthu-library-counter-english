@@ -25,7 +25,7 @@ const staleAudio = new TextEncoder().encode("old unclear privilege audio");
 function makeWorker() {
   const handlers = new Map();
   const stores = new Map([
-    ["nthu-library-audio-v7", new Map([[originalUrl, new Response(staleAudio)]])],
+    ["nthu-library-audio-v8", new Map([[originalUrl, new Response(staleAudio)]])],
   ]);
   const networkCalls = [];
   let offline = false;
@@ -83,19 +83,19 @@ function makeWorker() {
 
 test("audio versions produce separate browser cache keys while preserving Pages paths", () => {
   const path = base + "/audio/s01-v03-word.mp3";
-  const oldPath = versionedAudioPath(path, "nthu-library-audio-v7");
-  const newPath = versionedAudioPath(path, "nthu-library-audio-v8");
+  const oldPath = versionedAudioPath(path, "nthu-library-audio-v8");
+  const newPath = versionedAudioPath(path, "nthu-library-audio-v9");
   assert.notEqual(oldPath, newPath);
   assert.equal(new URL(newPath, origin).pathname, path);
-  const withQuery = new URL(versionedAudioPath(path + "?example=1", "v8"), origin);
+  const withQuery = new URL(versionedAudioPath(path + "?example=1", "v9"), origin);
   assert.equal(withQuery.searchParams.get("example"), "1");
-  assert.equal(withQuery.searchParams.get("audioVersion"), "v8");
+  assert.equal(withQuery.searchParams.get("audioVersion"), "v9");
 });
 
 test("an audio cache miss replaces stale browser HTTP audio with the approved clip", async () => {
   const worker = makeWorker();
   await worker.activate();
-  assert.equal(worker.stores.has("nthu-library-audio-v7"), false);
+  assert.equal(worker.stores.has("nthu-library-audio-v8"), false);
   const response = await worker.get(originalUrl);
   assert.deepEqual(Buffer.from(await response.arrayBuffer()), approvedAudio);
   assert.equal(worker.networkCalls.length, 1);

@@ -19,7 +19,7 @@ scenarioModule.filename = sourcePath;
 scenarioModule.paths = Module._nodeModulePaths(path.dirname(sourcePath));
 scenarioModule._compile(compiled, sourcePath);
 
-const { allAudioPaths } = scenarioModule.exports;
+const { allAudioPaths, audioPaths, scenarios, stripForSpeech, posSpeech } = scenarioModule.exports;
 const manifest = JSON.parse(
   fs.readFileSync(path.join(__dirname, "audio-manifest.json"), "utf8"),
 );
@@ -60,6 +60,32 @@ assert.deepEqual(manifest.voices, {
   },
 });
 assert.equal(manifest.entries.length, 708);
+
+// Detect text edits that have not been reflected in the approved speech inventory.
+const expectedTranscripts = new Map();
+const addTranscript = (publicPath, text) => expectedTranscripts.set(path.basename(publicPath), text);
+for (const scenario of scenarios) {
+  scenario.dialogue.forEach((turn, index) => {
+    addTranscript(audioPaths.dialogue(scenario.id, index, "en"), stripForSpeech(turn.en));
+    addTranscript(audioPaths.dialogue(scenario.id, index, "zh"), turn.zh);
+  });
+  scenario.patterns.forEach((pattern, index) => {
+    addTranscript(audioPaths.pattern(scenario.id, index, "en"), stripForSpeech(pattern.example));
+    addTranscript(audioPaths.pattern(scenario.id, index, "zh"), pattern.explanation);
+  });
+  scenario.grammar.forEach((grammar, index) => {
+    addTranscript(audioPaths.grammar(scenario.id, index), `${grammar.title}。${grammar.explanation}`);
+  });
+  scenario.vocabulary.forEach((item, index) => {
+    addTranscript(audioPaths.vocabWord(scenario.id, index), stripForSpeech(item.word));
+    addTranscript(audioPaths.vocabMeaning(scenario.id, index), `${item.meaning}，${posSpeech[item.pos]}`);
+  });
+}
+assert.equal(expectedTranscripts.size, 682);
+for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
+  assert.equal(entry.text, expectedTranscripts.get(entry.file), `Speech text differs from lesson: ${entry.file}`);
+}
+
 assert.equal(report.clip_count, 708);
 assert.equal(report.english_long_count, 180);
 assert.equal(report.english_wpm_target, 120);
@@ -87,6 +113,9 @@ const kokoroRecords = new Map(
 for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
   const record = kokoroRecords.get(entry.file);
   assert.ok(record, `Missing Kokoro source record: ${entry.file}`);
+  if (record.text !== undefined) {
+    assert.equal(record.text, entry.text, `Generated speech text differs from inventory: ${entry.file}`);
+  }
   assert.equal(entry.voice, `kokoro-${record.model}/${record.voice}`);
   assert.equal(entry.speed, record.speed);
   assert.equal(entry.phonemes, record.phonemes);

@@ -88,7 +88,7 @@ export const scenarios: Scenario[] = [
       {
         form: "Before you..., please...",
         example: "Before you borrow the book, please check your account.",
-        explanation: "用來有禮貌地說明先後順序，先完成前項條件，再進行後項。",
+        explanation: "用來有禮貌地說明先後順序；先完成請求的動作，再進行時間子句所述的動作，例如先查看帳戶，再借書。",
       },
       {
         form: "Will ... become active immediately?",
@@ -98,8 +98,8 @@ export const scenarios: Scenario[] = [
     ],
     grammar: [
       {
-        title: "動名詞作為補語",
-        explanation: "表示第一次做某事時，第一次之後可接動名詞，描述正在談論的活動。",
+        title: "第一次做某事的表達",
+        explanation: "表示第一次做某事時，可在表示第一次的片語後接動名詞，說明正在談論的活動。",
       },
       {
         title: "時間副詞子句",
@@ -151,7 +151,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "The original [əˋrɪdʒən!] due date stays the same, so please check your account and email regularly [ˋrɛgjəlɚlɪ].",
+        en: "The original [əˋrɪdʒənəl] due date stays the same, so please check your account and email regularly [ˋrɛgjəlɚlɪ].",
         zh: "原到期日會維持不變，因此請定期查看帳戶與電子郵件。",
       },
     ],
@@ -512,7 +512,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "Please return all materials borrowed from NTHU, UST, and reciprocal [rɪˋsɪprək!] libraries, and settle [ˋsɛt!] all charges.",
+        en: "Please return all materials borrowed from NTHU, UST, and reciprocal [rɪˋsɪprəkəl] libraries, and settle [ˋsɛtəl] all charges.",
         zh: "請歸還向清華大學、台灣聯大及互惠館借閱的所有資料，並結清全部費用。",
       },
       {
@@ -565,8 +565,8 @@ export const scenarios: Scenario[] = [
     ],
     vocabulary: [
       { word: "clearance", kk: "ˋklɪrəns", meaning: "離校查核、結清手續", pos: "n." },
-      { word: "reciprocal", kk: "rɪˋsɪprək!", meaning: "互惠的", pos: "adj." },
-      { word: "settle", kk: "ˋsɛt!", meaning: "結清、處理完畢", pos: "v." },
+      { word: "reciprocal", kk: "rɪˋsɪprəkəl", meaning: "互惠的", pos: "adj." },
+      { word: "settle", kk: "ˋsɛtəl", meaning: "結清、處理完畢", pos: "v." },
       { word: "delivery", kk: "dɪˋlɪvərɪ", meaning: "傳遞、交付", pos: "n." },
       { word: "procedure", kk: "prəˋsidʒɚ", meaning: "程序、手續", pos: "n." },
       { word: "reservation", kk: "͵rɛzɚˋveʃən", meaning: "預約", pos: "n." },
@@ -664,7 +664,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "Eligible [ˋɛlɪdʒəb!] NTHU researchers and students may apply for a project borrowing card.",
+        en: "Eligible [ˋɛlɪdʒəbəl] NTHU researchers and students may apply for a project borrowing card.",
         zh: "符合資格的清華大學研究人員與學生可以申請專案借書證。",
       },
       {
@@ -674,7 +674,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "The project card allows up to two hundred books, subject to the fixed return date and applicable [ˋæplɪkəb!] conditions.",
+        en: "The project card allows up to two hundred books, subject to the fixed return date and applicable [ˋæplɪkəbəl] conditions.",
         zh: "專案借書證最多可借兩百冊，但須遵守固定還書日及適用規定。",
       },
       {
@@ -717,10 +717,10 @@ export const scenarios: Scenario[] = [
     ],
     vocabulary: [
       { word: "project", kk: "ˋprɑdʒɛkt", meaning: "專案、研究計畫", pos: "n." },
-      { word: "eligible", kk: "ˋɛlɪdʒəb!", meaning: "符合資格的", pos: "adj." },
+      { word: "eligible", kk: "ˋɛlɪdʒəbəl", meaning: "符合資格的", pos: "adj." },
       { word: "researcher", kk: "rɪˋsɝtʃɚ", meaning: "研究人員", pos: "n." },
-      { word: "maximum", kk: "ˋmæksəməm", meaning: "最高的、最大值", pos: "adj." },
-      { word: "applicable", kk: "ˋæplɪkəb!", meaning: "適用的", pos: "adj." },
+      { word: "maximum", kk: "ˋmæksəməm", meaning: "最大的、最高的", pos: "adj." },
+      { word: "applicable", kk: "ˋæplɪkəbəl", meaning: "適用的", pos: "adj." },
       { word: "valid", kk: "ˋvælɪd", meaning: "有效的", pos: "adj." },
       { word: "identification", kk: "aɪ͵dɛntəfəˋkeʃən", meaning: "身分證明", pos: "n." },
     ],
@@ -750,7 +750,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "Exchange students may visit, but they are not eligible [ˋɛlɪdʒəb!] for cross-campus borrowing or the interlibrary circulation [͵sɝkjəˋleʃən] service.",
+        en: "Exchange students may visit, but they are not eligible [ˋɛlɪdʒəbəl] for cross-campus borrowing or the interlibrary circulation [͵sɝkjəˋleʃən] service.",
         zh: "交換生可以入館，但不具跨校借閱或館際流通服務的資格。",
       },
       {
@@ -760,7 +760,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "Search the NTHU collection first, and then ask us about available [əˋveləb!] interlibrary loan or document delivery options.",
+        en: "Search the NTHU collection first, and then ask us about available [əˋveləbəl] interlibrary loan or document delivery options.",
         zh: "請先查詢清華大學館藏，再向我們詢問可使用的館際借書或文件傳遞方案。",
       },
     ],
@@ -795,10 +795,10 @@ export const scenarios: Scenario[] = [
       { word: "exchange", kk: "ɪksˋtʃendʒ", meaning: "交換、交流", pos: "n." },
       { word: "present", kk: "prɪˋzɛnt", meaning: "出示、呈交", pos: "v." },
       { word: "submit", kk: "səbˋmɪt", meaning: "提交", pos: "v." },
-      { word: "eligible", kk: "ˋɛlɪdʒəb!", meaning: "符合資格的", pos: "adj." },
+      { word: "eligible", kk: "ˋɛlɪdʒəbəl", meaning: "符合資格的", pos: "adj." },
       { word: "cross-campus", kk: "͵krɔsˋkæmpəs", meaning: "跨校的", pos: "adj." },
       { word: "circulation", kk: "͵sɝkjəˋleʃən", meaning: "流通、借閱服務", pos: "n." },
-      { word: "available", kk: "əˋveləb!", meaning: "可使用的、可取得的", pos: "adj." },
+      { word: "available", kk: "əˋveləbəl", meaning: "可使用的、可取得的", pos: "adj." },
     ],
   },
   {
@@ -816,7 +816,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "Visitors over eighteen may present [prɪˋzɛnt] a national identification card in exchange [ɪksˋtʃendʒ] for a temporary [ˋtɛmpə͵rɛrɪ] library card.",
+        en: "Visitors aged eighteen or older may present [prɪˋzɛnt] a national identification card in exchange [ɪksˋtʃendʒ] for a temporary [ˋtɛmpə͵rɛrɪ] library card.",
         zh: "年滿十八歲的訪客可以出示身分證，換取臨時閱覽證。",
       },
       {
@@ -859,8 +859,8 @@ export const scenarios: Scenario[] = [
     ],
     grammar: [
       {
-        title: "表達目的的不定詞",
-        explanation: "使用不定詞說明到館或申請服務的目的，語氣直接且自然。",
+        title: "表示避免的目的",
+        explanation: "使用表示目的的不定詞，說明按時歸還證件是為了避免逾期費用。",
       },
       {
         title: "義務與期限",
@@ -873,7 +873,7 @@ export const scenarios: Scenario[] = [
       { word: "present", kk: "prɪˋzɛnt", meaning: "出示", pos: "v." },
       { word: "exchange", kk: "ɪksˋtʃendʒ", meaning: "交換、換取", pos: "v." },
       { word: "quota", kk: "ˋkwotə", meaning: "限額、配額", pos: "n." },
-      { word: "eligible", kk: "ˋɛlɪdʒəb!", meaning: "符合資格的", pos: "adj." },
+      { word: "eligible", kk: "ˋɛlɪdʒəbəl", meaning: "符合資格的", pos: "adj." },
       { word: "handling", kk: "ˋhændlɪŋ", meaning: "處理、經辦", pos: "n." },
     ],
   },
@@ -963,8 +963,8 @@ export const scenarios: Scenario[] = [
     dialogue: [
       {
         role: "reader",
-        en: "I returned a book five days late and received an overdue [͵ovɚˋdu] notice.",
-        zh: "我晚了五天還書，而且收到逾期通知。",
+        en: "I have a book that is five days overdue [͵ovɚˋdu], and I received an overdue notice.",
+        zh: "我有一本書已經逾期五天，而且收到逾期通知。",
       },
       {
         role: "librarian",
@@ -988,15 +988,15 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "Check the charges [tʃɑrdʒɪz] in My Account, return all overdue items, and settle [ˋsɛt!] the required fees.",
+        en: "Check the charges [tʃɑrdʒɪz] in My Account, return all overdue items, and settle [ˋsɛtəl] the required fees.",
         zh: "請在個人借閱狀況查詢費用，歸還所有逾期館藏，並結清應繳款項。",
       },
     ],
     patterns: [
       {
-        form: "I returned ... days late.",
-        example: "I returned the book three days late.",
-        explanation: "用來清楚說明歸還物品時已經逾期幾天。",
+        form: "I have ... that is ... days overdue.",
+        example: "I have a book that is three days overdue.",
+        explanation: "用來清楚說明尚未歸還的物品已經逾期幾天。",
       },
       {
         form: "Can I ... to stop ... from...?",
@@ -1011,8 +1011,8 @@ export const scenarios: Scenario[] = [
     ],
     grammar: [
       {
-        title: "時間長度的表達",
-        explanation: "數字加上時間單位可放在形容詞前，表示某項行為延遲了多久。",
+        title: "逾期時間的表達",
+        explanation: "時間長度片語放在表示逾期的形容詞前，說明館藏已經超過到期日多久。",
       },
       {
         title: "阻止持續發生",
@@ -1025,7 +1025,7 @@ export const scenarios: Scenario[] = [
       { word: "accumulate", kk: "əˋkjumjə͵let", meaning: "累積", pos: "v." },
       { word: "suspend", kk: "səˋspɛnd", meaning: "暫停", pos: "v." },
       { word: "privilege", kk: "ˋprɪvəlɪdʒ", meaning: "權益、權限", pos: "n." },
-      { word: "settle", kk: "ˋsɛt!", meaning: "結清、處理妥當", pos: "v." },
+      { word: "settle", kk: "ˋsɛtəl", meaning: "結清、處理妥當", pos: "v." },
       { word: "charge", kk: "tʃɑrdʒ", meaning: "應繳費用", pos: "n." },
     ],
   },
@@ -1091,8 +1091,8 @@ export const scenarios: Scenario[] = [
         explanation: "使用情態動詞搭配完成式，表達對過去事件的不確定推測。",
       },
       {
-        title: "條件式被動語態",
-        explanation: "強調替代版本在取得核准後才可能被接受。",
+        title: "情態動詞搭配被動語態",
+        explanation: "情態動詞後接表示被動的結構，說明新版可能被接受；取得核准是接受新版的條件。",
       },
     ],
     vocabulary: [
@@ -1115,7 +1115,7 @@ export const scenarios: Scenario[] = [
     dialogue: [
       {
         role: "reader",
-        en: "The catalog [ˋkæt!͵ɔg] says this book is on shelf, but I cannot locate [ˋlo͵ket] it.",
+        en: "The catalog [ˋkætə͵lɔg] says this book is on the shelf, but I cannot locate [ˋlo͵ket] it.",
         zh: "館藏目錄顯示這本書在架上，但我找不到。",
       },
       {
@@ -1172,8 +1172,8 @@ export const scenarios: Scenario[] = [
       },
     ],
     vocabulary: [
-      { word: "catalog", kk: "ˋkæt!͵ɔg", meaning: "館藏目錄", pos: "n." },
-      { word: "on shelf", kk: "ɑn ʃɛlf", meaning: "顯示在架", pos: "phr." },
+      { word: "catalog", kk: "ˋkætə͵lɔg", meaning: "館藏目錄", pos: "n." },
+      { word: "on the shelf", kk: "ɑn ðə ʃɛlf", meaning: "在書架上、在架", pos: "phr." },
       { word: "locate", kk: "ˋlo͵ket", meaning: "找到位置", pos: "v." },
       { word: "missing", kk: "ˋmɪsɪŋ", meaning: "找不到的、遺失的", pos: "adj." },
       { word: "nearby", kk: "ˋnɪrˋbaɪ", meaning: "附近的", pos: "adj." },
@@ -1190,15 +1190,15 @@ export const scenarios: Scenario[] = [
     sourceUrl: "https://www.lib.nthu.edu.tw/en/use/faq/q_a2.html",
     dialogue: [
       { role: "reader", en: "I received a pickup [ˋpɪk͵ʌp] notice for a book I reserved [rɪˋzɝvd].", zh: "我收到預約書到館的取件通知。" },
-      { role: "librarian", en: "Books requested from the Main Library are available [əˋveləb!] at the Smart Bookshelf on the first floor.", zh: "總圖的預約書可在一樓預約自助取書區領取。" },
-      { role: "reader", en: "How long will the reservation [͵rɛzɚˋveʃən] be retained [rɪˋtend] for me?", zh: "這筆預約會為我保留多久？" },
+      { role: "librarian", en: "Books requested from the Main Library are available [əˋveləbəl] at the Smart Bookshelf on the first floor.", zh: "總圖的預約書可在一樓預約自助取書區領取。" },
+      { role: "reader", en: "How long will the book be held for me?", zh: "這本預約書會為我保留多久？" },
       { role: "librarian", en: "It is normally held for three days, with weekends and official holidays excluded from the count.", zh: "一般會保留三天，星期六、星期日及學校規定的假日不列入計算。" },
       { role: "reader", en: "What should I do if I cannot arrive before the deadline [ˋdɛd͵laɪn]?", zh: "如果我無法在期限前到館，應該怎麼辦？" },
-      { role: "librarian", en: "Cancel [ˋkæns!] the request in My Account before it expires to avoid a pickup penalty [ˋpɛn!tɪ].", zh: "請在到期前於個人借閱狀況取消預約，以免產生未取書記點。" },
+      { role: "librarian", en: "Cancel [ˋkænsəl] the request in My Account before it expires to avoid a pickup penalty [ˋpɛnəltɪ].", zh: "請在到期前於個人借閱狀況取消預約，以免產生未取書記點。" },
     ],
     patterns: [
       { form: "I received a pickup notice for...", example: "I received a pickup notice for my reserved book.", explanation: "用來說明已收到預約資料可領取的通知。" },
-      { form: "How long will ... be retained?", example: "How long will the book be retained for me?", explanation: "用來詢問物品或申請會保留多長時間。" },
+      { form: "How long will ... be held?", example: "How long will the book be held for me?", explanation: "用來詢問預約物品會為讀者保留多長時間。" },
       { form: "... before it expires to avoid...", example: "Cancel the request before it expires to avoid a penalty.", explanation: "用來提醒在期限前採取行動，以避免不利結果。" },
     ],
     grammar: [
@@ -1210,9 +1210,9 @@ export const scenarios: Scenario[] = [
       { word: "reservation", kk: "͵rɛzɚˋveʃən", meaning: "預約", pos: "n." },
       { word: "retain", kk: "rɪˋten", meaning: "保留", pos: "v." },
       { word: "deadline", kk: "ˋdɛd͵laɪn", meaning: "截止期限", pos: "n." },
-      { word: "cancel", kk: "ˋkæns!", meaning: "取消", pos: "v." },
-      { word: "penalty", kk: "ˋpɛn!tɪ", meaning: "處罰、記點", pos: "n." },
-      { word: "available", kk: "əˋveləb!", meaning: "可以領取的、可用的", pos: "adj." },
+      { word: "cancel", kk: "ˋkænsəl", meaning: "取消", pos: "v." },
+      { word: "penalty", kk: "ˋpɛnəltɪ", meaning: "處罰、記點", pos: "n." },
+      { word: "available", kk: "əˋveləbəl", meaning: "可以領取的、可用的", pos: "adj." },
     ],
   },
   {
@@ -1246,7 +1246,7 @@ export const scenarios: Scenario[] = [
       { word: "check in", kk: "tʃɛk ɪn", meaning: "報到", pos: "phr." },
       { word: "release", kk: "rɪˋlis", meaning: "釋出", pos: "v." },
       { word: "extend", kk: "ɪkˋstɛnd", meaning: "延長", pos: "v." },
-      { word: "no-show", kk: "no ʃo", meaning: "預約未到", pos: "phr." },
+      { word: "no-show", kk: "͵noˋʃo", meaning: "預約未到、未到者", pos: "n." },
     ],
   },  {
     id: 18,
@@ -1261,7 +1261,7 @@ export const scenarios: Scenario[] = [
       { role: "reader", en: "I signed in, but the authentication [ɔ͵θɛntəˋkeʃən] page still will not connect.", zh: "我已經登入，但驗證頁面仍然無法連線。" },
       { role: "librarian", en: "Confirm that you selected the correct network, disconnect any unintended network, and reconnect [͵rikəˋnɛkt].", zh: "請確認選擇正確的網路，先中斷其他不需要的連線，再重新連接。" },
       { role: "reader", en: "Can I use the same account on more than one device [dɪˋvaɪs]?", zh: "同一個帳號可以在多個裝置上使用嗎？" },
-      { role: "librarian", en: "Yes, and the connection will end automatically after the account has been idle [ˋaɪd!] for ten minutes.", zh: "可以，帳號閒置十分鐘後，系統會自動中斷連線。" },
+      { role: "librarian", en: "Yes, and the connection will end automatically after the account has been idle [ˋaɪdəl] for ten minutes.", zh: "可以，帳號閒置十分鐘後，系統會自動中斷連線。" },
     ],
     patterns: [
       { form: "How can I access...?", example: "How can I access the wireless network?", explanation: "用來詢問取得網路、資源或服務的方法。" },
@@ -1269,17 +1269,17 @@ export const scenarios: Scenario[] = [
       { form: "Can I use the same ... on...?", example: "Can I use the same account on two devices?", explanation: "用來詢問同一帳號或服務能否在不同設備上使用。" },
     ],
     grammar: [
-      { title: "間接問句", explanation: "詢問方法時，疑問詞後接一般直述語序，使句子自然有禮。" },
-      { title: "現在完成式被動語態", explanation: "強調帳號持續處於閒置狀態，而且狀態與自動斷線有關。" },
+      { title: "詢問方法的直接問句", explanation: "詢問方法時，疑問詞後接情態動詞、主詞及原形動詞；本課用來詢問如何連接無線網路。" },
+      { title: "現在完成式描述持續狀態", explanation: "使用現在完成式搭配表示狀態的形容詞，說明帳號已經持續閒置一段時間；此處不是被動語態。" },
     ],
     vocabulary: [
       { word: "wireless", kk: "ˋwaɪrlɪs", meaning: "無線的", pos: "adj." },
       { word: "temporary", kk: "ˋtɛmpə͵rɛrɪ", meaning: "臨時的", pos: "adj." },
       { word: "authentication", kk: "ɔ͵θɛntəˋkeʃən", meaning: "身分驗證", pos: "n." },
       { word: "device", kk: "dɪˋvaɪs", meaning: "裝置", pos: "n." },
-      { word: "idle", kk: "ˋaɪd!", meaning: "閒置的", pos: "adj." },
+      { word: "idle", kk: "ˋaɪdəl", meaning: "閒置的", pos: "adj." },
       { word: "reconnect", kk: "͵rikəˋnɛkt", meaning: "重新連接", pos: "v." },
-      { word: "signal", kk: "ˋsɪgn!", meaning: "訊號", pos: "n." },
+      { word: "signal", kk: "ˋsɪgnəl", meaning: "訊號", pos: "n." },
     ],
   },
   {
@@ -1329,7 +1329,7 @@ export const scenarios: Scenario[] = [
       { role: "reader", en: "When will the authorization become effective [ɪˋfɛktɪv]?", zh: "委託代借何時會生效？" },
       { role: "librarian", en: "It becomes effective one day after the application is completed.", zh: "申請完成後的次日生效。" },
       { role: "reader", en: "What must the proxy borrower do when checking out materials?", zh: "受託人代借館藏時需要做什麼？" },
-      { role: "librarian", en: "The trustee [trʌsˋti] must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate [ˋtɝmə͵net] the authorization at the desk.", zh: "受託人必須是有效讀者，借書時主動說明是委託代借並出示自己的證件；您也可以到櫃檯終止委託。" },
+      { role: "librarian", en: "The proxy borrower [ˋbɑroɚ] must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate [ˋtɝmə͵net] the authorization at the desk.", zh: "受託人必須是有效讀者，借書時主動說明是委託代借並出示自己的證件；您也可以到櫃檯終止委託。" },
     ],
     patterns: [
       { form: "May I authorize someone to...?", example: "May I authorize someone to borrow books for me?", explanation: "用來詢問是否能正式授權他人代為處理事情。" },
@@ -1342,8 +1342,8 @@ export const scenarios: Scenario[] = [
     ],
     vocabulary: [
       { word: "authorize", kk: "ˋɔθə͵raɪz", meaning: "授權、委託", pos: "v." },
-      { word: "proxy", kk: "ˋprɑksɪ", meaning: "代理人、代理的", pos: "n." },
-      { word: "trustee", kk: "trʌsˋti", meaning: "受託人", pos: "n." },
+      { word: "proxy", kk: "ˋprɑksɪ", meaning: "代理人、受託代辦者", pos: "n." },
+      { word: "borrower", kk: "ˋbɑroɚ", meaning: "借閱者、借書人", pos: "n." },
       { word: "valid", kk: "ˋvælɪd", meaning: "有效的", pos: "adj." },
       { word: "submit", kk: "səbˋmɪt", meaning: "提交", pos: "v." },
       { word: "effective", kk: "ɪˋfɛktɪv", meaning: "生效的", pos: "adj." },

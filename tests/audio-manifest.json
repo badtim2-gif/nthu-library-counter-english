@@ -164,7 +164,7 @@
     },
     {
       "file": "s01-p02-zh.mp3",
-      "text": "用來有禮貌地說明先後順序，先完成前項條件，再進行後項。",
+      "text": "用來有禮貌地說明先後順序；先完成請求的動作，再進行時間子句所述的動作，例如先查看帳戶，再借書。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -194,7 +194,7 @@
     },
     {
       "file": "s01-g01-zh.mp3",
-      "text": "動名詞作為補語。表示第一次做某事時，第一次之後可接動名詞，描述正在談論的活動。",
+      "text": "第一次做某事的表達。表示第一次做某事時，可在表示第一次的片語後接動名詞，說明正在談論的活動。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -3025,7 +3025,7 @@
     },
     {
       "file": "s09-v04-meaning.mp3",
-      "text": "最高的、最大值，形容詞",
+      "text": "最大的、最高的，形容詞",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -3455,7 +3455,7 @@
     },
     {
       "file": "s11-t02-en.mp3",
-      "text": "Visitors over eighteen may present a national identification card in exchange for a temporary library card.",
+      "text": "Visitors aged eighteen or older may present a national identification card in exchange for a temporary library card.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",
@@ -3615,7 +3615,7 @@
     },
     {
       "file": "s11-g01-zh.mp3",
-      "text": "表達目的的不定詞。使用不定詞說明到館或申請服務的目的，語氣直接且自然。",
+      "text": "表示避免的目的。使用表示目的的不定詞，說明按時歸還證件是為了避免逾期費用。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -4115,7 +4115,7 @@
     },
     {
       "file": "s13-t01-en.mp3",
-      "text": "I returned a book five days late and received an overdue notice.",
+      "text": "I have a book that is five days overdue , and I received an overdue notice.",
       "voice": "kokoro-v1.0/am_fenrir",
       "language": "en",
       "kind": "english_long",
@@ -4125,7 +4125,7 @@
     },
     {
       "file": "s13-t01-zh.mp3",
-      "text": "我晚了五天還書，而且收到逾期通知。",
+      "text": "我有一本書已經逾期五天，而且收到逾期通知。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -4235,7 +4235,7 @@
     },
     {
       "file": "s13-p01-en.mp3",
-      "text": "I returned the book three days late.",
+      "text": "I have a book that is three days overdue.",
       "voice": "kokoro-v1.0/am_puck",
       "language": "en",
       "kind": "english_long",
@@ -4245,7 +4245,7 @@
     },
     {
       "file": "s13-p01-zh.mp3",
-      "text": "用來清楚說明歸還物品時已經逾期幾天。",
+      "text": "用來清楚說明尚未歸還的物品已經逾期幾天。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -4295,7 +4295,7 @@
     },
     {
       "file": "s13-g01-zh.mp3",
-      "text": "時間長度的表達。數字加上時間單位可放在形容詞前，表示某項行為延遲了多久。",
+      "text": "逾期時間的表達。時間長度片語放在表示逾期的形容詞前，說明館藏已經超過到期日多久。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -4645,7 +4645,7 @@
     },
     {
       "file": "s14-g02-zh.mp3",
-      "text": "條件式被動語態。強調替代版本在取得核准後才可能被接受。",
+      "text": "情態動詞搭配被動語態。情態動詞後接表示被動的結構，說明新版可能被接受；取得核准是接受新版的條件。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -4795,7 +4795,7 @@
     },
     {
       "file": "s15-t01-en.mp3",
-      "text": "The catalog says this book is on shelf, but I cannot locate it.",
+      "text": "The catalog says this book is on the shelf, but I cannot locate it.",
       "voice": "kokoro-v1.0/am_fenrir",
       "language": "en",
       "kind": "english_long",
@@ -5015,7 +5015,7 @@
     },
     {
       "file": "s15-v02-word.mp3",
-      "text": "on shelf",
+      "text": "on the shelf",
       "voice": "kokoro-v1.0/am_puck",
       "language": "en",
       "kind": "word",
@@ -5025,7 +5025,7 @@
     },
     {
       "file": "s15-v02-meaning.mp3",
-      "text": "顯示在架，片語",
+      "text": "在書架上、在架，片語",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -5175,7 +5175,7 @@
     },
     {
       "file": "s16-t03-en.mp3",
-      "text": "How long will the reservation be retained for me?",
+      "text": "How long will the book be held for me?",
       "voice": "kokoro-v1.0/am_fenrir",
       "language": "en",
       "kind": "english_long",
@@ -5185,7 +5185,7 @@
     },
     {
       "file": "s16-t03-zh.mp3",
-      "text": "這筆預約會為我保留多久？",
+      "text": "這本預約書會為我保留多久？",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -5275,7 +5275,7 @@
     },
     {
       "file": "s16-p02-en.mp3",
-      "text": "How long will the book be retained for me?",
+      "text": "How long will the book be held for me?",
       "voice": "kokoro-v1.0/am_puck",
       "language": "en",
       "kind": "english_long",
@@ -5285,7 +5285,7 @@
     },
     {
       "file": "s16-p02-zh.mp3",
-      "text": "用來詢問物品或申請會保留多長時間。",
+      "text": "用來詢問預約物品會為讀者保留多長時間。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -5805,7 +5805,7 @@
     },
     {
       "file": "s17-v07-meaning.mp3",
-      "text": "預約未到，片語",
+      "text": "預約未到、未到者，名詞",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -5995,7 +5995,7 @@
     },
     {
       "file": "s18-g01-zh.mp3",
-      "text": "間接問句。詢問方法時，疑問詞後接一般直述語序，使句子自然有禮。",
+      "text": "詢問方法的直接問句。詢問方法時，疑問詞後接情態動詞、主詞及原形動詞；本課用來詢問如何連接無線網路。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -6005,7 +6005,7 @@
     },
     {
       "file": "s18-g02-zh.mp3",
-      "text": "現在完成式被動語態。強調帳號持續處於閒置狀態，而且狀態與自動斷線有關。",
+      "text": "現在完成式描述持續狀態。使用現在完成式搭配表示狀態的形容詞，說明帳號已經持續閒置一段時間；此處不是被動語態。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -6595,7 +6595,7 @@
     },
     {
       "file": "s20-t06-en.mp3",
-      "text": "The trustee must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate the authorization at the desk.",
+      "text": "The proxy borrower must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate the authorization at the desk.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",
@@ -6725,7 +6725,7 @@
     },
     {
       "file": "s20-v02-meaning.mp3",
-      "text": "代理人、代理的，名詞",
+      "text": "代理人、受託代辦者，名詞",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -6735,7 +6735,7 @@
     },
     {
       "file": "s20-v03-word.mp3",
-      "text": "trustee",
+      "text": "borrower",
       "voice": "kokoro-v1.0/am_puck",
       "language": "en",
       "kind": "word",
@@ -6745,7 +6745,7 @@
     },
     {
       "file": "s20-v03-meaning.mp3",
-      "text": "受託人，名詞",
+      "text": "借閱者、借書人，名詞",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",

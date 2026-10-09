@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the 682 non-alphabet production clips with pinned Kokoro models.
+"""Generate all 682 non-alphabet production clips, or a selected subset, with pinned Kokoro models.
 
 The script deliberately writes outside public/audio.  Review and validate the
 staging output before copying it into the application.
@@ -286,6 +286,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--model-v10", type=Path, required=True)
     parser.add_argument("--model-v11zh", type=Path, required=True)
+    parser.add_argument("--files", nargs="+", help="Regenerate only these non-alphabet filenames")
     args = parser.parse_args()
 
     args.output.mkdir(parents=True, exist_ok=True)
@@ -300,6 +301,12 @@ def main() -> int:
     entries = [entry for entry in source["entries"] if entry["kind"] != "letter"]
     if len(entries) != 682:
         raise RuntimeError(f"Expected 682 synthetic clips, found {len(entries)}")
+    if args.files:
+        requested = set(args.files)
+        known = {entry["file"] for entry in entries}
+        if len(requested) != len(args.files) or not requested <= known:
+            raise RuntimeError(f"Duplicate or unknown selected files: {sorted(requested - known)}")
+        entries = [entry for entry in entries if entry["file"] in requested]
 
     model_dirs = {"v1.0": args.model_v10, "v1.1-zh": args.model_v11zh}
     for spec in VOICE_SPECS.values():
@@ -407,7 +414,7 @@ def main() -> int:
                     "verified_wpm": round(words / effective_duration * 60.0, 1),
                 }
             records.append(record)
-            print(f"[{counter:03d}/682] {filename} {spec['voice']} {loudness['integrated_lufs']:.2f} LUFS", flush=True)
+            print(f"[{counter:03d}/{len(entries)}] {filename} {spec['voice']} {loudness['integrated_lufs']:.2f} LUFS", flush=True)
 
         del pipelines, voice_packs, model
         torch.cuda.empty_cache()
@@ -423,7 +430,7 @@ def main() -> int:
     manifest = {
         "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "status": "passed",
-        "purpose": "Production replacement for the 682 synthetic speech clips; alphabet recordings excluded.",
+        "purpose": f"Production replacement for {len(entries)} selected synthetic speech clips; alphabet recordings excluded.",
         "source_manifest": str(args.manifest.resolve()),
         "environment": {
             "python": platform.python_version(),
