@@ -288,7 +288,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "reader",
-        en: "May I return the book through the self service machine or the book drop?",
+        en: "May I return the book through the self-service machine or the book drop?",
         zh: "我可以透過自助還書機或還書箱歸還嗎？",
       },
       {
@@ -365,7 +365,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "reader",
-        en: "Where can I locate [ˋloket] the book after I find the record?",
+        en: "Where can I locate [ˋlo͵ket] the book after I find the record?",
         zh: "找到紀錄後，我可以到哪裡找到這本書？",
       },
       {
@@ -415,7 +415,7 @@ export const scenarios: Scenario[] = [
       { word: "assign", kk: "əˋsaɪn", meaning: "指定、指派", pos: "v." },
       { word: "reserve", kk: "rɪˋzɝv", meaning: "保留、指定參考", pos: "n." },
       { word: "instructor", kk: "ɪnˋstrʌktɚ", meaning: "授課教師", pos: "n." },
-      { word: "locate", kk: "ˋloket", meaning: "找到位置", pos: "v." },
+      { word: "locate", kk: "ˋlo͵ket", meaning: "找到位置", pos: "v." },
       { word: "approved", kk: "əˋpruvd", meaning: "經核准的", pos: "adj." },
       { word: "designated", kk: "ˋdɛzɪg͵netɪd", meaning: "指定的", pos: "adj." },
       { word: "dissertation", kk: "͵dɪsɚˋteʃən", meaning: "博士論文", pos: "n." },
@@ -750,7 +750,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "Exchange students may visit, but they are not eligible [ˋɛlɪdʒəb!] for cross campus borrowing or the interlibrary circulation [͵sɝkjəˋleʃən] service.",
+        en: "Exchange students may visit, but they are not eligible [ˋɛlɪdʒəb!] for cross-campus borrowing or the interlibrary circulation [͵sɝkjəˋleʃən] service.",
         zh: "交換生可以入館，但不具跨校借閱或館際流通服務的資格。",
       },
       {
@@ -796,7 +796,7 @@ export const scenarios: Scenario[] = [
       { word: "present", kk: "prɪˋzɛnt", meaning: "出示、呈交", pos: "v." },
       { word: "submit", kk: "səbˋmɪt", meaning: "提交", pos: "v." },
       { word: "eligible", kk: "ˋɛlɪdʒəb!", meaning: "符合資格的", pos: "adj." },
-      { word: "cross campus", kk: "͵krɔsˋkæmpəs", meaning: "跨校的", pos: "adj." },
+      { word: "cross-campus", kk: "͵krɔsˋkæmpəs", meaning: "跨校的", pos: "adj." },
       { word: "circulation", kk: "͵sɝkjəˋleʃən", meaning: "流通、借閱服務", pos: "n." },
       { word: "available", kk: "əˋveləb!", meaning: "可使用的、可取得的", pos: "adj." },
     ],
@@ -902,7 +902,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "An item cannot be renewed if another reader has reserved [rɪˋzɝvd] it or if it is already overdue [ˋovɚˋdu].",
+        en: "An item cannot be renewed if another reader has reserved [rɪˋzɝvd] it or if it is already overdue [͵ovɚˋdu].",
         zh: "館藏若已被其他讀者預約，或本身已經逾期，就無法續借。",
       },
       {
@@ -949,7 +949,7 @@ export const scenarios: Scenario[] = [
       { word: "extend", kk: "ɪkˋstɛnd", meaning: "延長", pos: "v." },
       { word: "reserved", kk: "rɪˋzɝvd", meaning: "已被預約的", pos: "adj." },
       { word: "maximum", kk: "ˋmæksəməm", meaning: "最大的、最高的", pos: "adj." },
-      { word: "overdue", kk: "ˋovɚˋdu", meaning: "逾期的", pos: "adj." },
+      { word: "overdue", kk: "͵ovɚˋdu", meaning: "逾期的", pos: "adj." },
       { word: "period", kk: "ˋpɪrɪəd", meaning: "期間、期限", pos: "n." },
     ],
   },
@@ -963,7 +963,7 @@ export const scenarios: Scenario[] = [
     dialogue: [
       {
         role: "reader",
-        en: "I returned a book five days late and received an overdue [ˋovɚˋdu] notice.",
+        en: "I returned a book five days late and received an overdue [͵ovɚˋdu] notice.",
         zh: "我晚了五天還書，而且收到逾期通知。",
       },
       {
@@ -1020,7 +1020,7 @@ export const scenarios: Scenario[] = [
       },
     ],
     vocabulary: [
-      { word: "overdue", kk: "ˋovɚˋdu", meaning: "逾期的", pos: "adj." },
+      { word: "overdue", kk: "͵ovɚˋdu", meaning: "逾期的", pos: "adj." },
       { word: "fee", kk: "fi", meaning: "費用", pos: "n." },
       { word: "accumulate", kk: "əˋkjumjə͵let", meaning: "累積", pos: "v." },
       { word: "suspend", kk: "səˋspɛnd", meaning: "暫停", pos: "v." },
@@ -1228,7 +1228,7 @@ export const scenarios: Scenario[] = [
       { role: "reader", en: "How many participants [pɑrˋtɪsəpənts] are required, and how long may we use the room?", zh: "需要幾位使用者？一次可以使用多久？" },
       { role: "librarian", en: "A Main Library room requires three valid cards, and one reservation may last up to two hours.", zh: "總圖討論室需要三張有效證件，一次預約最長兩小時。" },
       { role: "reader", en: "What happens if one participant is late to check in?", zh: "如果其中一位使用者來不及報到，會怎麼樣？" },
-      { role: "librarian", en: "All participants must check in within fifteen minutes, or the room will be released [rɪˋlist] and a no show may be recorded.", zh: "所有使用者必須在十五分鐘內完成報到，否則空間會被釋出，並可能留下未到紀錄。" },
+      { role: "librarian", en: "All participants must check in within fifteen minutes, or the room will be released [rɪˋlist] and a no-show may be recorded.", zh: "所有使用者必須在十五分鐘內完成報到，否則空間會被釋出，並可能留下未到紀錄。" },
     ],
     patterns: [
       { form: "We would like to reserve...", example: "We would like to reserve a discussion room.", explanation: "用來禮貌表達團體希望預約某個空間。" },
@@ -1246,7 +1246,7 @@ export const scenarios: Scenario[] = [
       { word: "check in", kk: "tʃɛk ɪn", meaning: "報到", pos: "phr." },
       { word: "release", kk: "rɪˋlis", meaning: "釋出", pos: "v." },
       { word: "extend", kk: "ɪkˋstɛnd", meaning: "延長", pos: "v." },
-      { word: "no show", kk: "no ʃo", meaning: "預約未到", pos: "phr." },
+      { word: "no-show", kk: "no ʃo", meaning: "預約未到", pos: "phr." },
     ],
   },  {
     id: 18,

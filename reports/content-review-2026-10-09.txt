@@ -1,0 +1,108 @@
+檢查基準版本：479f46c
+圖書館櫃台英語教材內容檢查
+日期：2026-10-09
+範圍：本機 app/scenarios.ts 的全部20課、120句中英對話、60個句型、40項文法、141筆單字；另抽查網站教學標示。
+注意：這是本機來源檢查，未核實已部署網站的版本，未逐段聽完708個音檔，也不是全部政策、版權或功能的驗收。
+
+一、已修正的呈現標示（5組，共11處）
+A01 第12、13課 overdue：ˋovɚˋdu 改為 ͵ovɚˋdu，共4處。統一第一音節次重音、最後音節主重音。來源：https://dictionary.cambridge.org/pronunciation/english/overdue
+A02 第5課 locate：ˋloket 改為 ˋlo͵ket，共2處，與第15課一致。屬音標詳略與格式統一，不是判定原本的讀音不成立。
+A03 第4課 self service machine 改為 self-service machine，1處。
+A04 第10課 cross campus 改為 cross-campus，對話及單字共2處。
+A05 第17課 no show 改為 no-show，對話及單字共2處。來源：https://dictionary.cambridge.org/dictionary/english/no-show
+驗證：上述修改不改變經去除音標及正規化連字號後的朗讀內容，無須重製音檔；尚未推送或部署。
+
+二、需要修正並同步更新語音的9項問題
+B01 第1課／句型2中文解說／app/scenarios.ts:91
+原文：先完成前項條件，再進行後項。
+問題：Before you borrow the book, please check your account. 是先查看帳戶，再借書；原解說可能將前後順序說反。
+建議：用來有禮貌地說明先後順序，先完成請求的動作，再進行時間子句所述的動作。
+音檔：s01-p02-zh.mp3。
+
+B02 第11課／對話2／app/scenarios.ts:819
+原英文：Visitors over eighteen ...；中文：年滿十八歲的訪客...
+問題：over eighteen 排除恰好18歲，中文則包含18歲。館方中文入館須知也明列年滿18歲。
+建議：Visitors aged eighteen or older may present ...；中文可保留。
+音檔：s11-t02-en.mp3。
+依據：https://www.lib.nthu.edu.tw/use/in_lib_service.html
+補充：館方英文來源也使用 over the age of 18，可另列來源頁中英一致性問題給館員處理。
+
+B03 第13課／對話1及句型1／app/scenarios.ts:966
+原文：I returned a book five days late ...；後續對話卻詢問是否現在續借以停止費用累積。
+問題：同一本書既已歸還，就不能再續借，對話情境前後矛盾。
+建議第一句：I have a book that is five days overdue, and I received an overdue notice.
+建議中文：我有一本書已經逾期五天，而且收到逾期通知。
+句型1可同步改為 I have ... that is ... days overdue.；例句 I have a book that is three days overdue.；解說 用來清楚說明尚未歸還的物品已經逾期幾天。
+音檔：s13-t01-en.mp3、s13-t01-zh.mp3、s13-p01-en.mp3、s13-p01-zh.mp3。
+文法1需配合選定的對話修正方案調整，不能只改對話而保留不對應的例句。
+
+B04 第18課／文法1／app/scenarios.ts:1272
+原文：間接問句。詢問方法時，疑問詞後接一般直述語序...
+問題：本課 How can I access ...? 是直接問句，語序是疑問詞、情態動詞、主詞、原形動詞；不是間接問句。
+建議標題：詢問方法的直接問句。
+建議解說：詢問方法時，疑問詞後接情態動詞、主詞及原形動詞；本課用來詢問如何連接無線網路。
+音檔：s18-g01-zh.mp3。
+依據：https://dictionary.cambridge.org/grammar/british-grammar/how
+
+B05 第18課／文法2／app/scenarios.ts:1273
+原標題：現在完成式被動語態。
+問題：has been idle 中 idle 是形容詞，沒有被動語態的過去分詞；此處是現在完成式表達狀態持續。
+建議標題：現在完成式描述持續狀態。
+建議解說：使用現在完成式搭配表示狀態的形容詞，說明帳號已經持續閒置一段時間；此處不是被動語態。
+音檔：s18-g02-zh.mp3。
+
+B06 第13課／文法1／app/scenarios.ts:1015
+原解說：數字加上時間單位可放在形容詞前...
+問題：原對話 I returned the book ... late 中 late 修飾歸還動作，是副詞。不能用這句教成形容詞。
+處理：若保留原句，可改成『時間長度片語可放在副詞前，說明歸還動作延遲多久』；若採B03方案，改教 days overdue 中 overdue 的形容詞用法。兩者擇一，避免互相矛盾。
+音檔：s13-g01-zh.mp3。
+依據：https://dictionary.cambridge.org/grammar/british-grammar/late-or-lately
+
+B07 第9課／單字4 maximum／app/scenarios.ts:722
+原文：最高的、最大值；詞性 adj.
+問題：最大值是名詞釋義，與形容詞標示混在一起。
+建議：最大的、最高的；保持 adj.，與第12課一致。
+音檔：s09-v04-meaning.mp3。
+
+B08 第20課／單字2 proxy／app/scenarios.ts:1345
+原文：代理人、代理的；詞性 n.
+問題：代理的屬修飾語用法，不能直接和代理人的名詞釋義混列為名詞。
+建議：代理人、受託代辦者；保持 n.。若要教 proxy borrowing，另在句型解說交代用法。
+音檔：s20-v02-meaning.mp3。
+
+B09 第17課／單字7 no-show／app/scenarios.ts:1249
+原詞性：phr.；對話：a no-show may be recorded。
+問題：本課將 no-show 當作可數名詞使用，應標示 n.，不宜標成片語。
+建議釋義：預約未到、未到者；詞性 n.。
+音檔：s17-v07-meaning.mp3。
+依據：https://dictionary.cambridge.org/dictionary/english/no-show
+
+三、可改善的7項教學表達（不宜全部算成拼字或文法錯誤）
+C01 多課KK音標直接顯示驚嘆號，例如 settle [ˋsɛt!]、available [əˋveləb!]。這常是舊式字型代碼表示音節化的l，不宜一概當成發音錯誤；但目前沒有符號說明，可能使學生誤讀。建議改為可直接閱讀的音標寫法，並維持全站一致。
+C02 第1課『動名詞作為補語』標題不夠精確，建議改為『第一次做某事的表達』，說明 first time 後接動作的寫法。
+C03 第11課『表達目的的不定詞』應指明實際例句。例如第6句 to avoid ... 確實表示目的；I would like to use ... 中的不定詞是說明想做的事情，不能混為同一用法。
+C04 第14課『條件式被動語態』建議改為『情態動詞搭配被動語態』，再解說核准是接受替代版本的條件。
+C05 第15課 this book is on shelf：若是普通英文敘述，建議 is on the shelf；若是引用系統狀態，建議 is listed as On Shelf。單字 on shelf 也應說明是系統狀態名稱。涉及對話及單字語音，需同步處理。
+C06 第20課 trustee 通常指信託財產管理人或機構受託管理者；圖書代借情境以 proxy borrower 較清楚，且與前一句一致。不是否定 trustee 有受託人釋義，而是此處容易造成情境誤解。依據：https://dictionary.cambridge.org/dictionary/english/trustee
+C07 第16課 How long will the reservation be retained for me? 建議改問 How long will the book be held for me?，中文改為『這本預約書會為我保留多久？』，因為此處在談取書保留期限，不是預約申請留存期限。
+
+四、2項需要館員釐清的內容疑義
+D01 第7課對話4要求 every requested item 都 collected, returned, fully paid，包括文件傳遞影印本；與第4課『影印本可保留』容易衝突。官方離校頁中英文也有同樣概括寫法，不能僅憑教材判定政策錯誤。建議經館員確認後，分成『借來的書已歸還、影印資料已取件、相關費用已結清』。
+來源：https://www.lib.nthu.edu.tw/use/before_graduated.html
+D02 第6課讀者薦購的是電子書，第6句卻保證獲准後會自動辦理預約。官方薦購頁有概括預約說明，但電子書是否也適用仍需館員確認；不要自行擴大承諾。
+來源：https://www.lib.nthu.edu.tw/en/resource/rams.html
+
+五、不應誤判的音標差異
+immediately [ɪˋmidɪətlɪ] 是KK形式；Cambridge /ɪˈmiː.di.ət.li/ 是IPA形式。不同系統的符號不同，不代表教材有錯。
+patent 的弱讀元音或音節化n、nearby 的重音記載有字典差異，這次未憑單一符號差異直接認定錯誤。
+來源：https://dictionary.cambridge.org/pronunciation/english/immediately
+來源：https://dictionary.cambridge.org/pronunciation/english/patent
+來源：https://dictionary.cambridge.org/dictionary/english/nearby
+
+六、驗證與後續處理
+全部20課已逐課檢查；未列問題的教材不代表已完成政策、授權或聽音驗收。
+已修改的11處只涉及音標及連字號。修改前後對話朗讀稿、中文、句型與文法朗讀內容保持一致；單字名稱經連字號正規化後也一致。
+已核對682筆合成音檔SHA-256與來源紀錄相符，並核對708個預期音檔路徑；此為檔案完整性核對，不是聽音品質判定。
+模組可正常解析；git diff --check 通過。專案未安裝node_modules，本次未執行完整建置及瀏覽器畫面測試。
+後續若採用B、C或D項建議，須更新對應音檔、audio-manifest、Kokoro來源紀錄及快取版本，再請工讀生複測。
+尚未修改Google試算表，未提交、推送或部署。
