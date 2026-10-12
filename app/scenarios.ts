@@ -141,18 +141,18 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "If more than fourteen days remained [rɪˋmend], the new due date is fourteen days from the recall request.",
+        en: "If more than fourteen days remain [rɪˋmen], the new due date is fourteen days from the recall request.",
         zh: "如果原本剩餘超過十四天，新到期日就是從召回申請日起算十四天。",
       },
       {
         role: "reader",
-        en: "What happens if fewer than fourteen days remain?",
-        zh: "如果剩不到十四天，會怎麼處理？",
+        en: "What happens if fourteen days or fewer remain?",
+        zh: "如果剩十四天或更少，會怎麼處理？",
       },
       {
         role: "librarian",
-        en: "The original [əˋrɪdʒənəl] due date stays the same, so please check your account and email regularly [ˋrɛgjəlɚlɪ].",
-        zh: "原到期日會維持不變，因此請定期查看帳戶與電子郵件。",
+        en: "The original [əˋrɪdʒənəl] due date stays the same. Please check your account regularly [ˋrɛgjəlɚlɪ], because notification emails are only reminders.",
+        zh: "原到期日維持不變。請定期查看個人借閱狀況，因為通知郵件僅供提醒。",
       },
     ],
     patterns: [

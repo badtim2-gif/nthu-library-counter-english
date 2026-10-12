@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-10-09",
+  "updated_at": "2026-10-12",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -1868,22 +1868,27 @@
     },
     {
       "file": "s02-t04-en.mp3",
+      "text": "If more than fourteen days remain , the new due date is fourteen days from the recall request.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "939a3dffa0b2d85c4a67d33f22992faf4eeee8a352cb28d6837eb44fc1ce8ca2",
+      "applied_target_lufs": -22.3,
+      "sha256": "5960029aa0f994db3f3fbf946cbd80dcff1aa82e060909bf44d4a4e40316dd88",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 8.687
+        "duration_seconds": 8.677
       },
       "loudness": {
-        "integrated_lufs": -23.08,
-        "true_peak_dbfs": -5.85,
-        "lra_lu": 3.0,
-        "threshold_lufs": -33.49
+        "integrated_lufs": -22.88,
+        "true_peak_dbfs": -4.63,
+        "lra_lu": 2.7,
+        "threshold_lufs": -33.34
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -1902,9 +1907,9 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.84117647,
+        "postprocess_atempo": 0.82352941,
         "word_count": 17,
-        "verified_wpm": 120.2
+        "verified_wpm": 120.3
       }
     },
     {
@@ -1944,22 +1949,27 @@
     },
     {
       "file": "s02-t05-en.mp3",
+      "text": "What happens if fourteen days or fewer remain?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_fenrir",
       "speed": 0.8,
-      "sha256": "bc04206224f051bc10049bd891139cf9bac6ca2a1f085672bdb9dc53054fea2b",
+      "applied_target_lufs": -22.3,
+      "sha256": "4a14f72c0c451a1d6edded95e621015da6bce0f3d5f7d9485623b4239288ab1f",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 4.198
+        "duration_seconds": 4.197
       },
       "loudness": {
-        "integrated_lufs": -22.41,
-        "true_peak_dbfs": -3.93,
-        "lra_lu": 2.3,
-        "threshold_lufs": -32.93
+        "integrated_lufs": -23.25,
+        "true_peak_dbfs": -3.94,
+        "lra_lu": 2.5,
+        "threshold_lufs": -33.78
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -1978,32 +1988,37 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.9625,
+        "postprocess_atempo": 0.95625,
         "word_count": 8,
         "verified_wpm": 120.1
       }
     },
     {
       "file": "s02-t05-zh.mp3",
+      "text": "如果剩十四天或更少，會怎麼處理？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "dfb6b780f19971f3fce91a985b17ef11c74ab284e2e6111a1a3341029ebc7f92",
+      "applied_target_lufs": -21.26,
+      "sha256": "c496d2efa17697265ec1b6b57ef8e1b31e48227fb3c1d35ccfac5b0a713fc174",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 4.65
+        "duration_seconds": 4.925
       },
       "loudness": {
-        "integrated_lufs": -22.32,
-        "true_peak_dbfs": -4.09,
-        "lra_lu": 4.3,
-        "threshold_lufs": -32.97
+        "integrated_lufs": -22.29,
+        "true_peak_dbfs": -3.93,
+        "lra_lu": 3.9,
+        "threshold_lufs": -33.0
       },
       "boundary_peaks": {
-        "leading_40ms": 2.6e-07,
+        "leading_40ms": 1.6e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2020,22 +2035,27 @@
     },
     {
       "file": "s02-t06-en.mp3",
+      "text": "The original due date stays the same. Please check your account regularly , because notification emails are only reminders.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "8e7abfd07c49ccacc51aa989f86ecd305ef0a0cd585fde4a99e9c1f4aa1016ba",
+      "applied_target_lufs": -22.3,
+      "sha256": "b931f82b326d31b5bf4b8cdeb759f9377542e15836711c3acbd80686a37f3f4e",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.687
+        "duration_seconds": 9.194
       },
       "loudness": {
-        "integrated_lufs": -22.46,
-        "true_peak_dbfs": -3.72,
-        "lra_lu": 3.7,
-        "threshold_lufs": -33.19
+        "integrated_lufs": -22.68,
+        "true_peak_dbfs": -3.77,
+        "lra_lu": 1.9,
+        "threshold_lufs": -33.15
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -2054,32 +2074,37 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.88,
-        "word_count": 15,
-        "verified_wpm": 120.2
+        "postprocess_atempo": 0.99444444,
+        "word_count": 18,
+        "verified_wpm": 120.1
       }
     },
     {
       "file": "s02-t06-zh.mp3",
+      "text": "原到期日維持不變。請定期查看個人借閱狀況，因為通知郵件僅供提醒。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "948b5580cede5b73ccefbebd55b7721798bc8da8e352a4e7b17e63db0f045f15",
+      "applied_target_lufs": -20.81,
+      "sha256": "a9a27fb42842731feb3ca14ce49625b83e8e5e30115fbc6ca7c66521bd9c7b06",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.6
+        "duration_seconds": 7.9
       },
       "loudness": {
-        "integrated_lufs": -22.31,
-        "true_peak_dbfs": -3.87,
-        "lra_lu": 3.8,
-        "threshold_lufs": -32.69
+        "integrated_lufs": -22.38,
+        "true_peak_dbfs": -3.64,
+        "lra_lu": 4.0,
+        "threshold_lufs": -32.85
       },
       "boundary_peaks": {
-        "leading_40ms": 2.3e-07,
+        "leading_40ms": 1.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -25163,36 +25188,16 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-10-09T09:57:30+08:00",
-    "clip_count": 25,
-    "staging_manifest_sha256": "7d536803a813529d0bdbbb94b595989709c7b42c608851cc62524d4cf7776841",
-    "transcript_manifest_sha256": "238b1a283f1eb6aa20b779d0bd8165e01d1a92aceb8b19d576defeaa51310fa7",
+    "generated_at": "2026-10-12T14:01:08+08:00",
+    "clip_count": 5,
+    "staging_manifest_sha256": "79ba140598bc5d823746381d83328379e2e51a69ef944cf700a0019844e21d02",
+    "transcript_manifest_sha256": "c066c85e75d5d41d0cd41d40787deccc4a3ac28f12fb386921a6e6214a773058",
     "files": [
-      "s01-g01-zh.mp3",
-      "s01-p02-zh.mp3",
-      "s09-v04-meaning.mp3",
-      "s11-g01-zh.mp3",
-      "s11-t02-en.mp3",
-      "s13-g01-zh.mp3",
-      "s13-p01-en.mp3",
-      "s13-p01-zh.mp3",
-      "s13-t01-en.mp3",
-      "s13-t01-zh.mp3",
-      "s14-g02-zh.mp3",
-      "s15-t01-en.mp3",
-      "s15-v02-meaning.mp3",
-      "s15-v02-word.mp3",
-      "s16-p02-en.mp3",
-      "s16-p02-zh.mp3",
-      "s16-t03-en.mp3",
-      "s16-t03-zh.mp3",
-      "s17-v07-meaning.mp3",
-      "s18-g01-zh.mp3",
-      "s18-g02-zh.mp3",
-      "s20-t06-en.mp3",
-      "s20-v02-meaning.mp3",
-      "s20-v03-meaning.mp3",
-      "s20-v03-word.mp3"
+      "s02-t04-en.mp3",
+      "s02-t05-en.mp3",
+      "s02-t05-zh.mp3",
+      "s02-t06-en.mp3",
+      "s02-t06-zh.mp3"
     ]
   }
 }

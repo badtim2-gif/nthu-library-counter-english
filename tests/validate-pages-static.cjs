@@ -41,10 +41,12 @@ assert.match(creditsHtml, new RegExp(`${basePath}/third-party-packages\\.json`))
 
 const serviceWorker = fs.readFileSync(path.join(output, "sw.js"), "utf8");
 assert.match(serviceWorker, /self\.registration\.scope/);
-assert.match(serviceWorker, /nthu-library-shell-v11/);
+assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v12";/);
 assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
-assert.match(serviceWorker, /nthu-library-audio-v9/);
-assert.doesNotMatch(serviceWorker, /nthu-library-audio-v[1-7]/);
+assert.match(serviceWorker, /const AUDIO_CACHE = "nthu-library-audio-v10";/);
+for (let version = 1; version <= 9; version += 1) {
+  assert.ok(!serviceWorker.includes(`"nthu-library-audio-v${version}"`));
+}
 
 const kokoroSources = JSON.parse(
   fs.readFileSync(path.join(output, "audio", "kokoro-audio-sources.json"), "utf8"),
@@ -60,10 +62,10 @@ assert.equal(packageReport.packages.length, packageReport.package_count);
 assert.ok(packageReport.packages.every((entry) => !("paths" in entry)));
 
 const pageSource = fs.readFileSync(path.join(root, "app", "page.tsx"), "utf8");
-assert.match(pageSource, /const AUDIO_CACHE_NAME = "nthu-library-audio-v9"/);
+assert.match(pageSource, /const AUDIO_CACHE_NAME = "nthu-library-audio-v10";/);
 assert.match(pageSource, /caches\.open\(AUDIO_CACHE_NAME\)/);
-for (const version of [1, 2, 3, 4, 5, 6, 7]) {
-  assert.match(pageSource, new RegExp(`nthu-library-audio-v${version}`));
+for (let version = 1; version <= 9; version += 1) {
+  assert.ok(pageSource.includes(`"nthu-library-audio-v${version}"`));
 }
 
 const manifest = JSON.parse(

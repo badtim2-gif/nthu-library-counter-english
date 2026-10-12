@@ -61,6 +61,18 @@ assert.deepEqual(manifest.voices, {
 });
 assert.equal(manifest.entries.length, 708);
 
+const recallLesson = scenarios.find((scenario) => scenario.id === 2);
+assert.equal(recallLesson.dialogue[3].en, "If more than fourteen days remain [rɪˋmen], the new due date is fourteen days from the recall request.");
+assert.equal(recallLesson.dialogue[3].zh, "如果原本剩餘超過十四天，新到期日就是從召回申請日起算十四天。");
+assert.equal(recallLesson.dialogue[4].en, "What happens if fourteen days or fewer remain?");
+assert.equal(recallLesson.dialogue[4].zh, "如果剩十四天或更少，會怎麼處理？");
+assert.equal(recallLesson.dialogue[5].en, "The original [əˋrɪdʒənəl] due date stays the same. Please check your account regularly [ˋrɛgjəlɚlɪ], because notification emails are only reminders.");
+assert.equal(recallLesson.dialogue[5].zh, "原到期日維持不變。請定期查看個人借閱狀況，因為通知郵件僅供提醒。");
+assert.equal(recallLesson.vocabulary.length, 7);
+assert.deepEqual(recallLesson.vocabulary.find((item) => item.word === "recall"), {
+  word: "recall", kk: "rɪˋkɔl", meaning: "召回", pos: "n.",
+});
+
 // Detect text edits that have not been reflected in the approved speech inventory.
 const expectedTranscripts = new Map();
 const addTranscript = (publicPath, text) => expectedTranscripts.set(path.basename(publicPath), text);

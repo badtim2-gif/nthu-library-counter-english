@@ -415,7 +415,7 @@
     },
     {
       "file": "s02-t04-en.mp3",
-      "text": "If more than fourteen days remained , the new due date is fourteen days from the recall request.",
+      "text": "If more than fourteen days remain , the new due date is fourteen days from the recall request.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",
@@ -435,7 +435,7 @@
     },
     {
       "file": "s02-t05-en.mp3",
-      "text": "What happens if fewer than fourteen days remain?",
+      "text": "What happens if fourteen days or fewer remain?",
       "voice": "kokoro-v1.0/am_fenrir",
       "language": "en",
       "kind": "english_long",
@@ -445,7 +445,7 @@
     },
     {
       "file": "s02-t05-zh.mp3",
-      "text": "如果剩不到十四天，會怎麼處理？",
+      "text": "如果剩十四天或更少，會怎麼處理？",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -455,7 +455,7 @@
     },
     {
       "file": "s02-t06-en.mp3",
-      "text": "The original due date stays the same, so please check your account and email regularly .",
+      "text": "The original due date stays the same. Please check your account regularly , because notification emails are only reminders.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",
@@ -465,7 +465,7 @@
     },
     {
       "file": "s02-t06-zh.mp3",
-      "text": "原到期日會維持不變，因此請定期查看帳戶與電子郵件。",
+      "text": "原到期日維持不變。請定期查看個人借閱狀況，因為通知郵件僅供提醒。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",

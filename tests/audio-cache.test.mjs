@@ -24,9 +24,13 @@ const staleAudio = new TextEncoder().encode("old unclear privilege audio");
 
 function makeWorker() {
   const handlers = new Map();
-  const stores = new Map([
-    ["nthu-library-audio-v8", new Map([[originalUrl, new Response(staleAudio)]])],
-  ]);
+  const stores = new Map(
+    Array.from({ length: 9 }, (_, index) => [
+      `nthu-library-audio-v${index + 1}`,
+      new Map([[originalUrl, new Response(staleAudio)]]),
+    ]),
+  );
+  stores.set("nthu-library-shell-v11", new Map());
   const networkCalls = [];
   let offline = false;
   const keyOf = (request) => typeof request === "string" ? request : request.url;
@@ -83,19 +87,34 @@ function makeWorker() {
 
 test("audio versions produce separate browser cache keys while preserving Pages paths", () => {
   const path = base + "/audio/s01-v03-word.mp3";
-  const oldPath = versionedAudioPath(path, "nthu-library-audio-v8");
-  const newPath = versionedAudioPath(path, "nthu-library-audio-v9");
+  const oldPath = versionedAudioPath(path, "nthu-library-audio-v9");
+  const newPath = versionedAudioPath(path, "nthu-library-audio-v10");
   assert.notEqual(oldPath, newPath);
   assert.equal(new URL(newPath, origin).pathname, path);
-  const withQuery = new URL(versionedAudioPath(path + "?example=1", "v9"), origin);
+  const withQuery = new URL(versionedAudioPath(path + "?example=1", "v10"), origin);
   assert.equal(withQuery.searchParams.get("example"), "1");
-  assert.equal(withQuery.searchParams.get("audioVersion"), "v9");
+  assert.equal(withQuery.searchParams.get("audioVersion"), "v10");
+});
+
+test("activation keeps exact v10 and v12 cache names while removing v1-v9", async () => {
+  const worker = makeWorker();
+  assert.equal(worker.cacheName, "nthu-library-audio-v10");
+  const url = origin + versionedAudioPath(base + "/audio/s01-v03-word.mp3", worker.cacheName);
+  worker.stores.set("nthu-library-audio-v10", new Map([[url, new Response(approvedAudio)]]));
+  worker.stores.set("nthu-library-shell-v12", new Map());
+  await worker.activate();
+  assert.deepEqual([...worker.stores.keys()].sort(), ["nthu-library-audio-v10", "nthu-library-shell-v12"]);
+  worker.setOffline();
+  assert.deepEqual(Buffer.from(await (await worker.get(url)).arrayBuffer()), approvedAudio);
+  assert.equal(worker.networkCalls.length, 0);
 });
 
 test("an audio cache miss replaces stale browser HTTP audio with the approved clip", async () => {
   const worker = makeWorker();
   await worker.activate();
-  assert.equal(worker.stores.has("nthu-library-audio-v8"), false);
+  for (let version = 1; version <= 9; version += 1) {
+    assert.equal(worker.stores.has(`nthu-library-audio-v${version}`), false);
+  }
   const response = await worker.get(originalUrl);
   assert.deepEqual(Buffer.from(await response.arrayBuffer()), approvedAudio);
   assert.equal(worker.networkCalls.length, 1);

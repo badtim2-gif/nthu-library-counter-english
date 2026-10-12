@@ -1,0 +1,48 @@
+後續驗收與發布授權：2026-10-12 使用者試聽後確認5段新語音品質通過，並另行要求推送GitHub。
+下列內容保留產製與本機驗證階段紀錄；其中「未提交／未推送／未部署」是當時狀態。實際發布結果以GitHub提交與Pages工作流程為準。
+
+情境2：館藏召回教材與語音修正紀錄
+日期：2026-10-12
+基準提交：ffb4c9597a5d6c9e23eb3152a36ba0560c5ee839
+範圍：第4、5、6句；保留 recall 音標、詞性、既有文法卡及7個單字。
+發布範圍：只更新本機；本次不提交、不推送 GitHub、不部署。
+
+一、教材修正
+第4句：remained [rɪˋmend] 改為 remain [rɪˋmen]；保留 is、現有中文及 from the recall request。
+第5句：What happens if fourteen days or fewer remain?
+中文：如果剩十四天或更少，會怎麼處理？
+第6句：The original due date stays the same. Please check your account regularly, because notification emails are only reminders.
+中文：原到期日維持不變。請定期查看個人借閱狀況，因為通知郵件僅供提醒。
+保留原有 original、regularly 的KK標示；朗讀稿去除KK後維持原有正規化規則。
+
+二、待館員確認的起算日疑義
+讀者權益聲明英文頁表示從預約申請日起算14天：
+https://www.lib.nthu.edu.tw/en/use/privileges_sign.html
+圖書催還制度中英文頁表示預約後隔日凌晨執行，並在通知發出後14天內歸還：
+https://www.lib.nthu.edu.tw/use/recall.html
+https://www.lib.nthu.edu.tw/en/use/recall.html
+以上公開頁面的寫法不同；本次不自行判定實際系統的日期算法，先保留既有第4句起算日說法及政策查核日期。待館員確認後再同步調整中英文與語音。
+recall 後重音名詞讀法有 Oxford 美式字典支持，本次不改音標或該單字音檔：
+https://www.oxfordlearnersdictionaries.com/definition/american_english/recall_2
+
+三、語音與來源
+只重製 s02-t04-en.mp3、s02-t05-en.mp3、s02-t05-zh.mp3、s02-t06-en.mp3、s02-t06-zh.mp3。
+館員英文 Maple；讀者英文 Fenrir；中文 zm_010。
+沿用 kokoro 0.9.4、misaki 0.9.4、既有固定模型修訂版、聲線與速度；英文長句沿用120 WPM處理。
+音檔清單、逐檔SHA-256、Kokoro來源與音量／語速統計同步更新。
+5個原音檔、來源檔備份、708段音檔基準雜湊、產製腳本、逐檔驗證與新舊試聽頁保留於D槽產製資料夾，不加入公開專案。
+音訊快取改為 nthu-library-audio-v10，網站快取改為 nthu-library-shell-v12。
+舊版v1至v9清除；新增完整名稱比對測試，避免v10誤判為v1。
+
+四、驗證與限制
+已通過 pnpm test：20個情境、120句對話、708段音檔、682份合成音檔的教材朗讀稿與SHA-256一致。
+已通過34項播放／快取／複習／睡眠計時測試，以及5項頁面呈現測試，共39項。
+已通過 pnpm test:pages：正式靜態建置、TypeScript、Pages輸出與v10/v12快取驗證。
+已通過5段語音技術檢查：MP3、24 kHz、單聲道、48 kbps、有效長度及首尾安全空白；SHA-256互不重複。
+5段語音響度範圍：-23.25至-22.29 LUFS；最高真峰值：-3.64 dBFS。
+3段新英文長句：120.1至120.3 WPM；全站180段英文長句：119.3至120.8 WPM。
+確認其餘703段音檔完全未變，包括26段真人字母與已核准 privilege 音檔。
+驗證副本位於D槽，測試的專案來源與正式工作目錄逐檔雜湊相符；未在Google Drive安裝套件。
+新增完整快取名稱測試：清除v1至v9與舊網站快取，保留v10/v12且新版音訊仍可離線播放。
+本次未提交、推送或部署；HEAD仍為上述基準提交。
+技術驗證不代表已通過人工聽音驗收，也未確認線上網站更新。
