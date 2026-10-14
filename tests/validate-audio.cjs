@@ -169,6 +169,20 @@ for (let index = 0; index < 26; index += 1) {
 for (const entry of manifest.entries) {
 
   if (entry.language === "zh") {
+    if (entry.file.startsWith("s02-")) {
+      const periods = entry.text.split("期").length - 1;
+      if (periods > 0) {
+        assert.ok(entry.phonemes, `Lesson 2 period tone is not pinned: ${entry.file}`);
+        assert.equal((entry.phonemes.match(/ㄑㄧ2/g) ?? []).length, periods,
+          `Lesson 2 period must use qi2: ${entry.file}`);
+        assert.doesNotMatch(entry.phonemes, /ㄑㄧ1/, `Wrong first tone: ${entry.file}`);
+      }
+      if (entry.text.includes("處理")) {
+        assert.match(entry.phonemes ?? "", /ㄔㄨ[23]ㄌㄧ3/,
+          `Processing must use the third-tone base or its second-tone sandhi: ${entry.file}`);
+      }
+    }
+
     // A return transaction must not use the pronunciation for "still".
     const returned = [...entry.text.matchAll(/(?<=歸|返|交|償)還|還(?=書|款|清)/gu)].length;
     if (returned > 0) {

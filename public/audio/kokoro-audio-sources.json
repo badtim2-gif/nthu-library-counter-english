@@ -1529,25 +1529,30 @@
     },
     {
       "file": "s02-p02-zh.mp3",
+      "text": "用被動語態詢問日期、費用或數量的計算方式。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "4deda627d6458d35b7ae636863b6ed3e9e73db793628641fabefb73932dc658c",
+      "applied_target_lufs": -21.11,
+      "sha256": "d2b18df5ab65a44e923ef2561fae6014612a0dcbde3845c1e42a694864bba4a6",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.825
+        "duration_seconds": 5.8
       },
       "loudness": {
-        "integrated_lufs": -22.35,
-        "true_peak_dbfs": -3.83,
+        "integrated_lufs": -22.38,
+        "true_peak_dbfs": -3.92,
         "lra_lu": 2.4,
-        "threshold_lufs": -32.71
+        "threshold_lufs": -32.8
       },
       "boundary_peaks": {
-        "leading_40ms": 1.7e-07,
+        "leading_40ms": 2.3e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -1560,7 +1565,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "用4/ㄅㄟ4ㄉ中4/ㄩ3ㄊㄞ4/ㄒ云2文4/ㄖ十4ㄑㄧ2, ㄈㄟ4用4/ㄏ我4/ㄕㄨ4ㄌ阳4/ㄉㄜ5/ㄐㄧ4ㄙ万4/ㄈㄤ1ㄕ十4."
     },
     {
       "file": "s02-p03-en.mp3",
@@ -1681,25 +1687,30 @@
     },
     {
       "file": "s02-t01-zh.mp3",
+      "text": "我收到一本尚未到期書籍的召回通知。",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "f5e53b05d0f2617e522fbd7461ba0886c7cf97de6125002ff3f337ed4a60cb7c",
+      "applied_target_lufs": -20.31,
+      "sha256": "fca79074d6432ef69e16c62e2be4f929362ecdd59aba4f96221ccf2d4dc1cada",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.2
+        "duration_seconds": 5.15
       },
       "loudness": {
-        "integrated_lufs": -22.4,
-        "true_peak_dbfs": -3.75,
-        "lra_lu": 4.4,
-        "threshold_lufs": -32.72
+        "integrated_lufs": -22.56,
+        "true_peak_dbfs": -3.77,
+        "lra_lu": 4.3,
+        "threshold_lufs": -32.75
       },
       "boundary_peaks": {
-        "leading_40ms": 1.8e-07,
+        "leading_40ms": 1.6e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -1712,7 +1723,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "我3/ㄕㄡ1ㄉㄠ4/ㄧ4ㄅㄣ3/ㄕㄤ4为4/ㄉㄠ4ㄑㄧ2/ㄕㄨ1ㄐㄧ2/ㄉㄜ5/ㄓㄠ4ㄏ为2/ㄊ中1ㄓ十1."
     },
     {
       "file": "s02-t02-en.mp3",
@@ -1757,10 +1769,15 @@
     },
     {
       "file": "s02-t02-zh.mp3",
+      "text": "另一位讀者已預約這本書，所以到期日縮短了。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "76477babd8ed3fc0815931fcdc47456482786b5d64c337abeac6b703cf39c6bb",
+      "applied_target_lufs": -22.3,
+      "sha256": "b756868ef20928cd6d9e23dacd064ef9b33b102e4c609e1934ded886b07b9df6",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -1769,13 +1786,13 @@
         "duration_seconds": 5.75
       },
       "loudness": {
-        "integrated_lufs": -22.93,
-        "true_peak_dbfs": -3.77,
-        "lra_lu": 2.3,
-        "threshold_lufs": -33.25
+        "integrated_lufs": -22.96,
+        "true_peak_dbfs": -3.93,
+        "lra_lu": 2.5,
+        "threshold_lufs": -33.28
       },
       "boundary_peaks": {
-        "leading_40ms": 1.7e-07,
+        "leading_40ms": 1.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -1788,7 +1805,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄌ应4/ㄧ2为4/ㄉㄨ2ㄓㄜ3ㄧ3/ㄩ4月1/ㄓㄜ4/ㄅㄣ3ㄕㄨ1, ㄙ我2ㄧ3/ㄉㄠ4ㄑㄧ2ㄖ十4/ㄙ我1ㄉ万3/ㄌㄜ5."
     },
     {
       "file": "s02-t03-en.mp3",
@@ -1920,10 +1938,15 @@
     },
     {
       "file": "s02-t04-zh.mp3",
+      "text": "如果原本剩餘超過十四天，新到期日就是從召回申請日起算十四天。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "08415ce08f818a5171e822303a5d39b937db0b9e06422a2ab5392e230ddf8ae6",
+      "applied_target_lufs": -20.57,
+      "sha256": "7374e241ddb5ee7489b33ccac8bfc7a3f419eb27494c7b7ce58a039eb6e337f3",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -1932,13 +1955,13 @@
         "duration_seconds": 7.575
       },
       "loudness": {
-        "integrated_lufs": -22.4,
-        "true_peak_dbfs": -3.4,
+        "integrated_lufs": -22.35,
+        "true_peak_dbfs": -3.47,
         "lra_lu": 5.0,
-        "threshold_lufs": -32.69
+        "threshold_lufs": -32.64
       },
       "boundary_peaks": {
-        "leading_40ms": 1.3e-07,
+        "leading_40ms": 1.9e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -1951,7 +1974,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄖㄨ2ㄍ我3/元2ㄅㄣ3/ㄕㄥ4ㄩ2/ㄔㄠ1ㄍ我4/ㄕ十2ㄙㄭ4ㄊ言1, ㄒ阴1/ㄉㄠ4ㄑㄧ2ㄖ十4/ㄐ又4ㄕ十4/ㄘ中2/ㄓㄠ4ㄏ为2/ㄕㄣ1ㄑ应3/ㄖ十4/ㄑㄧ3ㄙ万4/ㄕ十2ㄙㄭ4ㄊ言1."
     },
     {
       "file": "s02-t05-en.mp3",
@@ -2008,23 +2032,23 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -21.26,
-      "sha256": "c496d2efa17697265ec1b6b57ef8e1b31e48227fb3c1d35ccfac5b0a713fc174",
+      "applied_target_lufs": -21.09,
+      "sha256": "710f079ddc17983bf321b4383cae1979a5261e3e62810d6341b5cd1c039cfc1d",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 4.925
+        "duration_seconds": 4.95
       },
       "loudness": {
-        "integrated_lufs": -22.29,
-        "true_peak_dbfs": -3.93,
-        "lra_lu": 3.9,
-        "threshold_lufs": -33.0
+        "integrated_lufs": -22.3,
+        "true_peak_dbfs": -3.85,
+        "lra_lu": 3.8,
+        "threshold_lufs": -32.84
       },
       "boundary_peaks": {
-        "leading_40ms": 1.6e-07,
+        "leading_40ms": 3.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2037,7 +2061,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄖㄨ2ㄍ我3/ㄕㄥ4/ㄕ十2ㄙㄭ4ㄊ言1/ㄏ我4/ㄍㄥ4ㄕㄠ3, ㄏ为4/ㄗㄣ3ㄇㄜ5/ㄔㄨ2ㄌㄧ3?"
     },
     {
       "file": "s02-t06-en.mp3",
@@ -2094,8 +2119,8 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -20.81,
-      "sha256": "a9a27fb42842731feb3ca14ce49625b83e8e5e30115fbc6ca7c66521bd9c7b06",
+      "applied_target_lufs": -20.83,
+      "sha256": "ee2f9c9e4d5dd11501604dc91eb5616ee8ef82848b398593746ec059ccb4c5e8",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -2104,8 +2129,8 @@
         "duration_seconds": 7.9
       },
       "loudness": {
-        "integrated_lufs": -22.38,
-        "true_peak_dbfs": -3.64,
+        "integrated_lufs": -22.39,
+        "true_peak_dbfs": -3.74,
         "lra_lu": 4.0,
         "threshold_lufs": -32.85
       },
@@ -2123,7 +2148,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "元2/ㄉㄠ4ㄑㄧ2ㄖ十4/为2ㄔ十2/ㄅㄨ2ㄅ言4. ㄑ应3/ㄉ应4ㄑㄧ2/ㄔㄚ2ㄎㄢ4/ㄍㄜ4/ㄖㄣ2/ㄐㄝ4月4/ㄓ王4ㄎ王4, 阴1为4/ㄊ中1ㄓ十1/又2ㄐ言4/ㄐ阴3/ㄍ中1/ㄊㄧ2ㄒ应3."
     },
     {
       "file": "s02-v01-meaning.mp3",
@@ -2162,10 +2188,15 @@
     },
     {
       "file": "s02-v01-word.mp3",
+      "text": "receive",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "bc809478f92249938c4a00924862e9777ea7d4204403bbd41f842d6e8249db46",
+      "applied_target_lufs": -22.3,
+      "sha256": "42c29efd3a34e386f25f41bec24bf3e5d493728e65a18aba58a2cc9b04c2d0dd",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -2174,13 +2205,13 @@
         "duration_seconds": 1.826
       },
       "loudness": {
-        "integrated_lufs": -22.73,
-        "true_peak_dbfs": -5.44,
+        "integrated_lufs": -22.74,
+        "true_peak_dbfs": -5.54,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.6
+        "threshold_lufs": -33.61
       },
       "boundary_peaks": {
-        "leading_40ms": 4e-08,
+        "leading_40ms": 7e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2193,7 +2224,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ɹɪsˈiv"
     },
     {
       "file": "s02-v02-meaning.mp3",
@@ -2512,10 +2544,15 @@
     },
     {
       "file": "s02-v06-word.mp3",
+      "text": "remain",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "170f6cbdd952dbbbce03e516d2b2b0f4ec0002433d5206bc10c44f7c1f6e496b",
+      "applied_target_lufs": -22.3,
+      "sha256": "f121d00018379a9c721c242cbdfe5d3d3aa4a9c53a7078018bd60624db12cba3",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -2525,9 +2562,9 @@
       },
       "loudness": {
         "integrated_lufs": -22.74,
-        "true_peak_dbfs": -7.9,
+        "true_peak_dbfs": -7.7,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.23
+        "threshold_lufs": -34.24
       },
       "boundary_peaks": {
         "leading_40ms": 5e-08,
@@ -2543,14 +2580,20 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ɹɪmˈAn"
     },
     {
       "file": "s02-v07-meaning.mp3",
+      "text": "定期地，副詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "17051834cea5d3b7a3888741a05dd6ab31cbdee0878d2b397471feb969fc1a02",
+      "applied_target_lufs": -22.3,
+      "sha256": "bf80d870399c02438cd32996f39db0294f5dadb74e6781caf227d42b0423cd0c",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -2559,13 +2602,13 @@
         "duration_seconds": 2.6
       },
       "loudness": {
-        "integrated_lufs": -22.91,
-        "true_peak_dbfs": -4.23,
+        "integrated_lufs": -22.72,
+        "true_peak_dbfs": -4.36,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.38
+        "threshold_lufs": -33.43
       },
       "boundary_peaks": {
-        "leading_40ms": 1.5e-07,
+        "leading_40ms": 1.2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2578,7 +2621,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄉ应4ㄑㄧ2/ㄉㄜ5, ㄈㄨ4/ㄘㄭ2"
     },
     {
       "file": "s02-v07-word.mp3",
@@ -25293,56 +25337,27 @@
   ],
   "last_partial_regeneration": {
     "issues": [
-      "P0004",
-      "P0005",
-      "P0006",
-      "P0007",
-      "P0008",
-      "P0009",
-      "P0010",
-      "P0011",
-      "P0012"
+      "P0015",
+      "P0016",
+      "P0017",
+      "P0019",
+      "P0020"
     ],
-    "clip_count": 19,
-    "staging_runs": [
-      {
-        "generated_at": "2026-10-14T11:37:43+08:00",
-        "clip_count": 1,
-        "manifest_sha256": "5a6b13574bcf6208fd1ac2d278dda57b303601be905367057c3595af10ac4587"
-      },
-      {
-        "generated_at": "2026-10-14T11:39:49+08:00",
-        "clip_count": 1,
-        "manifest_sha256": "8083227d6e1cb579235e1cd0006f12e77319163eae7f697beaf7d273946b53f3"
-      },
-      {
-        "generated_at": "2026-10-14T11:44:55+08:00",
-        "clip_count": 17,
-        "manifest_sha256": "48dff59612d0cfd4990f4e273ab2ea144f439fe38796b9c06959e6ef4d480f11"
-      }
-    ],
-    "transcript_manifest_sha256": "9d246ad7c86c299970dcb06ee0d6721809c7867e487334526daf93508ecd5542",
+    "clip_count": 9,
+    "generated_at": "2026-10-14T15:03:49+08:00",
+    "staging_manifest_sha256": "8a531ba275174c8f3ca5df55a53d7807fa69d25d83f37a076b04f03c7f2991c8",
+    "transcript_manifest_sha256": "c6fab083be917a4bf5a6aa5b16cbc7f301d1d65bd642205761006c32d8bad5c9",
     "files": [
-      "s02-t03-zh.mp3",
-      "s03-v04-meaning.mp3",
-      "s04-g02-zh.mp3",
-      "s04-p02-zh.mp3",
-      "s04-p03-zh.mp3",
-      "s04-t03-zh.mp3",
-      "s04-t04-zh.mp3",
-      "s04-t05-zh.mp3",
-      "s04-t06-zh.mp3",
-      "s07-g02-zh.mp3",
-      "s07-t02-zh.mp3",
-      "s07-t04-zh.mp3",
-      "s09-t04-zh.mp3",
-      "s11-g01-zh.mp3",
-      "s11-g02-zh.mp3",
-      "s11-t05-zh.mp3",
-      "s11-t06-zh.mp3",
-      "s13-p01-zh.mp3",
-      "s13-t06-zh.mp3"
+      "s02-p02-zh.mp3",
+      "s02-t01-zh.mp3",
+      "s02-t02-zh.mp3",
+      "s02-t04-zh.mp3",
+      "s02-t05-zh.mp3",
+      "s02-t06-zh.mp3",
+      "s02-v01-word.mp3",
+      "s02-v06-word.mp3",
+      "s02-v07-meaning.mp3"
     ],
-    "scope": "P0004 translation, P0005 meaning, and all return-related huan2 readings; hai2 contexts preserved"
+    "scope": "Confirmed lesson 2 Mandarin period/processing readings and canonical ri syllable for receive/remain; unverified tail and stress reports remain open"
   }
 }

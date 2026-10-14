@@ -371,7 +371,8 @@
       "kind": "chinese",
       "role": "reader",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "我3/ㄕㄡ1ㄉㄠ4/ㄧ4ㄅㄣ3/ㄕㄤ4为4/ㄉㄠ4ㄑㄧ2/ㄕㄨ1ㄐㄧ2/ㄉㄜ5/ㄓㄠ4ㄏ为2/ㄊ中1ㄓ十1."
     },
     {
       "file": "s02-t02-en.mp3",
@@ -391,7 +392,8 @@
       "kind": "chinese",
       "role": "librarian",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄌ应4/ㄧ2为4/ㄉㄨ2ㄓㄜ3ㄧ3/ㄩ4月1/ㄓㄜ4/ㄅㄣ3ㄕㄨ1, ㄙ我2ㄧ3/ㄉㄠ4ㄑㄧ2ㄖ十4/ㄙ我1ㄉ万3/ㄌㄜ5."
     },
     {
       "file": "s02-t03-en.mp3",
@@ -432,7 +434,8 @@
       "kind": "chinese",
       "role": "librarian",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄖㄨ2ㄍ我3/元2ㄅㄣ3/ㄕㄥ4ㄩ2/ㄔㄠ1ㄍ我4/ㄕ十2ㄙㄭ4ㄊ言1, ㄒ阴1/ㄉㄠ4ㄑㄧ2ㄖ十4/ㄐ又4ㄕ十4/ㄘ中2/ㄓㄠ4ㄏ为2/ㄕㄣ1ㄑ应3/ㄖ十4/ㄑㄧ3ㄙ万4/ㄕ十2ㄙㄭ4ㄊ言1."
     },
     {
       "file": "s02-t05-en.mp3",
@@ -452,7 +455,8 @@
       "kind": "chinese",
       "role": "reader",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄖㄨ2ㄍ我3/ㄕㄥ4/ㄕ十2ㄙㄭ4ㄊ言1/ㄏ我4/ㄍㄥ4ㄕㄠ3, ㄏ为4/ㄗㄣ3ㄇㄜ5/ㄔㄨ2ㄌㄧ3?"
     },
     {
       "file": "s02-t06-en.mp3",
@@ -472,7 +476,8 @@
       "kind": "chinese",
       "role": "librarian",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "元2/ㄉㄠ4ㄑㄧ2ㄖ十4/为2ㄔ十2/ㄅㄨ2ㄅ言4. ㄑ应3/ㄉ应4ㄑㄧ2/ㄔㄚ2ㄎㄢ4/ㄍㄜ4/ㄖㄣ2/ㄐㄝ4月4/ㄓ王4ㄎ王4, 阴1为4/ㄊ中1ㄓ十1/又2ㄐ言4/ㄐ阴3/ㄍ中1/ㄊㄧ2ㄒ应3."
     },
     {
       "file": "s02-p01-en.mp3",
@@ -512,7 +517,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "用4/ㄅㄟ4ㄉ中4/ㄩ3ㄊㄞ4/ㄒ云2文4/ㄖ十4ㄑㄧ2, ㄈㄟ4用4/ㄏ我4/ㄕㄨ4ㄌ阳4/ㄉㄜ5/ㄐㄧ4ㄙ万4/ㄈㄤ1ㄕ十4."
     },
     {
       "file": "s02-p03-en.mp3",
@@ -562,7 +568,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "ɹɪsˈiv"
     },
     {
       "file": "s02-v01-meaning.mp3",
@@ -662,7 +669,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "ɹɪmˈAn"
     },
     {
       "file": "s02-v06-meaning.mp3",
@@ -692,7 +700,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄉ应4ㄑㄧ2/ㄉㄜ5, ㄈㄨ4/ㄘㄭ2"
     },
     {
       "file": "s03-t01-en.mp3",
