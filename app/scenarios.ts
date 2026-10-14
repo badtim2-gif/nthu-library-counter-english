@@ -137,7 +137,7 @@ export const scenarios: Scenario[] = [
       {
         role: "reader",
         en: "How is the revised [rɪˋvaɪzd] due date calculated [ˋkælkjə͵letɪd]?",
-        zh: "新的到期日是如何計算的？",
+        zh: "調整後的還書期限是如何計算的？",
       },
       {
         role: "librarian",
@@ -262,7 +262,7 @@ export const scenarios: Scenario[] = [
       { word: "alumnus", kk: "əˋlʌmnəs", meaning: "男性校友", pos: "n." },
       { word: "alumni", kk: "əˋlʌmnaɪ", meaning: "校友們", pos: "n." },
       { word: "access", kk: "ˋæksɛs", meaning: "使用、存取", pos: "v." },
-      { word: "remote", kk: "rɪˋmot", meaning: "遠端的、校外的", pos: "adj." },
+      { word: "remote", kk: "rɪˋmot", meaning: "遠端的（本課指校外存取）", pos: "adj." },
       { word: "licensed", kk: "ˋlaɪsənst", meaning: "經授權的", pos: "adj." },
       { word: "electronic", kk: "ɪ͵lɛkˋtrɑnɪk", meaning: "電子的", pos: "adj." },
       { word: "connect", kk: "kəˋnɛkt", meaning: "連線", pos: "v." },

@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-10-12",
+  "updated_at": "2026-10-14",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -1833,25 +1833,30 @@
     },
     {
       "file": "s02-t03-zh.mp3",
+      "text": "調整後的還書期限是如何計算的？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "a7bd3fda7592011341f30b2b99280d7edde962fda00134d0e3e8bde0a517dd96",
+      "applied_target_lufs": -21.14,
+      "sha256": "7c0a30034d25f289334c4f370fe7f512c891a502e31bbbae4b1a32ca61c2d9e0",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 4.1
+        "duration_seconds": 4.826
       },
       "loudness": {
-        "integrated_lufs": -23.1,
-        "true_peak_dbfs": -4.14,
-        "lra_lu": 2.5,
-        "threshold_lufs": -33.49
+        "integrated_lufs": -22.41,
+        "true_peak_dbfs": -4.05,
+        "lra_lu": 2.7,
+        "threshold_lufs": -32.9
       },
       "boundary_peaks": {
-        "leading_40ms": 2.3e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -1864,7 +1869,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄊ要2ㄓㄥ3/ㄏㄡ4/ㄉㄜ5/ㄏ万2ㄕㄨ1/ㄑㄧ2ㄒ言4/ㄕ十4/ㄖㄨ2ㄏㄜ2/ㄐㄧ4ㄙ万4/ㄉㄜ5?"
     },
     {
       "file": "s02-t04-en.mp3",
@@ -3575,25 +3581,30 @@
     },
     {
       "file": "s03-v04-meaning.mp3",
+      "text": "遠端的（本課指校外存取），形容詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "5306e1b5ff01c0245d1469c2571beee4575c38e8d8a1f822fc0c0da93d3665c3",
+      "applied_target_lufs": -20.47,
+      "sha256": "b6a024465fbc9352f920678316ab646b189ea4245e77aa3f9aa778bb94395d2d",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.626
+        "duration_seconds": 4.7
       },
       "loudness": {
-        "integrated_lufs": -22.47,
-        "true_peak_dbfs": -3.87,
-        "lra_lu": 2.7,
-        "threshold_lufs": -32.63
+        "integrated_lufs": -22.49,
+        "true_peak_dbfs": -3.88,
+        "lra_lu": 5.1,
+        "threshold_lufs": -32.92
       },
       "boundary_peaks": {
-        "leading_40ms": 2.4e-07,
+        "leading_40ms": 1.6e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -3606,7 +3617,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "元3/ㄉ万1ㄉㄜ5 (ㄅㄣ3/ㄎㄜ4ㄓ十3/ㄒ要4外4/ㄘ文2ㄑㄩ3) , ㄒ应2ㄖ中2/ㄘㄭ2"
     },
     {
       "file": "s03-v04-word.mp3",
@@ -3890,25 +3902,30 @@
     },
     {
       "file": "s04-g02-zh.mp3",
+      "text": "被動語態表達必要規定。規定物品必須被歸還到特定地點時，可用被動語態搭配表示義務的情態動詞。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "4dcccc8fde77141ef6c76c2d8a43e8089e23e613f366fc4280ca84518fd6fdf2",
+      "applied_target_lufs": -20.51,
+      "sha256": "02f8a7ef581a06413fefae60d315dde4dd3cfc3964e884cb5d95fa368ccf8131",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 10.45
+        "duration_seconds": 10.475
       },
       "loudness": {
-        "integrated_lufs": -22.44,
-        "true_peak_dbfs": -3.71,
-        "lra_lu": 4.9,
-        "threshold_lufs": -32.81
+        "integrated_lufs": -22.48,
+        "true_peak_dbfs": -3.9,
+        "lra_lu": 5.0,
+        "threshold_lufs": -32.91
       },
       "boundary_peaks": {
-        "leading_40ms": 2e-07,
+        "leading_40ms": 1.5e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -3921,7 +3938,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄅㄟ4/ㄉ中4ㄩ3ㄊㄞ4/ㄅ要3ㄉㄚ2/ㄅㄧ4要4/ㄍ为1ㄉ应4. ㄍ为1ㄉ应4/ㄨ4ㄆ阴3/ㄅㄧ4ㄒㄩ1/ㄅㄟ4/ㄍ为1/ㄏ万2/ㄉㄠ4/ㄊㄜ4ㄉ应4/ㄉㄜ5ㄉ言3/ㄕ十2, ㄎㄜ3用4/ㄅㄟ4/ㄉ中4ㄩ3ㄊㄞ4/ㄉㄚ1ㄆㄟ4/ㄅ要3ㄕ十4/ㄧ4ㄨ4/ㄉㄜ5/ㄑ应2ㄊㄞ4/ㄉ中4ㄘㄭ2."
     },
     {
       "file": "s04-p01-en.mp3",
@@ -4042,25 +4060,30 @@
     },
     {
       "file": "s04-p02-zh.mp3",
+      "text": "用來有禮貌地確認某種歸還方式是否可行。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "adc4f44027763656207902dfd351bfd093c7aba33985d5e668505624869c2ad3",
+      "applied_target_lufs": -20.64,
+      "sha256": "ef106d73dd268a1a85f249d4800d46e68bf2d8c6fa92a67a75ba487d61a80f0b",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.4
+        "duration_seconds": 5.375
       },
       "loudness": {
-        "integrated_lufs": -22.42,
-        "true_peak_dbfs": -3.91,
-        "lra_lu": 3.8,
-        "threshold_lufs": -33.0
+        "integrated_lufs": -22.46,
+        "true_peak_dbfs": -3.87,
+        "lra_lu": 3.6,
+        "threshold_lufs": -32.97
       },
       "boundary_peaks": {
-        "leading_40ms": 1.8e-07,
+        "leading_40ms": 2.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -4073,7 +4096,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "用4/ㄌㄞ2又3/ㄌㄧ3ㄇㄠ4/ㄉㄜ5/ㄑ月4ㄖㄣ4/ㄇㄡ2ㄓ中3/ㄍ为1/ㄏ万2/ㄈㄤ1ㄕ十4/ㄕ十4ㄈㄡ3/ㄎㄜ3ㄒ应2."
     },
     {
       "file": "s04-p03-en.mp3",
@@ -4118,25 +4142,30 @@
     },
     {
       "file": "s04-p03-zh.mp3",
+      "text": "用來強調資料必須歸還至指定地點。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "ed38966a66a5b85f5bbb4d1be04b234e1ef0ebc3d61c5713f28518c160078be3",
+      "applied_target_lufs": -20.65,
+      "sha256": "b2d52261f0c251db526649d853c2fbb96618f9caf961895a070a797d00d8b96b",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 4.875
+        "duration_seconds": 4.975
       },
       "loudness": {
         "integrated_lufs": -22.28,
-        "true_peak_dbfs": -3.4,
-        "lra_lu": 3.8,
-        "threshold_lufs": -32.77
+        "true_peak_dbfs": -3.69,
+        "lra_lu": 3.6,
+        "threshold_lufs": -32.76
       },
       "boundary_peaks": {
-        "leading_40ms": 2.2e-07,
+        "leading_40ms": 2.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -4149,7 +4178,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "用4ㄌㄞ2/ㄑ阳2ㄉ要4/ㄗㄭ1ㄌ要4/ㄅㄧ4ㄒㄩ1/ㄍ为1/ㄏ万2/ㄓ十4/ㄓ十3ㄉ应4/ㄉㄜ5ㄉ言3."
     },
     {
       "file": "s04-t01-en.mp3",
@@ -4346,25 +4376,30 @@
     },
     {
       "file": "s04-t03-zh.mp3",
+      "text": "我可以透過自助還書機或還書箱歸還嗎？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "148cd0c82ac90169ec2c7d70880ec8a164554897f959f979b981167fe0b0d745",
+      "applied_target_lufs": -20.95,
+      "sha256": "d97e47122330868477914500ba15d4b50b318b41dc45cb587deb986b31bb8b61",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.5
+        "duration_seconds": 5.375
       },
       "loudness": {
-        "integrated_lufs": -22.49,
-        "true_peak_dbfs": -3.87,
-        "lra_lu": 2.8,
-        "threshold_lufs": -32.8
+        "integrated_lufs": -22.45,
+        "true_peak_dbfs": -3.93,
+        "lra_lu": 3.2,
+        "threshold_lufs": -32.64
       },
       "boundary_peaks": {
-        "leading_40ms": 1.8e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -4377,7 +4412,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "我3ㄎㄜ2ㄧ3/ㄊㄡ4ㄍ我4/ㄗㄭ4ㄓㄨ4/ㄏ万2/ㄕㄨ1ㄐㄧ1/ㄏ我4/ㄏ万2/ㄕㄨ1ㄒ阳1/ㄍ为1ㄏ万2/ㄇㄚ5?"
     },
     {
       "file": "s04-t04-en.mp3",
@@ -4422,10 +4458,15 @@
     },
     {
       "file": "s04-t04-zh.mp3",
+      "text": "不可以，向他館借來的資料必須在期限前歸還服務櫃檯。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "c035e925056333b161c22f08745418cbc2eeb2566eaed91cb243a282d81b58a7",
+      "applied_target_lufs": -20.64,
+      "sha256": "5a37c89b0bfbcb101e09736a5ddc693982b0e37509c42f5f89d1b34cecd62dee",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -4434,13 +4475,13 @@
         "duration_seconds": 6.3
       },
       "loudness": {
-        "integrated_lufs": -22.34,
-        "true_peak_dbfs": -3.81,
-        "lra_lu": 3.6,
-        "threshold_lufs": -32.62
+        "integrated_lufs": -22.35,
+        "true_peak_dbfs": -3.71,
+        "lra_lu": 4.0,
+        "threshold_lufs": -32.63
       },
       "boundary_peaks": {
-        "leading_40ms": 2.9e-07,
+        "leading_40ms": 3.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -4453,7 +4494,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄅㄨ4ㄎㄜ2ㄧ3, ㄒ阳4/ㄊㄚ1ㄍ万3/ㄐㄝ4ㄌㄞ2/ㄉㄜ5/ㄗㄭ1ㄌ要4/ㄅㄧ4ㄒㄩ1/ㄗㄞ4/ㄑㄧ1ㄒ言4/ㄑ言2/ㄍ为1/ㄏ万2/ㄈㄨ2ㄨ4/ㄍ为4/ㄊㄞ2."
     },
     {
       "file": "s04-t05-en.mp3",
@@ -4498,10 +4540,15 @@
     },
     {
       "file": "s04-t05-zh.mp3",
+      "text": "影印本也需要歸還嗎？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "8a605c3d10721f5b351296e2e39537b754e196e9c3fd256936541afda876f5c4",
+      "applied_target_lufs": -22.3,
+      "sha256": "a14d66c1bad2b2b5936ed5b34b8280b230816e2ffa9083bb0999a8024989120e",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -4510,13 +4557,13 @@
         "duration_seconds": 3.475
       },
       "loudness": {
-        "integrated_lufs": -22.31,
-        "true_peak_dbfs": -4.1,
-        "lra_lu": 1.5,
-        "threshold_lufs": -32.83
+        "integrated_lufs": -22.26,
+        "true_peak_dbfs": -3.95,
+        "lra_lu": 1.4,
+        "threshold_lufs": -32.78
       },
       "boundary_peaks": {
-        "leading_40ms": 2.1e-07,
+        "leading_40ms": 2.4e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -4529,7 +4576,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "应3阴4ㄅㄣ3/ㄝ3/ㄒㄩ1要4/ㄍ为1ㄏ万2/ㄇㄚ5?"
     },
     {
       "file": "s04-t06-en.mp3",
@@ -4574,25 +4622,30 @@
     },
     {
       "file": "s04-t06-zh.mp3",
+      "text": "影印本可以保留，但借來的書必須準時歸還，以免產生逾期費用。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "8c7534a990d44081716ea24628c610718602ab7de8283efcac89145c03f200fd",
+      "applied_target_lufs": -20.39,
+      "sha256": "cae6cbbb466b9fc31b34e8d231be5a60cdf994072eccca89df14ec38e7a55149",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.1
+        "duration_seconds": 7.175
       },
       "loudness": {
-        "integrated_lufs": -22.43,
-        "true_peak_dbfs": -3.7,
-        "lra_lu": 4.6,
-        "threshold_lufs": -32.84
+        "integrated_lufs": -22.35,
+        "true_peak_dbfs": -3.94,
+        "lra_lu": 4.7,
+        "threshold_lufs": -32.91
       },
       "boundary_peaks": {
-        "leading_40ms": 1.6e-07,
+        "leading_40ms": 2.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -4605,7 +4658,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "应3阴4ㄅㄣ3/ㄎㄜ2ㄧ3/ㄅㄠ3ㄌ又2, ㄉㄢ4/ㄐㄝ4ㄌㄞ2/ㄉㄜ5/ㄕㄨ1/ㄅㄧ4ㄒㄩ1/ㄓ文3/ㄕ十2/ㄍ为1/ㄏ万2, ㄧ2ㄇ言3/ㄔㄢ3ㄕㄥ1/ㄩ2ㄑㄧ1/ㄈㄟ4用4."
     },
     {
       "file": "s04-v01-meaning.mp3",
@@ -7692,25 +7746,30 @@
     },
     {
       "file": "s07-g02-zh.mp3",
+      "text": "現在完成式被動語態。確認物品已被歸還或費用已被繳清時，可使用現在完成式的被動語態。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "0cc7bb70ad8d836ec5a59d092d6693e9d3ca6f4539343321f0e42177a508c5ec",
+      "applied_target_lufs": -21.04,
+      "sha256": "31ba868931c94b5e0ed81b4922a819840c269d69a91b510cd8262588f5013e5d",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 10.025
+        "duration_seconds": 10.05
       },
       "loudness": {
-        "integrated_lufs": -22.4,
-        "true_peak_dbfs": -3.87,
+        "integrated_lufs": -22.43,
+        "true_peak_dbfs": -3.81,
         "lra_lu": 2.8,
-        "threshold_lufs": -32.74
+        "threshold_lufs": -32.77
       },
       "boundary_peaks": {
-        "leading_40ms": 1.6e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -7723,7 +7782,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄒ言4ㄗㄞ4/万2ㄔㄥ2/ㄕ十4/ㄅㄟ4/ㄉ中4ㄩ3ㄊㄞ4. ㄑ月4ㄖㄣ4/ㄨ4ㄆ阴3ㄧ3/ㄅㄟ4/ㄍ为1ㄏ万2/ㄏ我4/ㄈㄟ4用4/ㄧ3/ㄅㄟ4/ㄐ要3ㄑ应1/ㄕ十2, ㄎㄜ2ㄕ十3用4/ㄒ言4ㄗㄞ4/万2ㄔㄥ2/ㄕ十4/ㄉㄜ5/ㄅㄟ4ㄉ中4/ㄩ3ㄊㄞ4."
     },
     {
       "file": "s07-p01-en.mp3",
@@ -8072,25 +8132,30 @@
     },
     {
       "file": "s07-t02-zh.mp3",
+      "text": "請歸還向清華大學、台灣聯大及互惠館借閱的所有資料，並結清全部費用。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "def9999d2b2fd9144b3a1e9d74660bc7e45648aa0e2475877040dd2e9cf13b9e",
+      "applied_target_lufs": -20.48,
+      "sha256": "cdb56c548f22f46e13221db5d6537e29c65f7d72cf2ddda32bfcb430e7fb21d4",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.95
+        "duration_seconds": 8.0
       },
       "loudness": {
-        "integrated_lufs": -22.36,
-        "true_peak_dbfs": -4.18,
-        "lra_lu": 4.0,
-        "threshold_lufs": -32.63
+        "integrated_lufs": -22.26,
+        "true_peak_dbfs": -4.45,
+        "lra_lu": 4.1,
+        "threshold_lufs": -32.49
       },
       "boundary_peaks": {
-        "leading_40ms": 1.5e-07,
+        "leading_40ms": 1.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -8103,7 +8168,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄑ应3ㄍ为1/ㄏ万2/ㄒ阳4/ㄑ应1ㄏ穵2ㄉㄚ4ㄒ月2, ㄊㄞ2万1/ㄌ言2ㄉㄚ4/ㄐㄧ2/ㄏㄨ4ㄏ为4/ㄍ万3/ㄐㄝ4月4/ㄉㄜ5/ㄙ我2又3/ㄗㄭ1ㄌ要4, ㄅ应4/ㄐㄝ2ㄑ应1/ㄑ元2ㄅㄨ4/ㄈㄟ4用4."
     },
     {
       "file": "s07-t03-en.mp3",
@@ -8224,10 +8290,15 @@
     },
     {
       "file": "s07-t04-zh.mp3",
+      "text": "請確認所有申請資料都已領取、歸還並完成繳費。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "12bbad3f9921356c3e0042029f11c5244576adcfc5f5fb4306781ee002ffce62",
+      "applied_target_lufs": -22.3,
+      "sha256": "3b6061e818c06a5c3659f95e7038781d1991bf821066af4f0c7649127d48f1d6",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -8236,13 +8307,13 @@
         "duration_seconds": 5.95
       },
       "loudness": {
-        "integrated_lufs": -22.97,
-        "true_peak_dbfs": -5.71,
-        "lra_lu": 3.1,
-        "threshold_lufs": -33.85
+        "integrated_lufs": -22.93,
+        "true_peak_dbfs": -6.05,
+        "lra_lu": 2.9,
+        "threshold_lufs": -33.5
       },
       "boundary_peaks": {
-        "leading_40ms": 2.4e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -8255,7 +8326,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄑ应3/ㄑ月4ㄖㄣ4/ㄙ我2又3/ㄕㄣ1ㄑ应3/ㄗㄭ1ㄌ要4/ㄉㄡ1/ㄧ3ㄌ应2ㄑㄩ3, ㄍ为1ㄏ万2/ㄅ应4/万2ㄔㄥ2/ㄐ要3ㄈㄟ4."
     },
     {
       "file": "s07-t05-en.mp3",
@@ -10712,25 +10784,30 @@
     },
     {
       "file": "s09-t04-zh.mp3",
+      "text": "專案借書證最多可借兩百冊，但須遵守固定還書日及適用規定。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "47dc539f2b7d2c184bcf3b851132d8ed749e1bdb116875255316b57e72e50d87",
+      "applied_target_lufs": -20.23,
+      "sha256": "155b7c27b86b1c47b97a8614d6e6bd6bde822fb5bb127c567dce643bcae29058",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.3
+        "duration_seconds": 7.275
       },
       "loudness": {
         "integrated_lufs": -22.51,
-        "true_peak_dbfs": -3.92,
-        "lra_lu": 3.8,
-        "threshold_lufs": -32.81
+        "true_peak_dbfs": -3.87,
+        "lra_lu": 3.9,
+        "threshold_lufs": -32.72
       },
       "boundary_peaks": {
-        "leading_40ms": 2.8e-07,
+        "leading_40ms": 3.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -10743,7 +10820,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄓ万1ㄢ4/ㄐㄝ4ㄕㄨ1ㄓㄥ4/ㄗ为4ㄉ我1/ㄎㄜ3ㄐㄝ4/ㄌ阳3ㄅㄞ3ㄘㄜ4, ㄉㄢ4/ㄒㄩ1/ㄗ文1ㄕㄡ3/ㄍㄨ4ㄉ应4/ㄏ万2/ㄕㄨ1/ㄖ十4/ㄐㄧ2/ㄕ十4用4/ㄍ为1ㄉ应4."
     },
     {
       "file": "s09-t05-en.mp3",
@@ -12645,8 +12723,8 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -20.29,
-      "sha256": "adc78bdd036cb6d2ac1b586a9f104ec7fd40105ebbd7e17317ff4767c93bb0f6",
+      "applied_target_lufs": -20.31,
+      "sha256": "37adb61ed071b06f3afb60cbff2a9b11c1251c930a9eb47b98f57df3702a00a3",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -12656,12 +12734,12 @@
       },
       "loudness": {
         "integrated_lufs": -22.59,
-        "true_peak_dbfs": -3.73,
-        "lra_lu": 3.7,
-        "threshold_lufs": -32.89
+        "true_peak_dbfs": -3.87,
+        "lra_lu": 3.4,
+        "threshold_lufs": -32.81
       },
       "boundary_peaks": {
-        "leading_40ms": 1.8e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -12674,29 +12752,35 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄅ要3ㄕ十4/ㄅㄧ4ㄇ言3/ㄉㄜ5/ㄇㄨ4ㄉㄧ5. ㄕ十3用4/ㄅ要3ㄕ十4/ㄇㄨ4ㄉㄧ5/ㄉㄜ5/ㄅㄨ2ㄉ应4/ㄘㄭ2, ㄕ我1ㄇ应2/ㄢ4/ㄕ十2/ㄍ为1/ㄏ万2/ㄓㄥ4ㄐ言4/ㄕ十4为4/ㄌㄜ5/ㄅㄧ4ㄇ言3/ㄩ2ㄑㄧ1/ㄈㄟ4用4."
     },
     {
       "file": "s11-g02-zh.mp3",
+      "text": "義務與期限。使用表示義務的情態動詞，清楚說明證件必須在何時歸還。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "7e445418fb853fe5fbd5de16bbfbc82e0c47213fa6a977f21f3479f88cbb6ed6",
+      "applied_target_lufs": -21.03,
+      "sha256": "9f53021c2d22c659cbfa1717ce1c36dbfc68ef0b1e47f376f391f3c0172b3e90",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.5
+        "duration_seconds": 7.55
       },
       "loudness": {
-        "integrated_lufs": -22.34,
-        "true_peak_dbfs": -3.95,
+        "integrated_lufs": -22.35,
+        "true_peak_dbfs": -3.94,
         "lra_lu": 2.8,
-        "threshold_lufs": -32.63
+        "threshold_lufs": -32.59
       },
       "boundary_peaks": {
-        "leading_40ms": 1.4e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -12709,7 +12793,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄧ4ㄨ4/ㄩ3/ㄑㄧ1ㄒ言4. ㄕ十3用4/ㄅ要3ㄕ十4/ㄧ4ㄨ4/ㄉㄜ5/ㄑ应2ㄊㄞ4/ㄉ中4ㄘㄭ2, ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄓㄥ4ㄐ言4/ㄅㄧ4ㄒㄩ1/ㄗㄞ4/ㄏㄜ2ㄕ十2/ㄍ为1/ㄏ万2."
     },
     {
       "file": "s11-p01-en.mp3",
@@ -13291,25 +13376,30 @@
     },
     {
       "file": "s11-t05-zh.mp3",
+      "text": "我可以用這張證借書嗎？又應該何時歸還？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "f299d367b1b16e0b41be3332fd7f4684d2bec36badca6eabad8cc4836b9877ae",
+      "applied_target_lufs": -21.2,
+      "sha256": "bfd8dbb6c50b43f6bc80740acedecb4b930e30f7eebff84756a9bdd9ae98c269",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.275
+        "duration_seconds": 5.325
       },
       "loudness": {
-        "integrated_lufs": -22.43,
-        "true_peak_dbfs": -3.7,
-        "lra_lu": 2.8,
-        "threshold_lufs": -32.76
+        "integrated_lufs": -22.39,
+        "true_peak_dbfs": -3.95,
+        "lra_lu": 2.7,
+        "threshold_lufs": -32.73
       },
       "boundary_peaks": {
-        "leading_40ms": 2.7e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -13322,7 +13412,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "我3ㄎㄜ2ㄧ3/用4/ㄓㄜ4/ㄓㄤ1/ㄓㄥ4/ㄐㄝ4/ㄕㄨ1/ㄇㄚ5? 又4/应1/ㄍㄞ1ㄏㄜ2/ㄕ十2/ㄍ为1/ㄏ万2?"
     },
     {
       "file": "s11-t06-en.mp3",
@@ -13367,25 +13458,30 @@
     },
     {
       "file": "s11-t06-zh.mp3",
+      "text": "這張證只供入館閱覽，必須當天歸還，以免產生逾期費用或遺失處理費。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "629a62bee645b21f6a447f0dc473574cc9ea42edaa466e6a9622e538e16bf80c",
+      "applied_target_lufs": -20.92,
+      "sha256": "481a3bdf6d72c4353c37f77d94558dea11de85cd194aa56d4bb1c5ca5329dd15",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.55
+        "duration_seconds": 7.65
       },
       "loudness": {
-        "integrated_lufs": -22.4,
-        "true_peak_dbfs": -3.71,
-        "lra_lu": 3.1,
-        "threshold_lufs": -32.63
+        "integrated_lufs": -22.42,
+        "true_peak_dbfs": -3.94,
+        "lra_lu": 2.9,
+        "threshold_lufs": -32.66
       },
       "boundary_peaks": {
-        "leading_40ms": 1.5e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -13398,7 +13494,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄓㄜ4/ㄓㄤ1/ㄓㄥ4/ㄓ十3/ㄍ中1ㄖㄨ4/ㄍ万3/月4ㄌㄢ3, ㄅㄧ4ㄒㄩ1/ㄉㄤ1ㄊ言1/ㄍ为1/ㄏ万2, ㄧ2ㄇ言3/ㄔㄢ3ㄕㄥ1/ㄩ2ㄑㄧ1/ㄈㄟ4用4/ㄏ我4/ㄧ2ㄕ十1/ㄔㄨ4ㄌㄧ3/ㄈㄟ4."
     },
     {
       "file": "s11-v01-meaning.mp3",
@@ -15264,20 +15361,20 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -19.62,
-      "sha256": "79a1f67a2eca063190d91e2aa553666aa6236dcbe67dad393ed4acd54b28c283",
+      "applied_target_lufs": -19.75,
+      "sha256": "f3cd58ed443a35e5b17dc9bba5fa8616be7909e60f650bc3a616a2eac89741a8",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.85
+        "duration_seconds": 5.875
       },
       "loudness": {
-        "integrated_lufs": -22.63,
-        "true_peak_dbfs": -3.85,
-        "lra_lu": 7.3,
-        "threshold_lufs": -33.11
+        "integrated_lufs": -22.69,
+        "true_peak_dbfs": -3.94,
+        "lra_lu": 7.4,
+        "threshold_lufs": -33.29
       },
       "boundary_peaks": {
         "leading_40ms": 2.7e-07,
@@ -15293,7 +15390,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "用4ㄌㄞ2/ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄕㄤ4为4/ㄍ为1ㄏ万2/ㄉㄜ5/ㄨ4ㄆ阴3/ㄧ3ㄐ应1/ㄩ2ㄑㄧ1/ㄐㄧ3ㄊ言1."
     },
     {
       "file": "s13-p02-en.mp3",
@@ -15880,25 +15978,30 @@
     },
     {
       "file": "s13-t06-zh.mp3",
+      "text": "請在個人借閱狀況查詢費用，歸還所有逾期館藏，並結清應繳款項。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "a7f12a22d8d4c2177d9248f8333e9a9b98ac91bff03d5665d7250014cc4d6d7f",
+      "applied_target_lufs": -20.82,
+      "sha256": "9153a094ede7fec97eac87c7b8de64fbbca723f6f1c30edf775d4d902d268859",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.525
+        "duration_seconds": 7.575
       },
       "loudness": {
-        "integrated_lufs": -22.31,
-        "true_peak_dbfs": -3.98,
-        "lra_lu": 3.5,
-        "threshold_lufs": -32.51
+        "integrated_lufs": -22.33,
+        "true_peak_dbfs": -3.91,
+        "lra_lu": 4.1,
+        "threshold_lufs": -32.52
       },
       "boundary_peaks": {
-        "leading_40ms": 1.7e-07,
+        "leading_40ms": 1.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -15911,7 +16014,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄑ应3/ㄗㄞ4/ㄍㄜ4/ㄖㄣ2/ㄐㄝ4月4/ㄓ王4ㄎ王4/ㄔㄚ2ㄒ云2/ㄈㄟ4用4, ㄍ为1/ㄏ万2/ㄙ我2又3/ㄩ2ㄑㄧ1/ㄍ万3ㄘㄤ2, ㄅ应4/ㄐㄝ2ㄑ应1/应1/ㄐ要2ㄎ万3/ㄒ阳4."
     },
     {
       "file": "s13-v01-meaning.mp3",
@@ -25188,16 +25292,57 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-10-12T14:01:08+08:00",
-    "clip_count": 5,
-    "staging_manifest_sha256": "79ba140598bc5d823746381d83328379e2e51a69ef944cf700a0019844e21d02",
-    "transcript_manifest_sha256": "c066c85e75d5d41d0cd41d40787deccc4a3ac28f12fb386921a6e6214a773058",
+    "issues": [
+      "P0004",
+      "P0005",
+      "P0006",
+      "P0007",
+      "P0008",
+      "P0009",
+      "P0010",
+      "P0011",
+      "P0012"
+    ],
+    "clip_count": 19,
+    "staging_runs": [
+      {
+        "generated_at": "2026-10-14T11:37:43+08:00",
+        "clip_count": 1,
+        "manifest_sha256": "5a6b13574bcf6208fd1ac2d278dda57b303601be905367057c3595af10ac4587"
+      },
+      {
+        "generated_at": "2026-10-14T11:39:49+08:00",
+        "clip_count": 1,
+        "manifest_sha256": "8083227d6e1cb579235e1cd0006f12e77319163eae7f697beaf7d273946b53f3"
+      },
+      {
+        "generated_at": "2026-10-14T11:44:55+08:00",
+        "clip_count": 17,
+        "manifest_sha256": "48dff59612d0cfd4990f4e273ab2ea144f439fe38796b9c06959e6ef4d480f11"
+      }
+    ],
+    "transcript_manifest_sha256": "9d246ad7c86c299970dcb06ee0d6721809c7867e487334526daf93508ecd5542",
     "files": [
-      "s02-t04-en.mp3",
-      "s02-t05-en.mp3",
-      "s02-t05-zh.mp3",
-      "s02-t06-en.mp3",
-      "s02-t06-zh.mp3"
-    ]
+      "s02-t03-zh.mp3",
+      "s03-v04-meaning.mp3",
+      "s04-g02-zh.mp3",
+      "s04-p02-zh.mp3",
+      "s04-p03-zh.mp3",
+      "s04-t03-zh.mp3",
+      "s04-t04-zh.mp3",
+      "s04-t05-zh.mp3",
+      "s04-t06-zh.mp3",
+      "s07-g02-zh.mp3",
+      "s07-t02-zh.mp3",
+      "s07-t04-zh.mp3",
+      "s09-t04-zh.mp3",
+      "s11-g01-zh.mp3",
+      "s11-g02-zh.mp3",
+      "s11-t05-zh.mp3",
+      "s11-t06-zh.mp3",
+      "s13-p01-zh.mp3",
+      "s13-t06-zh.mp3"
+    ],
+    "scope": "P0004 translation, P0005 meaning, and all return-related huan2 readings; hai2 contexts preserved"
   }
 }

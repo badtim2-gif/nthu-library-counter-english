@@ -1,0 +1,165 @@
+後續修正：使用者已指定修正P0004、P0005、P0006–P0012，並掃描全站相同歸還字音；修正與驗證詳見worker-fixes-2026-10-14.txt。以下為修正前的核對紀錄，保留原始狀態供對照。
+
+工讀生問題回報逐列核對
+檢查日期：2026-10-14（臺灣時間）
+來源：Google試算表「問題追蹤」A1:T1000；共21筆，P0000–P0020。
+範圍：目前線上網站的HTTP頁面、實際JavaScript教材、21個被回報位置所用MP3、來源紀錄及相同版本語音產製流程。
+網站：https://badtim2-gif.github.io/nthu-library-counter-english/
+試算表：https://docs.google.com/spreadsheets/d/1u0JkA9lYZdj7-DDgh0viD1Y2kuJQerCs5AT-iE8c9mo/edit?gid=1537264783
+
+重要限制：目前工具不支援音訊輸入；本次沒有獨立聽完MP3，也沒有在工讀生的裝置上重播。因此音素輸出是「產製流程的字音證據」，不是宣稱已由人耳確認成品聽感。尾音／重音／清晰度疑義維持待確認。
+沒有修改網站、音檔或Google試算表；未把工讀生回報直接改標通過或結案。
+
+結論：
+1. 10筆中文語音回報在相同產製流程中重現錯誤字音：P0006–P0012、P0015、P0016、P0020，共15段中文MP3。
+2. P0003的來源連結確實沒有直達公告。
+3. P0004與P0005屬教材表達可更精確，不能一律說原文完全錯誤。
+4. P0000現況連結正常；P0001現況音標可成立；P0002已重製的新檔在線上，仍應複聽清晰度。
+5. P0013、P0014、P0017、P0018、P0019保留聽音疑義；其中receive及remain的第一音節設定與教材音標不完全一致。
+
+版本與證據：
+本機基準提交：150bbccfabec6ea3bd686043f3b5d2e46ce30a43
+線上Service Worker：nthu-library-shell-v12／nthu-library-audio-v10。
+線上Kokoro來源的682筆records與本機完全相同；被回報位置的21段線上MP3均與本機檔及來源SHA-256相符。
+文字核對使用線上實際載入的13ads25q.v57n.js及首頁／credits HTML，不只依本機資料。
+中文字音：Kokoro 0.9.4搭配misaki 0.9.4的ZHG2P(version=1.1)，沿用現有產製路徑；字音未有個別覆寫。
+
+共同成因：繁體字在目前字音處理器中有誤選，例如「歸還」產生hai2，而簡體「归还」可產生huan2；「處理」產生chu4，而「处理」連讀產生chu2（原字典標音chu3）。但「还书」仍可能產生hai2，且期仍為qi1，所以僅轉簡體不能完整修好；應使用臺灣讀音及逐詞覆寫，再複聽成品。
+
+P0000｜現況正常，原連結問題不再重現
+核對結果：線上credits頁的Brannon Wyndesor連結現在指向OpenGameArt的A-Z Male Voice，實際HTTP 200；原作者指定署名中的www.wyndesor.com仍保留為文字，並非該超連結目的地。
+建議處理：連結故障可標示現況已修正；這不是全部版權清查完成。
+
+P0001｜現況未見音標錯誤
+核對結果：線上首頁立即顯示 immediately [ɪˋmidɪətlɪ]。這是KK寫法；Cambridge使用IPA /ɪˈmiː.di.ət.li/，不同符號不等於不同或錯誤發音。
+建議處理：針對目前版本，音標這一項可通過；不回推原回報時的畫面一定正確。
+
+P0002｜已確認重製成品在線上，清晰度仍待人工複聽
+核對結果：線上s01-v03-word.mp3的SHA-256與目前核准成品相符。來源有明確音素pɹˈɪvəlɪʤ.及速度0.75；能證明新檔已公開，不能以此證明尾音聽感已改善。
+建議處理：由人工再完整聽一次，才判斷privilege尾音是否清楚。
+對應音檔：s01-v03-word.mp3
+
+P0003｜確認來源連結問題仍存在
+核對結果：二〇二六年論文授權新制公告的線上href是https://www.lib.nthu.edu.tw/news/list_en.html，目的頁為News Category／新聞分類列表，沒有直達特定公告。
+建議處理：應找出對應公告的固定網址，核對日期及內容後再替換；本次未修改。這是來源指向問題，不是已證明侵權。
+
+P0004｜可改善精確度，原譯不宜直接判成錯誤
+核對結果：線上仍是How is the revised due date calculated?／新的到期日是如何計算的？。召回情境下「新的」可指修訂後日期，但沒有明講調整。
+建議處理：建議中文改成「調整後的還書期限是如何計算的？」；需同步中文語音。
+
+P0005｜單字義與情境義應分清楚
+核對結果：線上remote釋義仍是「遠端的、校外的」。remote通常指遠端；在remote access的圖書館情境可譯成校外存取，不能因此教成單獨remote必定等於校外。
+建議處理：建議詞條「遠端的（本課指校外存取）」或將情境說明獨立；這是教材文字問題，非素材授權问题。
+
+P0006｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：s04-t03-zh.mp3的原版本字音處理結果將自助還書機、還書箱及歸還的「還」均輸出ㄏㄞ2。正確歸還語義應是ㄏㄨㄢˊ。
+建議處理：需修正字音處理並重製；不能只修畫面文字。
+對應音檔：s04-t03-zh.mp3
+
+P0007｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：s04-t04-zh.mp3的歸還輸出ㄍ为1／ㄏㄞ2；「還」被選成hai2。
+建議處理：同上；確認歸還的還使用huan2。
+對應音檔：s04-t04-zh.mp3
+
+P0008｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：s04-t05-zh.mp3的歸還輸出hai2。
+建議處理：同上。
+對應音檔：s04-t05-zh.mp3
+
+P0009｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：s04-t06-zh.mp3的歸還輸出hai2；另外此句逾期的期也輸出qi1，與臺灣標準讀音qi2不同。
+建議處理：修正歸還與期的字音，再重製。
+對應音檔：s04-t06-zh.mp3
+
+P0010｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：s04-p02-zh.mp3的歸還輸出hai2。
+建議處理：同上。
+對應音檔：s04-p02-zh.mp3
+
+P0011｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：s04-p03-zh.mp3的歸還輸出hai2。
+建議處理：同上。
+對應音檔：s04-p03-zh.mp3
+
+P0012｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：s04-g02-zh.mp3的歸還輸出hai2。
+建議處理：同上。
+對應音檔：s04-g02-zh.mp3
+
+P0013｜音標寫法非確定錯誤，尾音聽感待確認
+核對結果：線上loaned為KK [lond]；回報的[loʊnd]是IPA樣式，不能直接稱為KK修正。產製音素為lˈOnd，包含n與d，沒有額外一個音節。Google語音的不同尾音力度不足以單獨認定教材發音錯誤。
+建議處理：保留尾音過重疑義，人工比對nd連接及是否多出母音後再決定重製。
+對應音檔：s04-v05-word.mp3
+
+P0014｜音標存在合理讀法差異，重音聽感待確認
+核對結果：線上photocopy為KK [ˋfoto͵kɑpɪ]，主重音在第一音節、次重音在copy；產製音素fˈOTəkˌɑpi亦保留此重音。Cambridge有完整第二母音/oʊ/及弱讀/ə/的不同美式標記。
+建議處理：不能只因[foto]與[fotə]不同判錯；重音是否清楚仍需人工試聽。
+對應音檔：s04-v07-word.mp3
+
+P0015｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：對話01、02、03、04、06中到期的期都輸出ㄑㄧ1；對話06另有定期也輸出qi1。對話05「處理」的處輸出ㄔㄨ4。臺灣辭典標音分別為期ㄑㄧˊ及處理ㄔㄨˇㄌㄧˇ。第三聲連讀變調可以出現第二聲，不會變成第四聲。
+建議處理：需一次處理6段中文對話；這是語音內容問題，不能據此認定全文播放按鈕壞掉。
+對應音檔：s02-t01-zh.mp3, s02-t02-zh.mp3, s02-t03-zh.mp3, s02-t04-zh.mp3, s02-t05-zh.mp3, s02-t06-zh.mp3
+
+P0016｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：s02-p02-zh.mp3中日期的期輸出ㄑㄧ1，臺灣辭典為ㄖˋㄑㄧˊ。
+建議處理：修正字音並重製；屬語音內容問題。
+對應音檔：s02-p02-zh.mp3
+
+P0017｜有字音與教材不一致的證據，回報聽感未獨立確認
+核對結果：receive的產製音素是ɹəsˈiv，第一音節為弱讀ə；教材KK為rɪˋsiv，Cambridge主要條目為/rɪˈsiːv/。這可以指出與教材目標的差異，但不能將ə直接說成工讀生聽到的/re/；部分英語字典也記錄rə的弱讀。
+建議處理：可為教學一致性明確指定rɪ讀法後製作試聽版本；本次未直接判定成品/re/已重現。
+對應音檔：s02-v01-word.mp3
+
+P0018｜尾音異常仍待人工確認
+核對結果：recall的產製音素ɹəkˈɔl最後是l，未含v或e。這只能排除朗讀文字／音素設定刻意多加ve，不能排除合成成品有異常聲音。
+建議處理：保留待確認；需比對單獨MP3及含拼字的整段播放，定位異常聲是否來自音檔本身或後續拼字。
+對應音檔：s02-v02-word.mp3
+
+P0019｜第一音節有一致性疑義；尾音t尚未證實
+核對結果：remain的產製音素ɹəmˈAn，第一音節ə與教材/rɪ/不同，最後是n，沒有t。不能據此認定工讀生聽到的/re/或額外/t/已重現，也不能直接結案。
+建議處理：可為教學一致性明確指定rɪ讀法；尾音需人工試聽。
+對應音檔：s02-v06-word.mp3
+
+P0020｜已重現產製字音錯誤，成品未獨立聽音
+核對結果：s02-v07-meaning.mp3的「定期地」實際字音輸出ㄉ应4ㄑㄧ1／ㄉㄜ5，「期」使用第一聲；臺灣應為第二聲。回報步驟中的regulaly漏了一個r，但線上詞條regularly拼字正確。
+建議處理：修正定期的期並重製；不把回報中的拼寫誤植當成網站拼錯。
+對應音檔：s02-v07-meaning.mp3
+
+官方與辭典參考：
+還（交回、還書）：https://dict.revised.moe.edu.tw/dictView.jsp?ID=5181&q=1&word=%E9%82%84
+日期： https://dict.revised.moe.edu.tw/dictView.jsp?ID=135055&la=1&powerMode=0
+處理：https://dict.revised.moe.edu.tw/dictView.jsp?ID=125310&q=1&word=%E7%90%86
+receive：https://dictionary.cambridge.org/us/dictionary/english/receive
+receive弱讀例：https://dictionary.cambridge.org/us/dictionary/english-italian/receive
+remain：https://dictionary.cambridge.org/us/dictionary/english/remain
+remain弱讀例：https://dictionary.cambridge.org/us/dictionary/english-french/remain
+immediately：https://dictionary.cambridge.org/pronunciation/english/immediately
+photocopy：https://dictionary.cambridge.org/us/dictionary/english/photocopy
+remote：https://dictionary.cambridge.org/us/dictionary/english/remote
+loan：https://dictionary.cambridge.org/us/dictionary/english/loan
+字母素材來源：https://opengameart.org/content/a-z-male-voice
+現有公告連結：https://www.lib.nthu.edu.tw/news/list_en.html
+
+21段線上MP3核對摘要（SHA-256）：
+s01-v03-word.mp3 74a25846cc26e03f5041ba5a41c5b5828386038692c634ff792a1fe6d64c7c29
+s02-v01-word.mp3 bc809478f92249938c4a00924862e9777ea7d4204403bbd41f842d6e8249db46
+s02-v02-word.mp3 a3eeaf6724defa885ae8b90767f4fb0721043fe5edd91bbf34ff177f59d62efd
+s02-v06-word.mp3 170f6cbdd952dbbbce03e516d2b2b0f4ec0002433d5206bc10c44f7c1f6e496b
+s02-v07-meaning.mp3 17051834cea5d3b7a3888741a05dd6ab31cbdee0878d2b397471feb969fc1a02
+s02-p02-zh.mp3 4deda627d6458d35b7ae636863b6ed3e9e73db793628641fabefb73932dc658c
+s04-v05-word.mp3 6945c93d92b1420fd01d12f034c5046384d49645992db8b312666a2d9b928c55
+s04-v07-word.mp3 9ab41ffddd9e6c9ea67cc53eb30576e8eb9bd1a0d6b61ed28e005d6d8ec62b17
+s04-p02-zh.mp3 adc4f44027763656207902dfd351bfd093c7aba33985d5e668505624869c2ad3
+s04-p03-zh.mp3 ed38966a66a5b85f5bbb4d1be04b234e1ef0ebc3d61c5713f28518c160078be3
+s04-g02-zh.mp3 4dcccc8fde77141ef6c76c2d8a43e8089e23e613f366fc4280ca84518fd6fdf2
+s02-t01-zh.mp3 f5e53b05d0f2617e522fbd7461ba0886c7cf97de6125002ff3f337ed4a60cb7c
+s02-t02-zh.mp3 76477babd8ed3fc0815931fcdc47456482786b5d64c337abeac6b703cf39c6bb
+s02-t03-zh.mp3 a7bd3fda7592011341f30b2b99280d7edde962fda00134d0e3e8bde0a517dd96
+s02-t04-zh.mp3 08415ce08f818a5171e822303a5d39b937db0b9e06422a2ab5392e230ddf8ae6
+s02-t05-zh.mp3 c496d2efa17697265ec1b6b57ef8e1b31e48227fb3c1d35ccfac5b0a713fc174
+s02-t06-zh.mp3 a9a27fb42842731feb3ca14ce49625b83e8e5e30115fbc6ca7c66521bd9c7b06
+s04-t03-zh.mp3 148cd0c82ac90169ec2c7d70880ec8a164554897f959f979b981167fe0b0d745
+s04-t04-zh.mp3 c035e925056333b161c22f08745418cbc2eeb2566eaed91cb243a282d81b58a7
+s04-t05-zh.mp3 8a605c3d10721f5b351296e2e39537b754e196e9c3fd256936541afda876f5c4
+s04-t06-zh.mp3 8c7534a990d44081716ea24628c610718602ab7de8283efcac89145c03f200fd

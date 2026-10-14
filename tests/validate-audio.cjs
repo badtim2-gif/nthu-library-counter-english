@@ -167,6 +167,20 @@ for (let index = 0; index < 26; index += 1) {
 }
 
 for (const entry of manifest.entries) {
+
+  if (entry.language === "zh") {
+    // A return transaction must not use the pronunciation for "still".
+    const returned = [...entry.text.matchAll(/(?<=歸|返|交|償)還|還(?=書|款|清)/gu)].length;
+    if (returned > 0) {
+      assert.ok(entry.phonemes, `Return pronunciation is not pinned: ${entry.file}`);
+      assert.equal((entry.phonemes.match(/ㄏ万2/g) ?? []).length, returned,
+        `Return must use huan2: ${entry.file}`);
+      const still = entry.text.split("還").length - 1 - returned;
+      assert.equal((entry.phonemes.match(/ㄏㄞ2/g) ?? []).length, still,
+        `Preserve hai2 only for the remaining contexts: ${entry.file}`);
+    }
+  }
+
   assert.doesNotMatch(entry.text, /\[[^\]]*]/, `KK entered speech: ${entry.file}`);
   assert.doesNotMatch(entry.text, /[*\/-]/, `Forbidden symbol entered speech: ${entry.file}`);
   assert.doesNotMatch(entry.text, /\bNTHU\b/, `NTHU was not expanded: ${entry.file}`);

@@ -96,7 +96,7 @@ test("keeps the final app free of starter preview code", async () => {
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);
-  assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v12";/);
+  assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v13";/);
   assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
   await access(new URL("../public/img_20260726120102.png", import.meta.url));
