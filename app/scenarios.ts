@@ -298,7 +298,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "reader",
-        en: "Do I also need to return a photocopy [ˋfoto͵kɑpɪ]?",
+        en: "Do I also need to return a photocopy [ˋfotə͵kɑpɪ]?",
         zh: "影印本也需要歸還嗎？",
       },
       {
@@ -341,7 +341,7 @@ export const scenarios: Scenario[] = [
       { word: "appointed", kk: "əˋpɔɪntɪd", meaning: "指定的", pos: "adj." },
       { word: "loaned", kk: "lond", meaning: "借出的", pos: "adj." },
       { word: "expiration", kk: "͵ɛkspəˋreʃən", meaning: "到期、期限屆滿", pos: "n." },
-      { word: "photocopy", kk: "ˋfoto͵kɑpɪ", meaning: "影印本", pos: "n." },
+      { word: "photocopy", kk: "ˋfotə͵kɑpɪ", meaning: "影印本", pos: "n." },
       { word: "charge", kk: "tʃɑrdʒ", meaning: "費用", pos: "n." },
     ],
   },
@@ -1292,7 +1292,7 @@ export const scenarios: Scenario[] = [
     dialogue: [
       { role: "reader", en: "I need to print a color document. Can I send it from my personal laptop?", zh: "我需要彩色列印，可以從自己的筆記型電腦傳送嗎？" },
       { role: "librarian", en: "Personal laptop printing is unavailable because of driver compatibility [kəm͵pætəˋbɪlətɪ] and data security concerns.", zh: "基於驅動程式相容性與資料安全考量，目前不提供個人電腦列印。" },
-      { role: "reader", en: "How can I pay for a printout [ˋprɪnt͵aʊt] or photocopy [ˋfoto͵kɑpɪ]?", zh: "列印或影印要如何付費？" },
+      { role: "reader", en: "How can I pay for a printout [ˋprɪnt͵aʊt] or photocopy [ˋfotə͵kɑpɪ]?", zh: "列印或影印要如何付費？" },
       { role: "librarian", en: "You can pay with an EasyCard or coins, and remember to select [səˋlɛkt] the color option before printing.", zh: "可以使用悠遊卡或硬幣付款，彩色列印前請記得選擇彩色選項。" },
       { role: "reader", en: "Will I be charged if a paper jam [ˋpepɚ dʒæm] occurs?", zh: "如果發生卡紙，我還會被收費嗎？" },
       { role: "librarian", en: "No, follow the instructions on the screen, and report the machine location if the problem continues. You may also request a receipt [rɪˋsit] at the desk.", zh: "不會，請依螢幕指示處理；若問題持續，請回報設備位置。您也可以到櫃檯申請收據。" },
@@ -1308,7 +1308,7 @@ export const scenarios: Scenario[] = [
     ],
     vocabulary: [
       { word: "printout", kk: "ˋprɪnt͵aʊt", meaning: "列印文件", pos: "n." },
-      { word: "photocopy", kk: "ˋfoto͵kɑpɪ", meaning: "影印本、影印", pos: "n." },
+      { word: "photocopy", kk: "ˋfotə͵kɑpɪ", meaning: "影印本、影印", pos: "n." },
       { word: "compatibility", kk: "kəm͵pætəˋbɪlətɪ", meaning: "相容性", pos: "n." },
       { word: "select", kk: "səˋlɛkt", meaning: "選擇", pos: "v." },
       { word: "paper jam", kk: "ˋpepɚ dʒæm", meaning: "卡紙", pos: "phr." },

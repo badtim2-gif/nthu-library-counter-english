@@ -589,7 +589,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "ɹɪkˈɔl."
     },
     {
       "file": "s02-v02-meaning.mp3",
@@ -971,7 +972,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "ɹɪmˈOt."
     },
     {
       "file": "s03-v04-meaning.mp3",
@@ -1339,7 +1341,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "lˈOnd."
     },
     {
       "file": "s04-v05-meaning.mp3",
@@ -1379,7 +1382,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "fˈOTəkˌɑpi."
     },
     {
       "file": "s04-v07-meaning.mp3",

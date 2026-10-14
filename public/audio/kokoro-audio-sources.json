@@ -2264,25 +2264,30 @@
     },
     {
       "file": "s02-v02-word.mp3",
+      "text": "recall",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "a3eeaf6724defa885ae8b90767f4fb0721043fe5edd91bbf34ff177f59d62efd",
+      "applied_target_lufs": -22.3,
+      "sha256": "b7682efa118e339172269ff578691992934b0db7bbed108485a0bb2aa28a9b0d",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.75
+        "duration_seconds": 1.775
       },
       "loudness": {
-        "integrated_lufs": -22.79,
-        "true_peak_dbfs": -6.8,
+        "integrated_lufs": -22.7,
+        "true_peak_dbfs": -6.99,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.66
+        "threshold_lufs": -33.15
       },
       "boundary_peaks": {
-        "leading_40ms": 6e-08,
+        "leading_40ms": 4e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2295,7 +2300,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ɹɪkˈɔl."
     },
     {
       "file": "s02-v03-meaning.mp3",
@@ -3666,22 +3672,27 @@
     },
     {
       "file": "s03-v04-word.mp3",
+      "text": "remote",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "6a646d3104babc5155818d6cad34ec5ce704e650c6015a44000593f5ab6c4ad9",
+      "applied_target_lufs": -22.3,
+      "sha256": "b7b0d6a85b7a76a4d13a5114e272893ea4f1bbf43661989125e9648b1001bc65",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.375
+        "duration_seconds": 1.7
       },
       "loudness": {
-        "integrated_lufs": -22.79,
-        "true_peak_dbfs": -7.19,
+        "integrated_lufs": -22.76,
+        "true_peak_dbfs": -7.55,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.51
+        "threshold_lufs": -34.68
       },
       "boundary_peaks": {
         "leading_40ms": 5e-08,
@@ -3697,7 +3708,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ɹɪmˈOt."
     },
     {
       "file": "s03-v05-meaning.mp3",
@@ -5022,22 +5034,27 @@
     },
     {
       "file": "s04-v05-word.mp3",
+      "text": "loaned",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "6945c93d92b1420fd01d12f034c5046384d49645992db8b312666a2d9b928c55",
+      "applied_target_lufs": -22.3,
+      "sha256": "42ff5db3ad3fb0990bd8b5335864921dd842a50c33d85e448ea4bf9d3958185a",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.65
+        "duration_seconds": 1.575
       },
       "loudness": {
-        "integrated_lufs": -22.8,
-        "true_peak_dbfs": -7.99,
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -8.29,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.31
+        "threshold_lufs": -34.41
       },
       "boundary_peaks": {
         "leading_40ms": 5e-08,
@@ -5053,7 +5070,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "lˈOnd."
     },
     {
       "file": "s04-v06-meaning.mp3",
@@ -5162,25 +5180,30 @@
     },
     {
       "file": "s04-v07-word.mp3",
+      "text": "photocopy",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "9ab41ffddd9e6c9ea67cc53eb30576e8eb9bd1a0d6b61ed28e005d6d8ec62b17",
+      "applied_target_lufs": -22.3,
+      "sha256": "280e10b4e388274a53fb5377c8c4728e7b1029b2118e8d2dc93e43a56aeacc56",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.125
+        "duration_seconds": 2.1
       },
       "loudness": {
-        "integrated_lufs": -22.69,
-        "true_peak_dbfs": -6.82,
+        "integrated_lufs": -22.7,
+        "true_peak_dbfs": -7.99,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.11
+        "threshold_lufs": -34.13
       },
       "boundary_peaks": {
-        "leading_40ms": 4e-08,
+        "leading_40ms": 5e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -5193,7 +5216,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "fˈOTəkˌɑpi."
     },
     {
       "file": "s04-v08-meaning.mp3",
@@ -25337,27 +25361,31 @@
   ],
   "last_partial_regeneration": {
     "issues": [
-      "P0015",
-      "P0016",
-      "P0017",
-      "P0019",
-      "P0020"
+      "P0013",
+      "P0014",
+      "P0018",
+      "P0021"
     ],
-    "clip_count": 9,
-    "generated_at": "2026-10-14T15:03:49+08:00",
-    "staging_manifest_sha256": "8a531ba275174c8f3ca5df55a53d7807fa69d25d83f37a076b04f03c7f2991c8",
-    "transcript_manifest_sha256": "c6fab083be917a4bf5a6aa5b16cbc7f301d1d65bd642205761006c32d8bad5c9",
+    "clip_count": 4,
+    "generated_at": "2026-10-14T20:32:22+08:00",
+    "staging_manifest_sha256": "ae746de7fc0e5bf59ab10adf71d5889e2e8b45aa3c706a6ab5589b11bc2d7978",
+    "generation_manifests": [
+      {
+        "clip_count": 3,
+        "sha256": "3b3262cdabde9761b4bb07cb1de0e420bf326f08bf209f66b00d9d3b03839715"
+      },
+      {
+        "clip_count": 1,
+        "sha256": "98b9d8531fdd290efffdead435786979c478142d959fc3762b5e1b455c764e49"
+      }
+    ],
+    "transcript_manifest_sha256": "379c82f2de22c1f3c6037d038dab6402e217b7bf1fee6aaa05d96a88debc2cd4",
     "files": [
-      "s02-p02-zh.mp3",
-      "s02-t01-zh.mp3",
-      "s02-t02-zh.mp3",
-      "s02-t04-zh.mp3",
-      "s02-t05-zh.mp3",
-      "s02-t06-zh.mp3",
-      "s02-v01-word.mp3",
-      "s02-v06-word.mp3",
-      "s02-v07-meaning.mp3"
+      "s02-v02-word.mp3",
+      "s03-v04-word.mp3",
+      "s04-v05-word.mp3",
+      "s04-v07-word.mp3"
     ],
-    "scope": "Confirmed lesson 2 Mandarin period/processing readings and canonical ri syllable for receive/remain; unverified tail and stress reports remain open"
+    "scope": "Explicit teaching pronunciation, stress and terminal punctuation for loaned/photocopy/recall/remote; subjective quality and the incomplete P0021 report still require human retest"
   }
 }

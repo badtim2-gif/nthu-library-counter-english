@@ -1,0 +1,43 @@
+未指派工讀生問題：修正與核對紀錄
+日期：2026-10-14（臺灣時間）
+基準提交：ef1a13b157ffd62de97cf06fd223606d9bdaf254
+來源：Google試算表「問題追蹤」，處理負責人空白且有回報內容的列。
+本次範圍：P0013、P0014、P0018、P0021；不包含僅預填問題編號的空白列。
+本文件記錄提交前的修改與驗證；實際發布與人工複測結果以GitHub Pages和Google問題追蹤表為準。
+
+一、判斷與修改
+P0013 loaned：保留KK [lond]。回報的[loʊnd]是IPA形式，不將兩套符號差異判成拼錯。針對尾音品質回報，重製單字音檔，明確設定 lˈOnd.，包含n、d與句尾結束符；不把尾音力度差異直接宣稱為發音錯誤。
+P0014 photocopy：採與Oxford及Merriam-Webster常見弱讀、原語音前處理一致的第二音節ə，將音標統一為 [ˋfotə͵kɑpɪ]。同步第4及19課的4處音標；重製回報所在第4課單字音檔，明確指定 fˈOTəkˌɑpi.，主重音第一音節、次重音copy。此為教材與聲音一致性調整，不宣稱其他母音變體一律錯誤。
+P0018 recall：保留KK [rɪˋkɔl]與名詞詞性，重製單字音檔，明確設定 ɹɪkˈɔl.，使第一音節與教材一致，並設定句尾結束符；音素不加入v或e。不能只靠音素紀錄宣稱成品尾音已經完全正常。
+P0021 remote：回報未填「實際結果」，已請使用者補充異常。獨立核對發現原前處理為 ɹəmˈOt，與教材 [rɪˋmot] 及Cambridge選定讀法有差異，為教學一致性重製成 ɹɪmˈOt.。保留中文釋義「遠端的（本課指校外存取）」。不推定原回報指的就是此差異，也不把正常弱讀直接判成所有口音下都錯誤。
+
+二、音檔與來源
+更新4個MP3：s02-v02-word.mp3、s03-v04-word.mp3、s04-v05-word.mp3、s04-v07-word.mp3。
+全部沿用Kokoro-82M v1.0、am_puck、速度0.8及原固定模型／聲線雜湊與授權。
+以明確音素產製，沿用24 kHz、單聲道、48 kbps、響度正規化及首尾安全靜音。
+成品響度-22.76至-22.70 LUFS，最高真峰值-6.99 dBFS；各項技術檢查通過。
+音檔清單與682段逐檔來源紀錄已同步；其餘704段MP3的SHA-256保持相同。
+4處音標的變更不改變朗讀文字；其餘對話音檔與第19課既有photocopy音檔保留。
+網站快取升為nthu-library-shell-v15，音訊快取升為nthu-library-audio-v13。
+
+三、驗證
+通過20課教材完整性及708個音檔存在檢查。
+通過682份合成音檔文字、聲線、明確音素與SHA-256一致性驗證。
+通過34項播放器、快取、循環、複習與計時測試及5項頁面呈現測試，共39項。
+通過vinext建置、Next.js Pages正式靜態建置、TypeScript及Pages輸出驗證。
+執行實際vocabSteps及runPlaybackQueue：remote順序為單字、1秒、R E M O T E、中文解說、2秒；所需8個素材均存在，模擬2輪順序正確。這是程式執行檢查，未宣稱已在工讀生瀏覽器實際聽音。
+驗證副本與專案來源逐檔相同，僅在副本保留供共用套件使用的Turbopack根目錄。
+
+四、Google試算表處理原則
+只更新四筆的N至P欄：處理負責人、處理狀態及修正說明。
+負責人填「語庭codex」；發布確認後使用既有選單「待複測」。
+保留原回報、證據與人工複測人／日期／結果，空白預留列不指派。
+本次工具無法獨立聽音，尾音及重音清晰度仍須人工複測；不自行填「通過」或「已結案」。
+P0021仍需補充實際異常，若另有中文語音或操作問題，沿該回報繼續處理。
+
+五、查核來源
+loan：https://www.merriam-webster.com/dictionary/loan
+photocopy：https://www.merriam-webster.com/dictionary/photocopy
+photocopy：https://www.oxfordlearnersdictionaries.com/definition/american_english/photocopy_1
+recall：https://www.oxfordlearnersdictionaries.com/definition/american_english/recall_2
+remote：https://dictionary.cambridge.org/us/pronunciation/english/remote
