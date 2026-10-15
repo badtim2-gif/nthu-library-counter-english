@@ -1,0 +1,51 @@
+P0022–P0025 未指派問題：查核及修正紀錄
+日期：2026-10-15（臺灣時間）
+基準提交：7c5274e83bd9a85d4560d07130eaf337a77fd60d
+範圍：Google試算表「問題追蹤」中，處理負責人空白且有問題內容的4列；P0022至P0025。
+本文件記錄提交前的修改與驗證；實際上線版本及人工複測結果，以GitHub Pages及Google問題追蹤表為準。
+
+一、逐筆判斷
+P0022 locate：原KK [ˋlo͵ket]的第一音節主重音有Merriam-Webster及Cambridge美式條目支持，不能因工讀生提供另一讀法而直接判成錯誤。為教材一致性，選用Cambridge主要發音頁的第二音節重音 /loʊˈkeɪt/，KK統一為 [loˋket]。第5及15課的對話與單字共4處同步；重製2段英文對話與2段單字。英文音素明確指定 lOkˈAt，單字另加句尾結束符。
+P0023 locate：原「找到位置」意思接近，但動作與對象不夠清楚。釋義改為「找出或確定所在位置」，同步第5及15課單字，重製2段中文釋義。未改寫原對話的中英文意思。
+P0024 recommendation：採「推薦（本課指館藏薦購）」，把一般義放在前，另外標明圖書館情境義；不把原釋義順序視為拼字或基本語義錯誤。同步重製該詞中文釋義。
+P0025 clearance：Cambridge的許可義包含獲得正式許可或滿足規定條件，清大也使用Clearance Procedures for Graduates。本課離校查核與結清手續的用法有情境依據，不採一律替換為「清除、結清」。補為「核准、許可（本課指離校查核與結清手續）」，分清一般義與課文用法；同步重製中文釋義。未變更離校規定或流程。
+
+二、教材及語音範圍
+app/scenarios.ts：locate音標4處、locate釋義2處、recommendation與clearance釋義各1處。
+重製8個音檔：
+s05-t03-en.mp3
+s05-v04-word.mp3
+s05-v04-meaning.mp3
+s06-v05-meaning.mp3
+s07-v01-meaning.mp3
+s15-t01-en.mp3
+s15-v03-word.mp3
+s15-v03-meaning.mp3
+英文沿用Kokoro v1.0的am_fenrir／am_puck、速度0.8；中文沿用v1.1-zh的zm_010、速度0.9。
+兩段英文對話均校正至120.4 WPM；成品響度-22.75至-22.30 LUFS，最高真峰值-3.38 dBFS。
+更新朗讀清單、逐檔來源與雜湊；其餘700段MP3的SHA-256保持相同。
+網站快取改為nthu-library-shell-v16，音訊快取改為nthu-library-audio-v14，清除舊版音訊快取v1至v13。
+
+三、驗證
+20課、120句對話、708個音檔路徑，以及682份合成音檔的文字、角色、聲線、音素及雜湊檢查通過。
+34項播放器、循環、快取、複習及計時測試與5項頁面呈現測試，共39項通過。
+vinext建置、Next.js Pages正式靜態建置、TypeScript與Pages輸出驗證通過。
+8段新檔的MP3、24kHz、單聲道、48kbps、音量／峰值及首尾安全靜音檢查通過。
+新中文朗讀稿以相同語音前處理器核對字音；英文字音明確指定所選locate重音。
+驗證副本與本專案來源逐檔一致，僅在驗證副本設定共用套件的Turbopack根目錄。
+目前工具無法獨立聽音，不以技術檢查代替人工聽音驗收；發布後仍標為待複測。
+
+四、Google試算表
+只更新問題追蹤第24至27列的N:P：處理負責人填「語庭codex」，處理狀態使用既有選單「待複測」，修正說明列明本次改動、判斷及版本。
+保留原回報、證據、預估分鐘，以及人工複測人、日期與結果；僅預填問題編號的空白列不指派。
+
+五、主要查核來源
+https://www.merriam-webster.com/dictionary/locate
+https://dictionary.cambridge.org/pronunciation/english/locate
+https://dictionary.cambridge.org/us/dictionary/english/locate
+https://dictionary.cambridge.org/dictionary/english-chinese-traditional/locate?q=locate
+https://dictionary.cambridge.org/dictionary/english-chinese-traditional/recommendation
+https://dictionary.cambridge.org/dictionary/english-chinese-traditional/clearance
+https://www.merriam-webster.com/dictionary/clearance
+https://www.lib.nthu.edu.tw/en/use/before_graduated.html
+https://iphd.site.nthu.edu.tw/p/406-1222-170419%2Cr8110.php?Lang=zh-tw

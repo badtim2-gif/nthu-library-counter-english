@@ -365,7 +365,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "reader",
-        en: "Where can I locate [ˋlo͵ket] the book after I find the record?",
+        en: "Where can I locate [loˋket] the book after I find the record?",
         zh: "找到紀錄後，我可以到哪裡找到這本書？",
       },
       {
@@ -415,7 +415,7 @@ export const scenarios: Scenario[] = [
       { word: "assign", kk: "əˋsaɪn", meaning: "指定、指派", pos: "v." },
       { word: "reserve", kk: "rɪˋzɝv", meaning: "保留、指定參考", pos: "n." },
       { word: "instructor", kk: "ɪnˋstrʌktɚ", meaning: "授課教師", pos: "n." },
-      { word: "locate", kk: "ˋlo͵ket", meaning: "找到位置", pos: "v." },
+      { word: "locate", kk: "loˋket", meaning: "找出或確定所在位置", pos: "v." },
       { word: "approved", kk: "əˋpruvd", meaning: "經核准的", pos: "adj." },
       { word: "designated", kk: "ˋdɛzɪg͵netɪd", meaning: "指定的", pos: "adj." },
       { word: "dissertation", kk: "͵dɪsɚˋteʃən", meaning: "博士論文", pos: "n." },
@@ -492,7 +492,7 @@ export const scenarios: Scenario[] = [
       { word: "collection", kk: "kəˋlɛkʃən", meaning: "館藏", pos: "n." },
       { word: "publication", kk: "͵pʌblɪˋkeʃən", meaning: "出版物、出版資訊", pos: "n." },
       { word: "monthly", kk: "ˋmʌnθlɪ", meaning: "每月的", pos: "adj." },
-      { word: "recommendation", kk: "͵rɛkəmɛnˋdeʃən", meaning: "薦購、推薦", pos: "n." },
+      { word: "recommendation", kk: "͵rɛkəmɛnˋdeʃən", meaning: "推薦（本課指館藏薦購）", pos: "n." },
       { word: "track", kk: "træk", meaning: "追蹤", pos: "v." },
       { word: "notification", kk: "͵notəfəˋkeʃən", meaning: "通知", pos: "n." },
     ],
@@ -564,7 +564,7 @@ export const scenarios: Scenario[] = [
       },
     ],
     vocabulary: [
-      { word: "clearance", kk: "ˋklɪrəns", meaning: "離校查核、結清手續", pos: "n." },
+      { word: "clearance", kk: "ˋklɪrəns", meaning: "核准、許可（本課指離校查核與結清手續）", pos: "n." },
       { word: "reciprocal", kk: "rɪˋsɪprəkəl", meaning: "互惠的", pos: "adj." },
       { word: "settle", kk: "ˋsɛtəl", meaning: "結清、處理完畢", pos: "v." },
       { word: "delivery", kk: "dɪˋlɪvərɪ", meaning: "傳遞、交付", pos: "n." },
@@ -1115,7 +1115,7 @@ export const scenarios: Scenario[] = [
     dialogue: [
       {
         role: "reader",
-        en: "The catalog [ˋkætə͵lɔg] says this book is on the shelf, but I cannot locate [ˋlo͵ket] it.",
+        en: "The catalog [ˋkætə͵lɔg] says this book is on the shelf, but I cannot locate [loˋket] it.",
         zh: "館藏目錄顯示這本書在架上，但我找不到。",
       },
       {
@@ -1174,7 +1174,7 @@ export const scenarios: Scenario[] = [
     vocabulary: [
       { word: "catalog", kk: "ˋkætə͵lɔg", meaning: "館藏目錄", pos: "n." },
       { word: "on the shelf", kk: "ɑn ðə ʃɛlf", meaning: "在書架上、在架", pos: "phr." },
-      { word: "locate", kk: "ˋlo͵ket", meaning: "找到位置", pos: "v." },
+      { word: "locate", kk: "loˋket", meaning: "找出或確定所在位置", pos: "v." },
       { word: "missing", kk: "ˋmɪsɪŋ", meaning: "找不到的、遺失的", pos: "adj." },
       { word: "nearby", kk: "ˋnɪrˋbaɪ", meaning: "附近的", pos: "adj." },
       { word: "search form", kk: "sɝtʃ fɔrm", meaning: "協尋申請表", pos: "phr." },
