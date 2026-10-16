@@ -1,0 +1,47 @@
+P0024 延伸檢查：單字一般義與圖書館情境義修正紀錄
+日期：2026-10-16（臺灣時間）
+基準提交：ec3e0501e4311203dcd13463c65684b8b1818ab3
+範圍：檢查20個情境、141筆單字後，依使用者指示修改7筆；其中publication、photocopy修正釋義範圍或詞性，其餘補充情境或完整片語。不是把所有情境譯法都視為錯誤。
+
+一、教材修改
+情境05 reserve：保留、指定參考 → 保留、儲備（本課指課程指定參考資料）。
+情境06 recommend：推薦、薦購 → 推薦（本課指推薦館方採購）。
+情境06 publication：出版物、出版資訊 → 出版、出版物。publication information才是「出版資訊」；對話原有完整片語及正確中文，保留對話。
+情境08 embargo：延後公開、禁制 → 禁令、限制（本課指論文延後公開）。
+情境15 search form：改列與課文及館方表單一致的Missing Items Search form；KK補為[ˋmɪsɪŋ ˋaɪtəmz sɝtʃ fɔrm]，中文為「館藏協尋申請表」。
+情境16 penalty：處罰、記點 → 處罰（本課指未取預約書記點）。
+情境19 photocopy：影印本、影印 → 影印本、影本，與本課a photocopy的名詞用法相符。
+本次僅變更這7筆單字；20課的對話、句型、文法、政策來源及規定均維持原樣。
+
+二、語音與快取
+重製7段中文解說、1段英文片語，共8段：
+s05-v02-meaning.mp3
+s06-v01-meaning.mp3
+s06-v03-meaning.mp3
+s08-v05-meaning.mp3
+s15-v06-word.mp3
+s15-v06-meaning.mp3
+s16-v06-meaning.mp3
+s19-v02-meaning.mp3
+英文沿用Kokoro v1.0/am_puck、速度0.8；中文沿用v1.1-zh/zm_010、速度0.9。
+固定新稿音素，並校正語音前處理器對「處罰」的誤讀，指定「處」第三聲chu3。
+8段音檔均為MP3、24kHz、單聲道、48kbps；響度-22.97至-21.99 LUFS，最高真峰值-3.69 dBFS，首尾安全靜音檢查通過。
+更新朗讀清單、逐檔來源及SHA-256；其餘700段MP3的SHA-256保持相同。
+頁面與服務工作程式同步改用音訊快取nthu-library-audio-v15；網站快取nthu-library-shell-v17。舊音訊快取v1至v14納入清除及測試。
+
+三、驗證
+20課、120句對話、141筆單字及708個音檔路徑檢查通過，682份合成語音的朗讀稿、角色、聲線、音素與檔案雜湊一致。
+播放器、循環播放、手機語音、離線快取、複習及計時等34項測試，加上5項頁面呈現測試，共39項通過。
+vinext建置、GitHub Pages正式靜態建置、TypeScript及Pages輸出驗證通過。
+驗證副本與正式專案所有變更檔案逐位元組一致；驗證副本只另外設定本機共用套件的Turbopack根目錄，未將此環境設定帶入專案。
+技術檢查不等於人工聽音驗收；8段新語音仍需工讀生實際播放複測。本次未替任何人工複測欄位填寫通過。
+實際部署結果請以GitHub Pages工作流程及公開網站為準。
+
+四、查核依據
+https://dictionary.cambridge.org/us/dictionary/english/publication
+https://dictionary.cambridge.org/us/dictionary/english/photocopy
+https://dictionary.cambridge.org/dictionary/english/recommend
+https://dictionary.cambridge.org/dictionary/english/embargo
+https://dictionary.cambridge.org/dictionary/english/penalty
+https://www.lib.nthu.edu.tw/en/research/reserve.html
+https://www.lib.nthu.edu.tw/en/use/faq/q_a3.html

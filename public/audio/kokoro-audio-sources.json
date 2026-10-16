@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -6121,25 +6121,30 @@
     },
     {
       "file": "s05-v02-meaning.mp3",
+      "text": "保留、儲備（本課指課程指定參考資料），名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "2d207a32962c8215ecb23f4948c0b390ba03ee60b11378c4ae0c91c2dcb15ae8",
+      "applied_target_lufs": -19.6,
+      "sha256": "bf085349402cadfad340309e555d056cf37c52b3600f12660d44aecf37e7a473",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.475
+        "duration_seconds": 5.5
       },
       "loudness": {
-        "integrated_lufs": -23.07,
-        "true_peak_dbfs": -4.05,
-        "lra_lu": 1.7,
-        "threshold_lufs": -33.32
+        "integrated_lufs": -22.7,
+        "true_peak_dbfs": -3.69,
+        "lra_lu": 5.5,
+        "threshold_lufs": -33.0
       },
       "boundary_peaks": {
-        "leading_40ms": 1.4e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -6152,7 +6157,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄅㄠ3ㄌ又2, ㄔㄨ3ㄅㄟ4 (ㄅㄣ3/ㄎㄜ4ㄓ十3/ㄎㄜ4ㄔㄥ2/ㄓ十3ㄉ应4/ㄘㄢ1ㄎㄠ3/ㄗㄭ1ㄌ要4) , ㄇ应2ㄘㄭ2"
     },
     {
       "file": "s05-v02-word.mp3",
@@ -7306,25 +7312,30 @@
     },
     {
       "file": "s06-v01-meaning.mp3",
+      "text": "推薦（本課指推薦館方採購），動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "242fefb9aba7ad3897f801642cdd9b742f85de23add345ab7cf49b577c27f9ae",
+      "applied_target_lufs": -21.22,
+      "sha256": "3dcf12a6df05f0282c52cd621377cfbb8f5a1a76774c17b7af1c3689ecfaf1b8",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.075
+        "duration_seconds": 4.826
       },
       "loudness": {
-        "integrated_lufs": -21.35,
-        "true_peak_dbfs": -3.97,
-        "lra_lu": 0.2,
-        "threshold_lufs": -31.93
+        "integrated_lufs": -22.29,
+        "true_peak_dbfs": -3.89,
+        "lra_lu": 2.8,
+        "threshold_lufs": -32.63
       },
       "boundary_peaks": {
-        "leading_40ms": 2.2e-07,
+        "leading_40ms": 2.4e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -7337,7 +7348,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄊ为1ㄐ言4 (ㄅㄣ3/ㄎㄜ4ㄓ十3/ㄊ为1ㄐ言4/ㄍ万3ㄈㄤ1/ㄘㄞ3ㄍㄡ4) , ㄉ中4ㄘㄭ2"
     },
     {
       "file": "s06-v01-word.mp3",
@@ -7446,25 +7458,30 @@
     },
     {
       "file": "s06-v03-meaning.mp3",
+      "text": "出版、出版物，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "964b61510f4f1c93b7c86ddf4473231bf64a73387ab4779dbdcf0a3a45b391ae",
+      "applied_target_lufs": -22.3,
+      "sha256": "ca94bb3846c7cd3051623433c54a2603dec4d6ea112275089dff7f45a9d1e7c9",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.65
+        "duration_seconds": 3.225
       },
       "loudness": {
-        "integrated_lufs": -23.2,
-        "true_peak_dbfs": -3.89,
-        "lra_lu": 2.0,
-        "threshold_lufs": -33.7
+        "integrated_lufs": -22.1,
+        "true_peak_dbfs": -3.99,
+        "lra_lu": 0.0,
+        "threshold_lufs": -32.64
       },
       "boundary_peaks": {
-        "leading_40ms": 2e-07,
+        "leading_40ms": 2.5e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -7477,7 +7494,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄔㄨ1ㄅㄢ3, ㄔㄨ1ㄅㄢ3ㄨ4, ㄇ应2ㄘㄭ2"
     },
     {
       "file": "s06-v03-word.mp3",
@@ -10102,22 +10120,27 @@
     },
     {
       "file": "s08-v05-meaning.mp3",
+      "text": "禁令、限制（本課指論文延後公開），名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "0acb898ae9dd257eeb136d0a2f5bf556168a59950f7c1cbb941b45fb4b5fabb9",
+      "applied_target_lufs": -21.13,
+      "sha256": "fed188acef60b97dfc0776dfbe82767561a9e902e9eece521ced8b09db2b90e5",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.575
+        "duration_seconds": 5.1
       },
       "loudness": {
-        "integrated_lufs": -22.83,
-        "true_peak_dbfs": -3.78,
-        "lra_lu": 1.9,
-        "threshold_lufs": -33.16
+        "integrated_lufs": -22.38,
+        "true_peak_dbfs": -3.77,
+        "lra_lu": 2.9,
+        "threshold_lufs": -32.78
       },
       "boundary_peaks": {
         "leading_40ms": 1.9e-07,
@@ -10133,7 +10156,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄐ阴4ㄌ应4, ㄒ言4ㄓ十4 (ㄅㄣ3/ㄎㄜ4/ㄓ十3ㄌ文4/文2言2ㄏㄡ4/ㄍ中1ㄎㄞ1) , ㄇ应2ㄘㄭ2"
     },
     {
       "file": "s08-v05-word.mp3",
@@ -18984,25 +19008,30 @@
     },
     {
       "file": "s15-v06-meaning.mp3",
+      "text": "館藏協尋申請表，片語",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "467db48bd685294b1eea11dda19205ae2a886646417ff882241f2bc220e69aed",
+      "applied_target_lufs": -22.3,
+      "sha256": "0fac92077a1ea9d8213af2b7664b357a1473f2352eab7015be4d63dfbf29113a",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.25
+        "duration_seconds": 3.75
       },
       "loudness": {
-        "integrated_lufs": -22.06,
-        "true_peak_dbfs": -3.96,
-        "lra_lu": 0.3,
-        "threshold_lufs": -33.0
+        "integrated_lufs": -22.97,
+        "true_peak_dbfs": -3.94,
+        "lra_lu": 2.4,
+        "threshold_lufs": -33.73
       },
       "boundary_peaks": {
-        "leading_40ms": 1.3e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -19015,29 +19044,35 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄍ万3ㄘㄤ2/ㄒㄝ2ㄒ云2/ㄕㄣ1ㄑ应3ㄅ要3, ㄆ言4ㄩ3"
     },
     {
       "file": "s15-v06-word.mp3",
+      "text": "Missing Items Search form",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "65fde403f0fca3d788a33c67413f004cf0394a0c1357addb91f0db15bf484b9f",
+      "applied_target_lufs": -22.3,
+      "sha256": "71c4d740d98e3bdf49f661895e36a63ccb01bb96a4a54a0f2ade986b3956c660",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.975
+        "duration_seconds": 2.775
       },
       "loudness": {
-        "integrated_lufs": -22.74,
-        "true_peak_dbfs": -7.6,
+        "integrated_lufs": -22.71,
+        "true_peak_dbfs": -5.28,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.86
+        "threshold_lufs": -33.17
       },
       "boundary_peaks": {
-        "leading_40ms": 4e-08,
+        "leading_40ms": 6e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -19050,7 +19085,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "mˈɪsɪŋ ˈITəmz sˈɜɹʧ fˈɔɹm."
     },
     {
       "file": "s15-v07-meaning.mp3",
@@ -20248,25 +20284,30 @@
     },
     {
       "file": "s16-v06-meaning.mp3",
+      "text": "處罰（本課指未取預約書記點），名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "0244751e0c1f46d9cfda5c3c4d27259645a70244047b1ded3c235ad5788c00a6",
+      "applied_target_lufs": -20.06,
+      "sha256": "352447bd58632cc6f00596613496c02d9ff920ac152293130ab8d703bf9ddf69",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.05
+        "duration_seconds": 4.925
       },
       "loudness": {
-        "integrated_lufs": -22.19,
+        "integrated_lufs": -22.63,
         "true_peak_dbfs": -3.88,
-        "lra_lu": 0.1,
-        "threshold_lufs": -32.78
+        "lra_lu": 4.7,
+        "threshold_lufs": -32.89
       },
       "boundary_peaks": {
-        "leading_40ms": 1.3e-07,
+        "leading_40ms": 2.4e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -20279,7 +20320,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄔㄨ3ㄈㄚ2 (ㄅㄣ3/ㄎㄜ4ㄓ十3/为4ㄑㄩ3/ㄩ4月1/ㄕㄨ1/ㄐㄧ4ㄉ言3) , ㄇ应2ㄘㄭ2"
     },
     {
       "file": "s16-v06-word.mp3",
@@ -23715,25 +23757,30 @@
     },
     {
       "file": "s19-v02-meaning.mp3",
+      "text": "影印本、影本，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "3896bbf490ed2f5f4c37440e84d901789a52f99ee92cc6ddaeb06c9ef7534422",
+      "applied_target_lufs": -22.3,
+      "sha256": "8a5fcf851a8935e40ebdb95aa4549731b056ed693d56546635269fb654c1eeca",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.25
+        "duration_seconds": 3.15
       },
       "loudness": {
-        "integrated_lufs": -22.21,
-        "true_peak_dbfs": -3.86,
-        "lra_lu": 0.0,
-        "threshold_lufs": -32.39
+        "integrated_lufs": -21.99,
+        "true_peak_dbfs": -3.79,
+        "lra_lu": 0.1,
+        "threshold_lufs": -32.17
       },
       "boundary_peaks": {
-        "leading_40ms": 2e-07,
+        "leading_40ms": 2.3e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -23746,7 +23793,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "应3阴4ㄅㄣ3, 应2ㄅㄣ3, ㄇ应2ㄘㄭ2"
     },
     {
       "file": "s19-v02-word.mp3",
@@ -25399,26 +25447,23 @@
     }
   ],
   "last_partial_regeneration": {
-    "issues": [
-      "P0022",
-      "P0023",
-      "P0024",
-      "P0025"
+    "related_issues": [
+      "P0024"
     ],
     "clip_count": 8,
-    "generated_at": "2026-10-15T18:32:25+08:00",
-    "staging_manifest_sha256": "4df3ad0e788f087cc6aaa3a9984514e30cd49926de933577991f2f4d9f3d8c7c",
-    "transcript_manifest_sha256": "7d162b609bc66ff91f0e4c2bfa59af5e5e458e9717dc0a229e4026bb34b6879a",
+    "generated_at": "2026-10-16T14:14:15+08:00",
+    "staging_manifest_sha256": "258038076d2fc06d3031b283303ff9a86d2672c5545523d4e8c77942b739b0a3",
+    "transcript_manifest_sha256": "bf62023f86c83d946ad7c3da3b0d22eca3e78bdcea154c5b7896d287ea235a46",
     "files": [
-      "s05-t03-en.mp3",
-      "s05-v04-meaning.mp3",
-      "s05-v04-word.mp3",
-      "s06-v05-meaning.mp3",
-      "s07-v01-meaning.mp3",
-      "s15-t01-en.mp3",
-      "s15-v03-meaning.mp3",
-      "s15-v03-word.mp3"
+      "s05-v02-meaning.mp3",
+      "s06-v01-meaning.mp3",
+      "s06-v03-meaning.mp3",
+      "s08-v05-meaning.mp3",
+      "s15-v06-meaning.mp3",
+      "s15-v06-word.mp3",
+      "s16-v06-meaning.mp3",
+      "s19-v02-meaning.mp3"
     ],
-    "scope": "Choose consistent second-syllable locate stress in lessons 5/15; clarify locate meaning and distinguish general recommendation/clearance meanings from library context; alternative valid readings and contextual translations are not categorically errors"
+    "scope": "Follow-up review of all 20 scenarios: separate general vocabulary meanings from library context, correct publication/photocopy meanings, and expand Missing Items Search form with matching KK and speech. Pin chu3 in 處罰; preserve all dialogue and policies."
   }
 }

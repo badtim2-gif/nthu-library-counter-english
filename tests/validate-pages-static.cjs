@@ -41,10 +41,10 @@ assert.match(creditsHtml, new RegExp(`${basePath}/third-party-packages\\.json`))
 
 const serviceWorker = fs.readFileSync(path.join(output, "sw.js"), "utf8");
 assert.match(serviceWorker, /self\.registration\.scope/);
-assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v16";/);
+assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v17";/);
 assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
-assert.match(serviceWorker, /const AUDIO_CACHE = "nthu-library-audio-v14";/);
-for (let version = 1; version <= 13; version += 1) {
+assert.match(serviceWorker, /const AUDIO_CACHE = "nthu-library-audio-v15";/);
+for (let version = 1; version <= 14; version += 1) {
   assert.ok(!serviceWorker.includes(`"nthu-library-audio-v${version}"`));
 }
 
@@ -62,9 +62,9 @@ assert.equal(packageReport.packages.length, packageReport.package_count);
 assert.ok(packageReport.packages.every((entry) => !("paths" in entry)));
 
 const pageSource = fs.readFileSync(path.join(root, "app", "page.tsx"), "utf8");
-assert.match(pageSource, /const AUDIO_CACHE_NAME = "nthu-library-audio-v14";/);
+assert.match(pageSource, /const AUDIO_CACHE_NAME = "nthu-library-audio-v15";/);
 assert.match(pageSource, /caches\.open\(AUDIO_CACHE_NAME\)/);
-for (let version = 1; version <= 13; version += 1) {
+for (let version = 1; version <= 14; version += 1) {
   assert.ok(pageSource.includes(`"nthu-library-audio-v${version}"`));
 }
 
