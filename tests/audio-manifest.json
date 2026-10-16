@@ -2491,7 +2491,8 @@
       "kind": "english_long",
       "role": "reader",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "ˌI mˈA əplˈI fɔɹ ɐ pˈætənt , sˌO kæn ˌI ɹəkwˈɛst ɐn əmbˈɑɹɡO ?"
     },
     {
       "file": "s08-t03-zh.mp3",
@@ -2531,7 +2532,8 @@
       "kind": "english_long",
       "role": "reader",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "wˌʌt ʃˌʊd ˌI dˈu ɪf ˌI dəskˈʌvəɹ ɐn ˈɛɹɚ ˈæftəɹ ɡɹˌæʤʊˈAʃən?"
     },
     {
       "file": "s08-t05-zh.mp3",
@@ -2611,7 +2613,8 @@
       "kind": "english_long",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "wˌʌt ʃˌʊd ˌI dˈu ɪf ˌI fˈInd ɐn ˈɛɹɚ?"
     },
     {
       "file": "s08-p03-zh.mp3",
@@ -2651,7 +2654,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "θˈisɪs."
     },
     {
       "file": "s08-v01-meaning.mp3",
@@ -2711,7 +2715,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "pˈætənt."
     },
     {
       "file": "s08-v04-meaning.mp3",

@@ -593,7 +593,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "reader",
-        en: "I may apply for a patent [ˋpætnt], so can I request an embargo [ɛmˋbɑrgo]?",
+        en: "I may apply for a patent [ˋpætənt], so can I request an embargo [ɛmˋbɑrgo]?",
         zh: "我可能會申請專利，可以申請延後公開嗎？",
       },
       {
@@ -643,7 +643,7 @@ export const scenarios: Scenario[] = [
       { word: "thesis", kk: "ˋθisɪs", meaning: "碩士論文、學位論文", pos: "n." },
       { word: "submission", kk: "səbˋmɪʃən", meaning: "提交、送審", pos: "n." },
       { word: "authorization", kk: "͵ɔθərəˋzeʃən", meaning: "授權", pos: "n." },
-      { word: "patent", kk: "ˋpætnt", meaning: "專利", pos: "n." },
+      { word: "patent", kk: "ˋpætənt", meaning: "專利", pos: "n." },
       { word: "embargo", kk: "ɛmˋbɑrgo", meaning: "禁令、限制（本課指論文延後公開）", pos: "n." },
       { word: "supporting", kk: "səˋportɪŋ", meaning: "作為證明的、補充的", pos: "adj." },
       { word: "revision", kk: "rɪˋvɪʒən", meaning: "修訂、修改", pos: "n." },

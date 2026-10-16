@@ -9308,22 +9308,27 @@
     },
     {
       "file": "s08-p03-en.mp3",
+      "text": "What should I do if I find an error?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "b10ba0cc93a872cb005de3f13e1c5bb64cbe7d6d086681620aaa1a3b0ed7f2fa",
+      "applied_target_lufs": -21.18,
+      "sha256": "fea9d75ad9132ab560c6c24b53858153d579bdfa2ade8b974cb0b226d71768c9",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 4.675
+        "duration_seconds": 4.672
       },
       "loudness": {
-        "integrated_lufs": -22.3,
-        "true_peak_dbfs": -4.28,
-        "lra_lu": 5.9,
-        "threshold_lufs": -33.06
+        "integrated_lufs": -22.25,
+        "true_peak_dbfs": -4.83,
+        "lra_lu": 6.0,
+        "threshold_lufs": -33.21
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -9340,11 +9345,12 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
+      "phonemes": "wˌʌt ʃˌʊd ˌI dˈu ɪf ˌI fˈInd ɐn ˈɛɹɚ?",
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.62777778,
+        "postprocess_atempo": 0.60555556,
         "word_count": 9,
-        "verified_wpm": 120.7
+        "verified_wpm": 120.8
       }
     },
     {
@@ -9536,22 +9542,27 @@
     },
     {
       "file": "s08-t03-en.mp3",
+      "text": "I may apply for a patent , so can I request an embargo ?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_fenrir",
       "speed": 0.8,
-      "sha256": "fde28ea6b2afa6a01aef419d0a72a015baac26f71ddfc2147f82b9ddb7271fcc",
+      "applied_target_lufs": -22.3,
+      "sha256": "6d7ad9d679a88045cbce9a5fbfd6bd2c3d4cd34fe8f1fb354e93dae9924902dc",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.191
+        "duration_seconds": 6.185
       },
       "loudness": {
-        "integrated_lufs": -23.07,
-        "true_peak_dbfs": -5.17,
-        "lra_lu": 3.0,
-        "threshold_lufs": -33.66
+        "integrated_lufs": -23.29,
+        "true_peak_dbfs": -4.9,
+        "lra_lu": 3.3,
+        "threshold_lufs": -33.76
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -9568,11 +9579,12 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
+      "phonemes": "ˌI mˈA əplˈI fɔɹ ɐ pˈætənt , sˌO kæn ˌI ɹəkwˈɛst ɐn əmbˈɑɹɡO ?",
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.75,
+        "postprocess_atempo": 0.76666667,
         "word_count": 12,
-        "verified_wpm": 120.2
+        "verified_wpm": 120.3
       }
     },
     {
@@ -9688,22 +9700,27 @@
     },
     {
       "file": "s08-t05-en.mp3",
+      "text": "What should I do if I discover an error after graduation?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_fenrir",
       "speed": 0.8,
-      "sha256": "f0378aa8395d189d0077458efc4dd45cf0937c175d3e7f7b0ba0ee4c56fa5bef",
+      "applied_target_lufs": -20.6,
+      "sha256": "d037d045fbb9b56f7ba269b61aeb78a8827145e9ee5a228dfd6e51324415fa99",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.696
+        "duration_seconds": 5.692
       },
       "loudness": {
-        "integrated_lufs": -22.32,
-        "true_peak_dbfs": -3.66,
-        "lra_lu": 4.0,
-        "threshold_lufs": -32.81
+        "integrated_lufs": -22.3,
+        "true_peak_dbfs": -4.62,
+        "lra_lu": 4.7,
+        "threshold_lufs": -32.79
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -9720,11 +9737,12 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
+      "phonemes": "wˌʌt ʃˌʊd ˌI dˈu ɪf ˌI dəskˈʌvəɹ ɐn ˈɛɹɚ ˈæftəɹ ɡɹˌæʤʊˈAʃən?",
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.88181818,
+        "postprocess_atempo": 0.86818182,
         "word_count": 11,
-        "verified_wpm": 120.1
+        "verified_wpm": 120.2
       }
     },
     {
@@ -9875,10 +9893,15 @@
     },
     {
       "file": "s08-v01-word.mp3",
+      "text": "thesis",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "c9ff893ba421d3ec2207b69cc3ba858a2116ddde2360623a7f3faf4b262acd80",
+      "applied_target_lufs": -22.3,
+      "sha256": "462f8d208ebd0e707928f925af611882fce0f9666d5e0b9fad295ee606bea736",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -9887,10 +9910,10 @@
         "duration_seconds": 1.85
       },
       "loudness": {
-        "integrated_lufs": -22.75,
-        "true_peak_dbfs": -8.94,
+        "integrated_lufs": -22.7,
+        "true_peak_dbfs": -8.82,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.12
+        "threshold_lufs": -34.08
       },
       "boundary_peaks": {
         "leading_40ms": 5e-08,
@@ -9906,7 +9929,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "θˈisɪs."
     },
     {
       "file": "s08-v02-meaning.mp3",
@@ -10085,25 +10109,30 @@
     },
     {
       "file": "s08-v04-word.mp3",
+      "text": "patent",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "b680a4ebb589a74cca24945eab55c88e0ef35e340ec7fa54ad7e2db6442d654f",
+      "applied_target_lufs": -22.3,
+      "sha256": "77d7682873b4b14e397d11664ccfc1e899b9d0bb71a4e26d61b0b02564cb6a52",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.7
+        "duration_seconds": 1.775
       },
       "loudness": {
-        "integrated_lufs": -22.74,
-        "true_peak_dbfs": -7.92,
+        "integrated_lufs": -22.78,
+        "true_peak_dbfs": -7.77,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.26
+        "threshold_lufs": -34.15
       },
       "boundary_peaks": {
-        "leading_40ms": 6e-08,
+        "leading_40ms": 4e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -10116,7 +10145,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "pˈætənt."
     },
     {
       "file": "s08-v05-meaning.mp3",
@@ -25447,23 +25477,22 @@
     }
   ],
   "last_partial_regeneration": {
-    "related_issues": [
-      "P0024"
+    "issues": [
+      "P0026",
+      "P0027",
+      "P0028"
     ],
-    "clip_count": 8,
-    "generated_at": "2026-10-16T14:14:15+08:00",
-    "staging_manifest_sha256": "258038076d2fc06d3031b283303ff9a86d2672c5545523d4e8c77942b739b0a3",
-    "transcript_manifest_sha256": "bf62023f86c83d946ad7c3da3b0d22eca3e78bdcea154c5b7896d287ea235a46",
+    "clip_count": 5,
+    "generated_at": "2026-10-16T18:38:30+08:00",
+    "staging_manifest_sha256": "edc5b11c348893d3f9301dadda81aee0051f77a3dce23878502a3cfef3fc0197",
+    "transcript_manifest_sha256": "be1e17cee35a9198dd3b7d69eb33fa4096b862ce87a5ea4ae670f3191066f4ac",
     "files": [
-      "s05-v02-meaning.mp3",
-      "s06-v01-meaning.mp3",
-      "s06-v03-meaning.mp3",
-      "s08-v05-meaning.mp3",
-      "s15-v06-meaning.mp3",
-      "s15-v06-word.mp3",
-      "s16-v06-meaning.mp3",
-      "s19-v02-meaning.mp3"
+      "s08-p03-en.mp3",
+      "s08-t03-en.mp3",
+      "s08-t05-en.mp3",
+      "s08-v01-word.mp3",
+      "s08-v04-word.mp3"
     ],
-    "scope": "Follow-up review of all 20 scenarios: separate general vocabulary meanings from library context, correct publication/photocopy meanings, and expand Missing Items Search form with matching KK and speech. Pin chu3 in 處罰; preserve all dialogue and policies."
+    "scope": "Regenerate error with compact US rhotic ending, thesis with explicit voiceless dental theta and terminal punctuation, and patent with explicit t-schwa-n-t; retain valid US rhotic vowels rather than treating them as extra sounds. Match patent KK to the fully written US pronunciation. Subjective listening quality remains pending human retest."
   }
 }
