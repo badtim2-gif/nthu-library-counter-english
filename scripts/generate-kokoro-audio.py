@@ -231,6 +231,15 @@ def boundary_peaks(path: Path) -> dict[str, float]:
 
 
 def select_voice(entry: dict[str, object]) -> str:
+    override = entry.get("voice_key")
+    if override is not None:
+        if (
+            entry["language"] != "en"
+            or entry["kind"] != "word"
+            or override not in ("reader-en", "librarian-en", "explainer-en")
+        ):
+            raise ValueError(f"Invalid English word voice override: {entry['file']}")
+        return override
     if entry["language"] == "zh":
         return "chinese"
     if entry["role"] == "reader":
@@ -355,8 +364,8 @@ def main() -> int:
             output_path = audio_dir / filename
             speed = float(entry.get("speed", spec["speed"]))
             phonemes = entry.get("phonemes")
-            # Overrides must not reuse WAVs generated with the default pronunciation.
-            if not raw_path.exists() or phonemes or speed != spec["speed"]:
+            # Pronunciation, voice, or speed overrides must not reuse default WAVs.
+            if not raw_path.exists() or phonemes or entry.get("voice_key") or speed != spec["speed"]:
                 audio = synthesize(
                     pipelines[spec["lang_code"]],
                     entry["text"],
@@ -403,6 +412,8 @@ def main() -> int:
                 "boundary_peaks": boundaries,
                 "checks": checks,
             }
+            if entry.get("voice_key"):
+                record["voice_key"] = entry["voice_key"]
             if phonemes:
                 record["phonemes"] = phonemes
             if tempo is not None and words is not None:

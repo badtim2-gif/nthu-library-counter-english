@@ -9898,25 +9898,25 @@
       "role": "explainer",
       "kind": "word",
       "model": "v1.0",
-      "voice": "am_puck",
+      "voice": "am_fenrir",
       "speed": 0.8,
       "applied_target_lufs": -22.3,
-      "sha256": "462f8d208ebd0e707928f925af611882fce0f9666d5e0b9fad295ee606bea736",
+      "sha256": "c3fda662136576862b234ad918929f70e2a55436d4b5bafc1f8c35d5c9d9076a",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.85
+        "duration_seconds": 1.775
       },
       "loudness": {
-        "integrated_lufs": -22.7,
-        "true_peak_dbfs": -8.82,
+        "integrated_lufs": -22.71,
+        "true_peak_dbfs": -8.57,
         "lra_lu": 0.0,
         "threshold_lufs": -34.08
       },
       "boundary_peaks": {
-        "leading_40ms": 5e-08,
+        "leading_40ms": 7e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -9930,6 +9930,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
+      "voice_key": "reader-en",
       "phonemes": "θˈisɪs."
     },
     {
@@ -25478,21 +25479,16 @@
   ],
   "last_partial_regeneration": {
     "issues": [
-      "P0026",
-      "P0027",
-      "P0028"
+      "P0027"
     ],
-    "clip_count": 5,
-    "generated_at": "2026-10-16T18:38:30+08:00",
-    "staging_manifest_sha256": "edc5b11c348893d3f9301dadda81aee0051f77a3dce23878502a3cfef3fc0197",
-    "transcript_manifest_sha256": "be1e17cee35a9198dd3b7d69eb33fa4096b862ce87a5ea4ae670f3191066f4ac",
+    "reason": "Human retest still abnormal after 679fae3; use a different existing voice rather than repeat the same speaker.",
+    "clip_count": 1,
+    "generated_at": "2026-10-16T19:22:25+08:00",
+    "staging_manifest_sha256": "a6a42bf768761c32879ec22705c9740d9f8201b16af354e5edb3d80ac69a6171",
+    "transcript_manifest_sha256": "88d9340b85d7288f1c9dea2debac2cfc8bd729dd83794167033694d46e693a34",
     "files": [
-      "s08-p03-en.mp3",
-      "s08-t03-en.mp3",
-      "s08-t05-en.mp3",
-      "s08-v01-word.mp3",
-      "s08-v04-word.mp3"
+      "s08-v01-word.mp3"
     ],
-    "scope": "Regenerate error with compact US rhotic ending, thesis with explicit voiceless dental theta and terminal punctuation, and patent with explicit t-schwa-n-t; retain valid US rhotic vowels rather than treating them as extra sounds. Match patent KK to the fully written US pronunciation. Subjective listening quality remains pending human retest."
+    "scope": "Only the isolated thesis word uses the existing v1.0/am_fenrir voice, with the explainer role preserved and voice_key recorded explicitly. Correct theta pronunciation and all learning content remain unchanged. Listening acceptance is pending a new human retest."
   }
 }

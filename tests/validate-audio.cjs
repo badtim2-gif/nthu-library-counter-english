@@ -131,6 +131,7 @@ for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
   assert.equal(entry.voice, `kokoro-${record.model}/${record.voice}`);
   assert.equal(entry.speed, record.speed);
   assert.equal(entry.phonemes, record.phonemes);
+  assert.equal(entry.voice_key, record.voice_key);
   assert.equal(entry.model, record.model);
   assert.equal(record.technical.codec, "mp3");
   assert.equal(record.technical.sample_rate, 24000);
@@ -206,11 +207,19 @@ for (const entry of manifest.entries) {
 
   const language = entry.language === "zh" ? "chinese" : "english";
   if (entry.kind !== "letter") {
-    assert.equal(
-      entry.voice,
-      manifest.voices[language][entry.role],
-      `Wrong ${language} voice: ${entry.file}`,
-    );
+    let expectedVoice = manifest.voices[language][entry.role];
+    if (entry.voice_key !== undefined) {
+      assert.equal(entry.language, "en", `Voice override must be English: ${entry.file}`);
+      assert.equal(entry.kind, "word", `Voice override must be a word: ${entry.file}`);
+      const wordVoices = {
+        "reader-en": manifest.voices.english.reader,
+        "librarian-en": manifest.voices.english.librarian,
+        "explainer-en": manifest.voices.english.explainer,
+      };
+      assert.ok(Object.hasOwn(wordVoices, entry.voice_key), `Unknown word voice: ${entry.file}`);
+      expectedVoice = wordVoices[entry.voice_key];
+    }
+    assert.equal(entry.voice, expectedVoice, `Wrong ${language} voice: ${entry.file}`);
   }
   if (entry.language === "zh") {
     assert.equal(entry.voice, "kokoro-v1.1-zh/zm_010", `Wrong Chinese voice: ${entry.file}`);

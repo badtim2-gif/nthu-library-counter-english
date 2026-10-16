@@ -19,7 +19,7 @@ const officialSources = Array.from(
 const syntheticVoices = [
   ["英文讀者", "Kokoro-82M v1.0 / am_fenrir"],
   ["英文館員", "Kokoro-82M-v1.1-zh / af_maple"],
-  ["英文解說", "Kokoro-82M v1.0 / am_puck"],
+  ["英文解說（預設）", "Kokoro-82M v1.0 / am_puck"],
   ["中文讀者／館員／解說", "Kokoro-82M-v1.1-zh / zm_010"],
 ] as const;
 
@@ -75,6 +75,9 @@ export default function CreditsPage() {
               <div key={voice}><dt>{role}</dt><dd><code>{voice}</code></dd></div>
             ))}
           </dl>
+          <p className="credits-note">
+            個別單字會選用上述其他聲線，實際配置記錄於逐檔語音來源清單。
+          </p>
           <p className="credits-note">
             使用的 <a href="https://huggingface.co/hexgrad/Kokoro-82M" target="_blank" rel="noreferrer">Kokoro-82M v1.0</a>
             {" "}與 <a href="https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh" target="_blank" rel="noreferrer">Kokoro-82M-v1.1-zh</a>

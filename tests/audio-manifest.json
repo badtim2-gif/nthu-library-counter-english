@@ -2649,13 +2649,14 @@
     {
       "file": "s08-v01-word.mp3",
       "text": "thesis",
-      "voice": "kokoro-v1.0/am_puck",
+      "voice": "kokoro-v1.0/am_fenrir",
       "language": "en",
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
       "model": "v1.0",
-      "phonemes": "θˈisɪs."
+      "phonemes": "θˈisɪs.",
+      "voice_key": "reader-en"
     },
     {
       "file": "s08-v01-meaning.mp3",
