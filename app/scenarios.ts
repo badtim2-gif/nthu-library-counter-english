@@ -836,7 +836,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "The card is for entry and reading only, and you must return it on the same day to avoid a late fee or handling [ˋhændlɪŋ] charge.",
+        en: "The card is for entry and reading only, and you must return it on the same day to avoid a late fee or a lost-card handling [ˋhændlɪŋ] charge.",
         zh: "這張證只供入館閱覽，必須當天歸還，以免產生逾期費用或遺失處理費。",
       },
     ],

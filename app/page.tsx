@@ -66,7 +66,7 @@ type RolePlayMode = Role | "all" | null;
 
 const roleIsHidden = (mode: RolePlayMode, role: Role) => mode === "all" || mode === role;
 
-const AUDIO_CACHE_NAME = "nthu-library-audio-v17";
+const AUDIO_CACHE_NAME = "nthu-library-audio-v18";
 const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v1",
   "nthu-library-audio-v2",
@@ -84,6 +84,7 @@ const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v14",
   "nthu-library-audio-v15",
   "nthu-library-audio-v16",
+  "nthu-library-audio-v17",
 ];
 
 
@@ -1222,7 +1223,8 @@ export default function Home() {
                 <div>
                   <p className="section-label">VOCABULARY</p>
                   <h3>本課單字</h3>
-                  <p className="content-subtitle">先聽單字，停兩秒，再聽逐字母拼寫與中文解說。</p>
+                  <p className="content-subtitle">先聽單字，停一秒，再聽逐字母拼寫與中文解說。</p>
+                  <p className="content-subtitle">本區包含對話用字及情境延伸單字，不一定逐字出現在對話中。</p>
                 </div>
                 <div className="content-actions">
                   <button className="button button--small" onClick={() => void playSteps(vocabSteps(scenario))}>▶ 依序播放</button>

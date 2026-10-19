@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-19",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -13567,22 +13567,27 @@
     },
     {
       "file": "s11-t06-en.mp3",
+      "text": "The card is for entry and reading only, and you must return it on the same day to avoid a late fee or a lost card handling charge.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "247a42fb8a5a725dc3ce13040ce352a5f21a459c90c53bb35f472f9e9005a3ab",
+      "applied_target_lufs": -22.3,
+      "sha256": "90e1ad9b596c3dba4ccba66e2f2a58706a7fc0e79d36f66199b0e07136cb8b0d",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 12.671
+        "duration_seconds": 14.166
       },
       "loudness": {
-        "integrated_lufs": -23.3,
-        "true_peak_dbfs": -3.59,
-        "lra_lu": 3.3,
-        "threshold_lufs": -33.77
+        "integrated_lufs": -22.99,
+        "true_peak_dbfs": -3.97,
+        "lra_lu": 5.3,
+        "threshold_lufs": -33.58
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -13601,8 +13606,8 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.686,
-        "word_count": 25,
+        "postprocess_atempo": 0.67857143,
+        "word_count": 28,
         "verified_wpm": 120.3
       }
     },
@@ -25478,17 +25483,12 @@
     }
   ],
   "last_partial_regeneration": {
-    "issues": [
-      "P0027"
-    ],
-    "reason": "Human retest still abnormal after 679fae3; use a different existing voice rather than repeat the same speaker.",
+    "generated_at": "2026-10-19T13:30:59+08:00",
     "clip_count": 1,
-    "generated_at": "2026-10-16T19:22:25+08:00",
-    "staging_manifest_sha256": "a6a42bf768761c32879ec22705c9740d9f8201b16af354e5edb3d80ac69a6171",
-    "transcript_manifest_sha256": "88d9340b85d7288f1c9dea2debac2cfc8bd729dd83794167033694d46e693a34",
+    "staging_manifest_sha256": "78ecde41e0a83181be403aca051b267aa3f5ecc76a028930d764ae142e95e1b7",
+    "transcript_manifest_sha256": "90e5c322c2bec69bd07e969414d0b60c8af29af896fdb462752e81c5b3b03dcc",
     "files": [
-      "s08-v01-word.mp3"
-    ],
-    "scope": "Only the isolated thesis word uses the existing v1.0/am_fenrir voice, with the explainer role preserved and voice_key recorded explicitly. Correct theta pronunciation and all learning content remain unchanged. Listening acceptance is pending a new human retest."
+      "s11-t06-en.mp3"
+    ]
   }
 }

@@ -3574,7 +3574,7 @@
     },
     {
       "file": "s11-t06-en.mp3",
-      "text": "The card is for entry and reading only, and you must return it on the same day to avoid a late fee or handling charge.",
+      "text": "The card is for entry and reading only, and you must return it on the same day to avoid a late fee or a lost card handling charge.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",

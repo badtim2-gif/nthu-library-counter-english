@@ -61,6 +61,13 @@ assert.deepEqual(manifest.voices, {
 });
 assert.equal(manifest.entries.length, 708);
 
+const visitorLesson = scenarios.find((scenario) => scenario.id === 11);
+assert.equal(visitorLesson.dialogue[5].en, "The card is for entry and reading only, and you must return it on the same day to avoid a late fee or a lost-card handling [ˋhændlɪŋ] charge.");
+assert.equal(visitorLesson.dialogue[5].zh, "這張證只供入館閱覽，必須當天歸還，以免產生逾期費用或遺失處理費。");
+assert.equal(visitorLesson.vocabulary[5].word, "eligible");
+assert.equal(visitorLesson.vocabulary[5].meaning, "符合資格的");
+assert.equal(visitorLesson.vocabulary.length, 7);
+
 const recallLesson = scenarios.find((scenario) => scenario.id === 2);
 assert.equal(recallLesson.dialogue[3].en, "If more than fourteen days remain [rɪˋmen], the new due date is fourteen days from the recall request.");
 assert.equal(recallLesson.dialogue[3].zh, "如果原本剩餘超過十四天，新到期日就是從召回申請日起算十四天。");
