@@ -32,7 +32,7 @@ export default function CreditsPage() {
         <h1>素材來源、第三方授權及著作權聲明</h1>
         <p>
           本頁說明網站教學內容、語音、視覺素材及軟體套件的來源與利用條件。
-          政策資料最後查核日期為 <time dateTime={CHECKED_AT}>{CHECKED_AT}</time>。
+          政策資料原查核日期為 <time dateTime={CHECKED_AT}>{CHECKED_AT}</time>。各課最新查核日期請見課程頁尾。
         </p>
       </header>
 

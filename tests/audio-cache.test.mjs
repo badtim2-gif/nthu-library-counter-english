@@ -30,7 +30,7 @@ function makeWorker() {
       new Map([[originalUrl, new Response(staleAudio)]]),
     ]),
   );
-  stores.set("nthu-library-shell-v19", new Map());
+  stores.set("nthu-library-shell-v20", new Map());
   const networkCalls = [];
   let offline = false;
   const keyOf = (request) => typeof request === "string" ? request : request.url;
@@ -101,9 +101,9 @@ test("activation keeps exact current cache names while removing v1-v17", async (
   assert.equal(worker.cacheName, "nthu-library-audio-v18");
   const url = origin + versionedAudioPath(base + "/audio/s01-v03-word.mp3", worker.cacheName);
   worker.stores.set("nthu-library-audio-v18", new Map([[url, new Response(approvedAudio)]]));
-  worker.stores.set("nthu-library-shell-v20", new Map());
+  worker.stores.set("nthu-library-shell-v21", new Map());
   await worker.activate();
-  assert.deepEqual([...worker.stores.keys()].sort(), ["nthu-library-audio-v18", "nthu-library-shell-v20"]);
+  assert.deepEqual([...worker.stores.keys()].sort(), ["nthu-library-audio-v18", "nthu-library-shell-v21"]);
   worker.setOffline();
   assert.deepEqual(Buffer.from(await (await worker.get(url)).arrayBuffer()), approvedAudio);
   assert.equal(worker.networkCalls.length, 0);

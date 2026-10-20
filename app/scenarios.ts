@@ -31,6 +31,7 @@ export type Scenario = {
   summary: string;
   sourceLabel: string;
   sourceUrl: string;
+  sourceCheckedAt?: string;
   dialogue: DialogueTurn[];
   patterns: Pattern[];
   grammar: GrammarPoint[];
@@ -656,6 +657,7 @@ export const scenarios: Scenario[] = [
     summary: "說明研究用途大量借書的申請資格、兩百冊上限與證件限制。",
     sourceLabel: "圖書館借書證申請",
     sourceUrl: "https://www.lib.nthu.edu.tw/en/use/id_application.html",
+    sourceCheckedAt: "2026-10-20",
     dialogue: [
       {
         role: "reader",

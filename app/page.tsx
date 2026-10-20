@@ -1266,7 +1266,7 @@ export default function Home() {
 
           <footer className="lesson-source">
             <div><span>官方資料來源</span><a href={scenario.sourceUrl} target="_blank" rel="noreferrer">{scenario.sourceLabel} ↗</a></div>
-            <p>資料查核日期：{CHECKED_AT}。實際資格、費用與作業方式請以清大圖書館最新公告為準。</p>
+            <p>資料查核日期：<time dateTime={scenario.sourceCheckedAt ?? CHECKED_AT}>{scenario.sourceCheckedAt ?? CHECKED_AT}</time>。實際資格、費用與作業方式請以清大圖書館最新公告為準。</p>
           </footer>
         </article>
       </section>

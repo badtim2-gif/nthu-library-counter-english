@@ -41,7 +41,7 @@ assert.match(creditsHtml, new RegExp(`${basePath}/third-party-packages\\.json`))
 
 const serviceWorker = fs.readFileSync(path.join(output, "sw.js"), "utf8");
 assert.match(serviceWorker, /self\.registration\.scope/);
-assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v20";/);
+assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v21";/);
 assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
 assert.match(serviceWorker, /const AUDIO_CACHE = "nthu-library-audio-v18";/);
 for (let version = 1; version <= 17; version += 1) {
