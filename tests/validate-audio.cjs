@@ -140,6 +140,12 @@ for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
   assert.equal(entry.phonemes, record.phonemes);
   assert.equal(entry.voice_key, record.voice_key);
   assert.equal(entry.model, record.model);
+  if (entry.target_wpm !== undefined) {
+    assert.equal(entry.kind, "english_long");
+    assert.ok(entry.target_wpm >= 115 && entry.target_wpm <= 125);
+    assert.equal(record.timing.target_wpm, entry.target_wpm);
+    assert.ok(Math.abs(record.timing.verified_wpm - entry.target_wpm) < 1);
+  }
   assert.equal(record.technical.codec, "mp3");
   assert.equal(record.technical.sample_rate, 24000);
   assert.equal(record.technical.channels, 1);
@@ -175,14 +181,23 @@ for (let index = 0; index < 26; index += 1) {
 }
 
 for (const entry of manifest.entries) {
-
+  if (entry.kind === "word" && entry.text === "present") {
+    assert.match(entry.phonemes ?? "", /pɹɪzˈɛnt/, `Present must use the verb stress: ${entry.file}`);
+  }
+  if (entry.file === "s10-p01-zh.mp3") {
+    assert.match(entry.phonemes ?? "", /ㄍ万3ㄕㄜ4/, "館舍 must use guan3 she4");
+    assert.match(entry.phonemes ?? "", /ㄒ阳3ㄑ言2王3/, "Keep 想前往 in one spoken phrase");
+  }
+  if (entry.file === "s12-v03-meaning.mp3") {
+    assert.match(entry.phonemes ?? "", /言2ㄔㄤ2/, "延長 must use yan2 chang2");
+  }
   if (entry.language === "zh") {
-    if (entry.file.startsWith("s02-")) {
+    if (/^s(?:02|11)-/.test(entry.file)) {
       const periods = entry.text.split("期").length - 1;
       if (periods > 0) {
-        assert.ok(entry.phonemes, `Lesson 2 period tone is not pinned: ${entry.file}`);
+        assert.ok(entry.phonemes, `Period tone is not pinned: ${entry.file}`);
         assert.equal((entry.phonemes.match(/ㄑㄧ2/g) ?? []).length, periods,
-          `Lesson 2 period must use qi2: ${entry.file}`);
+          `期 must use qi2: ${entry.file}`);
         assert.doesNotMatch(entry.phonemes, /ㄑㄧ1/, `Wrong first tone: ${entry.file}`);
       }
       if (entry.text.includes("處理")) {

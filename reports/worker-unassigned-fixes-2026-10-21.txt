@@ -1,0 +1,54 @@
+未指派問題回報：P0034–P0045處理紀錄
+日期：2026-10-21（臺灣時間）
+基準提交：cdd1b1b0c0b1ab5f9328fd4220ff45b38a72ba12
+範圍：指定Google試算表「問題追蹤」第2至1000列，僅處理有實際問題描述且處理負責人空白的列。
+本輪12筆：第36至47列P0034–P0045。P0031仍只有位置、沒有問題描述，保留待補；不將預填編號當成問題內容。
+
+一、逐案判斷與處理
+P0034：原官方大學部服務頁已明載交換生跨校權限，保留連結；來源名稱改為官方「大學部學生服務」，第10課查核日更新為2026-10-21，現行限制與教材相符。
+P0035：重現步驟實為第10課句型01中文解說。固定「館舍」為ㄍㄨㄢˇ ㄕㄜˋ，將「想前往」連成同一音素語組；不改文字及速度。
+P0036、P0042：present在兩課皆為動詞，原孤立單字前端卻採名詞首音節重音。保留正確KK [prɪˋzɛnt]，固定動詞音素pɹɪzˈɛnt.，重製兩段單字語音。
+P0037：第12課對話02將open your loan list改為open My Loans，保留原My Account及中文對應，重製該英文對話。
+P0038：核對一般訪客資格、當日歸還、僅供閱覽及遺失處理費等現行條件，教材可對應；第11課查核日更新為2026-10-21，來源及政策文字不變。
+P0039：第11課對話06中文固定「期」第二聲；「處理」採第三聲本調的連讀變調第二聲接第三聲，排除原處的第四聲。
+P0040：原句型02英文約119.7字／分鐘，並非明顯偏離全站速度；依易聽需求略降，目標116、實測115.9字／分鐘。中文速度0.9降至0.85，保留文字與聲線。初次以115為目標時，MP3編碼時差使實測114.8低於下限，已在整合前調整並重驗。
+P0041：第11課文法01、02的逾期／期限均固定期的第二聲，保留歸還讀音與文字。
+P0043：handling中文解說「處理」固定正確本調與連讀變調，保留英文音檔、音標與中文文字。
+P0044：修正中文「延長」的長為ㄔㄤˊ；原KK [ɪkˋstɛnd] 與建議IPA /ɪkˈstend/ 使用不同標音符號，原KK正確，不混入IPA或更動英文音檔。
+P0045：原KK [͵ovɚˋdu] 與IPA /ˌoʊ.vɚˈduː/ 均表示同一美式讀法及末音節主重音，保留原音標、文字和音檔；僅就該音標疑問結案。
+
+二、語音及快取
+僅重製11段：s10-p01-zh、s10-v02-word、s11-t06-zh、s11-p02-en、s11-p02-zh、s11-g01-zh、s11-g02-zh、s11-v03-word、s11-v07-meaning、s12-t02-en、s12-v03-meaning（皆為.mp3）。
+沿用原Kokoro固定模型、既有聲線及授權，逐檔更新朗讀稿、音素、速度、來源雜湊及音訊報告；其餘697段MP3的SHA-256保持相同，包含26段真人字母及thesis音檔。
+生成器支援單段英文長句指定115–125字／分鐘，預設仍120；保留既有格式、音量及首尾靜音驗收門檻。
+音訊快取升至nthu-library-audio-v19，頁面快取升至nthu-library-shell-v22，舊音訊v1至v18納入清除與回歸驗證。
+
+三、驗證
+20課、120句對話及708段音檔的路徑、朗讀稿、模型、聲線、音素與雜湊檢查通過；682段合成來源雜湊一致。
+11段新檔均為24kHz單聲道MP3、約48kbps；音量、真峰值及首尾安全靜音均通過，11筆成品雜湊互異。
+34項播放、循環、快取、手機語音、複習與計時測試，加上5項伺服器呈現測試，共39項通過；vinext建置、GitHub Pages正式建置、靜態輸出與TypeScript通過。
+新增動詞重音、多音字及調速目標的驗證；另對語速函式測試3種有效目標與5種無效邊界，符合預期。
+瀏覽器逐課核對20個查核日期：僅10、11課為本次日期，9課保留2026-10-20，其餘保留原日；來源名稱及My Loans文字正確。
+獨立未登入的Chrome確認present循環可開始與停止，請求使用v19；11段新MP3均可解碼為單聲道音訊，無頁面執行錯誤。桌機及390px手機頁尾可完整閱讀。
+Windows獨立驗證副本的套件共同根目錄設定只用於本機建置，未帶入正式專案。
+以上為技術與介面檢查，未宣稱已獨立聽音驗收。11筆有修改的案件待工讀生人耳或畫面複測。
+
+四、試算表與發布
+僅回填N36:P47的負責人「語庭codex」、處理狀態及修正說明：11筆待複測，P0045就音標疑問已結案。
+原回報、日期、證據、影響程度、預估分鐘與所有複測欄位保留，下拉驗證不變；僅調整這12列必要高度，避免說明截斷。
+公開專案不提交工讀生姓名、私人表格匯出、備份或本機驗證設定。正式提交、部署與線上音檔比對結果另回填至原生修正說明。
+
+五、核對來源
+https://www.lib.nthu.edu.tw/en/use/identity/undergra.html
+https://www.lib.nthu.edu.tw/use/identity/undergra.html
+https://www.lib.nthu.edu.tw/en/use/in_lib_service.html
+https://www.lib.nthu.edu.tw/use/in_lib_service.html
+https://www.lib.nthu.edu.tw/en/use/faq/q_a2.html
+https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/150End_User_Help/13Using_My_Library_Card_in_Primo_VE
+https://dictionary.cambridge.org/us/dictionary/english/present
+https://dictionary.cambridge.org/us/dictionary/english/extend
+https://dictionary.cambridge.org/us/dictionary/english/overdue
+https://dict.revised.moe.edu.tw/dictView.jsp?ID=74142&la=0&powerMode=0
+https://dict.revised.moe.edu.tw/dictView.jsp?ID=163361
+https://dict.concised.moe.edu.tw/dictView.jsp?ID=32651&la=0&powerMode=0
+https://dict.concised.moe.edu.tw/dictView.jsp?ID=41723&la=0&powerMode=0

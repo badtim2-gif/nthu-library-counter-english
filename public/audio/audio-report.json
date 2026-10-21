@@ -16,7 +16,7 @@
   "alphabet_clip_count": 26,
   "english_long_count": 180,
   "english_wpm_target": 120.0,
-  "english_wpm_min": 119.3,
+  "english_wpm_min": 115.9,
   "english_wpm_max": 120.8,
   "english_wpm_average": 120.2,
   "outside_115_125": [],
@@ -482,7 +482,7 @@
     ],
     [
       "s11-p02-en.mp3",
-      119.7,
+      115.9,
       "kokoro-v1.0/am_puck"
     ],
     [

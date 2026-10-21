@@ -142,11 +142,13 @@ def audio_duration(path: Path) -> float:
     return float(result.stdout.strip())
 
 
-def pace_english_long(raw_wav: Path, paced_wav: Path, text: str) -> tuple[float, int]:
+def pace_english_long(raw_wav: Path, paced_wav: Path, text: str, target_wpm: float = 120.0) -> tuple[float, int]:
+    if not math.isfinite(target_wpm) or not 115.0 <= target_wpm <= 125.0:
+        raise ValueError("English target WPM must be between 115 and 125")
     words = len(re.findall(r"\b[\w']+\b", text))
     source_duration = audio_duration(raw_wav)
     speech_duration = max(0.05, source_duration - LEAD_SECONDS - TAIL_SECONDS)
-    target_speech_duration = words / 120.0 * 60.0
+    target_speech_duration = words / target_wpm * 60.0
     tempo = speech_duration / target_speech_duration
     trim_end = source_duration - TAIL_SECONDS
     paced_wav.parent.mkdir(parents=True, exist_ok=True)
@@ -379,7 +381,9 @@ def main() -> int:
             words = None
             if entry["kind"] == "english_long":
                 normalization_input = paced_dir / filename.replace(".mp3", ".wav")
-                tempo, words = pace_english_long(raw_path, normalization_input, entry["text"])
+                tempo, words = pace_english_long(
+                    raw_path, normalization_input, entry["text"], float(entry.get("target_wpm", 120.0))
+                )
             loudness, applied_target = normalize(normalization_input, output_path)
             technical = probe(output_path)
             boundaries = boundary_peaks(output_path)
@@ -420,6 +424,7 @@ def main() -> int:
                 effective_duration = max(0.05, technical["duration_seconds"] - LEAD_SECONDS - TAIL_SECONDS)
                 record["timing"] = {
                     "base_kokoro_speed": speed,
+                    "target_wpm": float(entry.get("target_wpm", 120.0)),
                     "postprocess_atempo": round(tempo, 8),
                     "word_count": words,
                     "verified_wpm": round(words / effective_duration * 60.0, 1),

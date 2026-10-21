@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-10-19",
+  "updated_at": "2026-10-21",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -11733,10 +11733,15 @@
     },
     {
       "file": "s10-p01-zh.mp3",
+      "text": "用來禮貌表達想前往某個館舍或地點。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "5b8f6bb87b6839ddcc51ec2f960fb5102028f4e15c2d56af108387f46af18624",
+      "applied_target_lufs": -20.98,
+      "sha256": "23af523ccbef0d0dd9bf650052736049d115202ceda1df6ea9f465f2e002778e",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -11745,13 +11750,13 @@
         "duration_seconds": 5.2
       },
       "loudness": {
-        "integrated_lufs": -23.29,
-        "true_peak_dbfs": -4.0,
-        "lra_lu": 3.1,
-        "threshold_lufs": -33.76
+        "integrated_lufs": -22.38,
+        "true_peak_dbfs": -3.92,
+        "lra_lu": 3.5,
+        "threshold_lufs": -32.77
       },
       "boundary_peaks": {
-        "leading_40ms": 2.3e-07,
+        "leading_40ms": 3.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -11764,7 +11769,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "用4ㄌㄞ2/ㄌㄧ3ㄇㄠ4/ㄅ要3ㄉㄚ2/ㄒ阳3ㄑ言2王3/ㄇㄡ3ㄍㄜ4/ㄍ万3ㄕㄜ4/ㄏ我4/ㄉㄜ5ㄉ言3."
     },
     {
       "file": "s10-p02-en.mp3",
@@ -12481,22 +12487,27 @@
     },
     {
       "file": "s10-v02-word.mp3",
+      "text": "present",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "f0c25f812edc850cd51aa86401f85e19e6643aeb184fd9fcacbbc98b161a8db2",
+      "applied_target_lufs": -22.3,
+      "sha256": "95f11276b577d2cb4f7d8aceba875ff4b70bf42811b466aa67acfa997bbe7646",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.725
+        "duration_seconds": 1.75
       },
       "loudness": {
-        "integrated_lufs": -22.73,
-        "true_peak_dbfs": -8.34,
+        "integrated_lufs": -22.7,
+        "true_peak_dbfs": -8.97,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.66
+        "threshold_lufs": -34.62
       },
       "boundary_peaks": {
         "leading_40ms": 4e-08,
@@ -12512,7 +12523,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "pɹɪzˈɛnt."
     },
     {
       "file": "s10-v03-meaning.mp3",
@@ -12873,23 +12885,23 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -20.31,
-      "sha256": "37adb61ed071b06f3afb60cbff2a9b11c1251c930a9eb47b98f57df3702a00a3",
+      "applied_target_lufs": -20.36,
+      "sha256": "c28d4d8ee30b60ab26cffe28932bea2dfda04355e0df67bef1ecd1600b9ca7dd",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 8.4
+        "duration_seconds": 8.375
       },
       "loudness": {
-        "integrated_lufs": -22.59,
-        "true_peak_dbfs": -3.87,
-        "lra_lu": 3.4,
-        "threshold_lufs": -32.81
+        "integrated_lufs": -22.54,
+        "true_peak_dbfs": -3.84,
+        "lra_lu": 3.6,
+        "threshold_lufs": -32.94
       },
       "boundary_peaks": {
-        "leading_40ms": 2e-07,
+        "leading_40ms": 1.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -12903,7 +12915,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ㄅ要3ㄕ十4/ㄅㄧ4ㄇ言3/ㄉㄜ5/ㄇㄨ4ㄉㄧ5. ㄕ十3用4/ㄅ要3ㄕ十4/ㄇㄨ4ㄉㄧ5/ㄉㄜ5/ㄅㄨ2ㄉ应4/ㄘㄭ2, ㄕ我1ㄇ应2/ㄢ4/ㄕ十2/ㄍ为1/ㄏ万2/ㄓㄥ4ㄐ言4/ㄕ十4为4/ㄌㄜ5/ㄅㄧ4ㄇ言3/ㄩ2ㄑㄧ1/ㄈㄟ4用4."
+      "phonemes": "ㄅ要3ㄕ十4/ㄅㄧ4ㄇ言3/ㄉㄜ5/ㄇㄨ4ㄉㄧ5. ㄕ十3用4/ㄅ要3ㄕ十4/ㄇㄨ4ㄉㄧ5/ㄉㄜ5/ㄅㄨ2ㄉ应4/ㄘㄭ2, ㄕ我1ㄇ应2/ㄢ4/ㄕ十2/ㄍ为1/ㄏ万2/ㄓㄥ4ㄐ言4/ㄕ十4为4/ㄌㄜ5/ㄅㄧ4ㄇ言3/ㄩ2ㄑㄧ2/ㄈㄟ4用4."
     },
     {
       "file": "s11-g02-zh.mp3",
@@ -12914,20 +12926,20 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -21.03,
-      "sha256": "9f53021c2d22c659cbfa1717ce1c36dbfc68ef0b1e47f376f391f3c0172b3e90",
+      "applied_target_lufs": -21.1,
+      "sha256": "55f3354b8ce02ff31b9c1ab4c908c540e9a42d40931bbbfa07ae3879e3110c9e",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.55
+        "duration_seconds": 7.575
       },
       "loudness": {
-        "integrated_lufs": -22.35,
-        "true_peak_dbfs": -3.94,
+        "integrated_lufs": -22.37,
+        "true_peak_dbfs": -3.84,
         "lra_lu": 2.8,
-        "threshold_lufs": -32.59
+        "threshold_lufs": -32.75
       },
       "boundary_peaks": {
         "leading_40ms": 1.7e-07,
@@ -12944,7 +12956,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ㄧ4ㄨ4/ㄩ3/ㄑㄧ1ㄒ言4. ㄕ十3用4/ㄅ要3ㄕ十4/ㄧ4ㄨ4/ㄉㄜ5/ㄑ应2ㄊㄞ4/ㄉ中4ㄘㄭ2, ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄓㄥ4ㄐ言4/ㄅㄧ4ㄒㄩ1/ㄗㄞ4/ㄏㄜ2ㄕ十2/ㄍ为1/ㄏ万2."
+      "phonemes": "ㄧ4ㄨ4/ㄩ3/ㄑㄧ2ㄒ言4. ㄕ十3用4/ㄅ要3ㄕ十4/ㄧ4ㄨ4/ㄉㄜ5/ㄑ应2ㄊㄞ4/ㄉ中4ㄘㄭ2, ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄓㄥ4ㄐ言4/ㄅㄧ4ㄒㄩ1/ㄗㄞ4/ㄏㄜ2ㄕ十2/ㄍ为1/ㄏ万2."
     },
     {
       "file": "s11-p01-en.mp3",
@@ -13024,22 +13036,27 @@
     },
     {
       "file": "s11-p02-en.mp3",
+      "text": "Visitors may present identification in exchange for a temporary card.",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "be15d5853f042a4c94b717c8b0f7ea30a1ed865949779fb006dd24325c85feb3",
+      "applied_target_lufs": -20.38,
+      "sha256": "332982562b3063cc7736fad8c3422f5092ac0a63efcca8d1b4fec815dfb4ff31",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.211
+        "duration_seconds": 5.378
       },
       "loudness": {
-        "integrated_lufs": -22.26,
+        "integrated_lufs": -22.14,
         "true_peak_dbfs": -3.9,
-        "lra_lu": 5.0,
-        "threshold_lufs": -32.58
+        "lra_lu": 4.9,
+        "threshold_lufs": -32.45
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -13058,32 +13075,38 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 1.23,
+        "target_wpm": 116.0,
+        "postprocess_atempo": 1.189,
         "word_count": 10,
-        "verified_wpm": 119.7
+        "verified_wpm": 115.9
       }
     },
     {
       "file": "s11-p02-zh.mp3",
+      "text": "用來說明出示某項證件後可以換取另一項物品。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
-      "speed": 0.9,
-      "sha256": "c3a52bc6dd9d2e0263ffd5fc155d8b1cd52478b8f2bf59d281e602921c88f9ba",
+      "speed": 0.85,
+      "applied_target_lufs": -21.22,
+      "sha256": "52c9276ec886c7963d5e7d82ae47e8110e174dd6a3659c1958a8ba9005766093",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.85
+        "duration_seconds": 6.25
       },
       "loudness": {
-        "integrated_lufs": -22.42,
-        "true_peak_dbfs": -3.76,
-        "lra_lu": 4.1,
-        "threshold_lufs": -32.99
+        "integrated_lufs": -22.32,
+        "true_peak_dbfs": -3.81,
+        "lra_lu": 3.2,
+        "threshold_lufs": -33.27
       },
       "boundary_peaks": {
-        "leading_40ms": 1.6e-07,
+        "leading_40ms": 2.4e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -13620,23 +13643,23 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -20.92,
-      "sha256": "481a3bdf6d72c4353c37f77d94558dea11de85cd194aa56d4bb1c5ca5329dd15",
+      "applied_target_lufs": -20.76,
+      "sha256": "a06e38d907f07abe74c0063130b4545c4c43bcabedb7699748a7cc34b88077d5",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.65
+        "duration_seconds": 7.6
       },
       "loudness": {
-        "integrated_lufs": -22.42,
-        "true_peak_dbfs": -3.94,
-        "lra_lu": 2.9,
-        "threshold_lufs": -32.66
+        "integrated_lufs": -22.43,
+        "true_peak_dbfs": -3.62,
+        "lra_lu": 3.3,
+        "threshold_lufs": -32.71
       },
       "boundary_peaks": {
-        "leading_40ms": 2e-07,
+        "leading_40ms": 1.9e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -13650,7 +13673,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ㄓㄜ4/ㄓㄤ1/ㄓㄥ4/ㄓ十3/ㄍ中1ㄖㄨ4/ㄍ万3/月4ㄌㄢ3, ㄅㄧ4ㄒㄩ1/ㄉㄤ1ㄊ言1/ㄍ为1/ㄏ万2, ㄧ2ㄇ言3/ㄔㄢ3ㄕㄥ1/ㄩ2ㄑㄧ1/ㄈㄟ4用4/ㄏ我4/ㄧ2ㄕ十1/ㄔㄨ4ㄌㄧ3/ㄈㄟ4."
+      "phonemes": "ㄓㄜ4/ㄓㄤ1/ㄓㄥ4/ㄓ十3/ㄍ中1ㄖㄨ4/ㄍ万3/月4ㄌㄢ3, ㄅㄧ4ㄒㄩ1/ㄉㄤ1ㄊ言1/ㄍ为1/ㄏ万2, ㄧ2ㄇ言3/ㄔㄢ3ㄕㄥ1/ㄩ2ㄑㄧ2/ㄈㄟ4用4/ㄏ我4/ㄧ2ㄕ十1/ㄔㄨ2ㄌㄧ3/ㄈㄟ4."
     },
     {
       "file": "s11-v01-meaning.mp3",
@@ -13829,22 +13852,27 @@
     },
     {
       "file": "s11-v03-word.mp3",
+      "text": "present",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "6c4287636026496b6da093e444f2b154014aa78b894806f2fdf2b3e0bd039ce1",
+      "applied_target_lufs": -22.3,
+      "sha256": "3fc05b5b5dd970a04344251a534e08dc05ffe971768b1271b11986d9b6af5be5",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.725
+        "duration_seconds": 1.75
       },
       "loudness": {
-        "integrated_lufs": -22.73,
-        "true_peak_dbfs": -8.52,
+        "integrated_lufs": -22.7,
+        "true_peak_dbfs": -9.15,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.66
+        "threshold_lufs": -34.62
       },
       "boundary_peaks": {
         "leading_40ms": 4e-08,
@@ -13860,7 +13888,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "pɹɪzˈɛnt."
     },
     {
       "file": "s11-v04-meaning.mp3",
@@ -14074,25 +14103,30 @@
     },
     {
       "file": "s11-v07-meaning.mp3",
+      "text": "處理、經辦，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "47cc85c77847c52aa9aaa30d6dac838749f2e361ec3e3c615d0ed7e17fc27e1c",
+      "applied_target_lufs": -22.3,
+      "sha256": "91e80b0008c3bb6a59c1f8768fef045f2fe785eeeaf60450751433bbcb824166",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.026
+        "duration_seconds": 3.1
       },
       "loudness": {
-        "integrated_lufs": -21.78,
-        "true_peak_dbfs": -3.96,
+        "integrated_lufs": -21.59,
+        "true_peak_dbfs": -3.73,
         "lra_lu": 0.4,
-        "threshold_lufs": -32.17
+        "threshold_lufs": -31.97
       },
       "boundary_peaks": {
-        "leading_40ms": 3e-07,
+        "leading_40ms": 1.6e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -14105,7 +14139,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄔㄨ2ㄌㄧ3, ㄐ应1ㄅㄢ4, ㄇ应2ㄘㄭ2."
     },
     {
       "file": "s11-v07-word.mp3",
@@ -14518,22 +14553,27 @@
     },
     {
       "file": "s12-t02-en.mp3",
+      "text": "You can sign in to My Account , open My Loans, and select the renewal option.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "7f8da590db9a41b036763949df84b9a2a7203ffa52605950f6efa03a352d9c8b",
+      "applied_target_lufs": -22.3,
+      "sha256": "f3f7bebe9c3c6fa98005dff7f23f77531f410083e329791afc67056fa422218a",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 8.181
+        "duration_seconds": 7.679
       },
       "loudness": {
-        "integrated_lufs": -22.73,
-        "true_peak_dbfs": -5.86,
-        "lra_lu": 3.8,
-        "threshold_lufs": -33.44
+        "integrated_lufs": -22.87,
+        "true_peak_dbfs": -5.21,
+        "lra_lu": 3.1,
+        "threshold_lufs": -33.55
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -14552,8 +14592,9 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.80625,
-        "word_count": 16,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.82333333,
+        "word_count": 15,
         "verified_wpm": 120.3
       }
     },
@@ -15038,25 +15079,30 @@
     },
     {
       "file": "s12-v03-meaning.mp3",
+      "text": "延長，動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "308ef4f34ca0b84252114b1341b377c54a71de3492beae6ef5407b0b0cfecc3c",
+      "applied_target_lufs": -22.3,
+      "sha256": "6125a9cf1d651b86440ee72e2122508f85ce88bb333a6ed239ab69bf5812000b",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.45
+        "duration_seconds": 2.55
       },
       "loudness": {
-        "integrated_lufs": -22.72,
-        "true_peak_dbfs": -4.63,
+        "integrated_lufs": -22.75,
+        "true_peak_dbfs": -5.12,
         "lra_lu": 0.0,
-        "threshold_lufs": -32.98
+        "threshold_lufs": -33.0
       },
       "boundary_peaks": {
-        "leading_40ms": 1.6e-07,
+        "leading_40ms": 1.2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -15069,7 +15115,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "言2ㄔㄤ2, ㄉ中4ㄘㄭ2."
     },
     {
       "file": "s12-v03-word.mp3",
@@ -25483,12 +25530,22 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-10-19T13:30:59+08:00",
-    "clip_count": 1,
-    "staging_manifest_sha256": "78ecde41e0a83181be403aca051b267aa3f5ecc76a028930d764ae142e95e1b7",
-    "transcript_manifest_sha256": "90e5c322c2bec69bd07e969414d0b60c8af29af896fdb462752e81c5b3b03dcc",
+    "generated_at": "2026-10-21T15:58:33+08:00",
+    "clip_count": 11,
+    "staging_manifest_sha256": "429aeccea9f7b34307941c4265a65940c85688737597f55cd563bebadf9215a5",
+    "transcript_manifest_sha256": "84883b76b4e39afefb8029230173339d74eeaddddd47251943a086f56d72a774",
     "files": [
-      "s11-t06-en.mp3"
+      "s10-p01-zh.mp3",
+      "s10-v02-word.mp3",
+      "s11-g01-zh.mp3",
+      "s11-g02-zh.mp3",
+      "s11-p02-en.mp3",
+      "s11-p02-zh.mp3",
+      "s11-t06-zh.mp3",
+      "s11-v03-word.mp3",
+      "s11-v07-meaning.mp3",
+      "s12-t02-en.mp3",
+      "s12-v03-meaning.mp3"
     ]
   }
 }

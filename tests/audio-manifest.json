@@ -3269,7 +3269,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "用4ㄌㄞ2/ㄌㄧ3ㄇㄠ4/ㄅ要3ㄉㄚ2/ㄒ阳3ㄑ言2王3/ㄇㄡ3ㄍㄜ4/ㄍ万3ㄕㄜ4/ㄏ我4/ㄉㄜ5ㄉ言3."
     },
     {
       "file": "s10-p02-en.mp3",
@@ -3359,7 +3360,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "pɹɪzˈɛnt."
     },
     {
       "file": "s10-v02-meaning.mp3",
@@ -3591,7 +3593,7 @@
       "role": "librarian",
       "speed": 0.9,
       "model": "v1.1-zh",
-      "phonemes": "ㄓㄜ4/ㄓㄤ1/ㄓㄥ4/ㄓ十3/ㄍ中1ㄖㄨ4/ㄍ万3/月4ㄌㄢ3, ㄅㄧ4ㄒㄩ1/ㄉㄤ1ㄊ言1/ㄍ为1/ㄏ万2, ㄧ2ㄇ言3/ㄔㄢ3ㄕㄥ1/ㄩ2ㄑㄧ1/ㄈㄟ4用4/ㄏ我4/ㄧ2ㄕ十1/ㄔㄨ4ㄌㄧ3/ㄈㄟ4."
+      "phonemes": "ㄓㄜ4/ㄓㄤ1/ㄓㄥ4/ㄓ十3/ㄍ中1ㄖㄨ4/ㄍ万3/月4ㄌㄢ3, ㄅㄧ4ㄒㄩ1/ㄉㄤ1ㄊ言1/ㄍ为1/ㄏ万2, ㄧ2ㄇ言3/ㄔㄢ3ㄕㄥ1/ㄩ2ㄑㄧ2/ㄈㄟ4用4/ㄏ我4/ㄧ2ㄕ十1/ㄔㄨ2ㄌㄧ3/ㄈㄟ4."
     },
     {
       "file": "s11-p01-en.mp3",
@@ -3621,7 +3623,8 @@
       "kind": "english_long",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "target_wpm": 116.0
     },
     {
       "file": "s11-p02-zh.mp3",
@@ -3630,7 +3633,7 @@
       "language": "zh",
       "kind": "chinese",
       "role": "explainer",
-      "speed": 0.9,
+      "speed": 0.85,
       "model": "v1.1-zh"
     },
     {
@@ -3662,7 +3665,7 @@
       "role": "explainer",
       "speed": 0.9,
       "model": "v1.1-zh",
-      "phonemes": "ㄅ要3ㄕ十4/ㄅㄧ4ㄇ言3/ㄉㄜ5/ㄇㄨ4ㄉㄧ5. ㄕ十3用4/ㄅ要3ㄕ十4/ㄇㄨ4ㄉㄧ5/ㄉㄜ5/ㄅㄨ2ㄉ应4/ㄘㄭ2, ㄕ我1ㄇ应2/ㄢ4/ㄕ十2/ㄍ为1/ㄏ万2/ㄓㄥ4ㄐ言4/ㄕ十4为4/ㄌㄜ5/ㄅㄧ4ㄇ言3/ㄩ2ㄑㄧ1/ㄈㄟ4用4."
+      "phonemes": "ㄅ要3ㄕ十4/ㄅㄧ4ㄇ言3/ㄉㄜ5/ㄇㄨ4ㄉㄧ5. ㄕ十3用4/ㄅ要3ㄕ十4/ㄇㄨ4ㄉㄧ5/ㄉㄜ5/ㄅㄨ2ㄉ应4/ㄘㄭ2, ㄕ我1ㄇ应2/ㄢ4/ㄕ十2/ㄍ为1/ㄏ万2/ㄓㄥ4ㄐ言4/ㄕ十4为4/ㄌㄜ5/ㄅㄧ4ㄇ言3/ㄩ2ㄑㄧ2/ㄈㄟ4用4."
     },
     {
       "file": "s11-g02-zh.mp3",
@@ -3673,7 +3676,7 @@
       "role": "explainer",
       "speed": 0.9,
       "model": "v1.1-zh",
-      "phonemes": "ㄧ4ㄨ4/ㄩ3/ㄑㄧ1ㄒ言4. ㄕ十3用4/ㄅ要3ㄕ十4/ㄧ4ㄨ4/ㄉㄜ5/ㄑ应2ㄊㄞ4/ㄉ中4ㄘㄭ2, ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄓㄥ4ㄐ言4/ㄅㄧ4ㄒㄩ1/ㄗㄞ4/ㄏㄜ2ㄕ十2/ㄍ为1/ㄏ万2."
+      "phonemes": "ㄧ4ㄨ4/ㄩ3/ㄑㄧ2ㄒ言4. ㄕ十3用4/ㄅ要3ㄕ十4/ㄧ4ㄨ4/ㄉㄜ5/ㄑ应2ㄊㄞ4/ㄉ中4ㄘㄭ2, ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄓㄥ4ㄐ言4/ㄅㄧ4ㄒㄩ1/ㄗㄞ4/ㄏㄜ2ㄕ十2/ㄍ为1/ㄏ万2."
     },
     {
       "file": "s11-v01-word.mp3",
@@ -3723,7 +3726,8 @@
       "kind": "word",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "phonemes": "pɹɪzˈɛnt."
     },
     {
       "file": "s11-v03-meaning.mp3",
@@ -3813,7 +3817,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄔㄨ2ㄌㄧ3, ㄐ应1ㄅㄢ4, ㄇ应2ㄘㄭ2."
     },
     {
       "file": "s12-t01-en.mp3",
@@ -3837,7 +3842,7 @@
     },
     {
       "file": "s12-t02-en.mp3",
-      "text": "You can sign in to My Account , open your loan list, and select the renewal option.",
+      "text": "You can sign in to My Account , open My Loans, and select the renewal option.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",
@@ -4073,7 +4078,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "言2ㄔㄤ2, ㄉ中4ㄘㄭ2."
     },
     {
       "file": "s12-v04-word.mp3",

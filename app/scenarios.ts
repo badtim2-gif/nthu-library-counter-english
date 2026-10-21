@@ -732,8 +732,9 @@ export const scenarios: Scenario[] = [
     shortTitle: "交換生與台聯大",
     title: "交換生詢問 UST 跨校入館與借閱資格",
     summary: "協助交換生區分跨校入館、借書及代借申請的不同資格。",
-    sourceLabel: "大學生與交換生服務",
+    sourceLabel: "大學部學生服務",
     sourceUrl: "https://www.lib.nthu.edu.tw/en/use/identity/undergra.html",
+    sourceCheckedAt: "2026-10-21",
     dialogue: [
       {
         role: "reader",
@@ -810,6 +811,7 @@ export const scenarios: Scenario[] = [
     summary: "協助校外訪客了解換證入館、每日名額、使用限制與歸還規定。",
     sourceLabel: "入館須知",
     sourceUrl: "https://www.lib.nthu.edu.tw/en/use/in_lib_service.html",
+    sourceCheckedAt: "2026-10-21",
     dialogue: [
       {
         role: "reader",
@@ -894,7 +896,7 @@ export const scenarios: Scenario[] = [
       },
       {
         role: "librarian",
-        en: "You can sign in to My Account [əˋkaʊnt], open your loan list, and select the renewal option.",
+        en: "You can sign in to My Account [əˋkaʊnt], open My Loans, and select the renewal option.",
         zh: "您可以登入個人借閱狀況，開啟借閱清單後選擇續借。",
       },
       {
