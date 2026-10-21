@@ -17995,25 +17995,30 @@
     },
     {
       "file": "s15-g02-zh.mp3",
+      "text": "無論是否。用來表示兩種相反結果都不會改變後續通知的安排。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "db40589245e873ee7c8feca0f3d5b6ebe1380c2e0d62cbe0d1d84c06f77c1ff8",
+      "applied_target_lufs": -20.3,
+      "sha256": "d7662f393d557a6e27522d4ef023bcf4f98002763d9601d04f4de61138e155dc",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.05
+        "duration_seconds": 7.15
       },
       "loudness": {
-        "integrated_lufs": -22.32,
-        "true_peak_dbfs": -4.08,
-        "lra_lu": 4.7,
-        "threshold_lufs": -32.58
+        "integrated_lufs": -22.31,
+        "true_peak_dbfs": -3.98,
+        "lra_lu": 4.6,
+        "threshold_lufs": -32.46
       },
       "boundary_peaks": {
-        "leading_40ms": 2.6e-07,
+        "leading_40ms": 1.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -18026,7 +18031,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄨ2ㄌ文4/ㄕ十4ㄈㄡ3. 用4ㄌㄞ2/ㄅ要3ㄕ十4/ㄌ阳2ㄓ中3/ㄒ阳1ㄈㄢ3/ㄐㄝ2ㄍ我3/ㄉㄡ1/ㄅㄨ2ㄏ为4/ㄍㄞ3ㄅ言4/ㄏㄡ4ㄒㄩ4/ㄊ中1ㄓ十1/ㄉㄜ5/ㄢ1ㄆㄞ2."
     },
     {
       "file": "s15-p01-en.mp3",
@@ -18223,25 +18229,30 @@
     },
     {
       "file": "s15-p03-zh.mp3",
+      "text": "用來詢問後續結果會透過何種方式通知。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "4b6d8c84f47c8fab45150d63e969be5260912fdfb62f5048c3de0b2c0b81f4b6",
+      "applied_target_lufs": -20.75,
+      "sha256": "12dad5e067ada781398df0814ca2ddb55329a4d6ac5023d6dc21367ae0c7a67a",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.575
+        "duration_seconds": 5.525
       },
       "loudness": {
-        "integrated_lufs": -22.51,
-        "true_peak_dbfs": -3.95,
-        "lra_lu": 4.3,
-        "threshold_lufs": -32.94
+        "integrated_lufs": -22.47,
+        "true_peak_dbfs": -3.8,
+        "lra_lu": 3.1,
+        "threshold_lufs": -32.78
       },
       "boundary_peaks": {
-        "leading_40ms": 2.7e-07,
+        "leading_40ms": 2.2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -18254,7 +18265,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "用4ㄌㄞ2/ㄒ云2文4/ㄏㄡ4ㄒㄩ4/ㄐㄝ2ㄍ我3/ㄏ为4/ㄊㄡ4/ㄍ我4/ㄏㄜ2ㄓ中3/ㄈㄤ1ㄕ十4/ㄊ中1ㄓ十1."
     },
     {
       "file": "s15-t01-en.mp3",
@@ -25530,22 +25542,13 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-10-21T15:58:33+08:00",
-    "clip_count": 11,
-    "staging_manifest_sha256": "429aeccea9f7b34307941c4265a65940c85688737597f55cd563bebadf9215a5",
-    "transcript_manifest_sha256": "84883b76b4e39afefb8029230173339d74eeaddddd47251943a086f56d72a774",
+    "generated_at": "2026-10-21T16:20:29+08:00",
+    "clip_count": 2,
+    "staging_manifest_sha256": "8a2946388dbf45db526b5cdfa57d58ccadacec541aaeb1c4ef16c9b35d2e93fa",
+    "transcript_manifest_sha256": "11361ac8a23437054408322e5d383ab9f8b764b1b3c6116646e62ffae96eea8e",
     "files": [
-      "s10-p01-zh.mp3",
-      "s10-v02-word.mp3",
-      "s11-g01-zh.mp3",
-      "s11-g02-zh.mp3",
-      "s11-p02-en.mp3",
-      "s11-p02-zh.mp3",
-      "s11-t06-zh.mp3",
-      "s11-v03-word.mp3",
-      "s11-v07-meaning.mp3",
-      "s12-t02-en.mp3",
-      "s12-v03-meaning.mp3"
+      "s15-g02-zh.mp3",
+      "s15-p03-zh.mp3"
     ]
   }
 }
