@@ -4922,7 +4922,8 @@
       "kind": "chinese",
       "role": "librarian",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄎㄜ2ㄧ3, ㄑ应3ㄉㄠ4/ㄈㄨ2ㄨ4/ㄍ为4ㄊㄞ2/ㄊ言2ㄒㄝ2ㄍ万3ㄘㄤ2/ㄒㄝ2ㄒ云2/ㄕㄣ1ㄑ应3."
     },
     {
       "file": "s15-t05-en.mp3",

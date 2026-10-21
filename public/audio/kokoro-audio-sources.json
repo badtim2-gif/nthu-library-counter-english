@@ -18545,25 +18545,30 @@
     },
     {
       "file": "s15-t04-zh.mp3",
+      "text": "可以，請到服務櫃檯填寫館藏協尋申請。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "fd0f4c7a9abdfca5a10cfeb24c9545e7e8b53887ebae165649b902e3881dd032",
+      "applied_target_lufs": -20.91,
+      "sha256": "0c0f987b3798163cf98a0675e6ea7870446c34157aba991dff5a914a28df7142",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.325
+        "duration_seconds": 5.35
       },
       "loudness": {
-        "integrated_lufs": -22.51,
-        "true_peak_dbfs": -3.86,
-        "lra_lu": 4.5,
-        "threshold_lufs": -33.09
+        "integrated_lufs": -22.36,
+        "true_peak_dbfs": -3.47,
+        "lra_lu": 3.5,
+        "threshold_lufs": -33.08
       },
       "boundary_peaks": {
-        "leading_40ms": 2e-07,
+        "leading_40ms": 2.3e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -18576,7 +18581,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄎㄜ2ㄧ3, ㄑ应3ㄉㄠ4/ㄈㄨ2ㄨ4/ㄍ为4ㄊㄞ2/ㄊ言2ㄒㄝ2ㄍ万3ㄘㄤ2/ㄒㄝ2ㄒ云2/ㄕㄣ1ㄑ应3."
     },
     {
       "file": "s15-t05-en.mp3",
@@ -25542,13 +25548,12 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-10-21T16:20:29+08:00",
-    "clip_count": 2,
-    "staging_manifest_sha256": "8a2946388dbf45db526b5cdfa57d58ccadacec541aaeb1c4ef16c9b35d2e93fa",
-    "transcript_manifest_sha256": "11361ac8a23437054408322e5d383ab9f8b764b1b3c6116646e62ffae96eea8e",
+    "generated_at": "2026-10-21T21:33:01+08:00",
+    "clip_count": 1,
+    "staging_manifest_sha256": "1f4ca4dca43f415774a55834a53a717a1f5a08a644520d52fa4cd11e5bae9ef7",
+    "transcript_manifest_sha256": "2d9205909400ac04cad7efdf5ebc237881d4ebfcd36e3e8e58cc68136db7de06",
     "files": [
-      "s15-g02-zh.mp3",
-      "s15-p03-zh.mp3"
+      "s15-t04-zh.mp3"
     ]
   }
 }

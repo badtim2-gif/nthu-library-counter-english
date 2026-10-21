@@ -188,6 +188,10 @@ for (const entry of manifest.entries) {
     assert.match(entry.phonemes ?? "", /ㄍ万3ㄕㄜ4/, "館舍 must use guan3 she4");
     assert.match(entry.phonemes ?? "", /ㄒ阳3ㄑ言2王3/, "Keep 想前往 in one spoken phrase");
   }
+  if (entry.file === "s15-t04-zh.mp3") {
+    assert.match(entry.phonemes ?? "", /ㄍ为4ㄊㄞ2/, "Keep 櫃檯 together");
+    assert.match(entry.phonemes ?? "", /ㄊ言2ㄒㄝ2ㄍ万3ㄘㄤ2/, "Keep 填寫館藏 in one spoken phrase");
+  }
   if (["s15-p03-zh.mp3", "s15-g02-zh.mp3"].includes(entry.file)) {
     assert.match(entry.phonemes ?? "", /ㄏㄡ4ㄒㄩ4/, "Keep 後續 together within one word");
   }

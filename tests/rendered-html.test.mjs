@@ -96,7 +96,7 @@ test("keeps the final app free of starter preview code", async () => {
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);
-  assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v23";/);
+  assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v24";/);
   assert.match(page, /本區包含對話用字及情境延伸單字，不一定逐字出現在對話中。/);
   assert.match(page, /先聽單字，停一秒，再聽逐字母拼寫與中文解說。/);
   assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
