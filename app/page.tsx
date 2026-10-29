@@ -66,7 +66,7 @@ type RolePlayMode = Role | "all" | null;
 
 const roleIsHidden = (mode: RolePlayMode, role: Role) => mode === "all" || mode === role;
 
-const AUDIO_CACHE_NAME = "nthu-library-audio-v21";
+const AUDIO_CACHE_NAME = "nthu-library-audio-v22";
 const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v1",
   "nthu-library-audio-v2",
@@ -88,6 +88,7 @@ const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v18",
   "nthu-library-audio-v19",
   "nthu-library-audio-v20",
+  "nthu-library-audio-v21",
 ];
 
 
@@ -1076,6 +1077,7 @@ export default function Home() {
             <div>
               <strong>{offlineReady ? "離線語音已備妥" : "下載離線語音"}</strong>
               <p>{offlineProgress !== null ? `下載進度 ${offlineProgress}%` : "第一次下載需要網路，之後可離線練習。"}</p>
+              <p data-audio-version={AUDIO_CACHE_NAME}>音訊版本：{AUDIO_CACHE_NAME.replace("nthu-library-audio-", "")}</p>
             </div>
             <button onClick={downloadOffline} disabled={offlineProgress !== null} aria-label="下載全部離線語音">
               {offlineProgress !== null ? `${offlineProgress}%` : "↓"}

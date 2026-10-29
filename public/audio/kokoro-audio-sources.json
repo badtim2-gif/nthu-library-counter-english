@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-10-21",
+  "updated_at": "2026-10-29",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -9901,22 +9901,22 @@
       "voice": "am_fenrir",
       "speed": 0.8,
       "applied_target_lufs": -22.3,
-      "sha256": "c3fda662136576862b234ad918929f70e2a55436d4b5bafc1f8c35d5c9d9076a",
+      "sha256": "5ee7d68e4d84b163a43824fe048269220a34f885f6877bdf44d0a8fe46b03604",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.775
+        "duration_seconds": 0.852
       },
       "loudness": {
-        "integrated_lufs": -22.71,
-        "true_peak_dbfs": -8.57,
+        "integrated_lufs": -22.69,
+        "true_peak_dbfs": -8.31,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.08
+        "threshold_lufs": -32.69
       },
       "boundary_peaks": {
-        "leading_40ms": 7e-08,
+        "leading_40ms": 1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -9931,7 +9931,13 @@
         "trailing_safety_silence": true
       },
       "voice_key": "reader-en",
-      "phonemes": "θˈisɪs."
+      "source_segment": {
+        "file": "s08-t01-en.mp3",
+        "sha256": "e7da9accf65fcfe00544b40d6c4fa5c96c5af2d2833f4ecf6a013d9f87fc3715",
+        "text": "thesis",
+        "start_seconds": 0.558,
+        "end_seconds": 1.21
+      }
     },
     {
       "file": "s08-v02-meaning.mp3",
@@ -25548,12 +25554,13 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-10-21T21:33:01+08:00",
+    "generated_at": "2026-10-29T15:26:14+08:00",
     "clip_count": 1,
-    "staging_manifest_sha256": "1f4ca4dca43f415774a55834a53a717a1f5a08a644520d52fa4cd11e5bae9ef7",
-    "transcript_manifest_sha256": "2d9205909400ac04cad7efdf5ebc237881d4ebfcd36e3e8e58cc68136db7de06",
+    "staging_manifest_sha256": "683b0b7f04b809c2bd4f6e8e3ecdf6539367026b4eaad31c9b1d8fa52732e66c",
+    "transcript_manifest_sha256": "67565c7ddc0ed3c814e3f7803788d96f1e54f68a6bb205f1d98da295e6dba86d",
     "files": [
-      "s15-t04-zh.mp3"
-    ]
+      "s08-v01-word.mp3"
+    ],
+    "method": "Extract the user-confirmed pronunciation from the unchanged dialogue audio."
   }
 }

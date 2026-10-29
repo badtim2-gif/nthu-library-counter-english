@@ -139,7 +139,24 @@ for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
   assert.equal(entry.speed, record.speed);
   assert.equal(entry.phonemes, record.phonemes);
   assert.equal(entry.voice_key, record.voice_key);
+  assert.deepEqual(entry.source_segment, record.source_segment);
   assert.equal(entry.model, record.model);
+  if (entry.source_segment) {
+    const segment = entry.source_segment;
+    assert.equal(entry.kind, "word");
+    assert.equal(entry.language, "en");
+    assert.equal(entry.phonemes, undefined, "Derived words must not silently use isolated phonemes");
+    const reference = kokoroRecords.get(segment.file);
+    assert.ok(reference, `Missing contextual source: ${entry.file}`);
+    assert.notEqual(segment.file, entry.file);
+    assert.equal(segment.sha256, reference.sha256);
+    assert.equal(segment.text, entry.text);
+    assert.equal(record.model, reference.model);
+    assert.equal(record.voice, reference.voice);
+    assert.ok(Number.isFinite(segment.start_seconds) && segment.start_seconds >= 0);
+    assert.ok(Number.isFinite(segment.end_seconds) && segment.end_seconds > segment.start_seconds);
+    assert.ok(segment.end_seconds <= reference.technical.duration_seconds);
+  }
   if (entry.target_wpm !== undefined) {
     assert.equal(entry.kind, "english_long");
     assert.ok(entry.target_wpm >= 115 && entry.target_wpm <= 125);
@@ -181,6 +198,13 @@ for (let index = 0; index < 26; index += 1) {
 }
 
 for (const entry of manifest.entries) {
+  if (entry.file === "s08-v01-word.mp3") {
+    assert.equal(entry.source_segment?.file, "s08-t01-en.mp3", "thesis must retain its approved dialogue pronunciation");
+    assert.equal(entry.voice_key, "reader-en");
+    assert.notEqual(kokoroRecords.get(entry.file).sha256,
+      "c3fda662136576862b234ad918929f70e2a55436d4b5bafc1f8c35d5c9d9076a",
+      "Do not restore the unclear isolated thesis clip");
+  }
   if (entry.kind === "word" && entry.text === "present") {
     assert.match(entry.phonemes ?? "", /pɹɪzˈɛnt/, `Present must use the verb stress: ${entry.file}`);
   }

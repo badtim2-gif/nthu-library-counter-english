@@ -232,6 +232,33 @@ def boundary_peaks(path: Path) -> dict[str, float]:
     }
 
 
+def extract_reference_audio(source_dir: Path | None, segment: dict[str, object], output: Path) -> None:
+    """Preserve an approved contextual pronunciation rather than synthesize it again."""
+    if source_dir is None:
+        raise ValueError("Derived word clips require --reference-audio-dir")
+    filename = segment["file"]
+    if not isinstance(filename, str) or not re.fullmatch(r"[A-Za-z0-9_-]+\.mp3", filename):
+        raise ValueError("Reference audio must be a plain MP3 filename")
+    reference = source_dir / filename
+    if sha256(reference) != segment["sha256"]:
+        raise ValueError(f"Reference audio hash mismatch: {filename}")
+    start = float(segment["start_seconds"])
+    end = float(segment["end_seconds"])
+    if not all(map(math.isfinite, (start, end))) or not 0 <= start < end <= audio_duration(reference):
+        raise ValueError("Invalid reference segment boundaries")
+    if end - start < 0.05:
+        raise ValueError("Reference segment is too short")
+    run([
+        "ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(reference),
+        "-af", (
+            f"atrim=start={start:.6f}:end={end:.6f},asetpts=PTS-STARTPTS,"
+            f"afade=t=in:d=0.003,afade=t=out:st={end-start-0.003:.6f}:d=0.003,"
+            f"adelay={int(LEAD_SECONDS*1000)},apad=pad_dur={TAIL_SECONDS}"
+        ),
+        "-ar", str(SAMPLE_RATE), "-ac", "1", "-c:a", "pcm_s16le", str(output),
+    ])
+
+
 def select_voice(entry: dict[str, object]) -> str:
     override = entry.get("voice_key")
     if override is not None:
@@ -297,6 +324,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--model-v10", type=Path, required=True)
     parser.add_argument("--model-v11zh", type=Path, required=True)
+    parser.add_argument("--reference-audio-dir", type=Path, help="Pinned source MP3s for dialogue-derived words")
     parser.add_argument("--files", nargs="+", help="Regenerate only these non-alphabet filenames")
     args = parser.parse_args()
 
@@ -309,6 +337,7 @@ def main() -> int:
     audio_dir.mkdir(exist_ok=True)
 
     source = json.loads(args.manifest.read_text(encoding="utf-8"))
+    source_entries = {entry["file"]: entry for entry in source["entries"]}
     entries = [entry for entry in source["entries"] if entry["kind"] != "letter"]
     if len(entries) != 682:
         raise RuntimeError(f"Expected 682 synthetic clips, found {len(entries)}")
@@ -318,6 +347,12 @@ def main() -> int:
         if len(requested) != len(args.files) or not requested <= known:
             raise RuntimeError(f"Duplicate or unknown selected files: {sorted(requested - known)}")
         entries = [entry for entry in entries if entry["file"] in requested]
+    if any(entry.get("source_segment") for entry in entries) and args.reference_audio_dir is None:
+        parser.error("Dialogue-derived word clips require --reference-audio-dir")
+    selected_files = {entry["file"] for entry in entries}
+    pinned_references = {entry["source_segment"]["file"] for entry in entries if entry.get("source_segment")}
+    if selected_files & pinned_references:
+        parser.error("Pinned source dialogue cannot be regenerated with its derived word; review the source separately first")
 
     model_dirs = {"v1.0": args.model_v10, "v1.1-zh": args.model_v11zh}
     for spec in VOICE_SPECS.values():
@@ -366,8 +401,21 @@ def main() -> int:
             output_path = audio_dir / filename
             speed = float(entry.get("speed", spec["speed"]))
             phonemes = entry.get("phonemes")
+            segment = entry.get("source_segment")
+            if segment is not None:
+                reference_entry = source_entries.get(segment["file"])
+                if (
+                    entry["language"] != "en" or entry["kind"] != "word" or phonemes
+                    or reference_entry is None or reference_entry["kind"] != "english_long"
+                    or reference_entry["language"] != "en"
+                    or select_voice(reference_entry) != voice_key
+                    or segment.get("text") != entry["text"]
+                    or entry["text"].casefold() not in reference_entry["text"].casefold()
+                ):
+                    raise ValueError(f"Invalid contextual word source: {filename}")
+                extract_reference_audio(args.reference_audio_dir, segment, raw_path)
             # Pronunciation, voice, or speed overrides must not reuse default WAVs.
-            if not raw_path.exists() or phonemes or entry.get("voice_key") or speed != spec["speed"]:
+            elif not raw_path.exists() or phonemes or entry.get("voice_key") or speed != spec["speed"]:
                 audio = synthesize(
                     pipelines[spec["lang_code"]],
                     entry["text"],
@@ -420,6 +468,8 @@ def main() -> int:
                 record["voice_key"] = entry["voice_key"]
             if phonemes:
                 record["phonemes"] = phonemes
+            if segment is not None:
+                record["source_segment"] = segment
             if tempo is not None and words is not None:
                 effective_duration = max(0.05, technical["duration_seconds"] - LEAD_SECONDS - TAIL_SECONDS)
                 record["timing"] = {

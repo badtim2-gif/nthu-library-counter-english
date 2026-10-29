@@ -2655,8 +2655,14 @@
       "role": "explainer",
       "speed": 0.8,
       "model": "v1.0",
-      "phonemes": "θˈisɪs.",
-      "voice_key": "reader-en"
+      "voice_key": "reader-en",
+      "source_segment": {
+        "file": "s08-t01-en.mp3",
+        "sha256": "e7da9accf65fcfe00544b40d6c4fa5c96c5af2d2833f4ecf6a013d9f87fc3715",
+        "text": "thesis",
+        "start_seconds": 0.558,
+        "end_seconds": 1.21
+      }
     },
     {
       "file": "s08-v01-meaning.mp3",
