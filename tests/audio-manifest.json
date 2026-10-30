@@ -4185,7 +4185,8 @@
       "kind": "chinese",
       "role": "reader",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "我2又3/ㄧ4ㄅㄣ3/ㄕㄨ1/ㄧ3ㄐ应1/ㄩ2ㄑㄧ2/ㄨ3ㄊ言1, ㄦ2ㄑㄝ3/ㄕㄡ1ㄉㄠ4/ㄩ2ㄑㄧ2/ㄊ中1ㄓ十1."
     },
     {
       "file": "s13-t02-en.mp3",
@@ -4205,7 +4206,8 @@
       "kind": "chinese",
       "role": "librarian",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄔㄠ1ㄍ我4/ㄉㄠ4ㄑㄧ2ㄖ十4/ㄏㄡ4, ㄇㄟ3/ㄘㄜ4/ㄇㄟ3ㄊ言1/ㄏ为4ㄔㄢ3ㄕㄥ1/ㄒ阴1/ㄊㄞ2/ㄅㄧ4/ㄨ3元2/ㄉㄜ5/ㄩ2ㄑㄧ2/ㄔㄨ2ㄌㄧ3/ㄈㄟ4."
     },
     {
       "file": "s13-t03-en.mp3",
@@ -4225,7 +4227,8 @@
       "kind": "chinese",
       "role": "reader",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "我3/ㄒ言4ㄗㄞ4/ㄎㄜ2ㄧ3/ㄒㄩ4/ㄐㄝ4, ㄖㄤ4/ㄈㄟ4用4/ㄅㄨ2要4/ㄐㄧ4ㄒㄩ4/ㄌㄟ3ㄐㄧ1/ㄇㄚ5?"
     },
     {
       "file": "s13-t04-en.mp3",
@@ -4245,7 +4248,8 @@
       "kind": "chinese",
       "role": "librarian",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄅㄨ4ㄎㄜ2ㄧ3, ㄩ2ㄑㄧ2/ㄍ万3ㄘㄤ2/ㄨ2ㄈㄚ3ㄒㄩ4/ㄐㄝ4, ㄦ2ㄑㄝ3/ㄋ阴2/ㄉㄜ5/ㄐㄝ4月4/ㄑ元2/ㄎㄜ3ㄋㄥ2/ㄏ为4/ㄗㄢ4ㄊ应2."
     },
     {
       "file": "s13-t05-en.mp3",
@@ -4286,7 +4290,7 @@
       "role": "librarian",
       "speed": 0.9,
       "model": "v1.1-zh",
-      "phonemes": "ㄑ应3/ㄗㄞ4/ㄍㄜ4/ㄖㄣ2/ㄐㄝ4月4/ㄓ王4ㄎ王4/ㄔㄚ2ㄒ云2/ㄈㄟ4用4, ㄍ为1/ㄏ万2/ㄙ我2又3/ㄩ2ㄑㄧ1/ㄍ万3ㄘㄤ2, ㄅ应4/ㄐㄝ2ㄑ应1/应1/ㄐ要2ㄎ万3/ㄒ阳4."
+      "phonemes": "ㄑ应3/ㄗㄞ4/ㄍㄜ4/ㄖㄣ2/ㄐㄝ4月4/ㄓ王4ㄎ王4/ㄔㄚ2ㄒ云2/ㄈㄟ4用4, ㄍ为1/ㄏ万2/ㄙ我2又3/ㄩ2ㄑㄧ2/ㄍ万3ㄘㄤ2, ㄅ应4/ㄐㄝ2ㄑ应1/应1/ㄐ要2ㄎ万3/ㄒ阳4."
     },
     {
       "file": "s13-p01-en.mp3",
@@ -4307,7 +4311,7 @@
       "role": "explainer",
       "speed": 0.9,
       "model": "v1.1-zh",
-      "phonemes": "用4ㄌㄞ2/ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄕㄤ4为4/ㄍ为1ㄏ万2/ㄉㄜ5/ㄨ4ㄆ阴3/ㄧ3ㄐ应1/ㄩ2ㄑㄧ1/ㄐㄧ3ㄊ言1."
+      "phonemes": "用4ㄌㄞ2/ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄕㄤ4为4/ㄍ为1ㄏ万2/ㄉㄜ5/ㄨ4ㄆ阴3/ㄧ3ㄐ应1/ㄩ2ㄑㄧ2/ㄐㄧ3ㄊ言1."
     },
     {
       "file": "s13-p02-en.mp3",
@@ -4357,7 +4361,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄩ2ㄑㄧ2/ㄕ十2ㄐ言1/ㄉㄜ5/ㄅ要3ㄉㄚ2. ㄕ十2ㄐ言1/ㄔㄤ2ㄉㄨ4ㄆ言4ㄩ3/ㄈㄤ4ㄗㄞ4/ㄅ要3ㄕ十4/ㄩ2ㄑㄧ2/ㄉㄜ5/ㄒ应2ㄖ中2/ㄘㄭ2/ㄑ言2, ㄕ我1ㄇ应2/ㄍ万3ㄘㄤ2/ㄧ3ㄐ应1/ㄔㄠ1ㄍ我4/ㄉㄠ4ㄑㄧ2ㄖ十4/ㄉ我1ㄐ又3."
     },
     {
       "file": "s13-g02-zh.mp3",
@@ -4387,7 +4392,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄩ2ㄑㄧ2/ㄉㄜ5, ㄒ应2ㄖ中2/ㄘㄭ2"
     },
     {
       "file": "s13-v02-word.mp3",
@@ -4396,8 +4402,9 @@
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.8,
-      "model": "v1.0"
+      "speed": 0.75,
+      "model": "v1.0",
+      "phonemes": "fˈi."
     },
     {
       "file": "s13-v02-meaning.mp3",
@@ -4427,7 +4434,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄌㄟ3ㄐㄧ1, ㄉ中4ㄘㄭ2"
     },
     {
       "file": "s13-v04-word.mp3",
@@ -4456,8 +4464,9 @@
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.8,
-      "model": "v1.0"
+      "speed": 0.75,
+      "model": "v1.0",
+      "phonemes": "pɹˈɪvəlɪdʒ."
     },
     {
       "file": "s13-v05-meaning.mp3",
@@ -4487,7 +4496,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄐㄝ2ㄑ应1, ㄔㄨ2ㄌㄧ3/ㄊ我3ㄉㄤ4, ㄉ中4ㄘㄭ2"
     },
     {
       "file": "s13-v07-word.mp3",
@@ -4496,8 +4506,9 @@
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.8,
-      "model": "v1.0"
+      "speed": 0.75,
+      "model": "v1.0",
+      "phonemes": "tʃˈɑɹdʒ."
     },
     {
       "file": "s13-v07-meaning.mp3",
@@ -5233,8 +5244,9 @@
       "language": "zh",
       "kind": "chinese",
       "role": "librarian",
-      "speed": 0.9,
-      "model": "v1.1-zh"
+      "speed": 0.85,
+      "model": "v1.1-zh",
+      "phonemes": "ㄗ中3ㄊㄨ2/ㄉㄜ5/ㄩ4月1ㄕㄨ1/ㄎㄜ3/ㄗㄞ4/ㄧ4ㄌㄡ2/ㄩ4月1/ㄗㄭ4ㄓㄨ4/ㄑㄩ3/ㄕㄨ1ㄑㄩ1/ㄌ应2ㄑㄩ3."
     },
     {
       "file": "s16-t03-en.mp3",
@@ -5433,8 +5445,9 @@
       "language": "zh",
       "kind": "chinese",
       "role": "explainer",
-      "speed": 0.9,
-      "model": "v1.1-zh"
+      "speed": 0.85,
+      "model": "v1.1-zh",
+      "phonemes": "ㄩ4月1, ㄇ应2ㄘㄭ2"
     },
     {
       "file": "s16-v03-word.mp3",
@@ -5559,7 +5572,7 @@
     },
     {
       "file": "s17-t02-en.mp3",
-      "text": "You may reserve one through the library booking system within the next fourteen days.",
+      "text": "You may reserve one through the Library iBooking System within the next fourteen days.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",
@@ -5599,7 +5612,7 @@
     },
     {
       "file": "s17-t04-en.mp3",
-      "text": "A Main Library room requires three valid cards, and one reservation may last up to two hours.",
+      "text": "A Main Library room requires three valid Library IDs, and each reservation may last up to two hours.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",
@@ -5609,7 +5622,7 @@
     },
     {
       "file": "s17-t04-zh.mp3",
-      "text": "總圖討論室需要三張有效證件，一次預約最長兩小時。",
+      "text": "總圖討論室需要三張有效借書證，每次預約最長兩小時。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -5809,7 +5822,7 @@
     },
     {
       "file": "s17-v04-meaning.mp3",
-      "text": "報到，片語",
+      "text": "報到，片語動詞",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",

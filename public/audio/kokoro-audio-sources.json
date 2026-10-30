@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-10-29",
+  "updated_at": "2026-10-30",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -15448,8 +15448,8 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -21.06,
-      "sha256": "1358a3b05d9bf947f6300e4b008c582f6b6869c10dba68429733197850d670cb",
+      "applied_target_lufs": -21.2,
+      "sha256": "2d55cd0a75e520967d2b7ca959068dca2e3602a198347b9bf964d564eb18c977",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -15458,13 +15458,13 @@
         "duration_seconds": 9.725
       },
       "loudness": {
-        "integrated_lufs": -22.3,
-        "true_peak_dbfs": -3.95,
-        "lra_lu": 2.8,
-        "threshold_lufs": -32.66
+        "integrated_lufs": -22.31,
+        "true_peak_dbfs": -3.92,
+        "lra_lu": 2.5,
+        "threshold_lufs": -32.67
       },
       "boundary_peaks": {
-        "leading_40ms": 1.2e-07,
+        "leading_40ms": 2.3e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -15477,7 +15477,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄩ2ㄑㄧ2/ㄕ十2ㄐ言1/ㄉㄜ5/ㄅ要3ㄉㄚ2. ㄕ十2ㄐ言1/ㄔㄤ2ㄉㄨ4ㄆ言4ㄩ3/ㄈㄤ4ㄗㄞ4/ㄅ要3ㄕ十4/ㄩ2ㄑㄧ2/ㄉㄜ5/ㄒ应2ㄖ中2/ㄘㄭ2/ㄑ言2, ㄕ我1ㄇ应2/ㄍ万3ㄘㄤ2/ㄧ3ㄐ应1/ㄔㄠ1ㄍ我4/ㄉㄠ4ㄑㄧ2ㄖ十4/ㄉ我1ㄐ又3."
     },
     {
       "file": "s13-g02-zh.mp3",
@@ -15570,7 +15571,7 @@
       "voice": "zm_010",
       "speed": 0.9,
       "applied_target_lufs": -19.75,
-      "sha256": "f3cd58ed443a35e5b17dc9bba5fa8616be7909e60f650bc3a616a2eac89741a8",
+      "sha256": "aeda0d26f88bbcbce797a8b50ada355caa80f7fb7c98159b591f7a1b366d997d",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -15579,13 +15580,13 @@
         "duration_seconds": 5.875
       },
       "loudness": {
-        "integrated_lufs": -22.69,
-        "true_peak_dbfs": -3.94,
-        "lra_lu": 7.4,
-        "threshold_lufs": -33.29
+        "integrated_lufs": -22.81,
+        "true_peak_dbfs": -3.55,
+        "lra_lu": 7.3,
+        "threshold_lufs": -33.41
       },
       "boundary_peaks": {
-        "leading_40ms": 2.7e-07,
+        "leading_40ms": 3e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -15599,7 +15600,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "用4ㄌㄞ2/ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄕㄤ4为4/ㄍ为1ㄏ万2/ㄉㄜ5/ㄨ4ㄆ阴3/ㄧ3ㄐ应1/ㄩ2ㄑㄧ1/ㄐㄧ3ㄊ言1."
+      "phonemes": "用4ㄌㄞ2/ㄑ应1ㄔㄨ5/ㄕ我1ㄇ应2/ㄕㄤ4为4/ㄍ为1ㄏ万2/ㄉㄜ5/ㄨ4ㄆ阴3/ㄧ3ㄐ应1/ㄩ2ㄑㄧ2/ㄐㄧ3ㄊ言1."
     },
     {
       "file": "s13-p02-en.mp3",
@@ -15808,23 +15809,23 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -20.77,
-      "sha256": "2387e8e185a8ccbc773e9d77b0c73e43807137b0284a88d42bb3e8dfae853d43",
+      "applied_target_lufs": -20.9,
+      "sha256": "47496640056b4e79a6b47483374bc889286412269a333447f5bcd5d4bdabf864",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.45
+        "duration_seconds": 5.475
       },
       "loudness": {
-        "integrated_lufs": -22.67,
-        "true_peak_dbfs": -3.66,
-        "lra_lu": 3.7,
+        "integrated_lufs": -22.68,
+        "true_peak_dbfs": -3.85,
+        "lra_lu": 4.0,
         "threshold_lufs": -33.0
       },
       "boundary_peaks": {
-        "leading_40ms": 2.3e-07,
+        "leading_40ms": 3.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -15837,7 +15838,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "我2又3/ㄧ4ㄅㄣ3/ㄕㄨ1/ㄧ3ㄐ应1/ㄩ2ㄑㄧ2/ㄨ3ㄊ言1, ㄦ2ㄑㄝ3/ㄕㄡ1ㄉㄠ4/ㄩ2ㄑㄧ2/ㄊ中1ㄓ十1."
     },
     {
       "file": "s13-t02-en.mp3",
@@ -15882,25 +15884,30 @@
     },
     {
       "file": "s13-t02-zh.mp3",
+      "text": "超過到期日後，每冊每天會產生新臺幣五元的逾期處理費。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "d728d062ee4154f1f650542c4b4308ed687b44bd2c8dc80ce70098791879ee0b",
+      "applied_target_lufs": -20.39,
+      "sha256": "0cd17cc9922f2a3319cb2436ca42d067829e47fbfa0b5071997108fd36599501",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.525
+        "duration_seconds": 6.5
       },
       "loudness": {
-        "integrated_lufs": -22.46,
-        "true_peak_dbfs": -3.78,
-        "lra_lu": 4.3,
-        "threshold_lufs": -32.73
+        "integrated_lufs": -22.41,
+        "true_peak_dbfs": -3.75,
+        "lra_lu": 4.2,
+        "threshold_lufs": -32.79
       },
       "boundary_peaks": {
-        "leading_40ms": 1.6e-07,
+        "leading_40ms": 2.2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -15913,7 +15920,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄔㄠ1ㄍ我4/ㄉㄠ4ㄑㄧ2ㄖ十4/ㄏㄡ4, ㄇㄟ3/ㄘㄜ4/ㄇㄟ3ㄊ言1/ㄏ为4ㄔㄢ3ㄕㄥ1/ㄒ阴1/ㄊㄞ2/ㄅㄧ4/ㄨ3元2/ㄉㄜ5/ㄩ2ㄑㄧ2/ㄔㄨ2ㄌㄧ3/ㄈㄟ4."
     },
     {
       "file": "s13-t03-en.mp3",
@@ -15958,10 +15966,15 @@
     },
     {
       "file": "s13-t03-zh.mp3",
+      "text": "我現在可以續借，讓費用不要繼續累積嗎？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "65101fd29ac2f5175cf868625c1d31a9b6f5e7ae7262dfc85335b82b7d74cc91",
+      "applied_target_lufs": -20.57,
+      "sha256": "48749b4b185eb879c3a866ef6b8eedf1d2126d42f5845b3f47d997b763481d76",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -15970,13 +15983,13 @@
         "duration_seconds": 5.275
       },
       "loudness": {
-        "integrated_lufs": -22.46,
-        "true_peak_dbfs": -3.4,
-        "lra_lu": 3.7,
-        "threshold_lufs": -32.84
+        "integrated_lufs": -22.41,
+        "true_peak_dbfs": -4.09,
+        "lra_lu": 3.8,
+        "threshold_lufs": -32.8
       },
       "boundary_peaks": {
-        "leading_40ms": 3.3e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -15989,7 +16002,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "我3/ㄒ言4ㄗㄞ4/ㄎㄜ2ㄧ3/ㄒㄩ4/ㄐㄝ4, ㄖㄤ4/ㄈㄟ4用4/ㄅㄨ2要4/ㄐㄧ4ㄒㄩ4/ㄌㄟ3ㄐㄧ1/ㄇㄚ5?"
     },
     {
       "file": "s13-t04-en.mp3",
@@ -16034,25 +16048,30 @@
     },
     {
       "file": "s13-t04-zh.mp3",
+      "text": "不可以，逾期館藏無法續借，而且您的借閱權可能會暫停。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "30e942d1399a3da55639df3c1bff2a2ecda75f4b8410a054552c9dc5d88ee8c4",
+      "applied_target_lufs": -21.1,
+      "sha256": "a5b5851aba879f6fdda0fe8601b333bc0463718e01d01b493b88e8a30637c2b7",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.5
+        "duration_seconds": 6.525
       },
       "loudness": {
-        "integrated_lufs": -22.42,
-        "true_peak_dbfs": -3.76,
-        "lra_lu": 4.4,
-        "threshold_lufs": -33.03
+        "integrated_lufs": -22.44,
+        "true_peak_dbfs": -3.83,
+        "lra_lu": 4.2,
+        "threshold_lufs": -33.0
       },
       "boundary_peaks": {
-        "leading_40ms": 2.3e-07,
+        "leading_40ms": 2.4e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16065,7 +16084,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄅㄨ4ㄎㄜ2ㄧ3, ㄩ2ㄑㄧ2/ㄍ万3ㄘㄤ2/ㄨ2ㄈㄚ3ㄒㄩ4/ㄐㄝ4, ㄦ2ㄑㄝ3/ㄋ阴2/ㄉㄜ5/ㄐㄝ4月4/ㄑ元2/ㄎㄜ3ㄋㄥ2/ㄏ为4/ㄗㄢ4ㄊ应2."
     },
     {
       "file": "s13-t05-en.mp3",
@@ -16193,20 +16213,20 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -20.82,
-      "sha256": "9153a094ede7fec97eac87c7b8de64fbbca723f6f1c30edf775d4d902d268859",
+      "applied_target_lufs": -20.83,
+      "sha256": "f874ff4a9bd73b1c464f99512b0a6b4d8e696b5df246f85895f2bd3b036bb430",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.575
+        "duration_seconds": 7.6
       },
       "loudness": {
-        "integrated_lufs": -22.33,
-        "true_peak_dbfs": -3.91,
-        "lra_lu": 4.1,
-        "threshold_lufs": -32.52
+        "integrated_lufs": -22.34,
+        "true_peak_dbfs": -3.89,
+        "lra_lu": 4.2,
+        "threshold_lufs": -32.57
       },
       "boundary_peaks": {
         "leading_40ms": 1.8e-07,
@@ -16223,29 +16243,34 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ㄑ应3/ㄗㄞ4/ㄍㄜ4/ㄖㄣ2/ㄐㄝ4月4/ㄓ王4ㄎ王4/ㄔㄚ2ㄒ云2/ㄈㄟ4用4, ㄍ为1/ㄏ万2/ㄙ我2又3/ㄩ2ㄑㄧ1/ㄍ万3ㄘㄤ2, ㄅ应4/ㄐㄝ2ㄑ应1/应1/ㄐ要2ㄎ万3/ㄒ阳4."
+      "phonemes": "ㄑ应3/ㄗㄞ4/ㄍㄜ4/ㄖㄣ2/ㄐㄝ4月4/ㄓ王4ㄎ王4/ㄔㄚ2ㄒ云2/ㄈㄟ4用4, ㄍ为1/ㄏ万2/ㄙ我2又3/ㄩ2ㄑㄧ2/ㄍ万3ㄘㄤ2, ㄅ应4/ㄐㄝ2ㄑ应1/应1/ㄐ要2ㄎ万3/ㄒ阳4."
     },
     {
       "file": "s13-v01-meaning.mp3",
+      "text": "逾期的，形容詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "75e0264463125de348a7a1802d787266373e7f6d28d269f855356d7cd4ce551f",
+      "applied_target_lufs": -22.3,
+      "sha256": "76f0806edbb6fb622267c431cfd7e3b6e4f32e0d465629042f055aace23ad2ca",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.675
+        "duration_seconds": 2.725
       },
       "loudness": {
-        "integrated_lufs": -22.7,
-        "true_peak_dbfs": -3.74,
+        "integrated_lufs": -23.28,
+        "true_peak_dbfs": -3.51,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.14
+        "threshold_lufs": -33.5
       },
       "boundary_peaks": {
-        "leading_40ms": 2.2e-07,
+        "leading_40ms": 1.4e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16258,7 +16283,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄩ2ㄑㄧ2/ㄉㄜ5, ㄒ应2ㄖ中2/ㄘㄭ2"
     },
     {
       "file": "s13-v01-word.mp3",
@@ -16332,25 +16358,30 @@
     },
     {
       "file": "s13-v02-word.mp3",
+      "text": "fee",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
-      "speed": 0.8,
-      "sha256": "81f7d4e97e110d228dd2bf9400d65336342ce53fd3b8350dd9a58b80c4e5c784",
+      "speed": 0.75,
+      "applied_target_lufs": -22.3,
+      "sha256": "1ef39f8da359e8408472a4b71aec73f4795fbc97d0960652cf0d510f9545012f",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.3
+        "duration_seconds": 1.7
       },
       "loudness": {
-        "integrated_lufs": -22.73,
-        "true_peak_dbfs": -7.12,
+        "integrated_lufs": -22.76,
+        "true_peak_dbfs": -7.56,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.71
+        "threshold_lufs": -34.31
       },
       "boundary_peaks": {
-        "leading_40ms": 6e-08,
+        "leading_40ms": 5e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16363,14 +16394,20 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "fˈi."
     },
     {
       "file": "s13-v03-meaning.mp3",
+      "text": "累積，動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "e860139d3411801dc2dcfc9edc16b35832ae52f1186f058d270d3e22948f6fa1",
+      "applied_target_lufs": -22.3,
+      "sha256": "742c56b57416d91c0d3bac3be78d4050ef9aa68ed5c6ef9417a8080890348d7c",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -16379,13 +16416,13 @@
         "duration_seconds": 2.426
       },
       "loudness": {
-        "integrated_lufs": -22.74,
-        "true_peak_dbfs": -5.44,
+        "integrated_lufs": -23.14,
+        "true_peak_dbfs": -4.02,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.0
+        "threshold_lufs": -33.4
       },
       "boundary_peaks": {
-        "leading_40ms": 1.8e-07,
+        "leading_40ms": 2.5e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16398,7 +16435,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄌㄟ3ㄐㄧ1, ㄉ中4ㄘㄭ2"
     },
     {
       "file": "s13-v03-word.mp3",
@@ -16542,25 +16580,30 @@
     },
     {
       "file": "s13-v05-word.mp3",
+      "text": "privilege",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
-      "speed": 0.8,
-      "sha256": "c82a96c5993b9927f7246f57444d91f340a046ef0bce8220a60fc810e2ec8451",
+      "speed": 0.75,
+      "applied_target_lufs": -22.3,
+      "sha256": "437adb591084c379e4c5ac8d671678511a0633a35061685de463002a571b382c",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.8
+        "duration_seconds": 1.95
       },
       "loudness": {
-        "integrated_lufs": -22.74,
-        "true_peak_dbfs": -6.57,
+        "integrated_lufs": -22.79,
+        "true_peak_dbfs": -7.97,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.11
+        "threshold_lufs": -34.5
       },
       "boundary_peaks": {
-        "leading_40ms": 4e-08,
+        "leading_40ms": 5e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16573,26 +16616,32 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "pɹˈɪvəlɪdʒ."
     },
     {
       "file": "s13-v06-meaning.mp3",
+      "text": "結清、處理妥當，動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "df7d4135e08a86343ef430ae0c57512657d16eabfd26c618fcda312c4706714c",
+      "applied_target_lufs": -22.3,
+      "sha256": "fabba84538d40e64a3aadbf86735dfb0ebff1669af8ea1c361549f9ed144bfe2",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 3.475
+        "duration_seconds": 3.5
       },
       "loudness": {
-        "integrated_lufs": -22.79,
-        "true_peak_dbfs": -3.87,
-        "lra_lu": 2.0,
-        "threshold_lufs": -33.13
+        "integrated_lufs": -22.64,
+        "true_peak_dbfs": -4.05,
+        "lra_lu": 1.9,
+        "threshold_lufs": -32.9
       },
       "boundary_peaks": {
         "leading_40ms": 1.3e-07,
@@ -16608,7 +16657,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄐㄝ2ㄑ应1, ㄔㄨ2ㄌㄧ3/ㄊ我3ㄉㄤ4, ㄉ中4ㄘㄭ2"
     },
     {
       "file": "s13-v06-word.mp3",
@@ -16682,10 +16732,15 @@
     },
     {
       "file": "s13-v07-word.mp3",
+      "text": "charge",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
-      "speed": 0.8,
-      "sha256": "63516c5d0bf7edf719fd902f65b8497befa4813aebf2ec419600c0385f890704",
+      "speed": 0.75,
+      "applied_target_lufs": -22.3,
+      "sha256": "e6bcffbb487a5acb90a329e9ba1bc909d71d7710dcf37f5f02daf8f827c6913f",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -16694,13 +16749,13 @@
         "duration_seconds": 1.75
       },
       "loudness": {
-        "integrated_lufs": -22.76,
-        "true_peak_dbfs": -7.98,
+        "integrated_lufs": -22.71,
+        "true_peak_dbfs": -8.63,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.69
+        "threshold_lufs": -34.66
       },
       "boundary_peaks": {
-        "leading_40ms": 5e-08,
+        "leading_40ms": 4e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16713,7 +16768,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "tʃˈɑɹdʒ."
     },
     {
       "file": "s14-g01-zh.mp3",
@@ -19692,25 +19748,30 @@
     },
     {
       "file": "s16-t02-zh.mp3",
+      "text": "總圖的預約書可在一樓預約自助取書區領取。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
-      "speed": 0.9,
-      "sha256": "d1ff9e024c337c107a0366ab0df9cb73ef6a603085cb102de4a26766d647b72d",
+      "speed": 0.85,
+      "applied_target_lufs": -20.52,
+      "sha256": "ae8e044fc2bda979aa669438c84dca3bc581f0d6fa2ab1d63cc829b09bf454e9",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.625
+        "duration_seconds": 5.975
       },
       "loudness": {
-        "integrated_lufs": -22.48,
-        "true_peak_dbfs": -3.76,
-        "lra_lu": 5.0,
-        "threshold_lufs": -33.16
+        "integrated_lufs": -22.5,
+        "true_peak_dbfs": -3.81,
+        "lra_lu": 4.9,
+        "threshold_lufs": -33.53
       },
       "boundary_peaks": {
-        "leading_40ms": 2.3e-07,
+        "leading_40ms": 1.9e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -19723,7 +19784,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄗ中3ㄊㄨ2/ㄉㄜ5/ㄩ4月1ㄕㄨ1/ㄎㄜ3/ㄗㄞ4/ㄧ4ㄌㄡ2/ㄩ4月1/ㄗㄭ4ㄓㄨ4/ㄑㄩ3/ㄕㄨ1ㄑㄩ1/ㄌ应2ㄑㄩ3."
     },
     {
       "file": "s16-t03-en.mp3",
@@ -20111,22 +20173,27 @@
     },
     {
       "file": "s16-v02-meaning.mp3",
+      "text": "預約，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
-      "speed": 0.9,
-      "sha256": "80ba2f486eeb72d78064a032b955a2f2c0b9b7bc4527eb5433dcc876161b718e",
+      "speed": 0.85,
+      "applied_target_lufs": -22.3,
+      "sha256": "b58a491e21b9c5912fd245363b83e79fad6876fc7ed62aae95cbe69709eac537",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.4
+        "duration_seconds": 2.525
       },
       "loudness": {
         "integrated_lufs": -22.72,
-        "true_peak_dbfs": -6.32,
+        "true_peak_dbfs": -6.08,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.24
+        "threshold_lufs": -32.96
       },
       "boundary_peaks": {
         "leading_40ms": 1.2e-07,
@@ -20142,7 +20209,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄩ4月1, ㄇ应2ㄘㄭ2"
     },
     {
       "file": "s16-v02-word.mp3",
@@ -20911,22 +20979,27 @@
     },
     {
       "file": "s17-t02-en.mp3",
+      "text": "You may reserve one through the Library iBooking System within the next fourteen days.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "fe658103c8b5c79e77fe8cd459f16ac198c19eb0a43ce76977aa575a1533ba44",
+      "applied_target_lufs": -20.83,
+      "sha256": "bb020a3092ecb2973e0f690b1ee1934704955c717a3324b1db8f59871a6cffdc",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.186
+        "duration_seconds": 7.191
       },
       "loudness": {
-        "integrated_lufs": -22.37,
-        "true_peak_dbfs": -3.74,
-        "lra_lu": 3.1,
-        "threshold_lufs": -32.84
+        "integrated_lufs": -22.44,
+        "true_peak_dbfs": -3.61,
+        "lra_lu": 3.4,
+        "threshold_lufs": -32.76
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -20945,7 +21018,8 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.91428571,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.96071429,
         "word_count": 14,
         "verified_wpm": 120.2
       }
@@ -21063,22 +21137,27 @@
     },
     {
       "file": "s17-t04-en.mp3",
+      "text": "A Main Library room requires three valid Library IDs, and each reservation may last up to two hours.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "4c5be976504289f0374d9ce2e74f658be9719c50707286355a15a9e90d8434e9",
+      "applied_target_lufs": -22.3,
+      "sha256": "39a312c3b9dba28df944880a45d4a6a01ed45da0b42f66a193a10878f87d70b0",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 8.683
+        "duration_seconds": 9.192
       },
       "loudness": {
-        "integrated_lufs": -22.89,
-        "true_peak_dbfs": -4.89,
-        "lra_lu": 2.8,
-        "threshold_lufs": -33.11
+        "integrated_lufs": -22.84,
+        "true_peak_dbfs": -4.73,
+        "lra_lu": 2.9,
+        "threshold_lufs": -33.14
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -21097,32 +21176,38 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.90294118,
-        "word_count": 17,
-        "verified_wpm": 120.2
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.95,
+        "word_count": 18,
+        "verified_wpm": 120.1
       }
     },
     {
       "file": "s17-t04-zh.mp3",
+      "text": "總圖討論室需要三張有效借書證，每次預約最長兩小時。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "af6cca9cd6ddc7ddc541a78464b123eca3be9aa28af5cf9b027fd29ee3cde479",
+      "applied_target_lufs": -21.11,
+      "sha256": "dc895c73d8931a3ee665fbf6f01cccbbcce78ed680b5675d89b2bb023d707e51",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.45
+        "duration_seconds": 6.675
       },
       "loudness": {
-        "integrated_lufs": -22.43,
-        "true_peak_dbfs": -3.86,
-        "lra_lu": 3.3,
-        "threshold_lufs": -33.1
+        "integrated_lufs": -22.35,
+        "true_peak_dbfs": -3.92,
+        "lra_lu": 2.9,
+        "threshold_lufs": -33.06
       },
       "boundary_peaks": {
-        "leading_40ms": 2.4e-07,
+        "leading_40ms": 2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21501,25 +21586,30 @@
     },
     {
       "file": "s17-v04-meaning.mp3",
+      "text": "報到，片語動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "775f0469365d4e09954c5e3b23c37c9056ae5ab138dc868d378997e875546c07",
+      "applied_target_lufs": -22.3,
+      "sha256": "3571b2d2ad7443d9ab13494ed79fb2ca7e4cbfc2c7dc7d668b4710c088cb7ab5",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.35
+        "duration_seconds": 2.85
       },
       "loudness": {
-        "integrated_lufs": -22.76,
-        "true_peak_dbfs": -5.1,
+        "integrated_lufs": -23.09,
+        "true_peak_dbfs": -3.79,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.28
+        "threshold_lufs": -33.3
       },
       "boundary_peaks": {
-        "leading_40ms": 2.1e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -25554,13 +25644,30 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-10-29T15:26:14+08:00",
-    "clip_count": 1,
-    "staging_manifest_sha256": "683b0b7f04b809c2bd4f6e8e3ecdf6539367026b4eaad31c9b1d8fa52732e66c",
-    "transcript_manifest_sha256": "67565c7ddc0ed3c814e3f7803788d96f1e54f68a6bb205f1d98da295e6dba86d",
+    "generated_at": "2026-10-30T18:33:54+08:00",
+    "clip_count": 19,
+    "staging_manifest_sha256": "c45bb14fc4dd4497685cca81f44908166be37e13ca49501dcd226dd7e405e784",
+    "transcript_manifest_sha256": "4f0fd19556c469782c6edbb730268f751b6051e0c175e2b509305c8fdfef46f2",
     "files": [
-      "s08-v01-word.mp3"
-    ],
-    "method": "Extract the user-confirmed pronunciation from the unchanged dialogue audio."
+      "s13-g01-zh.mp3",
+      "s13-p01-zh.mp3",
+      "s13-t01-zh.mp3",
+      "s13-t02-zh.mp3",
+      "s13-t03-zh.mp3",
+      "s13-t04-zh.mp3",
+      "s13-t06-zh.mp3",
+      "s13-v01-meaning.mp3",
+      "s13-v02-word.mp3",
+      "s13-v03-meaning.mp3",
+      "s13-v05-word.mp3",
+      "s13-v06-meaning.mp3",
+      "s13-v07-word.mp3",
+      "s16-t02-zh.mp3",
+      "s16-v02-meaning.mp3",
+      "s17-t02-en.mp3",
+      "s17-t04-en.mp3",
+      "s17-t04-zh.mp3",
+      "s17-v04-meaning.mp3"
+    ]
   }
 }

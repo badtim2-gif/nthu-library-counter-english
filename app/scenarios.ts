@@ -21,7 +21,7 @@ export type VocabularyItem = {
   word: string;
   kk: string;
   meaning: string;
-  pos: "n." | "v." | "adj." | "adv." | "prep." | "conj." | "phr.";
+  pos: "n." | "v." | "adj." | "adv." | "prep." | "conj." | "phr." | "phr. v.";
 };
 
 export type Scenario = {
@@ -959,6 +959,7 @@ export const scenarios: Scenario[] = [
   },
   {
     id: 13,
+    sourceCheckedAt: "2026-10-30",
     shortTitle: "逾期停借",
     title: "圖書逾期、處理費與借閱權限制",
     summary: "協助讀者確認逾期費用、續借限制與恢復借閱權的方法。",
@@ -1228,9 +1229,9 @@ export const scenarios: Scenario[] = [
     sourceUrl: "https://www.lib.nthu.edu.tw/en/use/policies/policy18.html",
     dialogue: [
       { role: "reader", en: "My classmates and I would like to reserve [rɪˋzɝv] a discussion [dɪˋskʌʃən] room.", zh: "我和同學想預約一間討論室。" },
-      { role: "librarian", en: "You may reserve one through the library booking system within the next fourteen days.", zh: "您可以透過圖書館空間系統，預約未來十四天內的時段。" },
+      { role: "librarian", en: "You may reserve one through the Library iBooking System within the next fourteen days.", zh: "您可以透過圖書館空間系統，預約未來十四天內的時段。" },
       { role: "reader", en: "How many participants [pɑrˋtɪsəpənts] are required, and how long may we use the room?", zh: "需要幾位使用者？一次可以使用多久？" },
-      { role: "librarian", en: "A Main Library room requires three valid cards, and one reservation may last up to two hours.", zh: "總圖討論室需要三張有效證件，一次預約最長兩小時。" },
+      { role: "librarian", en: "A Main Library room requires three valid Library IDs, and each reservation may last up to two hours.", zh: "總圖討論室需要三張有效借書證，每次預約最長兩小時。" },
       { role: "reader", en: "What happens if one participant is late to check in?", zh: "如果其中一位使用者來不及報到，會怎麼樣？" },
       { role: "librarian", en: "All participants must check in within fifteen minutes, or the room will be released [rɪˋlist] and a no-show may be recorded.", zh: "所有使用者必須在十五分鐘內完成報到，否則空間會被釋出，並可能留下未到紀錄。" },
     ],
@@ -1247,7 +1248,7 @@ export const scenarios: Scenario[] = [
       { word: "discussion", kk: "dɪˋskʌʃən", meaning: "討論", pos: "n." },
       { word: "reserve", kk: "rɪˋzɝv", meaning: "預約", pos: "v." },
       { word: "participant", kk: "pɑrˋtɪsəpənt", meaning: "參與者、使用者", pos: "n." },
-      { word: "check in", kk: "tʃɛk ɪn", meaning: "報到", pos: "phr." },
+      { word: "check in", kk: "tʃɛk ɪn", meaning: "報到", pos: "phr. v." },
       { word: "release", kk: "rɪˋlis", meaning: "釋出", pos: "v." },
       { word: "extend", kk: "ɪkˋstɛnd", meaning: "延長", pos: "v." },
       { word: "no-show", kk: "͵noˋʃo", meaning: "預約未到、未到者", pos: "n." },
@@ -1260,7 +1261,7 @@ export const scenarios: Scenario[] = [
     sourceLabel: "無線網路常問問題",
     sourceUrl: "https://www.lib.nthu.edu.tw/en/use/faq/q_a8.html",
     dialogue: [
-      { role: "reader", en: "I am not an NTHU user. How can I access the wireless [ˋwaɪrlɪs] network?", zh: "我不是清華大學的使用者，要如何連接無線網路？" },
+      { role: "reader", en: "I am not an NTHU user. How can I access the wireless [ˋwaɪrləs] network?", zh: "我不是清華大學的使用者，要如何連接無線網路？" },
       { role: "librarian", en: "Please apply for a temporary [ˋtɛmpə͵rɛrɪ] wireless account at the library service counter.", zh: "請到圖書館服務櫃檯申請臨時無線網路帳號。" },
       { role: "reader", en: "I signed in, but the authentication [ɔ͵θɛntəˋkeʃən] page still will not connect.", zh: "我已經登入，但驗證頁面仍然無法連線。" },
       { role: "librarian", en: "Confirm that you selected the correct network, disconnect any unintended network, and reconnect [͵rikəˋnɛkt].", zh: "請確認選擇正確的網路，先中斷其他不需要的連線，再重新連接。" },
@@ -1277,7 +1278,7 @@ export const scenarios: Scenario[] = [
       { title: "現在完成式描述持續狀態", explanation: "使用現在完成式搭配表示狀態的形容詞，說明帳號已經持續閒置一段時間；此處不是被動語態。" },
     ],
     vocabulary: [
-      { word: "wireless", kk: "ˋwaɪrlɪs", meaning: "無線的", pos: "adj." },
+      { word: "wireless", kk: "ˋwaɪrləs", meaning: "無線的", pos: "adj." },
       { word: "temporary", kk: "ˋtɛmpə͵rɛrɪ", meaning: "臨時的", pos: "adj." },
       { word: "authentication", kk: "ɔ͵θɛntəˋkeʃən", meaning: "身分驗證", pos: "n." },
       { word: "device", kk: "dɪˋvaɪs", meaning: "裝置", pos: "n." },
@@ -1364,6 +1365,7 @@ export const posSpeech: Record<VocabularyItem["pos"], string> = {
   "prep.": "介系詞",
   "conj.": "連接詞",
   "phr.": "片語",
+  "phr. v.": "片語動詞",
 };
 
 export function stripForSpeech(text: string): string {

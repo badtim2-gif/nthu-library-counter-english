@@ -48,8 +48,8 @@ test("server-renders the course shell and PWA metadata", async () => {
 test("shows the audio version used by playback without developer tools", async () => {
   const response = await render();
   const html = await response.text();
-  assert.match(html, /data-audio-version="nthu-library-audio-v22"/);
-  assert.match(html, /音訊版本：(?:<!-- -->)?v22/);
+  assert.match(html, /data-audio-version="nthu-library-audio-v23"/);
+  assert.match(html, /音訊版本：(?:<!-- -->)?v23/);
 });
 
 test("server-renders material sources and license notices", async () => {
@@ -103,7 +103,7 @@ test("keeps the final app free of starter preview code", async () => {
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);
-  assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v25";/);
+  assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v26";/);
   assert.match(page, /本區包含對話用字及情境延伸單字，不一定逐字出現在對話中。/);
   assert.match(page, /先聽單字，停一秒，再聽逐字母拼寫與中文解說。/);
   assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
