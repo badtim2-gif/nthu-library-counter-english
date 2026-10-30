@@ -29,3 +29,8 @@ https://dictionary.cambridge.org/us/dictionary/english/privilege
 https://dictionary.cambridge.org/us/pronunciation/english/charge
 https://dictionary.cambridge.org/dictionary/english/check-in
 https://dictionary.cambridge.org/us/dictionary/english/wireless
+追加回報（同次作業期間新增）
+P0071：第19課句型01「檔案」前端確為第四聲，固定為臺灣第三聲ㄉㄤˇ，重製s19-p01-zh.mp3；文字及聲線不變，待聽音複測。
+P0072：原第19課對話02英文約119.8字／分鐘，符合既有範圍；採納略放慢建議，目標116、實測115.8，重製s19-t02-en.mp3；不宣稱原檔超出規範。
+總計18筆，累計21段MP3變更、687段不變；快取最終audio-v24、shell-v27。追加後40項測試及正式建置通過。
+原生表格預覽下載被自動審查拒絕，未重試或繞過；改以原生儲存格內容、換行格式、列高與下拉選單回讀驗收。未下載工讀生完整表格。

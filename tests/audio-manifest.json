@@ -6258,7 +6258,8 @@
       "kind": "english_long",
       "role": "librarian",
       "speed": 0.8,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "target_wpm": 116
     },
     {
       "file": "s19-t02-zh.mp3",
@@ -6368,7 +6369,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "用4ㄌㄞ2/ㄒ云2文4/ㄕ十4ㄈㄡ3/ㄋㄥ2/ㄘ中2/ㄊㄜ4ㄉ应4/ㄕㄜ4ㄅㄟ4/ㄔ万2ㄙ中4/ㄉㄤ3ㄢ4/ㄏ我4/ㄍ中1ㄗ我4."
     },
     {
       "file": "s19-p02-en.mp3",

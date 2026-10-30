@@ -16,7 +16,7 @@
   "alphabet_clip_count": 26,
   "english_long_count": 180,
   "english_wpm_target": 120.0,
-  "english_wpm_min": 115.9,
+  "english_wpm_min": 115.8,
   "english_wpm_max": 120.8,
   "english_wpm_average": 120.2,
   "outside_115_125": [],
@@ -857,7 +857,7 @@
     ],
     [
       "s19-t02-en.mp3",
-      119.8,
+      115.8,
       "kokoro-v1.1-zh/af_maple"
     ],
     [

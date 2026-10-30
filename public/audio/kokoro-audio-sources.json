@@ -23241,25 +23241,30 @@
     },
     {
       "file": "s19-p01-zh.mp3",
+      "text": "用來詢問是否能從特定設備傳送檔案或工作。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "5ead3afa9b72c2daff4d29cbd498391c3373e0a3d72acb738d8f011de13fe1df",
+      "applied_target_lufs": -21.27,
+      "sha256": "999e4df08749cebeea9c18a3b620c0ef78424bfb6795ec95d1f2977c085ff7a8",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.026
+        "duration_seconds": 6.075
       },
       "loudness": {
-        "integrated_lufs": -23.29,
-        "true_peak_dbfs": -3.98,
-        "lra_lu": 2.3,
-        "threshold_lufs": -33.52
+        "integrated_lufs": -22.4,
+        "true_peak_dbfs": -3.76,
+        "lra_lu": 2.5,
+        "threshold_lufs": -32.85
       },
       "boundary_peaks": {
-        "leading_40ms": 1.1e-07,
+        "leading_40ms": 2.3e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -23272,7 +23277,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "用4ㄌㄞ2/ㄒ云2文4/ㄕ十4ㄈㄡ3/ㄋㄥ2/ㄘ中2/ㄊㄜ4ㄉ应4/ㄕㄜ4ㄅㄟ4/ㄔ万2ㄙ中4/ㄉㄤ3ㄢ4/ㄏ我4/ㄍ中1ㄗ我4."
     },
     {
       "file": "s19-p02-en.mp3",
@@ -23504,22 +23510,27 @@
     },
     {
       "file": "s19-t02-en.mp3",
+      "text": "Personal laptop printing is unavailable because of driver compatibility and data security concerns.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "81952e2db09bc98b0ce096c61e1d6dfb55d3d2dcfa611bb60f57c521f7d04db1",
+      "applied_target_lufs": -22.3,
+      "sha256": "acee3598c3b2a14eff336b3a91e8b72dc6bc183517327c062a5a632b1aaea45a",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.711
+        "duration_seconds": 6.938
       },
       "loudness": {
-        "integrated_lufs": -22.36,
-        "true_peak_dbfs": -3.9,
-        "lra_lu": 3.1,
-        "threshold_lufs": -32.46
+        "integrated_lufs": -23.29,
+        "true_peak_dbfs": -3.79,
+        "lra_lu": 3.0,
+        "threshold_lufs": -33.39
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -23538,9 +23549,10 @@
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 1.33076923,
+        "target_wpm": 116.0,
+        "postprocess_atempo": 1.28641026,
         "word_count": 13,
-        "verified_wpm": 119.8
+        "verified_wpm": 115.8
       }
     },
     {
@@ -25644,30 +25656,13 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-10-30T18:33:54+08:00",
-    "clip_count": 19,
-    "staging_manifest_sha256": "c45bb14fc4dd4497685cca81f44908166be37e13ca49501dcd226dd7e405e784",
-    "transcript_manifest_sha256": "4f0fd19556c469782c6edbb730268f751b6051e0c175e2b509305c8fdfef46f2",
+    "generated_at": "2026-10-30T18:40:12+08:00",
+    "clip_count": 2,
+    "staging_manifest_sha256": "0c5c12d606a08a03b985b849f34e6a2a41f72eaf74625b7072c6f3951625b762",
+    "transcript_manifest_sha256": "1c91aea39cd62c34f1556553db0445f505e16f2c975219d694dd5fc80e9ada84",
     "files": [
-      "s13-g01-zh.mp3",
-      "s13-p01-zh.mp3",
-      "s13-t01-zh.mp3",
-      "s13-t02-zh.mp3",
-      "s13-t03-zh.mp3",
-      "s13-t04-zh.mp3",
-      "s13-t06-zh.mp3",
-      "s13-v01-meaning.mp3",
-      "s13-v02-word.mp3",
-      "s13-v03-meaning.mp3",
-      "s13-v05-word.mp3",
-      "s13-v06-meaning.mp3",
-      "s13-v07-word.mp3",
-      "s16-t02-zh.mp3",
-      "s16-v02-meaning.mp3",
-      "s17-t02-en.mp3",
-      "s17-t04-en.mp3",
-      "s17-t04-zh.mp3",
-      "s17-v04-meaning.mp3"
+      "s19-p01-zh.mp3",
+      "s19-t02-en.mp3"
     ]
   }
 }
