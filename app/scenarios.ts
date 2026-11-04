@@ -1227,6 +1227,7 @@ export const scenarios: Scenario[] = [
     summary: "協助學生了解討論室人數、預約時數、報到及未到記點規定。",
     sourceLabel: "讀者討論室使用須知",
     sourceUrl: "https://www.lib.nthu.edu.tw/en/use/policies/policy18.html",
+    sourceCheckedAt: "2026-11-04",
     dialogue: [
       { role: "reader", en: "My classmates and I would like to reserve [rɪˋzɝv] a discussion [dɪˋskʌʃən] room.", zh: "我和同學想預約一間討論室。" },
       { role: "librarian", en: "You may reserve one through the Library iBooking System within the next fourteen days.", zh: "您可以透過圖書館空間系統，預約未來十四天內的時段。" },
@@ -1328,13 +1329,14 @@ export const scenarios: Scenario[] = [
     summary: "說明委託代借的申請、啟用時間、受託人資格與終止方式。",
     sourceLabel: "委託代借圖書資料規定",
     sourceUrl: "https://www.lib.nthu.edu.tw/en/use/policies/policy20.html",
+    sourceCheckedAt: "2026-11-04",
     dialogue: [
       { role: "reader", en: "I cannot come to the library regularly. May I authorize [ˋɔθə͵raɪz] someone to borrow books for me?", zh: "我無法經常親自到館，可以委託他人代借圖書嗎？" },
-      { role: "librarian", en: "Yes, complete the proxy [ˋprɑksɪ] borrowing form and present it at the service desk with your valid [ˋvælɪd] library card.", zh: "可以，請填寫委託代借申請表，並持有效借書證到服務櫃檯辦理。" },
+      { role: "librarian", en: "Yes, please fill out the \"Authorization for Proxy Borrowing\" form and bring it in person to the service desk along with your valid [ˋvælɪd] library card.", zh: "可以，請填寫委託代借申請表，並攜帶表單及本人有效借書證，親自到服務櫃檯辦理。" },
       { role: "reader", en: "When will the authorization become effective [ɪˋfɛktɪv]?", zh: "委託代借何時會生效？" },
       { role: "librarian", en: "It becomes effective one day after the application is completed.", zh: "申請完成後的次日生效。" },
       { role: "reader", en: "What must the proxy borrower do when checking out materials?", zh: "受託人代借館藏時需要做什麼？" },
-      { role: "librarian", en: "The proxy borrower [ˋbɑroɚ] must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate [ˋtɝmə͵net] the authorization at the desk.", zh: "受託人必須是有效讀者，借書時主動說明是委託代借並出示自己的證件；您也可以到櫃檯終止委託。" },
+      { role: "librarian", en: "The proxy borrower [ˋbɑroɚ] must be a valid library patron. When checking out materials, they must state that this is proxy borrowing and present their own valid library card. You may also terminate [ˋtɝmə͵net] the authorization at the service desk.", zh: "受託人必須是有效讀者。借書時必須主動說明是委託代借，並出示本人有效借書證。您也可以到服務櫃檯終止委託。" },
     ],
     patterns: [
       { form: "May I authorize someone to...?", example: "May I authorize someone to borrow books for me?", explanation: "用來詢問是否能正式授權他人代為處理事情。" },

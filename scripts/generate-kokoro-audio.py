@@ -446,6 +446,9 @@ def main() -> int:
                 "leading_safety_silence": boundaries["leading_40ms"] <= 0.002,
                 "trailing_safety_silence": boundaries["trailing_60ms"] <= 0.002,
             }
+            if entry["kind"] == "english_long":
+                effective_duration = max(0.05, technical["duration_seconds"] - LEAD_SECONDS - TAIL_SECONDS)
+                checks["english_wpm_within_range"] = 115.0 <= words / effective_duration * 60.0 <= 125.0
             if not all(checks.values()):
                 raise RuntimeError(f"Validation failed for {filename}: {checks}")
             record = {

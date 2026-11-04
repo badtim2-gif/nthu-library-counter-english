@@ -222,6 +222,23 @@ for (const entry of manifest.entries) {
   if (entry.file === "s12-v03-meaning.mp3") {
     assert.match(entry.phonemes ?? "", /言2ㄔㄤ2/, "延長 must use yan2 chang2");
   }
+  if (["s17-t04-zh.mp3", "s17-v06-meaning.mp3"].includes(entry.file)) {
+    assert.match(entry.phonemes ?? "", /ㄔㄤ2/, "最長、延長必須使用 chang2");
+    assert.doesNotMatch(entry.phonemes ?? "", /ㄓㄤ3/, "最長、延長不可使用 zhang3");
+  }
+  if (entry.file === "s20-p01-zh.mp3") {
+    assert.match(entry.phonemes ?? "", /ㄉㄞ4为2/, "代為必須使用 dai4 wei2");
+    assert.match(entry.phonemes ?? "", /ㄔㄨ2ㄌㄧ3/, "處理保留第三聲連讀變調");
+  }
+  if (entry.file === "s20-g02-zh.mp3") {
+    assert.match(entry.phonemes ?? "", /^ㄐ言4ㄐㄝ1/, "間接必須使用 jian4 jie1");
+  }
+  if (entry.file === "s17-v05-word.mp3") {
+    assert.equal(entry.phonemes, "ɹɪlˈis", "release 首音須對應字典 rɪ，不可變為 re");
+  }
+  if (entry.file === "s17-p02-en.mp3") {
+    assert.equal(entry.target_wpm, 116.0, "保留已採納的句型略放慢設定");
+  }
   if (entry.language === "zh") {
     if (/^s(?:02|11)-/.test(entry.file)) {
       const periods = entry.text.split("期").length - 1;

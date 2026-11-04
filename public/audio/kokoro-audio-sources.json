@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-10-30",
+  "updated_at": "2026-11-04",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -20751,22 +20751,27 @@
     },
     {
       "file": "s17-p02-en.mp3",
+      "text": "How many participants are required?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
       "model": "v1.0",
       "voice": "am_puck",
       "speed": 0.8,
-      "sha256": "2d800fa92255405913feeadcdbb085f11033ea305440a8de200ed900f68b0886",
+      "applied_target_lufs": -22.3,
+      "sha256": "153b7c61fa649e45c9be14aed8c1802d679ba4333ec9e06cec8a9d11ed2d5de5",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.714
+        "duration_seconds": 2.799
       },
       "loudness": {
-        "integrated_lufs": -22.71,
-        "true_peak_dbfs": -6.19,
+        "integrated_lufs": -22.66,
+        "true_peak_dbfs": -5.95,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.15
+        "threshold_lufs": -33.09
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -20781,13 +20786,15 @@
         "loudness_within_1_lu": true,
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
-        "trailing_safety_silence": true
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 1.22,
+        "target_wpm": 116.0,
+        "postprocess_atempo": 1.17933333,
         "word_count": 5,
-        "verified_wpm": 119.3
+        "verified_wpm": 115.4
       }
     },
     {
@@ -21191,23 +21198,23 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "applied_target_lufs": -21.11,
-      "sha256": "dc895c73d8931a3ee665fbf6f01cccbbcce78ed680b5675d89b2bb023d707e51",
+      "applied_target_lufs": -21.03,
+      "sha256": "7b76ad6a0b99a1a407f648abb5f58c771d4ecc933ae60bfb77b115fb810ea424",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.675
+        "duration_seconds": 6.575
       },
       "loudness": {
-        "integrated_lufs": -22.35,
-        "true_peak_dbfs": -3.92,
-        "lra_lu": 2.9,
-        "threshold_lufs": -33.06
+        "integrated_lufs": -22.38,
+        "true_peak_dbfs": -3.78,
+        "lra_lu": 3.1,
+        "threshold_lufs": -33.17
       },
       "boundary_peaks": {
-        "leading_40ms": 2e-07,
+        "leading_40ms": 2.9e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21220,7 +21227,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄗ中3ㄊㄨ2/ㄊㄠ3ㄌ文4/ㄕ十4/ㄒㄩ1要4/ㄙㄢ1ㄓㄤ1/又3ㄒ要4/ㄐㄝ4ㄕㄨ1/ㄓㄥ4, ㄇㄟ3ㄘㄭ4/ㄩ4月1/ㄗ为4ㄔㄤ2ㄌ阳2ㄒ要3/ㄕ十2."
     },
     {
       "file": "s17-t05-en.mp3",
@@ -21696,25 +21704,30 @@
     },
     {
       "file": "s17-v05-word.mp3",
+      "text": "release",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
-      "speed": 0.8,
-      "sha256": "268bdb9dddd1474fc1530fbbe79187adc120d798470876379097c675f9ceb9f8",
+      "speed": 0.75,
+      "applied_target_lufs": -22.3,
+      "sha256": "4af7801503d2bafb86a924696fbfd36c0092e84b9ab814d2edb5cf4752fa4b44",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.725
+        "duration_seconds": 1.826
       },
       "loudness": {
         "integrated_lufs": -22.74,
-        "true_peak_dbfs": -8.39,
+        "true_peak_dbfs": -7.9,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.25
+        "threshold_lufs": -34.67
       },
       "boundary_peaks": {
-        "leading_40ms": 5e-08,
+        "leading_40ms": 4e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21727,29 +21740,35 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ɹɪlˈis"
     },
     {
       "file": "s17-v06-meaning.mp3",
+      "text": "延長，動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "966d3cb25fbd20738115bbb3e87c15aca832d5a1d282499539dc612638697139",
+      "applied_target_lufs": -22.3,
+      "sha256": "90c31c9c63100470c38228406a0be8468620d5095df8204b43a2130ec0896342",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.45
+        "duration_seconds": 2.475
       },
       "loudness": {
-        "integrated_lufs": -22.72,
-        "true_peak_dbfs": -4.87,
+        "integrated_lufs": -22.79,
+        "true_peak_dbfs": -5.18,
         "lra_lu": 0.0,
-        "threshold_lufs": -32.98
+        "threshold_lufs": -33.29
       },
       "boundary_peaks": {
-        "leading_40ms": 1.3e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21762,7 +21781,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "言2ㄔㄤ2, ㄉ中4ㄘㄭ2"
     },
     {
       "file": "s17-v06-word.mp3",
@@ -24427,25 +24447,30 @@
     },
     {
       "file": "s20-g02-zh.mp3",
+      "text": "間接陳述內容。使用連接詞帶出受託人必須向館員說明的完整內容。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "0dff0214ae1542662f222a7c53ca11229b85066030b3fa71ebce9d33f5d406ef",
+      "applied_target_lufs": -20.46,
+      "sha256": "7d84c8fe7a58907f438de7f2e526ddcd0907b9c7aff58637688ff1009b1e984a",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.525
+        "duration_seconds": 7.55
       },
       "loudness": {
-        "integrated_lufs": -22.35,
-        "true_peak_dbfs": -3.78,
-        "lra_lu": 3.9,
+        "integrated_lufs": -22.5,
+        "true_peak_dbfs": -3.97,
+        "lra_lu": 3.8,
         "threshold_lufs": -32.94
       },
       "boundary_peaks": {
-        "leading_40ms": 2.3e-07,
+        "leading_40ms": 2.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -24458,7 +24483,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "ㄐ言4ㄐㄝ1/ㄔㄣ2ㄕㄨ4/ㄋㄟ4ㄖ中2. ㄕ十3用4/ㄌ言2ㄐㄝ1/ㄘㄭ2/ㄉㄞ4ㄔㄨ1/ㄕㄡ4/ㄊ我1/ㄖㄣ2/ㄅㄧ4/ㄒㄩ1/ㄒ阳4/ㄍ万3/元2/ㄕ我1/ㄇ应2/ㄉㄜ5/万2ㄓㄥ3/ㄋㄟ4ㄖ中2."
     },
     {
       "file": "s20-p01-en.mp3",
@@ -24503,10 +24529,15 @@
     },
     {
       "file": "s20-p01-zh.mp3",
+      "text": "用來詢問是否能正式授權他人代為處理事情。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "e01201e5f5b64d12af4efb33c4a0f1b1359c4efc9585f453ec866071804930d0",
+      "applied_target_lufs": -21.23,
+      "sha256": "f4f6b7ffee4a8b33dbd4b8a59f11eea252d1ae73dabed2df3074c7d8c372604f",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
@@ -24515,13 +24546,13 @@
         "duration_seconds": 5.9
       },
       "loudness": {
-        "integrated_lufs": -23.23,
-        "true_peak_dbfs": -4.33,
-        "lra_lu": 3.8,
-        "threshold_lufs": -33.92
+        "integrated_lufs": -22.39,
+        "true_peak_dbfs": -3.96,
+        "lra_lu": 3.6,
+        "threshold_lufs": -32.95
       },
       "boundary_peaks": {
-        "leading_40ms": 2.1e-07,
+        "leading_40ms": 1.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -24534,7 +24565,8 @@
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
         "trailing_safety_silence": true
-      }
+      },
+      "phonemes": "用4ㄌㄞ2/ㄒ云2文4/ㄕ十4ㄈㄡ3/ㄋㄥ2/ㄓㄥ4ㄕ十4/ㄕㄡ4ㄑ元2/ㄊㄚ1ㄖㄣ2/ㄉㄞ4为2/ㄔㄨ2ㄌㄧ3/ㄕ十4ㄑ应5."
     },
     {
       "file": "s20-p02-en.mp3",
@@ -24766,22 +24798,27 @@
     },
     {
       "file": "s20-t02-en.mp3",
+      "text": "Yes, please fill out the \"Authorization for Proxy Borrowing\" form and bring it in person to the service desk along with your valid library card.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
       "model": "v1.1-zh",
       "voice": "af_maple",
       "speed": 0.8,
-      "sha256": "82fd44038d0bec1b4b71022d528bef8fcd9b09b4627fd110b1e9ea8f6fa1b7d5",
+      "applied_target_lufs": -22.3,
+      "sha256": "601ded55b3b63de06e9c89836715edf8ed1a235f7ae0fd25926dea86cac10eb0",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 9.195
+        "duration_seconds": 12.688
       },
       "loudness": {
-        "integrated_lufs": -22.33,
-        "true_peak_dbfs": -3.84,
-        "lra_lu": 3.0,
-        "threshold_lufs": -32.82
+        "integrated_lufs": -22.49,
+        "true_peak_dbfs": -3.71,
+        "lra_lu": 2.1,
+        "threshold_lufs": -33.02
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -24796,36 +24833,43 @@
         "loudness_within_1_lu": true,
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
-        "trailing_safety_silence": true
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.84722222,
-        "word_count": 18,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.816,
+        "word_count": 25,
         "verified_wpm": 120.1
       }
     },
     {
       "file": "s20-t02-zh.mp3",
+      "text": "可以，請填寫委託代借申請表，並攜帶表單及本人有效借書證，親自到服務櫃檯辦理。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "3563cae584061083332a89c73a9e27ebd2ba82546589fee25045aea2157a5280",
+      "applied_target_lufs": -21.06,
+      "sha256": "87bc7b96298f2bbfd20ba7ad006e370905ddc79d534532379e9785be381bb932",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 7.1
+        "duration_seconds": 9.2
       },
       "loudness": {
-        "integrated_lufs": -22.45,
-        "true_peak_dbfs": -3.85,
-        "lra_lu": 3.4,
-        "threshold_lufs": -32.91
+        "integrated_lufs": -22.4,
+        "true_peak_dbfs": -3.65,
+        "lra_lu": 2.9,
+        "threshold_lufs": -32.88
       },
       "boundary_peaks": {
-        "leading_40ms": 2.4e-07,
+        "leading_40ms": 1.9e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -25070,7 +25114,7 @@
     },
     {
       "file": "s20-t06-en.mp3",
-      "text": "The proxy borrower must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate the authorization at the desk.",
+      "text": "The proxy borrower must be a valid library patron. When checking out materials, they must state that this is proxy borrowing and present their own valid library card. You may also terminate the authorization at the service desk.",
       "language": "en",
       "role": "librarian",
       "kind": "english_long",
@@ -25078,19 +25122,19 @@
       "voice": "af_maple",
       "speed": 0.8,
       "applied_target_lufs": -22.3,
-      "sha256": "0c791e85df95594565bfc725b6c1cef300c2a9b35c1e94162c2de2f571414870",
+      "sha256": "5fe6f9d3107e07cb05c109b7271b6919e5ef8fec6d05a9ee2193601662d76198",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 14.683
+        "duration_seconds": 19.173
       },
       "loudness": {
-        "integrated_lufs": -23.25,
-        "true_peak_dbfs": -3.9,
-        "lra_lu": 4.1,
-        "threshold_lufs": -33.71
+        "integrated_lufs": -23.17,
+        "true_peak_dbfs": -3.83,
+        "lra_lu": 5.1,
+        "threshold_lufs": -33.75
       },
       "boundary_peaks": {
         "leading_40ms": 0.0,
@@ -25105,33 +25149,40 @@
         "loudness_within_1_lu": true,
         "true_peak_not_over_limit": true,
         "leading_safety_silence": true,
-        "trailing_safety_silence": true
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
       },
       "timing": {
         "base_kokoro_speed": 0.8,
-        "postprocess_atempo": 0.84310345,
-        "word_count": 29,
-        "verified_wpm": 120.1
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.84868421,
+        "word_count": 38,
+        "verified_wpm": 120.2
       }
     },
     {
       "file": "s20-t06-zh.mp3",
+      "text": "受託人必須是有效讀者。借書時必須主動說明是委託代借，並出示本人有效借書證。您也可以到服務櫃檯終止委託。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.9,
-      "sha256": "15696227a54ade0414724512f360ce19973e7b709561f618ce0815c87434d2cb",
+      "applied_target_lufs": -22.3,
+      "sha256": "f03ac34dbc29e6b2bd383e66e8620b8c01d0f40053c86fefe78878f057e3b318",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 10.575
+        "duration_seconds": 11.75
       },
       "loudness": {
-        "integrated_lufs": -23.05,
-        "true_peak_dbfs": -3.97,
-        "lra_lu": 1.7,
-        "threshold_lufs": -33.38
+        "integrated_lufs": -23.22,
+        "true_peak_dbfs": -3.67,
+        "lra_lu": 1.6,
+        "threshold_lufs": -33.45
       },
       "boundary_peaks": {
         "leading_40ms": 1e-07,
@@ -25656,13 +25707,21 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-10-30T18:40:12+08:00",
-    "clip_count": 2,
-    "staging_manifest_sha256": "0c5c12d606a08a03b985b849f34e6a2a41f72eaf74625b7072c6f3951625b762",
-    "transcript_manifest_sha256": "1c91aea39cd62c34f1556553db0445f505e16f2c975219d694dd5fc80e9ada84",
+    "generated_at": "2026-11-04T13:26:07+08:00",
+    "clip_count": 10,
+    "staging_manifest_sha256": "35411fb57e2319a09a1bdcb8e861579199e5ef4b1ef81de0ba613667c71e9273",
+    "transcript_manifest_sha256": "79f49ec5329edf15cbe2a6292bb34dc88f7f8fa6d7409e6c0d7630dd236b9659",
     "files": [
-      "s19-p01-zh.mp3",
-      "s19-t02-en.mp3"
+      "s17-t04-zh.mp3",
+      "s17-p02-en.mp3",
+      "s17-v06-meaning.mp3",
+      "s17-v05-word.mp3",
+      "s20-t02-en.mp3",
+      "s20-t02-zh.mp3",
+      "s20-t06-en.mp3",
+      "s20-t06-zh.mp3",
+      "s20-p01-zh.mp3",
+      "s20-g02-zh.mp3"
     ]
   }
 }

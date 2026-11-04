@@ -5628,7 +5628,8 @@
       "kind": "chinese",
       "role": "librarian",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄗ中3ㄊㄨ2/ㄊㄠ3ㄌ文4/ㄕ十4/ㄒㄩ1要4/ㄙㄢ1ㄓㄤ1/又3ㄒ要4/ㄐㄝ4ㄕㄨ1/ㄓㄥ4, ㄇㄟ3ㄘㄭ4/ㄩ4月1/ㄗ为4ㄔㄤ2ㄌ阳2ㄒ要3/ㄕ十2."
     },
     {
       "file": "s17-t05-en.mp3",
@@ -5698,7 +5699,8 @@
       "kind": "english_long",
       "role": "explainer",
       "speed": 0.8,
-      "model": "v1.0"
+      "model": "v1.0",
+      "target_wpm": 116.0
     },
     {
       "file": "s17-p02-zh.mp3",
@@ -5837,8 +5839,9 @@
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.8,
-      "model": "v1.0"
+      "speed": 0.75,
+      "model": "v1.0",
+      "phonemes": "ɹɪlˈis"
     },
     {
       "file": "s17-v05-meaning.mp3",
@@ -5868,7 +5871,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "言2ㄔㄤ2, ㄉ中4ㄘㄭ2"
     },
     {
       "file": "s17-v07-word.mp3",
@@ -6595,7 +6599,7 @@
     },
     {
       "file": "s20-t02-en.mp3",
-      "text": "Yes, complete the proxy borrowing form and present it at the service desk with your valid library card.",
+      "text": "Yes, please fill out the \"Authorization for Proxy Borrowing\" form and bring it in person to the service desk along with your valid library card.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",
@@ -6605,7 +6609,7 @@
     },
     {
       "file": "s20-t02-zh.mp3",
-      "text": "可以，請填寫委託代借申請表，並持有效借書證到服務櫃檯辦理。",
+      "text": "可以，請填寫委託代借申請表，並攜帶表單及本人有效借書證，親自到服務櫃檯辦理。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -6675,7 +6679,7 @@
     },
     {
       "file": "s20-t06-en.mp3",
-      "text": "The proxy borrower must be a valid library patron, state that the transaction is proxy borrowing, and present their own card. You may terminate the authorization at the desk.",
+      "text": "The proxy borrower must be a valid library patron. When checking out materials, they must state that this is proxy borrowing and present their own valid library card. You may also terminate the authorization at the service desk.",
       "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "english_long",
@@ -6685,7 +6689,7 @@
     },
     {
       "file": "s20-t06-zh.mp3",
-      "text": "受託人必須是有效讀者，借書時主動說明是委託代借並出示自己的證件；您也可以到櫃檯終止委託。",
+      "text": "受託人必須是有效讀者。借書時必須主動說明是委託代借，並出示本人有效借書證。您也可以到服務櫃檯終止委託。",
       "voice": "kokoro-v1.1-zh/zm_010",
       "language": "zh",
       "kind": "chinese",
@@ -6711,7 +6715,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "用4ㄌㄞ2/ㄒ云2文4/ㄕ十4ㄈㄡ3/ㄋㄥ2/ㄓㄥ4ㄕ十4/ㄕㄡ4ㄑ元2/ㄊㄚ1ㄖㄣ2/ㄉㄞ4为2/ㄔㄨ2ㄌㄧ3/ㄕ十4ㄑ应5."
     },
     {
       "file": "s20-p02-en.mp3",
@@ -6771,7 +6776,8 @@
       "kind": "chinese",
       "role": "explainer",
       "speed": 0.9,
-      "model": "v1.1-zh"
+      "model": "v1.1-zh",
+      "phonemes": "ㄐ言4ㄐㄝ1/ㄔㄣ2ㄕㄨ4/ㄋㄟ4ㄖ中2. ㄕ十3用4/ㄌ言2ㄐㄝ1/ㄘㄭ2/ㄉㄞ4ㄔㄨ1/ㄕㄡ4/ㄊ我1/ㄖㄣ2/ㄅㄧ4/ㄒㄩ1/ㄒ阳4/ㄍ万3/元2/ㄕ我1/ㄇ应2/ㄉㄜ5/万2ㄓㄥ3/ㄋㄟ4ㄖ中2."
     },
     {
       "file": "s20-v01-word.mp3",

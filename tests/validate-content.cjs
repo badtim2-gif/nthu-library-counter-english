@@ -52,6 +52,14 @@ for (const scenario of scenarios) {
   });
 }
 
+const proxyScenario = scenarios.find((item) => item.id === 20);
+assert(proxyScenario.sourceCheckedAt === "2026-11-04", "委託代借來源查核日期未更新");
+assert(proxyScenario.dialogue[1].en.includes('"Authorization for Proxy Borrowing"'), "委託表單名稱須對應官方名稱");
+assert(proxyScenario.dialogue[1].en.includes("in person"), "委託申請須保留親自辦理要求");
+assert(proxyScenario.dialogue[5].en.includes("they must state"), "代借告知為必須而非建議");
+assert(proxyScenario.dialogue[5].en.includes("their own valid library card"), "代借須出示本人有效借書證");
+assert(proxyScenario.vocabulary[2].word === "borrower", "現行單字為 borrower，不應還原舊對照稿 trustee");
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
