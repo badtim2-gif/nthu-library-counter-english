@@ -1,6 +1,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
+const crypto = require("node:crypto");
 
 const root = path.resolve(__dirname, "..");
 const output = path.join(root, "out");
@@ -12,6 +13,12 @@ for (const relative of [
   "manifest.webmanifest",
   "sw.js",
   "third-party-packages.json",
+  "visual-assets.json",
+  "licenses/next-template-MIT.txt",
+  "globe.svg",
+  "file.svg",
+  "window.svg",
+  "favicon.svg",
   ".nojekyll",
   "img_20260726120102.png",
   "img_20260726121722.png",
@@ -40,10 +47,29 @@ assert.match(creditsHtml, /Brannon Wyndesor/);
 assert.match(creditsHtml, /CC BY-SA 3\.0/);
 assert.match(creditsHtml, new RegExp(`href="${basePath}/"`));
 assert.match(creditsHtml, new RegExp(`${basePath}/third-party-packages\\.json`));
+const visualAssets = JSON.parse(fs.readFileSync(path.join(output, "visual-assets.json"), "utf8"));
+assert.equal(visualAssets.entries.length, 7);
+assert.equal(new Set(visualAssets.entries.map((entry) => entry.file)).size, 7);
+for (const asset of visualAssets.entries) {
+  assert.match(asset.file, /^[a-zA-Z0-9_.-]+$/);
+  assert.ok(creditsHtml.includes(`href="${basePath}/${asset.file}"`), `Missing visual link: ${asset.file}`);
+  assert.equal(crypto.createHash("sha256").update(fs.readFileSync(path.join(output, asset.file))).digest("hex"), asset.sha256);
+  if (asset.license === "MIT") {
+    assert.ok(asset.source_url.includes(visualAssets.upstream_revision));
+    assert.ok(asset.license_url.endsWith("/license.md"));
+  } else {
+    assert.equal(asset.license, null);
+    assert.match(asset.rights_status, /待補製作與權利證據/);
+  }
+}
+assert.equal(visualAssets.entries.filter((asset) => asset.license === "MIT").length, 3);
+const visualLicense = fs.readFileSync(path.join(output, "licenses/next-template-MIT.txt"), "utf8");
+assert.match(visualLicense, /Copyright \(c\) 2025 Vercel, Inc\./);
+assert.match(visualLicense, /THE SOFTWARE IS PROVIDED "AS IS"/);
 
 const serviceWorker = fs.readFileSync(path.join(output, "sw.js"), "utf8");
 assert.match(serviceWorker, /self\.registration\.scope/);
-assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v28";/);
+assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v29";/);
 assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
 assert.match(serviceWorker, /const AUDIO_CACHE = "nthu-library-audio-v25";/);
 for (let version = 1; version <= 24; version += 1) {

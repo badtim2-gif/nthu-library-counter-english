@@ -71,6 +71,18 @@ test("server-renders material sources and license notices", async () => {
   assert.match(html, /third-party-packages\.json/);
 });
 
+test("shows visual file links and separates verified sources from missing rights evidence", async () => {
+  const response = await renderCredits();
+  const html = await response.text();
+  for (const file of ["globe.svg", "file.svg", "window.svg", "favicon.svg", "img_20260726120102.png", "img_20260726121722.png", "og.png"]) {
+    assert.ok(html.includes(`href="/${file}"`), `Missing direct visual link: ${file}`);
+  }
+  assert.match(html, /待補製作與權利證據/);
+  assert.match(html, /不是首頁正文圖片/);
+  assert.match(html, /next-template-MIT\.txt/);
+  assert.match(html, /visual-assets\.json/);
+});
+
 test("keeps the repository license boundary explicit", async () => {
   const [license, packageJson] = await Promise.all([
     readFile(new URL("../LICENSE", import.meta.url), "utf8"),
@@ -103,7 +115,7 @@ test("keeps the final app free of starter preview code", async () => {
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(manifest, /standalone/);
-  assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v28";/);
+  assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v29";/);
   assert.match(page, /本區包含對話用字及情境延伸單字，不一定逐字出現在對話中。/);
   assert.match(page, /先聽單字，停一秒，再聽逐字母拼寫與中文解說。/);
   assert.match(serviceWorker, /withBase\("\/credits\/"\)/);

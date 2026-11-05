@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-11-05",
+  "scope": "檔案存在、實際引用與可核對來源；不是整體法律安全或校方授權結論。",
+  "upstream_revision": "ee6e79b1792a4d401ddf2480f40a83549fe8e722",
+  "entries": [
+    {
+      "file": "globe.svg",
+      "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf",
+      "usage": "未被目前正式頁面或PWA設定引用；檔案保留，可直接開啟，不要求出現在首頁。",
+      "source": "Next.js create-next-app v16.2.6範本；與固定上游提交內容比對相符（僅忽略檔尾換行）。",
+      "source_url": "https://github.com/vercel/next.js/blob/ee6e79b1792a4d401ddf2480f40a83549fe8e722/packages/create-next-app/templates/app/ts/public/globe.svg",
+      "license": "MIT",
+      "license_url": "https://github.com/vercel/next.js/blob/ee6e79b1792a4d401ddf2480f40a83549fe8e722/license.md",
+      "rights_status": "已核對上游來源與MIT條款；保留上游著作權及授權全文。"
+    },
+    {
+      "file": "file.svg",
+      "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4",
+      "usage": "未被目前正式頁面或PWA設定引用；檔案保留，可直接開啟，不要求出現在首頁。",
+      "source": "Next.js create-next-app v16.2.6範本；與固定上游提交內容比對相符（僅忽略檔尾換行）。",
+      "source_url": "https://github.com/vercel/next.js/blob/ee6e79b1792a4d401ddf2480f40a83549fe8e722/packages/create-next-app/templates/app/ts/public/file.svg",
+      "license": "MIT",
+      "license_url": "https://github.com/vercel/next.js/blob/ee6e79b1792a4d401ddf2480f40a83549fe8e722/license.md",
+      "rights_status": "已核對上游來源與MIT條款；保留上游著作權及授權全文。"
+    },
+    {
+      "file": "img_20260726120102.png",
+      "sha256": "1f39c0fd7796c6f01d739408c37a9be2dc10008dea4bbee0a47caa722dc2d04e",
+      "usage": "目前使用：網站分頁圖示、Apple圖示及PWA安裝圖示（app/layout.tsx、manifest.webmanifest）。",
+      "source": "既有專案聲明為本專案製作；Git收錄不等於原始製作或權利證明，尚缺可核對的製作紀錄。",
+      "source_url": null,
+      "license": null,
+      "license_url": null,
+      "rights_status": "待補製作與權利證據；未判定已取得完整利用授權。"
+    },
+    {
+      "file": "favicon.svg",
+      "sha256": "3e8863288c2d43dd33d2a71de317dcf9198f09932ea8d61e0def1b846a865435",
+      "usage": "未被目前正式頁面或PWA設定引用；檔案保留，可直接開啟，不要求出現在首頁。",
+      "source": "本專案既有圖檔；目前未找到可核對的原始製作或取得來源。",
+      "source_url": null,
+      "license": null,
+      "license_url": null,
+      "rights_status": "待補製作與權利證據；未判定已取得完整利用授權。"
+    },
+    {
+      "file": "img_20260726121722.png",
+      "sha256": "c537e0e8437de7dc116fc49e5b918146325de9250fd71201573ce0c719514cb2",
+      "usage": "未被目前正式頁面或PWA設定引用；檔案保留，可直接開啟，不要求出現在首頁。",
+      "source": "本專案既有圖檔；目前未找到可核對的原始製作或取得來源。",
+      "source_url": null,
+      "license": null,
+      "license_url": null,
+      "rights_status": "待補製作與權利證據；未判定已取得完整利用授權。"
+    },
+    {
+      "file": "window.svg",
+      "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1",
+      "usage": "未被目前正式頁面或PWA設定引用；檔案保留，可直接開啟，不要求出現在首頁。",
+      "source": "Next.js create-next-app v16.2.6範本；與固定上游提交內容比對相符（僅忽略檔尾換行）。",
+      "source_url": "https://github.com/vercel/next.js/blob/ee6e79b1792a4d401ddf2480f40a83549fe8e722/packages/create-next-app/templates/app/ts/public/window.svg",
+      "license": "MIT",
+      "license_url": "https://github.com/vercel/next.js/blob/ee6e79b1792a4d401ddf2480f40a83549fe8e722/license.md",
+      "rights_status": "已核對上游來源與MIT條款；保留上游著作權及授權全文。"
+    },
+    {
+      "file": "og.png",
+      "sha256": "5abfb404c5cd5f3305ba63b349cac37ac174019e31b6b61a4e7072d2c6ad2b24",
+      "usage": "目前使用：Open Graph與Twitter社群分享預覽；不是首頁正文圖片（app/layout.tsx）。",
+      "source": "既有專案聲明為本專案製作；Git收錄不等於原始製作或權利證明，尚缺可核對的製作紀錄。",
+      "source_url": null,
+      "license": null,
+      "license_url": null,
+      "rights_status": "待補製作與權利證據；未判定已取得完整利用授權。"
+    }
+  ]
+}

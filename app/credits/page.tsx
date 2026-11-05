@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { assetPath } from "../paths";
 import { CHECKED_AT, scenarios } from "../scenarios";
+import visualAssets from "../../public/visual-assets.json";
 
 export const metadata: Metadata = {
   title: "素材來源與授權｜清大圖書館英語情境練習室",
@@ -125,9 +126,27 @@ export default function CreditsPage() {
         <section className="credits-card" aria-labelledby="visual-heading">
           <h2 id="visual-heading">圖像、名稱與聲明</h2>
           <p>
-            應用程式圖示與社群分享圖為本專案製作的識別圖像；網站未使用第三方攝影作品或圖庫照片。校名、圖書館名稱、校徽與標準字的權利由校方依法管理；本專案無權且不嘗試對第三人授予任何校方商標權利。
+            以下列出現有圖檔、實際用途及可核對的來源。分頁、安裝圖示與社群分享圖不一定顯示於首頁正文；未引用的既有素材也不應僅因未出現在首頁就判為遺失。
+            既有「本專案製作」聲明不能取代原始製作及權利證據，資料不足的項目仍列待確認，不宣稱已完成授權審查。
+          </p>
+          <ul className="source-list">
+            {visualAssets.entries.map((asset) => (
+              <li key={asset.file}>
+                <a href={assetPath(`/${asset.file}`)}>{asset.file} ↗</a>
+                <p>{asset.usage}</p>
+                <p>來源：{asset.source}</p>
+                <p>{asset.rights_status}</p>
+                {asset.source_url && <a href={asset.source_url} target="_blank" rel="noreferrer">上游原檔 ↗</a>}
+                {asset.license_url && <> · <a href={asset.license_url} target="_blank" rel="noreferrer">{asset.license} 授權 ↗</a></>}
+              </li>
+            ))}
+          </ul>
+          <p>
+            <a href={assetPath("/visual-assets.json")}>下載圖像用途、來源及雜湊清單</a> · {" "}
+            <a href={assetPath("/licenses/next-template-MIT.txt")}>範本圖示 MIT 授權全文</a>
           </p>
           <p>
+            校名、圖書館名稱、校徽與標準字的權利由校方依法管理；本專案無權對第三人授予校方商標權利。
             如欲將相關名稱或標誌用於其他專案、宣傳或商業活動，應依
             {" "}<a href="https://www.nthu.edu.tw/files/cis/trademarkofnthu.pdf" target="_blank" rel="noreferrer">《國立清華大學商標使用管理要點》↗</a>
             {" "}向校方確認授權，或自行確認是否符合適用法律之合理使用；不得暗示校方授權、贊助、推薦或背書。
@@ -139,7 +158,7 @@ export default function CreditsPage() {
 
       <footer className="credits-footer">
         <a href={assetPath("/")}>返回首頁</a>
-        <span>最後更新：2026-10-07</span>
+        <span>最後更新：2026-11-05</span>
       </footer>
     </main>
   );

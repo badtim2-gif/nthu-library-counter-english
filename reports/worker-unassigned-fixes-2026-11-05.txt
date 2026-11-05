@@ -1,0 +1,36 @@
+未指派問題處理紀錄
+日期：2026-11-05
+起點：cf9eb90a6797ca2daa50923161e13cfe1788095a
+範圍：P0084–P0098共15筆；P0031缺少實際問題描述，保留不指派。
+
+逐案判斷
+P0084：依Cambridge美式/əˈfek.tɪv/，同步第20課對話03、單字06的KK為[əˋfɛktɪv]。KK不是英式音標；採用字典的美式標示，不宣稱原讀音只可能是英式。相關檢核與素材對照稿保留舊稿後更新。全部708段音訊未改。待複測8分鐘。
+P0085、P0087、P0089、P0091、P0093、P0095、P0097：7圖公開網址均HTTP 200，非檔案遺失。補授權頁直接連結與實際用途，不因未出現在首頁就判為缺檔，也不強行加上首頁裝飾圖。每筆待複測5分鐘。
+P0086、P0088、P0096：globe.svg、file.svg、window.svg內容與Next.js create-next-app v16.2.6固定提交ee6e79b1792a4d401ddf2480f40a83549fe8e722相符（僅忽略檔尾換行）。補上游連結及MIT全文，保留Copyright (c) 2025 Vercel, Inc.。不把本專案其他內容改授權為MIT。每筆待複測8分鐘。
+P0090、P0092、P0094、P0098：favicon.svg與3個PNG尚缺原始製作／取得來源。專案既有聲明、檔名、外觀及Git收錄不足以證明完整利用權利；已詢問維護者補製作紀錄、設計檔或授權頁，並公開標示待補證據。四筆暫緩，不推測作者、模型、授權或代判法律安全。每筆預估複測12分鐘，待證據後執行。
+
+圖像實際用途與來源
+- img_20260726120102.png：分頁、Apple及PWA安裝圖示。
+- og.png：Open Graph與Twitter分享預覽，不是首頁正文圖片。
+- globe.svg、file.svg、window.svg、favicon.svg、img_20260726121722.png：未被目前正式頁面或PWA設定引用，保留檔案可直接開啟。
+- 新增public/visual-assets.json，列7檔SHA-256、用途、已核對來源及待補證據狀態；新增public/licenses/next-template-MIT.txt保存MIT全文。
+- 授權頁與THIRD_PARTY_NOTICES不再以「本專案製作」概括代替完整權利證據；未刪除或修改任何原圖。
+- 網站快取nthu-library-shell-v29；音訊保持nthu-library-audio-v25。未新增API、後端、音檔或圖像。
+
+試算表
+- 問題追蹤N86:P100、U86:U100：語庭codex；11筆待複測、4筆暫緩，合計115分鐘。
+- 同步T2820–T2833及M1090–M1096的直接相關來源／用途；effective相關對照稿保留原文。
+- 保留原回報、人工檢核、複測任務、人員、日期、結果及下拉驗證，不代填館員結論或授權通過；素材工作表隱藏狀態不變。
+- 新增來源網址由Sheets自動產生正確連結；原純網址改為查核說明時，舊網址文字保留，不讓整段說明沿用不適用的整格連結。其餘字型、色彩、框線及驗證均核對未變。
+- 原生畫面工具逾時，以原生儲存格、換行及列高回讀；只加高本輪長說明所在列，未整表重排或匯出人員資料。不宣稱完成原生畫面驗收。
+
+驗證
+- 正式來源與D槽副本逐檔雜湊一致；pnpm test通過34個播放等測試及7個呈現測試，共41個。
+- pnpm test:pages通過，涵蓋7圖、Pages路徑、來源清單SHA-256、3筆MIT／4筆待補證據及MIT全文。
+- 20課、120句、708段音檔通過；全部音訊及7個原圖內容未變。
+- 公開紀錄不含回報／複測人姓名、私人匯出、下載權杖或預覽。
+
+查核來源
+https://dictionary.cambridge.org/us/pronunciation/english/effective
+https://github.com/vercel/next.js/tree/ee6e79b1792a4d401ddf2480f40a83549fe8e722/packages/create-next-app/templates/app/ts/public
+https://github.com/vercel/next.js/blob/ee6e79b1792a4d401ddf2480f40a83549fe8e722/license.md

@@ -59,6 +59,8 @@ assert(proxyScenario.dialogue[1].en.includes("in person"), "委託申請須保�
 assert(proxyScenario.dialogue[5].en.includes("they must state"), "代借告知為必須而非建議");
 assert(proxyScenario.dialogue[5].en.includes("their own valid library card"), "代借須出示本人有效借書證");
 assert(proxyScenario.vocabulary[2].word === "borrower", "現行單字為 borrower，不應還原舊對照稿 trustee");
+assert(proxyScenario.vocabulary[5].kk === "əˋfɛktɪv", "effective 應統一為所採字典美式首音");
+assert(proxyScenario.dialogue[2].en.includes("effective [əˋfɛktɪv]"), "對話 effective 音標應與單字表一致");
 
 if (errors.length) {
   console.error(errors.join("\n"));

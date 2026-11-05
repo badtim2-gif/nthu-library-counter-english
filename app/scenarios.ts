@@ -1333,7 +1333,7 @@ export const scenarios: Scenario[] = [
     dialogue: [
       { role: "reader", en: "I cannot come to the library regularly. May I authorize [ˋɔθə͵raɪz] someone to borrow books for me?", zh: "我無法經常親自到館，可以委託他人代借圖書嗎？" },
       { role: "librarian", en: "Yes, please fill out the \"Authorization for Proxy Borrowing\" form and bring it in person to the service desk along with your valid [ˋvælɪd] library card.", zh: "可以，請填寫委託代借申請表，並攜帶表單及本人有效借書證，親自到服務櫃檯辦理。" },
-      { role: "reader", en: "When will the authorization become effective [ɪˋfɛktɪv]?", zh: "委託代借何時會生效？" },
+      { role: "reader", en: "When will the authorization become effective [əˋfɛktɪv]?", zh: "委託代借何時會生效？" },
       { role: "librarian", en: "It becomes effective one day after the application is completed.", zh: "申請完成後的次日生效。" },
       { role: "reader", en: "What must the proxy borrower do when checking out materials?", zh: "受託人代借館藏時需要做什麼？" },
       { role: "librarian", en: "The proxy borrower [ˋbɑroɚ] must be a valid library patron. When checking out materials, they must state that this is proxy borrowing and present their own valid library card. You may also terminate [ˋtɝmə͵net] the authorization at the service desk.", zh: "受託人必須是有效讀者。借書時必須主動說明是委託代借，並出示本人有效借書證。您也可以到服務櫃檯終止委託。" },
@@ -1353,7 +1353,7 @@ export const scenarios: Scenario[] = [
       { word: "borrower", kk: "ˋbɑroɚ", meaning: "借閱者、借書人", pos: "n." },
       { word: "valid", kk: "ˋvælɪd", meaning: "有效的", pos: "adj." },
       { word: "submit", kk: "səbˋmɪt", meaning: "提交", pos: "v." },
-      { word: "effective", kk: "ɪˋfɛktɪv", meaning: "生效的", pos: "adj." },
+      { word: "effective", kk: "əˋfɛktɪv", meaning: "生效的", pos: "adj." },
       { word: "terminate", kk: "ˋtɝmə͵net", meaning: "終止", pos: "v." },
     ],
   },

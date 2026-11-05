@@ -1,6 +1,6 @@
 # 素材來源、第三方授權及著作權聲明
 
-最後更新：2026-09-26
+最後更新：2026-11-05
 
 ## 專案權利狀態
 
@@ -64,7 +64,16 @@
 
 ## 圖像素材
 
-目前網站使用的應用程式圖示 `public/img_20260726120102.png` 及社群分享圖 `public/og.png` 為本專案製作的識別圖像，未使用第三方攝影作品或圖庫照片。
+完整用途、逐檔 SHA-256、來源連結及待確認項目見 `public/visual-assets.json`；網站授權頁提供7個圖檔的直接連結。
+
+- `img_20260726120102.png` 目前用於分頁、Apple及PWA安裝圖示；`og.png` 用於Open Graph及Twitter分享預覽，不是首頁正文圖片。
+- `globe.svg`、`file.svg`、`window.svg` 未被正式頁面引用，內容與 Next.js create-next-app v16.2.6 範本固定提交 `ee6e79b1792a4d401ddf2480f40a83549fe8e722` 相符（僅忽略檔尾換行）。上游為 MIT，Copyright (c) 2025 Vercel, Inc.；保留全文於 `public/licenses/next-template-MIT.txt`。這不會將專案其他內容改授權為MIT。
+- `favicon.svg` 與 `img_20260726121722.png` 未被目前頁面或PWA設定引用；保留檔案不表示已找到來源。
+- `favicon.svg` 及3個PNG目前缺少可核對的原始製作或取得來源。既有「本專案製作」聲明與Git收錄時間不足以證明完整利用權利；仍待提供原始設計、產製服務紀錄或授權文件。本輪未推測作者、模型或授權，也不宣稱已完成法律審查。
+
+上游範本及MIT來源：
+https://github.com/vercel/next.js/tree/ee6e79b1792a4d401ddf2480f40a83549fe8e722/packages/create-next-app/templates/app/ts/public
+https://github.com/vercel/next.js/blob/ee6e79b1792a4d401ddf2480f40a83549fe8e722/license.md
 
 ## 開源軟體
 
