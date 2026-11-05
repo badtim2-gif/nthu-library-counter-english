@@ -1,5 +1,6 @@
 {
   "checked_at": "2026-11-05",
+  "sha256_normalization": "SVG以UTF-8文字將CRLF或CR統一為LF後計算；PNG依原始位元組計算。避免Windows與GitHub檢出換行差異造成誤判，非將雜湊視為授權證明。",
   "scope": "檔案存在、實際引用與可核對來源；不是整體法律安全或校方授權結論。",
   "upstream_revision": "ee6e79b1792a4d401ddf2480f40a83549fe8e722",
   "entries": [
@@ -35,7 +36,7 @@
     },
     {
       "file": "favicon.svg",
-      "sha256": "3e8863288c2d43dd33d2a71de317dcf9198f09932ea8d61e0def1b846a865435",
+      "sha256": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7",
       "usage": "未被目前正式頁面或PWA設定引用；檔案保留，可直接開啟，不要求出現在首頁。",
       "source": "本專案既有圖檔；目前未找到可核對的原始製作或取得來源。",
       "source_url": null,

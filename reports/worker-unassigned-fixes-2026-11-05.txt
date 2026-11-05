@@ -15,7 +15,7 @@ P0090、P0092、P0094、P0098：favicon.svg與3個PNG尚缺原始製作／取得
 - globe.svg、file.svg、window.svg、favicon.svg、img_20260726121722.png：未被目前正式頁面或PWA設定引用，保留檔案可直接開啟。
 - 新增public/visual-assets.json，列7檔SHA-256、用途、已核對來源及待補證據狀態；新增public/licenses/next-template-MIT.txt保存MIT全文。
 - 授權頁與THIRD_PARTY_NOTICES不再以「本專案製作」概括代替完整權利證據；未刪除或修改任何原圖。
-- 網站快取nthu-library-shell-v29；音訊保持nthu-library-audio-v25。未新增API、後端、音檔或圖像。
+- 網站快取nthu-library-shell-v30；音訊保持nthu-library-audio-v25。未新增API、後端、音檔或圖像。
 
 試算表
 - 問題追蹤N86:P100、U86:U100：語庭codex；11筆待複測、4筆暫緩，合計115分鐘。
@@ -29,6 +29,7 @@ P0090、P0092、P0094、P0098：favicon.svg與3個PNG尚缺原始製作／取得
 - pnpm test:pages通過，涵蓋7圖、Pages路徑、來源清單SHA-256、3筆MIT／4筆待補證據及MIT全文。
 - 20課、120句、708段音檔通過；全部音訊及7個原圖內容未變。
 - 公開紀錄不含回報／複測人姓名、私人匯出、下載權杖或預覽。
+- 上線核對發現favicon.svg本機718位元組為CRLF，GitHub部署712位元組為LF，圖形相同；已明定SVG雜湊先以UTF-8統一LF，PNG維持逐位元組計算，來源清單、授權頁與驗證同步規則，不將換行差異當作視覺或授權變更。
 
 查核來源
 https://dictionary.cambridge.org/us/pronunciation/english/effective

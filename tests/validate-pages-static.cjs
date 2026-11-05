@@ -53,7 +53,9 @@ assert.equal(new Set(visualAssets.entries.map((entry) => entry.file)).size, 7);
 for (const asset of visualAssets.entries) {
   assert.match(asset.file, /^[a-zA-Z0-9_.-]+$/);
   assert.ok(creditsHtml.includes(`href="${basePath}/${asset.file}"`), `Missing visual link: ${asset.file}`);
-  assert.equal(crypto.createHash("sha256").update(fs.readFileSync(path.join(output, asset.file))).digest("hex"), asset.sha256);
+  const fileBytes = fs.readFileSync(path.join(output, asset.file));
+  const hashInput = asset.file.endsWith(".svg") ? fileBytes.toString("utf8").replace(/\r\n?/g, "\n") : fileBytes;
+  assert.equal(crypto.createHash("sha256").update(hashInput).digest("hex"), asset.sha256);
   if (asset.license === "MIT") {
     assert.ok(asset.source_url.includes(visualAssets.upstream_revision));
     assert.ok(asset.license_url.endsWith("/license.md"));
@@ -63,13 +65,14 @@ for (const asset of visualAssets.entries) {
   }
 }
 assert.equal(visualAssets.entries.filter((asset) => asset.license === "MIT").length, 3);
+assert.match(visualAssets.sha256_normalization, /CRLF/);
 const visualLicense = fs.readFileSync(path.join(output, "licenses/next-template-MIT.txt"), "utf8");
 assert.match(visualLicense, /Copyright \(c\) 2025 Vercel, Inc\./);
 assert.match(visualLicense, /THE SOFTWARE IS PROVIDED "AS IS"/);
 
 const serviceWorker = fs.readFileSync(path.join(output, "sw.js"), "utf8");
 assert.match(serviceWorker, /self\.registration\.scope/);
-assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v29";/);
+assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v30";/);
 assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
 assert.match(serviceWorker, /const AUDIO_CACHE = "nthu-library-audio-v25";/);
 for (let version = 1; version <= 24; version += 1) {

@@ -142,7 +142,7 @@ export default function CreditsPage() {
             ))}
           </ul>
           <p>
-            <a href={assetPath("/visual-assets.json")}>下載圖像用途、來源及雜湊清單</a> · {" "}
+            <a href={assetPath("/visual-assets.json")}>下載圖像用途、來源及雜湊清單</a>（SVG換行統一為LF後計算，PNG依原始位元組） · {" "}
             <a href={assetPath("/licenses/next-template-MIT.txt")}>範本圖示 MIT 授權全文</a>
           </p>
           <p>
