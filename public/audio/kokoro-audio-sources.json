@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-11-04",
+  "updated_at": "2026-11-06",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -2194,24 +2194,24 @@
       "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
-      "speed": 0.8,
+      "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "42c29efd3a34e386f25f41bec24bf3e5d493728e65a18aba58a2cc9b04c2d0dd",
+      "sha256": "c5e4d2ef302e9e56959510e0b1cfa87bd8dea0b0d1f96e91ca8d0f3bfbed3644",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.826
+        "duration_seconds": 1.45
       },
       "loudness": {
-        "integrated_lufs": -22.74,
-        "true_peak_dbfs": -5.54,
+        "integrated_lufs": -22.65,
+        "true_peak_dbfs": -6.63,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.61
+        "threshold_lufs": -33.74
       },
       "boundary_peaks": {
-        "leading_40ms": 7e-08,
+        "leading_40ms": 1.6e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2225,7 +2225,58 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ɹɪsˈiv"
+      "phonemes": "ɹɪsˈiv",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: receive."
+      },
+      "context_extraction": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: receive.",
+        "target": "receive",
+        "target_phonemes": "ɹɪsˈiv",
+        "context_pcm_sha256": "09cb1927e46d2814a59f5df209f2b85105c27c5d7263210e1acfbe5ae6065024",
+        "context_duration_seconds": 2.375,
+        "word_start_seconds": 0.875,
+        "word_end_seconds": 2.0,
+        "crop_start_seconds": 0.83,
+        "crop_end_seconds": 2.08,
+        "leading_margin_seconds": 0.045,
+        "trailing_margin_seconds": 0.08,
+        "edge_fade_seconds": 0.003,
+        "tokens": [
+          {
+            "text": "Please",
+            "phonemes": "plˈiz",
+            "start_seconds": 0.25,
+            "end_seconds": 0.5875
+          },
+          {
+            "text": "say",
+            "phonemes": "sˈA",
+            "start_seconds": 0.5875,
+            "end_seconds": 0.825
+          },
+          {
+            "text": ":",
+            "phonemes": ":",
+            "start_seconds": 0.825,
+            "end_seconds": 0.875
+          },
+          {
+            "text": "receive",
+            "phonemes": "ɹɪsˈiv",
+            "start_seconds": 0.875,
+            "end_seconds": 2.0
+          },
+          {
+            "text": ".",
+            "phonemes": ".",
+            "start_seconds": 2.0,
+            "end_seconds": 2.275
+          }
+        ]
+      }
     },
     {
       "file": "s02-v02-meaning.mp3",
@@ -2556,24 +2607,24 @@
       "kind": "word",
       "model": "v1.0",
       "voice": "am_puck",
-      "speed": 0.8,
+      "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "f121d00018379a9c721c242cbdfe5d3d3aa4a9c53a7078018bd60624db12cba3",
+      "sha256": "be08dae0458057ba38c391c643341f140131c98e955c6e0f077de0e8ac63b887",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.725
+        "duration_seconds": 1.375
       },
       "loudness": {
-        "integrated_lufs": -22.74,
-        "true_peak_dbfs": -7.7,
+        "integrated_lufs": -22.78,
+        "true_peak_dbfs": -8.48,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.24
+        "threshold_lufs": -34.0
       },
       "boundary_peaks": {
-        "leading_40ms": 5e-08,
+        "leading_40ms": 1.19e-06,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2587,7 +2638,58 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ɹɪmˈAn"
+      "phonemes": "ɹɪmˈAn",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: remain."
+      },
+      "context_extraction": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: remain.",
+        "target": "remain",
+        "target_phonemes": "ɹɪmˈAn",
+        "context_pcm_sha256": "66719935e18c181b807af6b25bed0313b076b3d1ad04bea4f9b12de8ba254aea",
+        "context_duration_seconds": 2.325,
+        "word_start_seconds": 0.9,
+        "word_end_seconds": 1.95,
+        "crop_start_seconds": 0.855,
+        "crop_end_seconds": 2.03,
+        "leading_margin_seconds": 0.045,
+        "trailing_margin_seconds": 0.08,
+        "edge_fade_seconds": 0.003,
+        "tokens": [
+          {
+            "text": "Please",
+            "phonemes": "plˈiz",
+            "start_seconds": 0.25,
+            "end_seconds": 0.5875
+          },
+          {
+            "text": "say",
+            "phonemes": "sˈA",
+            "start_seconds": 0.5875,
+            "end_seconds": 0.85
+          },
+          {
+            "text": ":",
+            "phonemes": ":",
+            "start_seconds": 0.85,
+            "end_seconds": 0.9
+          },
+          {
+            "text": "remain",
+            "phonemes": "ɹɪmˈAn",
+            "start_seconds": 0.9,
+            "end_seconds": 1.95
+          },
+          {
+            "text": ".",
+            "phonemes": ".",
+            "start_seconds": 1.95,
+            "end_seconds": 2.225
+          }
+        ]
+      }
     },
     {
       "file": "s02-v07-meaning.mp3",
@@ -16588,22 +16690,22 @@
       "voice": "am_puck",
       "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "437adb591084c379e4c5ac8d671678511a0633a35061685de463002a571b382c",
+      "sha256": "b1ef7dbb45cd4538ab5bbe576c81ea823ed8c28712e0ed1da132529ac08dbf07",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.95
+        "duration_seconds": 1.55
       },
       "loudness": {
-        "integrated_lufs": -22.79,
-        "true_peak_dbfs": -7.97,
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -6.91,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.5
+        "threshold_lufs": -33.68
       },
       "boundary_peaks": {
-        "leading_40ms": 5e-08,
+        "leading_40ms": 6.2e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16617,7 +16719,58 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "pɹˈɪvəlɪdʒ."
+      "phonemes": "pɹˈɪvəlɪʤ",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: privilege."
+      },
+      "context_extraction": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: privilege.",
+        "target": "privilege",
+        "target_phonemes": "pɹˈɪvəlɪʤ",
+        "context_pcm_sha256": "923376f4741be6c1fbd4e1f2aa010fbe9fb720af7dca7dffc73a2180af1e2415",
+        "context_duration_seconds": 2.5,
+        "word_start_seconds": 0.9,
+        "word_end_seconds": 2.125,
+        "crop_start_seconds": 0.855,
+        "crop_end_seconds": 2.205,
+        "leading_margin_seconds": 0.045,
+        "trailing_margin_seconds": 0.08,
+        "edge_fade_seconds": 0.003,
+        "tokens": [
+          {
+            "text": "Please",
+            "phonemes": "plˈiz",
+            "start_seconds": 0.25,
+            "end_seconds": 0.5875
+          },
+          {
+            "text": "say",
+            "phonemes": "sˈA",
+            "start_seconds": 0.5875,
+            "end_seconds": 0.85
+          },
+          {
+            "text": ":",
+            "phonemes": ":",
+            "start_seconds": 0.85,
+            "end_seconds": 0.9
+          },
+          {
+            "text": "privilege",
+            "phonemes": "pɹˈɪvəlɪʤ",
+            "start_seconds": 0.9,
+            "end_seconds": 2.125
+          },
+          {
+            "text": ".",
+            "phonemes": ".",
+            "start_seconds": 2.125,
+            "end_seconds": 2.4
+          }
+        ]
+      }
     },
     {
       "file": "s13-v06-meaning.mp3",
@@ -16740,22 +16893,22 @@
       "voice": "am_puck",
       "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "e6bcffbb487a5acb90a329e9ba1bc909d71d7710dcf37f5f02daf8f827c6913f",
+      "sha256": "23021d4ab4e5c0ec5a74af91820bfb8eb0845d9e322a1c30ffadfe5a65fd76b7",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.75
+        "duration_seconds": 1.302
       },
       "loudness": {
-        "integrated_lufs": -22.71,
-        "true_peak_dbfs": -8.63,
+        "integrated_lufs": -22.81,
+        "true_peak_dbfs": -6.52,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.66
+        "threshold_lufs": -34.05
       },
       "boundary_peaks": {
-        "leading_40ms": 4e-08,
+        "leading_40ms": 5e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16769,7 +16922,58 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "tʃˈɑɹdʒ."
+      "phonemes": "ʧˈɑɹʤ",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: charge."
+      },
+      "context_extraction": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: charge.",
+        "target": "charge",
+        "target_phonemes": "ʧˈɑɹʤ",
+        "context_pcm_sha256": "7f56a6d43655d3aa8ebdd1dfc65f8439d3b8d883c942420913d2d2f807f96949",
+        "context_duration_seconds": 2.375,
+        "word_start_seconds": 0.9875,
+        "word_end_seconds": 1.95,
+        "crop_start_seconds": 0.9275,
+        "crop_end_seconds": 2.03,
+        "leading_margin_seconds": 0.06,
+        "trailing_margin_seconds": 0.08,
+        "edge_fade_seconds": 0.003,
+        "tokens": [
+          {
+            "text": "Please",
+            "phonemes": "plˈiz",
+            "start_seconds": 0.25,
+            "end_seconds": 0.6125
+          },
+          {
+            "text": "say",
+            "phonemes": "sˈA",
+            "start_seconds": 0.6125,
+            "end_seconds": 0.9
+          },
+          {
+            "text": ":",
+            "phonemes": ":",
+            "start_seconds": 0.9,
+            "end_seconds": 0.9875
+          },
+          {
+            "text": "charge",
+            "phonemes": "ʧˈɑɹʤ",
+            "start_seconds": 0.9875,
+            "end_seconds": 1.95
+          },
+          {
+            "text": ".",
+            "phonemes": ".",
+            "start_seconds": 1.95,
+            "end_seconds": 2.275
+          }
+        ]
+      }
     },
     {
       "file": "s14-g01-zh.mp3",
@@ -25707,21 +25911,16 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-11-04T13:26:07+08:00",
-    "clip_count": 10,
-    "staging_manifest_sha256": "35411fb57e2319a09a1bdcb8e861579199e5ef4b1ef81de0ba613667c71e9273",
-    "transcript_manifest_sha256": "79f49ec5329edf15cbe2a6292bb34dc88f7f8fa6d7409e6c0d7630dd236b9659",
+    "generated_at": "2026-11-06T21:30:29+08:00",
+    "clip_count": 4,
+    "staging_manifest_sha256": "e4fb32ca99e6734e2b759705d4a8d97a1b34a5e6079184861f616e997cebc46f",
+    "transcript_manifest_sha256": "becda8978c10005ba82a9df7f2f69d9dd4d77f06fb3a285c101039a130fff213",
     "files": [
-      "s17-t04-zh.mp3",
-      "s17-p02-en.mp3",
-      "s17-v06-meaning.mp3",
-      "s17-v05-word.mp3",
-      "s20-t02-en.mp3",
-      "s20-t02-zh.mp3",
-      "s20-t06-en.mp3",
-      "s20-t06-zh.mp3",
-      "s20-p01-zh.mp3",
-      "s20-g02-zh.mp3"
-    ]
+      "s02-v01-word.mp3",
+      "s02-v06-word.mp3",
+      "s13-v05-word.mp3",
+      "s13-v07-word.mp3"
+    ],
+    "method": "Same-voice aligned carrier synthesis with pinned word phonemes; retain only the target word."
   }
 }

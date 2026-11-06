@@ -140,6 +140,7 @@ for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
   assert.equal(entry.phonemes, record.phonemes);
   assert.equal(entry.voice_key, record.voice_key);
   assert.deepEqual(entry.source_segment, record.source_segment);
+  assert.deepEqual(entry.synthesis_context, record.synthesis_context);
   assert.equal(entry.model, record.model);
   if (entry.source_segment) {
     const segment = entry.source_segment;
@@ -156,6 +157,27 @@ for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
     assert.ok(Number.isFinite(segment.start_seconds) && segment.start_seconds >= 0);
     assert.ok(Number.isFinite(segment.end_seconds) && segment.end_seconds > segment.start_seconds);
     assert.ok(segment.end_seconds <= reference.technical.duration_seconds);
+  }
+  if (entry.synthesis_context) {
+    assert.equal(entry.kind, "word");
+    assert.equal(entry.language, "en");
+    assert.equal(record.voice, "am_puck");
+    assert.equal(record.speed, 0.75);
+    assert.equal(entry.synthesis_context.method, "aligned-carrier-v1");
+    assert.equal(entry.synthesis_context.text, `Please say: ${entry.text}.`);
+    const extracted = record.context_extraction;
+    assert.equal(extracted.method, "aligned-carrier-v1");
+    assert.equal(extracted.target, entry.text);
+    assert.equal(extracted.text, entry.synthesis_context.text);
+    assert.equal(extracted.target_phonemes, entry.phonemes);
+    assert.match(extracted.context_pcm_sha256, /^[0-9a-f]{64}$/);
+    const limits = [extracted.crop_start_seconds, extracted.word_start_seconds, extracted.word_end_seconds, extracted.crop_end_seconds, extracted.context_duration_seconds];
+    assert.ok(limits.every(Number.isFinite) && limits[0] >= 0);
+    assert.ok(limits.slice(1).every((n, i) => i === 3 ? n >= limits[i] : n > limits[i]));
+    assert.ok(extracted.leading_margin_seconds >= 0.02 && extracted.trailing_margin_seconds >= 0.02);
+    const targets = extracted.tokens.filter((token) => token.text.toLowerCase() === entry.text.toLowerCase());
+    assert.equal(targets.length, 1);
+    assert.equal(targets[0].phonemes, entry.phonemes);
   }
   if (entry.target_wpm !== undefined) {
     assert.equal(entry.kind, "english_long");
@@ -198,6 +220,16 @@ for (let index = 0; index < 26; index += 1) {
 }
 
 for (const entry of manifest.entries) {
+  const contextualWords = {
+    "s02-v01-word.mp3": "ɹɪsˈiv",
+    "s02-v06-word.mp3": "ɹɪmˈAn",
+    "s13-v05-word.mp3": "pɹˈɪvəlɪʤ",
+    "s13-v07-word.mp3": "ʧˈɑɹʤ",
+  };
+  if (entry.file in contextualWords) {
+    assert.equal(entry.phonemes, contextualWords[entry.file]);
+    assert.equal(entry.synthesis_context?.method, "aligned-carrier-v1");
+  }
   if (entry.file === "s08-v01-word.mp3") {
     assert.equal(entry.source_segment?.file, "s08-t01-en.mp3", "thesis must retain its approved dialogue pronunciation");
     assert.equal(entry.voice_key, "reader-en");

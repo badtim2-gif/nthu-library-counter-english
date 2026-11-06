@@ -16,21 +16,21 @@ new Function("module", "exports", "process", compiled)(
 );
 const { versionedAudioPath } = pathsModule.exports;
 const workerSource = await readFile(new URL("../public/sw.js", import.meta.url), "utf8");
-const approvedAudio = await readFile(new URL("../public/audio/s08-v01-word.mp3", import.meta.url));
+const approvedAudio = await readFile(new URL("../public/audio/s02-v06-word.mp3", import.meta.url));
 const origin = "https://badtim2-gif.github.io";
 const base = "/nthu-library-counter-english";
-const originalUrl = origin + base + "/audio/s08-v01-word.mp3";
-const staleAudio = new TextEncoder().encode("old unclear thesis audio");
+const originalUrl = origin + base + "/audio/s02-v06-word.mp3";
+const staleAudio = new TextEncoder().encode("old unclear remain audio");
 
 function makeWorker() {
   const handlers = new Map();
   const stores = new Map(
-    Array.from({ length: 24 }, (_, index) => [
+    Array.from({ length: 25 }, (_, index) => [
       `nthu-library-audio-v${index + 1}`,
       new Map([[originalUrl, new Response(staleAudio)]]),
     ]),
   );
-  stores.set("nthu-library-shell-v29", new Map());
+  stores.set("nthu-library-shell-v30", new Map());
   const networkCalls = [];
   let offline = false;
   const keyOf = (request) => typeof request === "string" ? request : request.url;
@@ -86,24 +86,24 @@ function makeWorker() {
 }
 
 test("audio versions produce separate browser cache keys while preserving Pages paths", () => {
-  const path = base + "/audio/s08-v01-word.mp3";
-  const oldPath = versionedAudioPath(path, "nthu-library-audio-v24");
-  const newPath = versionedAudioPath(path, "nthu-library-audio-v25");
+  const path = base + "/audio/s02-v06-word.mp3";
+  const oldPath = versionedAudioPath(path, "nthu-library-audio-v25");
+  const newPath = versionedAudioPath(path, "nthu-library-audio-v26");
   assert.notEqual(oldPath, newPath);
   assert.equal(new URL(newPath, origin).pathname, path);
-  const withQuery = new URL(versionedAudioPath(path + "?example=1", "v25"), origin);
+  const withQuery = new URL(versionedAudioPath(path + "?example=1", "v26"), origin);
   assert.equal(withQuery.searchParams.get("example"), "1");
-  assert.equal(withQuery.searchParams.get("audioVersion"), "v25");
+  assert.equal(withQuery.searchParams.get("audioVersion"), "v26");
 });
 
-test("activation keeps exact current cache names while removing v1-v24", async () => {
+test("activation keeps exact current cache names while removing v1-v25", async () => {
   const worker = makeWorker();
-  assert.equal(worker.cacheName, "nthu-library-audio-v25");
-  const url = origin + versionedAudioPath(base + "/audio/s08-v01-word.mp3", worker.cacheName);
-  worker.stores.set("nthu-library-audio-v25", new Map([[url, new Response(approvedAudio)]]));
-  worker.stores.set("nthu-library-shell-v30", new Map());
+  assert.equal(worker.cacheName, "nthu-library-audio-v26");
+  const url = origin + versionedAudioPath(base + "/audio/s02-v06-word.mp3", worker.cacheName);
+  worker.stores.set("nthu-library-audio-v26", new Map([[url, new Response(approvedAudio)]]));
+  worker.stores.set("nthu-library-shell-v31", new Map());
   await worker.activate();
-  assert.deepEqual([...worker.stores.keys()].sort(), ["nthu-library-audio-v25", "nthu-library-shell-v30"]);
+  assert.deepEqual([...worker.stores.keys()].sort(), ["nthu-library-audio-v26", "nthu-library-shell-v31"]);
   worker.setOffline();
   assert.deepEqual(Buffer.from(await (await worker.get(url)).arrayBuffer()), approvedAudio);
   assert.equal(worker.networkCalls.length, 0);
@@ -112,7 +112,7 @@ test("activation keeps exact current cache names while removing v1-v24", async (
 test("an audio cache miss replaces stale browser HTTP audio with the approved clip", async () => {
   const worker = makeWorker();
   await worker.activate();
-  for (let version = 1; version <= 24; version += 1) {
+  for (let version = 1; version <= 25; version += 1) {
     assert.equal(worker.stores.has(`nthu-library-audio-v${version}`), false);
   }
   const response = await worker.get(originalUrl);
@@ -123,7 +123,7 @@ test("an audio cache miss replaces stale browser HTTP audio with the approved cl
 
 test("versioned approved audio continues playing offline without another network request", async () => {
   const worker = makeWorker();
-  const url = origin + versionedAudioPath(base + "/audio/s08-v01-word.mp3", worker.cacheName);
+  const url = origin + versionedAudioPath(base + "/audio/s02-v06-word.mp3", worker.cacheName);
   await worker.get(url);
   worker.setOffline();
   const response = await worker.get(url);

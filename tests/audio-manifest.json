@@ -567,9 +567,13 @@
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.8,
+      "speed": 0.75,
       "model": "v1.0",
-      "phonemes": "ɹɪsˈiv"
+      "phonemes": "ɹɪsˈiv",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: receive."
+      }
     },
     {
       "file": "s02-v01-meaning.mp3",
@@ -669,9 +673,13 @@
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.8,
+      "speed": 0.75,
       "model": "v1.0",
-      "phonemes": "ɹɪmˈAn"
+      "phonemes": "ɹɪmˈAn",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: remain."
+      }
     },
     {
       "file": "s02-v06-meaning.mp3",
@@ -4466,7 +4474,11 @@
       "role": "explainer",
       "speed": 0.75,
       "model": "v1.0",
-      "phonemes": "pɹˈɪvəlɪdʒ."
+      "phonemes": "pɹˈɪvəlɪʤ",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: privilege."
+      }
     },
     {
       "file": "s13-v05-meaning.mp3",
@@ -4508,7 +4520,11 @@
       "role": "explainer",
       "speed": 0.75,
       "model": "v1.0",
-      "phonemes": "tʃˈɑɹdʒ."
+      "phonemes": "ʧˈɑɹʤ",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: charge."
+      }
     },
     {
       "file": "s13-v07-meaning.mp3",

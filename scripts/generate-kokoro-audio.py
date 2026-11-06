@@ -309,6 +309,69 @@ def synthesize(
     ])
 
 
+def synthesize_context_word(
+    pipeline: KPipeline, word: str, phonemes: str, context: dict[str, object],
+    voice_pack: torch.Tensor, speed: float, context_path: Path,
+) -> tuple[np.ndarray, dict[str, object]]:
+    """Render an English word in a carrier, then retain only its aligned audio."""
+    text = context.get("text")
+    if not re.fullmatch(r"[A-Za-z]+", word) or text != f"Please say: {word}.":
+        raise ValueError("Context words require one exact final-word carrier")
+    if not phonemes or context.get("method") != "aligned-carrier-v1":
+        raise ValueError("Context words require explicit model phonemes and method")
+    _, tokens = pipeline.g2p(text)
+    targets = [i for i, token in enumerate(tokens) if token.text.casefold() == word.casefold()]
+    if len(targets) != 1:
+        raise ValueError("Carrier must contain exactly one target word")
+    target_index = targets[0]
+    if any(re.search(r"[A-Za-z]", token.text) for token in tokens[target_index+1:]):
+        raise ValueError("Carrier target must be the final spoken word")
+    tokens[target_index].phonemes = phonemes
+    results = list(pipeline.generate_from_tokens(tokens, voice=voice_pack, speed=speed))
+    if len(results) != 1 or results[0].audio is None or results[0].tokens is None:
+        raise RuntimeError("Carrier must produce one timestamped audio result")
+    result = results[0]
+    selected = [t for t in result.tokens if t.text.casefold() == word.casefold()]
+    if len(selected) != 1 or selected[0].phonemes != phonemes:
+        raise RuntimeError("Aligned target or phonemes changed")
+    target = selected[0]
+    audio = result.audio.detach().cpu().numpy().astype(np.float32)
+    duration = len(audio) / SAMPLE_RATE
+    start, end = target.start_ts, target.end_ts
+    if start is None or end is None or not all(map(math.isfinite, (start, end))):
+        raise RuntimeError("Missing finite carrier timestamps")
+    if not 0 <= start < end <= duration:
+        raise RuntimeError("Invalid target timestamps")
+    previous_end = max((t.end_ts for t in result.tokens[:target_index]
+                        if re.search(r"[A-Za-z]", t.text) and t.end_ts is not None), default=0)
+    crop_start = max(0, start - 0.06, previous_end + 0.005)
+    crop_end = min(duration, end + 0.08)
+    if start - crop_start < 0.02 or crop_end - end < 0.02:
+        raise RuntimeError("Carrier has insufficient target-boundary safety margin")
+    segment = audio[round(crop_start*SAMPLE_RATE):round(crop_end*SAMPLE_RATE)].copy()
+    if len(segment) < round(0.15*SAMPLE_RATE):
+        raise RuntimeError("Aligned word audio too short")
+    fade = min(round(.003*SAMPLE_RATE), len(segment)//4)
+    segment[:fade] *= np.linspace(0, 1, fade, dtype=np.float32)
+    segment[-fade:] *= np.linspace(1, 0, fade, dtype=np.float32)
+    sf.write(context_path, audio, SAMPLE_RATE, subtype="PCM_16")
+    details = {
+        "method": "aligned-carrier-v1", "text": text, "target": word,
+        "target_phonemes": phonemes,
+        "context_pcm_sha256": sha256(context_path), "context_duration_seconds": round(duration, 6),
+        "word_start_seconds": start, "word_end_seconds": end,
+        "crop_start_seconds": round(crop_start, 6), "crop_end_seconds": round(crop_end, 6),
+        "leading_margin_seconds": round(start-crop_start, 6),
+        "trailing_margin_seconds": round(crop_end-end, 6), "edge_fade_seconds": .003,
+        "tokens": [{"text": t.text, "phonemes": t.phonemes,
+                    "start_seconds": t.start_ts, "end_seconds": t.end_ts} for t in result.tokens],
+    }
+    return np.concatenate([
+        np.zeros(round(SAMPLE_RATE*LEAD_SECONDS), dtype=np.float32), segment,
+        np.zeros(round(SAMPLE_RATE*TAIL_SECONDS), dtype=np.float32),
+    ]), details
+
+
 def load_model(model_dir: Path, key: str) -> KModel:
     spec = MODEL_SPECS[key]
     weight = model_dir / spec["weight"]
@@ -402,7 +465,17 @@ def main() -> int:
             speed = float(entry.get("speed", spec["speed"]))
             phonemes = entry.get("phonemes")
             segment = entry.get("source_segment")
-            if segment is not None:
+            context = entry.get("synthesis_context")
+            context_details = None
+            if context is not None:
+                if entry["language"] != "en" or entry["kind"] != "word" or segment is not None:
+                    raise ValueError(f"Invalid contextual synthesis entry: {filename}")
+                audio, context_details = synthesize_context_word(
+                    pipelines[spec["lang_code"]], entry["text"], phonemes, context,
+                    voice_packs[voice_key], speed, raw_path.with_name(raw_path.stem + "-context.wav"),
+                )
+                sf.write(raw_path, audio, SAMPLE_RATE, subtype="PCM_16")
+            elif segment is not None:
                 reference_entry = source_entries.get(segment["file"])
                 if (
                     entry["language"] != "en" or entry["kind"] != "word" or phonemes
@@ -473,6 +546,9 @@ def main() -> int:
                 record["phonemes"] = phonemes
             if segment is not None:
                 record["source_segment"] = segment
+            if context_details is not None:
+                record["synthesis_context"] = context
+                record["context_extraction"] = context_details
             if tempo is not None and words is not None:
                 effective_duration = max(0.05, technical["duration_seconds"] - LEAD_SECONDS - TAIL_SECONDS)
                 record["timing"] = {
