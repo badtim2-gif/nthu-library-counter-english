@@ -12,6 +12,7 @@ import {
 } from "./scenarios";
 import { assetPath, versionedAudioPath } from "./paths";
 import { runPlaybackQueue } from "./playback-loop";
+import { downloadOfflineAudio, hasCompleteOfflineAudio } from "./offline-audio";
 import {
   clearScenarioProgress,
   completeScenarioReview,
@@ -66,7 +67,7 @@ type RolePlayMode = Role | "all" | null;
 
 const roleIsHidden = (mode: RolePlayMode, role: Role) => mode === "all" || mode === role;
 
-const AUDIO_CACHE_NAME = "nthu-library-audio-v26";
+const AUDIO_CACHE_NAME = "nthu-library-audio-v27";
 const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v1",
   "nthu-library-audio-v2",
@@ -93,6 +94,7 @@ const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v23",
   "nthu-library-audio-v24",
   "nthu-library-audio-v25",
+  "nthu-library-audio-v26",
 ];
 
 
@@ -144,6 +146,9 @@ export default function Home() {
   const [installPrompt, setInstallPrompt] = useState<InstallPromptEvent | null>(null);
   const [offlineProgress, setOfflineProgress] = useState<number | null>(null);
   const [offlineReady, setOfflineReady] = useState(false);
+  const [offlineMessage, setOfflineMessage] = useState("");
+  const offlineDownloadRef = useRef<AbortController | null>(null);
+  const offlineCheckRunRef = useRef(0);
   const [sleepTimer, setSleepTimer] = useState<SleepTimerStore>(createDefaultSleepTimerStore);
   const [sleepTimerReady, setSleepTimerReady] = useState(false);
   const [sleepTimerDraft, setSleepTimerDraft] = useState("30");
@@ -251,7 +256,20 @@ export default function Home() {
       for (const cacheName of LEGACY_AUDIO_CACHE_NAMES) {
         caches.delete(cacheName).catch(() => undefined);
       }
-      caches.has(AUDIO_CACHE_NAME).then(setOfflineReady).catch(() => undefined);
+      let cancelled = false;
+      const checkRun = offlineCheckRunRef.current;
+      void hasCompleteOfflineAudio(caches, AUDIO_CACHE_NAME,
+        allAudioPaths.map((path) => versionedAudioPath(path, AUDIO_CACHE_NAME)))
+        .then((ready) => { if (!cancelled && checkRun === offlineCheckRunRef.current) setOfflineReady(ready); })
+        .catch(() => { if (!cancelled && checkRun === offlineCheckRunRef.current) setOfflineReady(false); });
+      const handleOffline = () => offlineDownloadRef.current?.abort();
+      window.addEventListener("offline", handleOffline);
+      return () => {
+        cancelled = true;
+        offlineDownloadRef.current?.abort();
+        window.removeEventListener("offline", handleOffline);
+        window.removeEventListener("beforeinstallprompt", beforeInstall);
+      };
     }
     return () => window.removeEventListener("beforeinstallprompt", beforeInstall);
   }, []);
@@ -402,6 +420,8 @@ export default function Home() {
       audioRef.current = audio;
       audioModeRef.current = "html";
       audio.src = versionedAudioPath(src, AUDIO_CACHE_NAME);
+      audio.defaultPlaybackRate = 1;
+      audio.playbackRate = 1;
       audio.load();
       const finish = () => {
         audio.removeEventListener("ended", finish);
@@ -451,6 +471,8 @@ export default function Home() {
       await new Promise<void>((resolve) => {
         const source = context.createBufferSource();
         source.buffer = buffer;
+        source.playbackRate.value = 1;
+        source.detune.value = 0;
         source.connect(context.destination);
         audioSourceRef.current = source;
         audioModeRef.current = "webaudio";
@@ -862,21 +884,37 @@ export default function Home() {
   };
 
   const downloadOffline = async () => {
-    if (!("caches" in window)) return;
-    setOfflineProgress(0);
-    const cache = await caches.open(AUDIO_CACHE_NAME);
-    for (let index = 0; index < allAudioPaths.length; index += 1) {
-      const path = versionedAudioPath(allAudioPaths[index], AUDIO_CACHE_NAME);
-      try {
-        const response = await fetch(path, { cache: "no-cache" });
-        if (response.ok) await cache.put(path, response);
-      } catch {
-        // Keep successful files and allow a later retry.
-      }
-      setOfflineProgress(Math.round(((index + 1) / allAudioPaths.length) * 100));
+    if (offlineDownloadRef.current) return;
+    if (!("caches" in window)) {
+      setOfflineMessage("此瀏覽器不支援離線語音儲存。");
+      return;
     }
-    setOfflineReady(true);
-    setOfflineProgress(null);
+    if (!navigator.onLine) {
+      setOfflineMessage(offlineReady ? "離線語音已備妥，可直接播放。" : "目前沒有網路，請恢復連線後重試；已儲存的檔案會保留。");
+      return;
+    }
+    const controller = new AbortController();
+    offlineCheckRunRef.current += 1;
+    offlineDownloadRef.current = controller;
+    setOfflineReady(false);
+    setOfflineMessage("");
+    setOfflineProgress(0);
+    try {
+      const result = await downloadOfflineAudio({
+        storage: caches, cacheName: AUDIO_CACHE_NAME,
+        paths: allAudioPaths.map((path) => versionedAudioPath(path, AUDIO_CACHE_NAME)),
+        signal: controller.signal,
+        isOnline: () => navigator.onLine,
+        fetchAudio: (path, signal) => fetch(path, { cache: "no-cache", signal }),
+        onProgress: (completed, total) => setOfflineProgress(Math.min(99, Math.floor(completed / total * 100))),
+      });
+      setOfflineReady(result.ready);
+      setOfflineMessage(result.ready ? `全部 ${result.total} 段語音已確認可離線使用。` :
+        `${result.reason === "offline" ? "連線中斷" : result.reason === "storage" ? "儲存失敗或空間不足" : "部分語音下載失敗"}；本次已確認 ${result.completed}/${result.total} 段。恢復連線或可用空間後按重試，會保留已下載檔案。`);
+    } finally {
+      offlineDownloadRef.current = null;
+      setOfflineProgress(null);
+    }
   };
 
   return (
@@ -1079,12 +1117,13 @@ export default function Home() {
           </section>
           <div className="offline-card">
             <div>
-              <strong>{offlineReady ? "離線語音已備妥" : "下載離線語音"}</strong>
-              <p>{offlineProgress !== null ? `下載進度 ${offlineProgress}%` : "第一次下載需要網路，之後可離線練習。"}</p>
+              <strong>{offlineProgress !== null ? "正在下載離線語音" : offlineReady ? "離線語音已備妥" : "下載離線語音"}</strong>
+              <p role="status" aria-live="polite">{offlineProgress !== null ? `下載進度 ${offlineProgress}%` : offlineMessage || (offlineReady ? `全部 ${allAudioPaths.length} 段語音已確認可離線使用。` : "第一次下載需要網路，之後可離線練習。")}</p>
               <p data-audio-version={AUDIO_CACHE_NAME}>音訊版本：{AUDIO_CACHE_NAME.replace("nthu-library-audio-", "")}</p>
+              <p>播放倍率：1.0×（原音）</p>
             </div>
             <button onClick={downloadOffline} disabled={offlineProgress !== null} aria-label="下載全部離線語音">
-              {offlineProgress !== null ? `${offlineProgress}%` : "↓"}
+              {offlineProgress !== null ? `${offlineProgress}%` : offlineMessage && !offlineReady ? "重試" : "↓"}
             </button>
           </div>
         </aside>

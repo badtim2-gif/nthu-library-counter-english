@@ -243,6 +243,7 @@ for (const entry of manifest.entries) {
   if (entry.file === "s10-p01-zh.mp3") {
     assert.match(entry.phonemes ?? "", /ㄍ万3ㄕㄜ4/, "館舍 must use guan3 she4");
     assert.match(entry.phonemes ?? "", /ㄒ阳3ㄑ言2王3/, "Keep 想前往 in one spoken phrase");
+    assert.match(entry.phonemes ?? "", /ㄉㄧ4ㄉ言3/, "地點 must use di4 dian3, not de5 dian3");
   }
   if (entry.file === "s15-t04-zh.mp3") {
     assert.match(entry.phonemes ?? "", /ㄍ为4ㄊㄞ2/, "Keep 櫃檯 together");
@@ -267,6 +268,18 @@ for (const entry of manifest.entries) {
   }
   if (entry.file === "s17-v05-word.mp3") {
     assert.equal(entry.phonemes, "ɹɪlˈis", "release 首音須對應字典 rɪ，不可變為 re");
+    assert.equal(entry.synthesis_context?.method, "aligned-carrier-v1");
+  }
+  if (entry.file === "s13-v02-word.mp3") {
+    assert.equal(entry.phonemes, "fˈi");
+    assert.equal(entry.synthesis_context?.method, "aligned-carrier-v1");
+  }
+  if (entry.file === "s16-t02-zh.mp3") {
+    assert.match(entry.phonemes, /^ㄗ中3ㄊㄨ2/, "總圖 must retain zong3 tu2");
+    assert.match(entry.phonemes, /ㄩ4月1ㄕㄨ1/, "預約書 must retain yue1 and shu1");
+  }
+  if (entry.file === "s16-v02-meaning.mp3") {
+    assert.match(entry.phonemes, /^ㄩ4月1/, "預約 must retain yu4 yue1");
   }
   if (entry.file === "s17-p02-en.mp3") {
     assert.equal(entry.target_wpm, 116.0, "保留已採納的句型略放慢設定");

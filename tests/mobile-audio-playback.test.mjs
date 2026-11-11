@@ -19,6 +19,14 @@ test("reuses a fallback media element instead of creating one per sentence", () 
   assert.match(pageSource, /audioRef\.current \?\? new Audio\(\)/);
 });
 
+test("both audio engines use original pitch and exactly 1x playback", () => {
+  assert.match(pageSource, /audio\.defaultPlaybackRate = 1;/);
+  assert.match(pageSource, /audio\.playbackRate = 1;/);
+  assert.match(pageSource, /source\.playbackRate\.value = 1;/);
+  assert.match(pageSource, /source\.detune\.value = 0;/);
+  assert.match(pageSource, /播放倍率：1\.0×（原音）/);
+});
+
 test("keeps pause, resume, and mobile memory limits in the player", () => {
   assert.match(pageSource, /context\.suspend\(\)/);
   assert.match(pageSource, /context\.resume\(\)/);

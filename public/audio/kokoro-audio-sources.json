@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-11-06",
+  "updated_at": "2026-11-11",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -11847,24 +11847,24 @@
       "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
-      "speed": 0.9,
-      "applied_target_lufs": -20.98,
-      "sha256": "23af523ccbef0d0dd9bf650052736049d115202ceda1df6ea9f465f2e002778e",
+      "speed": 0.85,
+      "applied_target_lufs": -20.87,
+      "sha256": "add2f5e0d997324608cfcba6f2ee153aa019f728257415a9e835f57a098f6662",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.2
+        "duration_seconds": 5.725
       },
       "loudness": {
-        "integrated_lufs": -22.38,
-        "true_peak_dbfs": -3.92,
-        "lra_lu": 3.5,
-        "threshold_lufs": -32.77
+        "integrated_lufs": -22.39,
+        "true_peak_dbfs": -3.81,
+        "lra_lu": 3.2,
+        "threshold_lufs": -32.83
       },
       "boundary_peaks": {
-        "leading_40ms": 3.1e-07,
+        "leading_40ms": 1.6e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -11878,7 +11878,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "用4ㄌㄞ2/ㄌㄧ3ㄇㄠ4/ㄅ要3ㄉㄚ2/ㄒ阳3ㄑ言2王3/ㄇㄡ3ㄍㄜ4/ㄍ万3ㄕㄜ4/ㄏ我4/ㄉㄜ5ㄉ言3."
+      "phonemes": "用4ㄌㄞ2/ㄌㄧ3ㄇㄠ4ㄅ要3ㄉㄚ2, ㄒ阳3ㄑ言2王3ㄇㄡ3ㄍㄜ4ㄍ万3ㄕㄜ4ㄏ我4ㄉㄧ4ㄉ言3."
     },
     {
       "file": "s10-p02-en.mp3",
@@ -16468,22 +16468,22 @@
       "voice": "am_puck",
       "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "1ef39f8da359e8408472a4b71aec73f4795fbc97d0960652cf0d510f9545012f",
+      "sha256": "409d70a83c0215373de2392ad6c6b010ea65bb5fa28b1d55ae7812511a860272",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.7
+        "duration_seconds": 1.127
       },
       "loudness": {
         "integrated_lufs": -22.76,
-        "true_peak_dbfs": -7.56,
+        "true_peak_dbfs": -6.7,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.31
+        "threshold_lufs": -34.2
       },
       "boundary_peaks": {
-        "leading_40ms": 5e-08,
+        "leading_40ms": 2.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16497,7 +16497,58 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "fˈi."
+      "phonemes": "fˈi",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: fee."
+      },
+      "context_extraction": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: fee.",
+        "target": "fee",
+        "target_phonemes": "fˈi",
+        "context_pcm_sha256": "f553ac40ba6ea92652a1335fa47bb536953c465611fd7fefc29879993678b443",
+        "context_duration_seconds": 2.225,
+        "word_start_seconds": 1.0125,
+        "word_end_seconds": 1.8,
+        "crop_start_seconds": 0.9525,
+        "crop_end_seconds": 1.88,
+        "leading_margin_seconds": 0.06,
+        "trailing_margin_seconds": 0.08,
+        "edge_fade_seconds": 0.003,
+        "tokens": [
+          {
+            "text": "Please",
+            "phonemes": "plˈiz",
+            "start_seconds": 0.25,
+            "end_seconds": 0.6125
+          },
+          {
+            "text": "say",
+            "phonemes": "sˈA",
+            "start_seconds": 0.6125,
+            "end_seconds": 0.925
+          },
+          {
+            "text": ":",
+            "phonemes": ":",
+            "start_seconds": 0.925,
+            "end_seconds": 1.0125
+          },
+          {
+            "text": "fee",
+            "phonemes": "fˈi",
+            "start_seconds": 1.0125,
+            "end_seconds": 1.8
+          },
+          {
+            "text": ".",
+            "phonemes": ".",
+            "start_seconds": 1.8,
+            "end_seconds": 2.1
+          }
+        ]
+      }
     },
     {
       "file": "s13-v03-meaning.mp3",
@@ -19958,24 +20009,24 @@
       "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
-      "speed": 0.85,
-      "applied_target_lufs": -20.52,
-      "sha256": "ae8e044fc2bda979aa669438c84dca3bc581f0d6fa2ab1d63cc829b09bf454e9",
+      "speed": 0.8,
+      "applied_target_lufs": -19.91,
+      "sha256": "2cb4d67e9e177b89dd59ab1545e05e5e6f42a3fdd0c5da0d48f72a63e3bf2562",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.975
+        "duration_seconds": 6.55
       },
       "loudness": {
-        "integrated_lufs": -22.5,
-        "true_peak_dbfs": -3.81,
-        "lra_lu": 4.9,
-        "threshold_lufs": -33.53
+        "integrated_lufs": -22.64,
+        "true_peak_dbfs": -3.79,
+        "lra_lu": 6.2,
+        "threshold_lufs": -33.26
       },
       "boundary_peaks": {
-        "leading_40ms": 1.9e-07,
+        "leading_40ms": 2.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -19989,7 +20040,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ㄗ中3ㄊㄨ2/ㄉㄜ5/ㄩ4月1ㄕㄨ1/ㄎㄜ3/ㄗㄞ4/ㄧ4ㄌㄡ2/ㄩ4月1/ㄗㄭ4ㄓㄨ4/ㄑㄩ3/ㄕㄨ1ㄑㄩ1/ㄌ应2ㄑㄩ3."
+      "phonemes": "ㄗ中3ㄊㄨ2ㄉㄜ5/ㄩ4月1ㄕㄨ1, ㄎㄜ3ㄗㄞ4/ㄧ4ㄌㄡ2/ㄩ4月1ㄗㄭ4ㄓㄨ4ㄑㄩ3ㄕㄨ1ㄑㄩ1/ㄌ应2ㄑㄩ3."
     },
     {
       "file": "s16-t03-en.mp3",
@@ -20383,24 +20434,24 @@
       "kind": "chinese",
       "model": "v1.1-zh",
       "voice": "zm_010",
-      "speed": 0.85,
+      "speed": 0.8,
       "applied_target_lufs": -22.3,
-      "sha256": "b58a491e21b9c5912fd245363b83e79fad6876fc7ed62aae95cbe69709eac537",
+      "sha256": "1fac076a302e76cd521e95f2dd617bc8e49391fe8c267403731c9351141f7db1",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 2.525
+        "duration_seconds": 2.65
       },
       "loudness": {
-        "integrated_lufs": -22.72,
-        "true_peak_dbfs": -6.08,
+        "integrated_lufs": -22.74,
+        "true_peak_dbfs": -7.04,
         "lra_lu": 0.0,
-        "threshold_lufs": -32.96
+        "threshold_lufs": -33.21
       },
       "boundary_peaks": {
-        "leading_40ms": 1.2e-07,
+        "leading_40ms": 1.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -20414,7 +20465,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ㄩ4月1, ㄇ应2ㄘㄭ2"
+      "phonemes": "ㄩ4月1/ㄇ应2ㄘㄭ2"
     },
     {
       "file": "s16-v02-word.mp3",
@@ -21916,22 +21967,22 @@
       "voice": "am_puck",
       "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "4af7801503d2bafb86a924696fbfd36c0092e84b9ab814d2edb5cf4752fa4b44",
+      "sha256": "68de207d1c4b4dc87fd9a064b4fb5a2276408b7e3a14153073f706a347a2004e",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.826
+        "duration_seconds": 1.35
       },
       "loudness": {
-        "integrated_lufs": -22.74,
-        "true_peak_dbfs": -7.9,
+        "integrated_lufs": -22.69,
+        "true_peak_dbfs": -7.86,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.67
+        "threshold_lufs": -33.91
       },
       "boundary_peaks": {
-        "leading_40ms": 4e-08,
+        "leading_40ms": 4.83e-06,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21945,7 +21996,58 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ɹɪlˈis"
+      "phonemes": "ɹɪlˈis",
+      "synthesis_context": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: release."
+      },
+      "context_extraction": {
+        "method": "aligned-carrier-v1",
+        "text": "Please say: release.",
+        "target": "release",
+        "target_phonemes": "ɹɪlˈis",
+        "context_pcm_sha256": "28c5042f6a7bb439ef393ed938285883c325cb42f2b3cf822316b3a0c3351714",
+        "context_duration_seconds": 2.3,
+        "word_start_seconds": 0.9,
+        "word_end_seconds": 1.925,
+        "crop_start_seconds": 0.855,
+        "crop_end_seconds": 2.005,
+        "leading_margin_seconds": 0.045,
+        "trailing_margin_seconds": 0.08,
+        "edge_fade_seconds": 0.003,
+        "tokens": [
+          {
+            "text": "Please",
+            "phonemes": "plˈiz",
+            "start_seconds": 0.25,
+            "end_seconds": 0.5875
+          },
+          {
+            "text": "say",
+            "phonemes": "sˈA",
+            "start_seconds": 0.5875,
+            "end_seconds": 0.85
+          },
+          {
+            "text": ":",
+            "phonemes": ":",
+            "start_seconds": 0.85,
+            "end_seconds": 0.9
+          },
+          {
+            "text": "release",
+            "phonemes": "ɹɪlˈis",
+            "start_seconds": 0.9,
+            "end_seconds": 1.925
+          },
+          {
+            "text": ".",
+            "phonemes": ".",
+            "start_seconds": 1.925,
+            "end_seconds": 2.2
+          }
+        ]
+      }
     },
     {
       "file": "s17-v06-meaning.mp3",
@@ -25911,16 +26013,17 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-11-06T21:30:29+08:00",
-    "clip_count": 4,
-    "staging_manifest_sha256": "e4fb32ca99e6734e2b759705d4a8d97a1b34a5e6079184861f616e997cebc46f",
-    "transcript_manifest_sha256": "becda8978c10005ba82a9df7f2f69d9dd4d77f06fb3a285c101039a130fff213",
+    "generated_at": "2026-11-11T20:48:47+08:00",
+    "clip_count": 5,
+    "staging_manifest_sha256": "7643d2b3a4110ec1b17281c88d3e2a4bca74f25fcdb72bf0da36bac65dc97748",
+    "transcript_manifest_sha256": "7d93d5fc87430d4f5b995865390f5dd40552a0b3203d6fea2899388b3b61ddde",
     "files": [
-      "s02-v01-word.mp3",
-      "s02-v06-word.mp3",
-      "s13-v05-word.mp3",
-      "s13-v07-word.mp3"
+      "s10-p01-zh.mp3",
+      "s13-v02-word.mp3",
+      "s16-t02-zh.mp3",
+      "s16-v02-meaning.mp3",
+      "s17-v05-word.mp3"
     ],
-    "method": "Same-voice aligned carrier synthesis with pinned word phonemes; retain only the target word."
+    "method": "Pinned same voices; English aligned carrier words and revised Mandarin phoneme grouping, tones and pacing; human retest pending."
   }
 }
