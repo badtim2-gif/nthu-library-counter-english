@@ -161,7 +161,9 @@ for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
   if (entry.synthesis_context) {
     assert.equal(entry.kind, "word");
     assert.equal(entry.language, "en");
-    assert.equal(record.voice, "am_puck");
+    const changedWord = ["s02-v01-word.mp3", "s02-v06-word.mp3", "s13-v05-word.mp3", "s17-v05-word.mp3"].includes(entry.file);
+    assert.equal(record.voice, changedWord ? "am_fenrir" : "am_puck");
+    if (changedWord) assert.equal(entry.voice_key, "reader-en");
     assert.equal(record.speed, 0.75);
     assert.equal(entry.synthesis_context.method, "aligned-carrier-v1");
     assert.equal(entry.synthesis_context.text, `Please say: ${entry.text}.`);

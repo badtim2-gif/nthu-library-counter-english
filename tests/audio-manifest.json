@@ -563,7 +563,7 @@
     {
       "file": "s02-v01-word.mp3",
       "text": "receive",
-      "voice": "kokoro-v1.0/am_puck",
+      "voice": "kokoro-v1.0/am_fenrir",
       "language": "en",
       "kind": "word",
       "role": "explainer",
@@ -573,7 +573,8 @@
       "synthesis_context": {
         "method": "aligned-carrier-v1",
         "text": "Please say: receive."
-      }
+      },
+      "voice_key": "reader-en"
     },
     {
       "file": "s02-v01-meaning.mp3",
@@ -669,7 +670,7 @@
     {
       "file": "s02-v06-word.mp3",
       "text": "remain",
-      "voice": "kokoro-v1.0/am_puck",
+      "voice": "kokoro-v1.0/am_fenrir",
       "language": "en",
       "kind": "word",
       "role": "explainer",
@@ -679,7 +680,8 @@
       "synthesis_context": {
         "method": "aligned-carrier-v1",
         "text": "Please say: remain."
-      }
+      },
+      "voice_key": "reader-en"
     },
     {
       "file": "s02-v06-meaning.mp3",
@@ -4472,7 +4474,7 @@
     {
       "file": "s13-v05-word.mp3",
       "text": "privilege",
-      "voice": "kokoro-v1.0/am_puck",
+      "voice": "kokoro-v1.0/am_fenrir",
       "language": "en",
       "kind": "word",
       "role": "explainer",
@@ -4482,7 +4484,8 @@
       "synthesis_context": {
         "method": "aligned-carrier-v1",
         "text": "Please say: privilege."
-      }
+      },
+      "voice_key": "reader-en"
     },
     {
       "file": "s13-v05-meaning.mp3",
@@ -5855,7 +5858,7 @@
     {
       "file": "s17-v05-word.mp3",
       "text": "release",
-      "voice": "kokoro-v1.0/am_puck",
+      "voice": "kokoro-v1.0/am_fenrir",
       "language": "en",
       "kind": "word",
       "role": "explainer",
@@ -5865,7 +5868,8 @@
       "synthesis_context": {
         "method": "aligned-carrier-v1",
         "text": "Please say: release."
-      }
+      },
+      "voice_key": "reader-en"
     },
     {
       "file": "s17-v05-meaning.mp3",

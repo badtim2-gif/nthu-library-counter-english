@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-18",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -2193,25 +2193,25 @@
       "role": "explainer",
       "kind": "word",
       "model": "v1.0",
-      "voice": "am_puck",
+      "voice": "am_fenrir",
       "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "c5e4d2ef302e9e56959510e0b1cfa87bd8dea0b0d1f96e91ca8d0f3bfbed3644",
+      "sha256": "6ee6252e09f13150eeaf5fb2ca110def0cc3a1537e224d0b4bbca9f5e5ea8745",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.45
+        "duration_seconds": 1.4
       },
       "loudness": {
-        "integrated_lufs": -22.65,
-        "true_peak_dbfs": -6.63,
+        "integrated_lufs": -22.67,
+        "true_peak_dbfs": -5.71,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.74
+        "threshold_lufs": -33.75
       },
       "boundary_peaks": {
-        "leading_40ms": 1.6e-07,
+        "leading_40ms": 4.6e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2225,6 +2225,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
+      "voice_key": "reader-en",
       "phonemes": "ɹɪsˈiv",
       "synthesis_context": {
         "method": "aligned-carrier-v1",
@@ -2235,11 +2236,11 @@
         "text": "Please say: receive.",
         "target": "receive",
         "target_phonemes": "ɹɪsˈiv",
-        "context_pcm_sha256": "09cb1927e46d2814a59f5df209f2b85105c27c5d7263210e1acfbe5ae6065024",
-        "context_duration_seconds": 2.375,
-        "word_start_seconds": 0.875,
+        "context_pcm_sha256": "16e7a14205f17c10957a20c16834dc9af2e924d4d42b1179cce0ce9c3d8c5bf4",
+        "context_duration_seconds": 2.35,
+        "word_start_seconds": 0.925,
         "word_end_seconds": 2.0,
-        "crop_start_seconds": 0.83,
+        "crop_start_seconds": 0.88,
         "crop_end_seconds": 2.08,
         "leading_margin_seconds": 0.045,
         "trailing_margin_seconds": 0.08,
@@ -2249,31 +2250,31 @@
             "text": "Please",
             "phonemes": "plˈiz",
             "start_seconds": 0.25,
-            "end_seconds": 0.5875
+            "end_seconds": 0.6125
           },
           {
             "text": "say",
             "phonemes": "sˈA",
-            "start_seconds": 0.5875,
-            "end_seconds": 0.825
+            "start_seconds": 0.6125,
+            "end_seconds": 0.875
           },
           {
             "text": ":",
             "phonemes": ":",
-            "start_seconds": 0.825,
-            "end_seconds": 0.875
+            "start_seconds": 0.875,
+            "end_seconds": 0.925
           },
           {
             "text": "receive",
             "phonemes": "ɹɪsˈiv",
-            "start_seconds": 0.875,
+            "start_seconds": 0.925,
             "end_seconds": 2.0
           },
           {
             "text": ".",
             "phonemes": ".",
             "start_seconds": 2.0,
-            "end_seconds": 2.275
+            "end_seconds": 2.25
           }
         ]
       }
@@ -2606,25 +2607,25 @@
       "role": "explainer",
       "kind": "word",
       "model": "v1.0",
-      "voice": "am_puck",
+      "voice": "am_fenrir",
       "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "be08dae0458057ba38c391c643341f140131c98e955c6e0f077de0e8ac63b887",
+      "sha256": "b2547d790be29c497e7cfb163c6683f15dbdd197528b449180f976b7defef8ae",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.375
+        "duration_seconds": 1.3
       },
       "loudness": {
-        "integrated_lufs": -22.78,
-        "true_peak_dbfs": -8.48,
+        "integrated_lufs": -22.79,
+        "true_peak_dbfs": -6.57,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.0
+        "threshold_lufs": -34.54
       },
       "boundary_peaks": {
-        "leading_40ms": 1.19e-06,
+        "leading_40ms": 2.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2638,6 +2639,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
+      "voice_key": "reader-en",
       "phonemes": "ɹɪmˈAn",
       "synthesis_context": {
         "method": "aligned-carrier-v1",
@@ -2648,12 +2650,12 @@
         "text": "Please say: remain.",
         "target": "remain",
         "target_phonemes": "ɹɪmˈAn",
-        "context_pcm_sha256": "66719935e18c181b807af6b25bed0313b076b3d1ad04bea4f9b12de8ba254aea",
-        "context_duration_seconds": 2.325,
-        "word_start_seconds": 0.9,
-        "word_end_seconds": 1.95,
-        "crop_start_seconds": 0.855,
-        "crop_end_seconds": 2.03,
+        "context_pcm_sha256": "26824fe98710918270b6deec25394c6bf94e026f268bcb577855f8075941cbb5",
+        "context_duration_seconds": 2.275,
+        "word_start_seconds": 0.95,
+        "word_end_seconds": 1.925,
+        "crop_start_seconds": 0.905,
+        "crop_end_seconds": 2.005,
         "leading_margin_seconds": 0.045,
         "trailing_margin_seconds": 0.08,
         "edge_fade_seconds": 0.003,
@@ -2662,31 +2664,31 @@
             "text": "Please",
             "phonemes": "plˈiz",
             "start_seconds": 0.25,
-            "end_seconds": 0.5875
+            "end_seconds": 0.6125
           },
           {
             "text": "say",
             "phonemes": "sˈA",
-            "start_seconds": 0.5875,
-            "end_seconds": 0.85
+            "start_seconds": 0.6125,
+            "end_seconds": 0.9
           },
           {
             "text": ":",
             "phonemes": ":",
-            "start_seconds": 0.85,
-            "end_seconds": 0.9
+            "start_seconds": 0.9,
+            "end_seconds": 0.95
           },
           {
             "text": "remain",
             "phonemes": "ɹɪmˈAn",
-            "start_seconds": 0.9,
-            "end_seconds": 1.95
+            "start_seconds": 0.95,
+            "end_seconds": 1.925
           },
           {
             "text": ".",
             "phonemes": ".",
-            "start_seconds": 1.95,
-            "end_seconds": 2.225
+            "start_seconds": 1.925,
+            "end_seconds": 2.175
           }
         ]
       }
@@ -16738,25 +16740,25 @@
       "role": "explainer",
       "kind": "word",
       "model": "v1.0",
-      "voice": "am_puck",
+      "voice": "am_fenrir",
       "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "b1ef7dbb45cd4538ab5bbe576c81ea823ed8c28712e0ed1da132529ac08dbf07",
+      "sha256": "d19bdd3c7c91acba8a83166bc2d8fd8247b3251d599bad0b58852eb346fc4033",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.55
+        "duration_seconds": 1.478
       },
       "loudness": {
-        "integrated_lufs": -22.73,
-        "true_peak_dbfs": -6.91,
+        "integrated_lufs": -22.74,
+        "true_peak_dbfs": -4.31,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.68
+        "threshold_lufs": -34.08
       },
       "boundary_peaks": {
-        "leading_40ms": 6.2e-07,
+        "leading_40ms": 8e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -16770,6 +16772,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
+      "voice_key": "reader-en",
       "phonemes": "pɹˈɪvəlɪʤ",
       "synthesis_context": {
         "method": "aligned-carrier-v1",
@@ -16780,13 +16783,13 @@
         "text": "Please say: privilege.",
         "target": "privilege",
         "target_phonemes": "pɹˈɪvəlɪʤ",
-        "context_pcm_sha256": "923376f4741be6c1fbd4e1f2aa010fbe9fb720af7dca7dffc73a2180af1e2415",
-        "context_duration_seconds": 2.5,
-        "word_start_seconds": 0.9,
+        "context_pcm_sha256": "98e2d9e4dfd39151aed2168b27228511c5fb34d03801244e429621a23c25e57f",
+        "context_duration_seconds": 2.475,
+        "word_start_seconds": 0.9875,
         "word_end_seconds": 2.125,
-        "crop_start_seconds": 0.855,
+        "crop_start_seconds": 0.9275,
         "crop_end_seconds": 2.205,
-        "leading_margin_seconds": 0.045,
+        "leading_margin_seconds": 0.06,
         "trailing_margin_seconds": 0.08,
         "edge_fade_seconds": 0.003,
         "tokens": [
@@ -16794,31 +16797,31 @@
             "text": "Please",
             "phonemes": "plˈiz",
             "start_seconds": 0.25,
-            "end_seconds": 0.5875
+            "end_seconds": 0.6125
           },
           {
             "text": "say",
             "phonemes": "sˈA",
-            "start_seconds": 0.5875,
-            "end_seconds": 0.85
+            "start_seconds": 0.6125,
+            "end_seconds": 0.9
           },
           {
             "text": ":",
             "phonemes": ":",
-            "start_seconds": 0.85,
-            "end_seconds": 0.9
+            "start_seconds": 0.9,
+            "end_seconds": 0.9875
           },
           {
             "text": "privilege",
             "phonemes": "pɹˈɪvəlɪʤ",
-            "start_seconds": 0.9,
+            "start_seconds": 0.9875,
             "end_seconds": 2.125
           },
           {
             "text": ".",
             "phonemes": ".",
             "start_seconds": 2.125,
-            "end_seconds": 2.4
+            "end_seconds": 2.375
           }
         ]
       }
@@ -21964,25 +21967,25 @@
       "role": "explainer",
       "kind": "word",
       "model": "v1.0",
-      "voice": "am_puck",
+      "voice": "am_fenrir",
       "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "68de207d1c4b4dc87fd9a064b4fb5a2276408b7e3a14153073f706a347a2004e",
+      "sha256": "a4f76cfd4fee9e699ea155e2472b05b83278e0d5eb08851ef3cf41b215cf658a",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.35
+        "duration_seconds": 1.275
       },
       "loudness": {
-        "integrated_lufs": -22.69,
-        "true_peak_dbfs": -7.86,
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -5.81,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.91
+        "threshold_lufs": -34.69
       },
       "boundary_peaks": {
-        "leading_40ms": 4.83e-06,
+        "leading_40ms": 3.6e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21996,6 +21999,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
+      "voice_key": "reader-en",
       "phonemes": "ɹɪlˈis",
       "synthesis_context": {
         "method": "aligned-carrier-v1",
@@ -22006,11 +22010,11 @@
         "text": "Please say: release.",
         "target": "release",
         "target_phonemes": "ɹɪlˈis",
-        "context_pcm_sha256": "28c5042f6a7bb439ef393ed938285883c325cb42f2b3cf822316b3a0c3351714",
-        "context_duration_seconds": 2.3,
-        "word_start_seconds": 0.9,
+        "context_pcm_sha256": "d6d9f3936aa8a319f00207ebb9b8e411e8330685e0805819a7e1f5fdb19210aa",
+        "context_duration_seconds": 2.275,
+        "word_start_seconds": 0.975,
         "word_end_seconds": 1.925,
-        "crop_start_seconds": 0.855,
+        "crop_start_seconds": 0.93,
         "crop_end_seconds": 2.005,
         "leading_margin_seconds": 0.045,
         "trailing_margin_seconds": 0.08,
@@ -22020,31 +22024,31 @@
             "text": "Please",
             "phonemes": "plˈiz",
             "start_seconds": 0.25,
-            "end_seconds": 0.5875
+            "end_seconds": 0.6125
           },
           {
             "text": "say",
             "phonemes": "sˈA",
-            "start_seconds": 0.5875,
-            "end_seconds": 0.85
+            "start_seconds": 0.6125,
+            "end_seconds": 0.925
           },
           {
             "text": ":",
             "phonemes": ":",
-            "start_seconds": 0.85,
-            "end_seconds": 0.9
+            "start_seconds": 0.925,
+            "end_seconds": 0.975
           },
           {
             "text": "release",
             "phonemes": "ɹɪlˈis",
-            "start_seconds": 0.9,
+            "start_seconds": 0.975,
             "end_seconds": 1.925
           },
           {
             "text": ".",
             "phonemes": ".",
             "start_seconds": 1.925,
-            "end_seconds": 2.2
+            "end_seconds": 2.175
           }
         ]
       }
@@ -26013,17 +26017,15 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-11-11T20:48:47+08:00",
-    "clip_count": 5,
-    "staging_manifest_sha256": "7643d2b3a4110ec1b17281c88d3e2a4bca74f25fcdb72bf0da36bac65dc97748",
-    "transcript_manifest_sha256": "7d93d5fc87430d4f5b995865390f5dd40552a0b3203d6fea2899388b3b61ddde",
+    "generated_at": "2026-11-18T17:04:40+08:00",
+    "clip_count": 4,
+    "staging_manifest_sha256": "b0438e51f5667ac96182b26c5611603cc39ffd9675f89228c729544fc5314d09",
+    "transcript_manifest_sha256": "6c83fc3b64dd35b6d2ba515cf0193acff6b91bb86b7464d989849a8b386954e4",
     "files": [
-      "s10-p01-zh.mp3",
-      "s13-v02-word.mp3",
-      "s16-t02-zh.mp3",
-      "s16-v02-meaning.mp3",
+      "s02-v01-word.mp3",
+      "s02-v06-word.mp3",
+      "s13-v05-word.mp3",
       "s17-v05-word.mp3"
-    ],
-    "method": "Pinned same voices; English aligned carrier words and revised Mandarin phoneme grouping, tones and pacing; human retest pending."
+    ]
   }
 }
