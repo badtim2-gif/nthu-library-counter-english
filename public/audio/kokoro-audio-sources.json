@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-11-18",
+  "updated_at": "2026-11-23",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -2193,25 +2193,25 @@
       "role": "explainer",
       "kind": "word",
       "model": "v1.0",
+      "speed": 0.8,
       "voice": "am_fenrir",
-      "speed": 0.75,
       "applied_target_lufs": -22.3,
-      "sha256": "6ee6252e09f13150eeaf5fb2ca110def0cc3a1537e224d0b4bbca9f5e5ea8745",
+      "sha256": "8e55fa542240e8b957b904f4f93c6b59be22af251ac39d941e071b75f07d88e1",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.4
+        "duration_seconds": 0.942
       },
       "loudness": {
-        "integrated_lufs": -22.67,
-        "true_peak_dbfs": -5.71,
+        "integrated_lufs": -22.59,
+        "true_peak_dbfs": -6.68,
         "lra_lu": 0.0,
-        "threshold_lufs": -33.75
+        "threshold_lufs": -32.59
       },
       "boundary_peaks": {
-        "leading_40ms": 4.6e-07,
+        "leading_40ms": 3.8e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2226,57 +2226,12 @@
         "trailing_safety_silence": true
       },
       "voice_key": "reader-en",
-      "phonemes": "ɹɪsˈiv",
-      "synthesis_context": {
-        "method": "aligned-carrier-v1",
-        "text": "Please say: receive."
-      },
-      "context_extraction": {
-        "method": "aligned-carrier-v1",
-        "text": "Please say: receive.",
-        "target": "receive",
-        "target_phonemes": "ɹɪsˈiv",
-        "context_pcm_sha256": "16e7a14205f17c10957a20c16834dc9af2e924d4d42b1179cce0ce9c3d8c5bf4",
-        "context_duration_seconds": 2.35,
-        "word_start_seconds": 0.925,
-        "word_end_seconds": 2.0,
-        "crop_start_seconds": 0.88,
-        "crop_end_seconds": 2.08,
-        "leading_margin_seconds": 0.045,
-        "trailing_margin_seconds": 0.08,
-        "edge_fade_seconds": 0.003,
-        "tokens": [
-          {
-            "text": "Please",
-            "phonemes": "plˈiz",
-            "start_seconds": 0.25,
-            "end_seconds": 0.6125
-          },
-          {
-            "text": "say",
-            "phonemes": "sˈA",
-            "start_seconds": 0.6125,
-            "end_seconds": 0.875
-          },
-          {
-            "text": ":",
-            "phonemes": ":",
-            "start_seconds": 0.875,
-            "end_seconds": 0.925
-          },
-          {
-            "text": "receive",
-            "phonemes": "ɹɪsˈiv",
-            "start_seconds": 0.925,
-            "end_seconds": 2.0
-          },
-          {
-            "text": ".",
-            "phonemes": ".",
-            "start_seconds": 2.0,
-            "end_seconds": 2.25
-          }
-        ]
+      "source_segment": {
+        "file": "s15-t05-en.mp3",
+        "sha256": "9d7aa4ef983637f6eb8ccf37a899ab43bfefe4cad645ac0a6cd64a6d0fff6367",
+        "text": "receive",
+        "start_seconds": 3.914,
+        "end_seconds": 4.656
       }
     },
     {
@@ -2606,26 +2561,26 @@
       "language": "en",
       "role": "explainer",
       "kind": "word",
-      "model": "v1.0",
-      "voice": "am_fenrir",
-      "speed": 0.75,
+      "model": "v1.1-zh",
+      "speed": 0.8,
+      "voice": "af_maple",
       "applied_target_lufs": -22.3,
-      "sha256": "b2547d790be29c497e7cfb163c6683f15dbdd197528b449180f976b7defef8ae",
+      "sha256": "b3e7ec2cb41dce246c14dffa7d963d375955505c4cc028f59690ee064153df65",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.3
+        "duration_seconds": 1.171
       },
       "loudness": {
-        "integrated_lufs": -22.79,
-        "true_peak_dbfs": -6.57,
+        "integrated_lufs": -22.74,
+        "true_peak_dbfs": -8.02,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.54
+        "threshold_lufs": -34.72
       },
       "boundary_peaks": {
-        "leading_40ms": 2.7e-07,
+        "leading_40ms": 4e-08,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -2639,58 +2594,13 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "voice_key": "reader-en",
-      "phonemes": "ɹɪmˈAn",
-      "synthesis_context": {
-        "method": "aligned-carrier-v1",
-        "text": "Please say: remain."
-      },
-      "context_extraction": {
-        "method": "aligned-carrier-v1",
-        "text": "Please say: remain.",
-        "target": "remain",
-        "target_phonemes": "ɹɪmˈAn",
-        "context_pcm_sha256": "26824fe98710918270b6deec25394c6bf94e026f268bcb577855f8075941cbb5",
-        "context_duration_seconds": 2.275,
-        "word_start_seconds": 0.95,
-        "word_end_seconds": 1.925,
-        "crop_start_seconds": 0.905,
-        "crop_end_seconds": 2.005,
-        "leading_margin_seconds": 0.045,
-        "trailing_margin_seconds": 0.08,
-        "edge_fade_seconds": 0.003,
-        "tokens": [
-          {
-            "text": "Please",
-            "phonemes": "plˈiz",
-            "start_seconds": 0.25,
-            "end_seconds": 0.6125
-          },
-          {
-            "text": "say",
-            "phonemes": "sˈA",
-            "start_seconds": 0.6125,
-            "end_seconds": 0.9
-          },
-          {
-            "text": ":",
-            "phonemes": ":",
-            "start_seconds": 0.9,
-            "end_seconds": 0.95
-          },
-          {
-            "text": "remain",
-            "phonemes": "ɹɪmˈAn",
-            "start_seconds": 0.95,
-            "end_seconds": 1.925
-          },
-          {
-            "text": ".",
-            "phonemes": ".",
-            "start_seconds": 1.925,
-            "end_seconds": 2.175
-          }
-        ]
+      "voice_key": "librarian-en",
+      "source_segment": {
+        "file": "s02-t04-en.mp3",
+        "sha256": "5960029aa0f994db3f3fbf946cbd80dcff1aa82e060909bf44d4a4e40316dd88",
+        "text": "remain",
+        "start_seconds": 2.264,
+        "end_seconds": 3.235
       }
     },
     {
@@ -21967,25 +21877,25 @@
       "role": "explainer",
       "kind": "word",
       "model": "v1.0",
-      "voice": "am_fenrir",
-      "speed": 0.75,
+      "speed": 0.8,
+      "voice": "am_puck",
       "applied_target_lufs": -22.3,
-      "sha256": "a4f76cfd4fee9e699ea155e2472b05b83278e0d5eb08851ef3cf41b215cf658a",
+      "sha256": "f774a1bf0c4e148177e8672bb4ccf8bf4ef33b741a4e6640e60dafe58af3926d",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 1.275
+        "duration_seconds": 1.117
       },
       "loudness": {
-        "integrated_lufs": -22.73,
-        "true_peak_dbfs": -5.81,
+        "integrated_lufs": -22.83,
+        "true_peak_dbfs": -7.26,
         "lra_lu": 0.0,
-        "threshold_lufs": -34.69
+        "threshold_lufs": -33.41
       },
       "boundary_peaks": {
-        "leading_40ms": 3.6e-07,
+        "leading_40ms": 1.1e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -21999,58 +21909,13 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "voice_key": "reader-en",
-      "phonemes": "ɹɪlˈis",
-      "synthesis_context": {
-        "method": "aligned-carrier-v1",
-        "text": "Please say: release."
-      },
-      "context_extraction": {
-        "method": "aligned-carrier-v1",
-        "text": "Please say: release.",
-        "target": "release",
-        "target_phonemes": "ɹɪlˈis",
-        "context_pcm_sha256": "d6d9f3936aa8a319f00207ebb9b8e411e8330685e0805819a7e1f5fdb19210aa",
-        "context_duration_seconds": 2.275,
-        "word_start_seconds": 0.975,
-        "word_end_seconds": 1.925,
-        "crop_start_seconds": 0.93,
-        "crop_end_seconds": 2.005,
-        "leading_margin_seconds": 0.045,
-        "trailing_margin_seconds": 0.08,
-        "edge_fade_seconds": 0.003,
-        "tokens": [
-          {
-            "text": "Please",
-            "phonemes": "plˈiz",
-            "start_seconds": 0.25,
-            "end_seconds": 0.6125
-          },
-          {
-            "text": "say",
-            "phonemes": "sˈA",
-            "start_seconds": 0.6125,
-            "end_seconds": 0.925
-          },
-          {
-            "text": ":",
-            "phonemes": ":",
-            "start_seconds": 0.925,
-            "end_seconds": 0.975
-          },
-          {
-            "text": "release",
-            "phonemes": "ɹɪlˈis",
-            "start_seconds": 0.975,
-            "end_seconds": 1.925
-          },
-          {
-            "text": ".",
-            "phonemes": ".",
-            "start_seconds": 1.925,
-            "end_seconds": 2.175
-          }
-        ]
+      "voice_key": "explainer-en",
+      "source_segment": {
+        "file": "s08-p02-en.mp3",
+        "sha256": "9563493264bf704f01d05715713e6099b8c87bfc133ba5c74465115619598e98",
+        "text": "release",
+        "start_seconds": 1.64,
+        "end_seconds": 2.557
       }
     },
     {
@@ -26017,15 +25882,15 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-11-18T17:04:40+08:00",
-    "clip_count": 4,
-    "staging_manifest_sha256": "b0438e51f5667ac96182b26c5611603cc39ffd9675f89228c729544fc5314d09",
-    "transcript_manifest_sha256": "6c83fc3b64dd35b6d2ba515cf0193acff6b91bb86b7464d989849a8b386954e4",
+    "generated_at": "2026-11-23T11:54:59+08:00",
+    "clip_count": 3,
+    "staging_manifest_sha256": "dd5d86256d16ad53b34ae20492e5eb1d3a6d1706ec99e58c66987dc457335cec",
+    "transcript_manifest_sha256": "e351afabd1314613ea3b97b8aad4a32f91a9c6a356bf585ef97ff346932586fc",
     "files": [
+      "s17-v05-word.mp3",
       "s02-v01-word.mp3",
-      "s02-v06-word.mp3",
-      "s13-v05-word.mp3",
-      "s17-v05-word.mp3"
-    ]
+      "s02-v06-word.mp3"
+    ],
+    "method": "Extract complete base-form words from existing lesson recordings. Human retest pending."
   }
 }

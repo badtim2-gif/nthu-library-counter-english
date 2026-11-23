@@ -161,9 +161,9 @@ for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
   if (entry.synthesis_context) {
     assert.equal(entry.kind, "word");
     assert.equal(entry.language, "en");
-    const changedWord = ["s02-v01-word.mp3", "s02-v06-word.mp3", "s13-v05-word.mp3", "s17-v05-word.mp3"].includes(entry.file);
-    assert.equal(record.voice, changedWord ? "am_fenrir" : "am_puck");
-    if (changedWord) assert.equal(entry.voice_key, "reader-en");
+    const isPrivilege = entry.file === "s13-v05-word.mp3";
+    assert.equal(record.voice, isPrivilege ? "am_fenrir" : "am_puck");
+    if (isPrivilege) assert.equal(entry.voice_key, "reader-en");
     assert.equal(record.speed, 0.75);
     assert.equal(entry.synthesis_context.method, "aligned-carrier-v1");
     assert.equal(entry.synthesis_context.text, `Please say: ${entry.text}.`);
@@ -223,8 +223,6 @@ for (let index = 0; index < 26; index += 1) {
 
 for (const entry of manifest.entries) {
   const contextualWords = {
-    "s02-v01-word.mp3": "ɹɪsˈiv",
-    "s02-v06-word.mp3": "ɹɪmˈAn",
     "s13-v05-word.mp3": "pɹˈɪvəlɪʤ",
     "s13-v07-word.mp3": "ʧˈɑɹʤ",
   };
@@ -268,9 +266,18 @@ for (const entry of manifest.entries) {
   if (entry.file === "s20-g02-zh.mp3") {
     assert.match(entry.phonemes ?? "", /^ㄐ言4ㄐㄝ1/, "間接必須使用 jian4 jie1");
   }
-  if (entry.file === "s17-v05-word.mp3") {
-    assert.equal(entry.phonemes, "ɹɪlˈis", "release 首音須對應字典 rɪ，不可變為 re");
-    assert.equal(entry.synthesis_context?.method, "aligned-carrier-v1");
+  const derivedWordSources = {
+    "s17-v05-word.mp3": "s08-p02-en.mp3",
+    "s02-v01-word.mp3": "s15-t05-en.mp3",
+    "s02-v06-word.mp3": "s02-t04-en.mp3",
+  };
+  if (Object.hasOwn(derivedWordSources, entry.file)) {
+    assert.equal(entry.source_segment?.file, derivedWordSources[entry.file],
+      `Keep the base-form lesson audio for ${entry.file}`);
+    assert.equal(entry.synthesis_context, undefined, "Do not reuse the old carrier phrase");
+    const reference = manifest.entries.find((item) => item.file === entry.source_segment.file);
+    assert.ok(reference.text.toLowerCase().split(/[^a-z]+/).includes(entry.text.toLowerCase()),
+      `The source must contain the complete base form: ${entry.file}`);
   }
   if (entry.file === "s13-v02-word.mp3") {
     assert.equal(entry.phonemes, "fˈi");

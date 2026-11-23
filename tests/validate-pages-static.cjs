@@ -38,8 +38,8 @@ assert.match(html, new RegExp(`${basePath}/_next/`));
 assert.match(html, new RegExp(`${basePath}/manifest\\.webmanifest`));
 assert.doesNotMatch(html, /(?:href|src)="\/_next\//);
 assert.match(html, new RegExp(`${basePath}/credits/`));
-assert.match(html, /data-audio-version="nthu-library-audio-v28"/);
-assert.match(html, /音訊版本：(?:<!-- -->)?v28/);
+assert.match(html, /data-audio-version="nthu-library-audio-v29"/);
+assert.match(html, /音訊版本：(?:<!-- -->)?v29/);
 
 const creditsHtml = fs.readFileSync(path.join(output, "credits", "index.html"), "utf8");
 assert.match(creditsHtml, /素材來源、第三方授權及著作權聲明/);
@@ -72,9 +72,9 @@ assert.match(visualLicense, /THE SOFTWARE IS PROVIDED "AS IS"/);
 
 const serviceWorker = fs.readFileSync(path.join(output, "sw.js"), "utf8");
 assert.match(serviceWorker, /self\.registration\.scope/);
-assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v33";/);
+assert.match(serviceWorker, /const SHELL_CACHE = "nthu-library-shell-v34";/);
 assert.match(serviceWorker, /withBase\("\/credits\/"\)/);
-assert.match(serviceWorker, /const AUDIO_CACHE = "nthu-library-audio-v28";/);
+assert.match(serviceWorker, /const AUDIO_CACHE = "nthu-library-audio-v29";/);
 for (let version = 1; version <= 27; version += 1) {
   assert.ok(!serviceWorker.includes(`"nthu-library-audio-v${version}"`));
 }
@@ -93,7 +93,7 @@ assert.equal(packageReport.packages.length, packageReport.package_count);
 assert.ok(packageReport.packages.every((entry) => !("paths" in entry)));
 
 const pageSource = fs.readFileSync(path.join(root, "app", "page.tsx"), "utf8");
-assert.match(pageSource, /const AUDIO_CACHE_NAME = "nthu-library-audio-v28";/);
+assert.match(pageSource, /const AUDIO_CACHE_NAME = "nthu-library-audio-v29";/);
 assert.match(pageSource, /storage: caches, cacheName: AUDIO_CACHE_NAME/);
 const offlineSource = fs.readFileSync(path.join(root, "app", "offline-audio.ts"), "utf8");
 assert.match(offlineSource, /storage\.open\(cacheName\)/);

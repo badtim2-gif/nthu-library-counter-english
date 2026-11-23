@@ -567,14 +567,16 @@
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.75,
+      "speed": 0.8,
       "model": "v1.0",
-      "phonemes": "ɹɪsˈiv",
-      "synthesis_context": {
-        "method": "aligned-carrier-v1",
-        "text": "Please say: receive."
-      },
-      "voice_key": "reader-en"
+      "voice_key": "reader-en",
+      "source_segment": {
+        "file": "s15-t05-en.mp3",
+        "sha256": "9d7aa4ef983637f6eb8ccf37a899ab43bfefe4cad645ac0a6cd64a6d0fff6367",
+        "text": "receive",
+        "start_seconds": 3.914,
+        "end_seconds": 4.656
+      }
     },
     {
       "file": "s02-v01-meaning.mp3",
@@ -670,18 +672,20 @@
     {
       "file": "s02-v06-word.mp3",
       "text": "remain",
-      "voice": "kokoro-v1.0/am_fenrir",
+      "voice": "kokoro-v1.1-zh/af_maple",
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.75,
-      "model": "v1.0",
-      "phonemes": "ɹɪmˈAn",
-      "synthesis_context": {
-        "method": "aligned-carrier-v1",
-        "text": "Please say: remain."
-      },
-      "voice_key": "reader-en"
+      "speed": 0.8,
+      "model": "v1.1-zh",
+      "voice_key": "librarian-en",
+      "source_segment": {
+        "file": "s02-t04-en.mp3",
+        "sha256": "5960029aa0f994db3f3fbf946cbd80dcff1aa82e060909bf44d4a4e40316dd88",
+        "text": "remain",
+        "start_seconds": 2.264,
+        "end_seconds": 3.235
+      }
     },
     {
       "file": "s02-v06-meaning.mp3",
@@ -5858,18 +5862,20 @@
     {
       "file": "s17-v05-word.mp3",
       "text": "release",
-      "voice": "kokoro-v1.0/am_fenrir",
+      "voice": "kokoro-v1.0/am_puck",
       "language": "en",
       "kind": "word",
       "role": "explainer",
-      "speed": 0.75,
+      "speed": 0.8,
       "model": "v1.0",
-      "phonemes": "ɹɪlˈis",
-      "synthesis_context": {
-        "method": "aligned-carrier-v1",
-        "text": "Please say: release."
-      },
-      "voice_key": "reader-en"
+      "voice_key": "explainer-en",
+      "source_segment": {
+        "file": "s08-p02-en.mp3",
+        "sha256": "9563493264bf704f01d05715713e6099b8c87bfc133ba5c74465115619598e98",
+        "text": "release",
+        "start_seconds": 1.64,
+        "end_seconds": 2.557
+      }
     },
     {
       "file": "s17-v05-meaning.mp3",
