@@ -580,7 +580,8 @@ export const scenarios: Scenario[] = [
     title: "學位論文上傳、授權及延後公開諮詢",
     summary: "回應研究生對論文上傳、授權文件、延後公開與後續修改的疑問。",
     sourceLabel: "二〇二六年論文授權新制公告",
-    sourceUrl: "https://www.lib.nthu.edu.tw/news/list_en.html",
+    sourceUrl: "https://cwemaster.site.nthu.edu.tw/p/406-1246-306152,r10687.php?Lang=zh-tw",
+    sourceCheckedAt: "2026-11-25",
     dialogue: [
       {
         role: "reader",

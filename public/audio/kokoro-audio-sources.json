@@ -1,7 +1,7 @@
 {
   "status": "approved-production",
   "generated_at": "2026-09-21T21:03:23+08:00",
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-25",
   "license": "Apache-2.0",
   "model_cards": [
     "https://huggingface.co/hexgrad/Kokoro-82M",
@@ -11760,23 +11760,23 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.85,
-      "applied_target_lufs": -20.87,
-      "sha256": "add2f5e0d997324608cfcba6f2ee153aa019f728257415a9e835f57a098f6662",
+      "applied_target_lufs": -20.97,
+      "sha256": "5e188d574fc214e06a53dd91b31a6b7f703a90c4068c5287459ab3e2951de87f",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 5.725
+        "duration_seconds": 5.55
       },
       "loudness": {
-        "integrated_lufs": -22.39,
-        "true_peak_dbfs": -3.81,
+        "integrated_lufs": -22.43,
+        "true_peak_dbfs": -3.92,
         "lra_lu": 3.2,
-        "threshold_lufs": -32.83
+        "threshold_lufs": -32.87
       },
       "boundary_peaks": {
-        "leading_40ms": 1.6e-07,
+        "leading_40ms": 1.7e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -11790,7 +11790,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "用4ㄌㄞ2/ㄌㄧ3ㄇㄠ4ㄅ要3ㄉㄚ2, ㄒ阳3ㄑ言2王3ㄇㄡ3ㄍㄜ4ㄍ万3ㄕㄜ4ㄏ我4ㄉㄧ4ㄉ言3."
+      "phonemes": "用4ㄌㄞ2ㄌㄧ3ㄇㄠ4ㄅ要3ㄉㄚ2/ㄒ阳3ㄑ言2王3ㄇㄡ3ㄍㄜ4ㄍ万3ㄕㄜ4ㄏ我4ㄉㄧ4ㄉ言3."
     },
     {
       "file": "s10-p02-en.mp3",
@@ -19923,23 +19923,23 @@
       "model": "v1.1-zh",
       "voice": "zm_010",
       "speed": 0.8,
-      "applied_target_lufs": -19.91,
-      "sha256": "2cb4d67e9e177b89dd59ab1545e05e5e6f42a3fdd0c5da0d48f72a63e3bf2562",
+      "applied_target_lufs": -20.29,
+      "sha256": "1a09437dd0d3c1d55556004a2df78c8104757f91e4905633819b6f96fb4e13cb",
       "technical": {
         "codec": "mp3",
         "sample_rate": 24000,
         "channels": 1,
         "bit_rate": 48000,
-        "duration_seconds": 6.55
+        "duration_seconds": 6.525
       },
       "loudness": {
-        "integrated_lufs": -22.64,
-        "true_peak_dbfs": -3.79,
-        "lra_lu": 6.2,
-        "threshold_lufs": -33.26
+        "integrated_lufs": -22.6,
+        "true_peak_dbfs": -3.95,
+        "lra_lu": 6.4,
+        "threshold_lufs": -33.65
       },
       "boundary_peaks": {
-        "leading_40ms": 2.8e-07,
+        "leading_40ms": 2.6e-07,
         "trailing_60ms": 0.0
       },
       "checks": {
@@ -19953,7 +19953,7 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       },
-      "phonemes": "ㄗ中3ㄊㄨ2ㄉㄜ5/ㄩ4月1ㄕㄨ1, ㄎㄜ3ㄗㄞ4/ㄧ4ㄌㄡ2/ㄩ4月1ㄗㄭ4ㄓㄨ4ㄑㄩ3ㄕㄨ1ㄑㄩ1/ㄌ应2ㄑㄩ3."
+      "phonemes": "ㄗ中3ㄊㄨ2ㄉㄜ5/ㄩ4月1ㄕㄨ1, ㄎㄜ3ㄗㄞ4/ㄧ4ㄌㄡ2/ㄩ4月1ㄗㄭ4ㄓㄨ4ㄑㄩ3ㄕㄨ1ㄑㄩ1/ㄌ应2ㄑㄩ3"
     },
     {
       "file": "s16-t03-en.mp3",
@@ -25882,15 +25882,14 @@
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-11-23T11:54:59+08:00",
-    "clip_count": 3,
-    "staging_manifest_sha256": "dd5d86256d16ad53b34ae20492e5eb1d3a6d1706ec99e58c66987dc457335cec",
-    "transcript_manifest_sha256": "e351afabd1314613ea3b97b8aad4a32f91a9c6a356bf585ef97ff346932586fc",
+    "generated_at": "2026-11-23T15:41:25+08:00",
+    "clip_count": 2,
+    "staging_manifest_sha256": "ab2075c2e06bd1265b73cc3e20ef1686feae8267b178bfc03a5769da3d8cd695",
+    "transcript_manifest_sha256": "0ae56a3cd517dc3a422aa34721b42733ee6ef7be7651bc4aa3f3ef9bb51c5873",
     "files": [
-      "s17-v05-word.mp3",
-      "s02-v01-word.mp3",
-      "s02-v06-word.mp3"
+      "s10-p01-zh.mp3",
+      "s16-t02-zh.mp3"
     ],
-    "method": "Extract complete base-form words from existing lesson recordings. Human retest pending."
+    "method": "Adopt reviewed-technical Mandarin candidates for two retest reports. Human listening pending."
   }
 }
