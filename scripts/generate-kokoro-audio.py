@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate all 682 non-alphabet production clips, or a selected subset, with pinned Kokoro models.
+"""Generate all 778 non-alphabet production clips, or a selected subset, with pinned Kokoro models.
 
 The script deliberately writes outside public/audio.  Review and validate the
 staging output before copying it into the application.
@@ -402,8 +402,8 @@ def main() -> int:
     source = json.loads(args.manifest.read_text(encoding="utf-8"))
     source_entries = {entry["file"]: entry for entry in source["entries"]}
     entries = [entry for entry in source["entries"] if entry["kind"] != "letter"]
-    if len(entries) != 682:
-        raise RuntimeError(f"Expected 682 synthetic clips, found {len(entries)}")
+    if len(entries) != 778:
+        raise RuntimeError(f"Expected 778 synthetic clips, found {len(entries)}")
     if args.files:
         requested = set(args.files)
         known = {entry["file"] for entry in entries}

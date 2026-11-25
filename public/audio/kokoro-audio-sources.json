@@ -74,8 +74,8 @@
     "tail_silence_ms": 120,
     "chunk_gap_ms": 120
   },
-  "clip_count": 682,
-  "unique_sha256_count": 682,
+  "clip_count": 778,
+  "unique_sha256_count": 778,
   "staging_manifest_sha256": "44b598111fca54d39a2a75bb97c1d7a9fe7a13731be01dd0da0737da6c760c28",
   "records": [
     {
@@ -25879,17 +25879,4167 @@
         "leading_safety_silence": true,
         "trailing_safety_silence": true
       }
+    },
+    {
+      "file": "s21-g01-zh.mp3",
+      "text": "有禮貌的處理指示。在祈使句前加上禮貌用語，讓請讀者報失、繳費或領證的指示更客氣。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.96,
+      "sha256": "dfed9e5675b2c9423b9fd7c51e1f54c23159dfdbe1f956808efee8d0c7103680",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 9.65
+      },
+      "loudness": {
+        "integrated_lufs": -22.34,
+        "true_peak_dbfs": -3.86,
+        "lra_lu": 3.3,
+        "threshold_lufs": -32.82
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.3e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-g02-zh.mp3",
+      "text": "時間連接詞。用表示等待期間或事後的連接詞，說明哪一件事先發生，哪一項服務在等待時適用。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.82,
+      "sha256": "09fcd5722995158bfba34fac0a819c50b9a531aab49937ca3ca04bc8d4df93ea",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 10.275
+      },
+      "loudness": {
+        "integrated_lufs": -22.43,
+        "true_peak_dbfs": -3.63,
+        "lra_lu": 3.2,
+        "threshold_lufs": -32.92
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.4e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-p01-en.mp3",
+      "text": "I lost my student ID. What should I do first?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -21.29,
+      "sha256": "687d4821475c0fc64a878d27ead493fc4f3ce19ff36c8ad55bb995287e0de631",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.182
+      },
+      "loudness": {
+        "integrated_lufs": -22.38,
+        "true_peak_dbfs": -3.87,
+        "lra_lu": 4.9,
+        "threshold_lufs": -33.4
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.79,
+        "word_count": 10,
+        "verified_wpm": 120.4
+      }
+    },
+    {
+      "file": "s21-p01-zh.mp3",
+      "text": "用來詢問遇到問題時要先採取哪一步。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.76,
+      "sha256": "6d7b5f05fef7698aad8190c160f1dcb06fc749ad440198422bf5eb3713560e86",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.125
+      },
+      "loudness": {
+        "integrated_lufs": -22.37,
+        "true_peak_dbfs": -3.93,
+        "lra_lu": 3.5,
+        "threshold_lufs": -32.57
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-p02-en.mp3",
+      "text": "How do I apply for a replacement card?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -21.25,
+      "sha256": "c0a1472de146d1689d460f292b9cdae7845280e9983e7638e15defb2ee3f46a5",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 4.185
+      },
+      "loudness": {
+        "integrated_lufs": -22.3,
+        "true_peak_dbfs": -5.64,
+        "lra_lu": 4.5,
+        "threshold_lufs": -32.97
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.78125,
+        "word_count": 8,
+        "verified_wpm": 120.5
+      }
+    },
+    {
+      "file": "s21-p02-zh.mp3",
+      "text": "用來詢問申請證件或服務的方式。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -21.05,
+      "sha256": "757b22ed584ede0ed6329eba9a3a2ffc540858c7bcf03b3300ac0599f3ccfdb8",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 4.675
+      },
+      "loudness": {
+        "integrated_lufs": -22.37,
+        "true_peak_dbfs": -3.8,
+        "lra_lu": 3.4,
+        "threshold_lufs": -32.73
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.9e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-p03-en.mp3",
+      "text": "Can I still enter while I wait for my new card?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -20.94,
+      "sha256": "46b3adf636b982df71af4e79d61682eff45a370e98a6118069e213e5986617ae",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.676
+      },
+      "loudness": {
+        "integrated_lufs": -22.32,
+        "true_peak_dbfs": -5.41,
+        "lra_lu": 6.4,
+        "threshold_lufs": -33.19
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.67727273,
+        "word_count": 11,
+        "verified_wpm": 120.5
+      }
+    },
+    {
+      "file": "s21-p03-zh.mp3",
+      "text": "用來確認等待某件事期間，是否還能使用原本的服務。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.57,
+      "sha256": "fc7585768a5be9202ef610f0bd1a8fab2d99ac6a7df672ef7bcdf903d9e82161",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 6.2
+      },
+      "loudness": {
+        "integrated_lufs": -22.47,
+        "true_peak_dbfs": -3.94,
+        "lra_lu": 3.9,
+        "threshold_lufs": -32.8
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-t01-en.mp3",
+      "text": "I lost my student ID. What should I do first?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_fenrir",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "8c606812ad6e14a77adbf8915a806e120846ebe84d2425414de88a8982493b46",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.184
+      },
+      "loudness": {
+        "integrated_lufs": -22.68,
+        "true_peak_dbfs": -4.71,
+        "lra_lu": 3.0,
+        "threshold_lufs": -33.71
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.83,
+        "word_count": 10,
+        "verified_wpm": 120.4
+      }
+    },
+    {
+      "file": "s21-t01-zh.mp3",
+      "text": "我的學生證不見了。請問我該先做什麼？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -21.27,
+      "sha256": "102ebc2359acc116fe354768311b19b9a53e63b71d87119cf8b00904fc819cd6",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 4.95
+      },
+      "loudness": {
+        "integrated_lufs": -22.44,
+        "true_peak_dbfs": -3.81,
+        "lra_lu": 3.1,
+        "threshold_lufs": -32.92
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.4e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-t02-en.mp3",
+      "text": "Please report the loss to the library right away.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
+      "model": "v1.1-zh",
+      "voice": "af_maple",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "f314d877fb48a4032c67695fa34f035d8eb7910480d6488f6ee1e5a3658ebc65",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 4.687
+      },
+      "loudness": {
+        "integrated_lufs": -22.14,
+        "true_peak_dbfs": -4.21,
+        "lra_lu": 1.1,
+        "threshold_lufs": -32.83
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.93333333,
+        "word_count": 9,
+        "verified_wpm": 120.3
+      }
+    },
+    {
+      "file": "s21-t02-zh.mp3",
+      "text": "請立即向圖書館報失。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "fa21f0b876ba2193ca023c684811ee807ffda3c3dc238b144ace26b861f7ffe0",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 3.65
+      },
+      "loudness": {
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -3.7,
+        "lra_lu": 2.0,
+        "threshold_lufs": -33.06
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.9e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-t03-en.mp3",
+      "text": "How do I apply for a replacement card?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_fenrir",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "a39b909623f1f96eecac47a09aaef221d662801f93b1eb34975589e941db5677",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 4.184
+      },
+      "loudness": {
+        "integrated_lufs": -23.02,
+        "true_peak_dbfs": -5.0,
+        "lra_lu": 2.8,
+        "threshold_lufs": -33.65
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.8,
+        "word_count": 8,
+        "verified_wpm": 120.5
+      }
+    },
+    {
+      "file": "s21-t03-zh.mp3",
+      "text": "我要怎麼申請補發學生證？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -21.18,
+      "sha256": "de85c06fc3143d749a7693864a7b2f0035ba977fccc3c50ac2ef7be423da75fe",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 4.0
+      },
+      "loudness": {
+        "integrated_lufs": -22.31,
+        "true_peak_dbfs": -3.99,
+        "lra_lu": 3.7,
+        "threshold_lufs": -32.78
+      },
+      "boundary_peaks": {
+        "leading_40ms": 3.7e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-t04-en.mp3",
+      "text": "Report the card lost in the Academic Information System, pay the replacement fee , and pick up the new card at the Card Distribution Center.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
+      "model": "v1.1-zh",
+      "voice": "af_maple",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "d2a685be26052d3c4109b7b7dcaa2b5a3a76906b32989f08bebabb08cb3c23eb",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 12.184
+      },
+      "loudness": {
+        "integrated_lufs": -23.11,
+        "true_peak_dbfs": -3.81,
+        "lra_lu": 2.9,
+        "threshold_lufs": -33.66
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.85208333,
+        "word_count": 24,
+        "verified_wpm": 120.2
+      }
+    },
+    {
+      "file": "s21-t04-zh.mp3",
+      "text": "請在校務資訊系統辦理掛失，繳交補發費用，再到發卡中心領取新證。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -21.01,
+      "sha256": "d687cd9e6272db9fc85be72fbb029ef72ecc1437ea8bc0f86261bae57aab7fcb",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 7.65
+      },
+      "loudness": {
+        "integrated_lufs": -22.36,
+        "true_peak_dbfs": -3.77,
+        "lra_lu": 4.0,
+        "threshold_lufs": -32.59
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.9e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-t05-en.mp3",
+      "text": "Can I still use the app to enter while I wait for my new card?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_fenrir",
+      "speed": 0.8,
+      "applied_target_lufs": -21.27,
+      "sha256": "94dff3c2ee4c6264634883fa5356502c28b18105dd74f1dc44ac293519175689",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 7.7
+      },
+      "loudness": {
+        "integrated_lufs": -22.36,
+        "true_peak_dbfs": -3.84,
+        "lra_lu": 4.1,
+        "threshold_lufs": -32.99
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.65666667,
+        "word_count": 15,
+        "verified_wpm": 120.0
+      }
+    },
+    {
+      "file": "s21-t05-zh.mp3",
+      "text": "等新證的期間，我還能用手機程式入館嗎？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.59,
+      "sha256": "12916233114be3ef64f84b4a65fb52bc80478ae35e80389f36217219b012c504",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.375
+      },
+      "loudness": {
+        "integrated_lufs": -22.54,
+        "true_peak_dbfs": -3.9,
+        "lra_lu": 3.2,
+        "threshold_lufs": -32.84
+      },
+      "boundary_peaks": {
+        "leading_40ms": 3.9e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-t06-en.mp3",
+      "text": "Let me check whether the app will work for you after your card is reported lost.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
+      "model": "v1.1-zh",
+      "voice": "af_maple",
+      "speed": 0.8,
+      "applied_target_lufs": -21.08,
+      "sha256": "e62eda25e16b518d95d104cfe9a68024a648f1dc3a5044293e527afb8f743d15",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 8.173
+      },
+      "loudness": {
+        "integrated_lufs": -22.41,
+        "true_peak_dbfs": -3.63,
+        "lra_lu": 5.5,
+        "threshold_lufs": -32.96
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.69375,
+        "word_count": 16,
+        "verified_wpm": 120.4
+      }
+    },
+    {
+      "file": "s21-t06-zh.mp3",
+      "text": "我幫您確認掛失後是否還能用手機程式入館。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.05,
+      "sha256": "9edbf1d9935c570fc3a5e38756242c366c53c87451e66f27db6008a93c9264bf",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.8
+      },
+      "loudness": {
+        "integrated_lufs": -22.66,
+        "true_peak_dbfs": -3.88,
+        "lra_lu": 4.9,
+        "threshold_lufs": -33.02
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.4e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v01-meaning.mp3",
+      "text": "遺失的，形容詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "b6d9debba2f93795f1a35087763dfa795eb00f5370a3f0aa476dca32a168dca6",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.7
+      },
+      "loudness": {
+        "integrated_lufs": -22.74,
+        "true_peak_dbfs": -5.04,
+        "lra_lu": 0.0,
+        "threshold_lufs": -32.96
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.3e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v01-word.mp3",
+      "text": "lost",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "5a52cc083422d065f381e91117270c26be8c2588da66be5d4badc043fb16956e",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.525
+      },
+      "loudness": {
+        "integrated_lufs": -22.67,
+        "true_peak_dbfs": -6.77,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.21
+      },
+      "boundary_peaks": {
+        "leading_40ms": 4e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v02-meaning.mp3",
+      "text": "通報、申報，動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -23.45,
+      "sha256": "a2626514c546ab216279b470ece76b9725ec876a8fa88e00b92c0f5ecad9b2d8",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 3.026
+      },
+      "loudness": {
+        "integrated_lufs": -22.12,
+        "true_peak_dbfs": -4.42,
+        "lra_lu": 0.9,
+        "threshold_lufs": -32.69
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.7e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v02-word.mp3",
+      "text": "report",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "2ebd1b19680fc3a35130853c9060d01a29675e11af6347862e88ab06e96da1c9",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.725
+      },
+      "loudness": {
+        "integrated_lufs": -22.75,
+        "true_peak_dbfs": -6.34,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.64
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v03-meaning.mp3",
+      "text": "補發的證件，片語",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -23.6,
+      "sha256": "cbd57e35adb70726783874a8002270bfb5a5937578becd72c74fbe602141f2cf",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 3.075
+      },
+      "loudness": {
+        "integrated_lufs": -22.11,
+        "true_peak_dbfs": -4.12,
+        "lra_lu": 0.5,
+        "threshold_lufs": -32.9
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.3e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v03-word.mp3",
+      "text": "replacement card",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "a9d1dba1cea530a5319e821371cbd0a9f8a20f20666a0d6cab82bd8028c02f9a",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.225
+      },
+      "loudness": {
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -5.27,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.35
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v04-meaning.mp3",
+      "text": "補發費用，片語",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "ee5c3a35cc614402f47a3a525707de14f2f645152cf3e1968d918ab42991aa4d",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.875
+      },
+      "loudness": {
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -3.92,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.62
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.7e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v04-word.mp3",
+      "text": "replacement fee",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "49c861df5639030f062a1fa935fa0f9b9d78efe8e213db48c729ee2a4771c24f",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.35
+      },
+      "loudness": {
+        "integrated_lufs": -22.76,
+        "true_peak_dbfs": -4.42,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.64
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v05-meaning.mp3",
+      "text": "領取，片語動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "23cc9418d13fb2c9f56c180208d06fafd3f661b4d792e1fd8478086dbb9fd213",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.925
+      },
+      "loudness": {
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -4.68,
+        "lra_lu": 0.0,
+        "threshold_lufs": -32.93
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v05-word.mp3",
+      "text": "pick up",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "6a22895a8c1f1a538f9e998fa2723dc975fd8ce27300a08e0f999a681fdd69dd",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.65
+      },
+      "loudness": {
+        "integrated_lufs": -22.76,
+        "true_peak_dbfs": -7.46,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.14
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v06-meaning.mp3",
+      "text": "是否，連接詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "cd6d5e457ca766d85f371561f573f47827f5fc16feb6b0d7a37f24fa36afc815",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.7
+      },
+      "loudness": {
+        "integrated_lufs": -22.95,
+        "true_peak_dbfs": -6.13,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.15
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.1e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s21-v06-word.mp3",
+      "text": "whether",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "eaf2663c205f9c53429b5721517d835c467ba24f68a1c200cedefdb9c23adbc9",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.625
+      },
+      "loudness": {
+        "integrated_lufs": -22.76,
+        "true_peak_dbfs": -7.67,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.29
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-g01-zh.mp3",
+      "text": "被動語態說明規定。用表示允許的動詞構成被動式，可以將重點放在某項物品或行為是否符合規定。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.77,
+      "sha256": "92731390d98faa56fbac8821726a4d72b80d41e847c6b625729a1e3b1041e3d4",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 10.475
+      },
+      "loudness": {
+        "integrated_lufs": -22.46,
+        "true_peak_dbfs": -3.75,
+        "lra_lu": 2.6,
+        "threshold_lufs": -32.76
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.1e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-g02-zh.mp3",
+      "text": "條件子句。先說明適用條件，再說明讀者可以或應該採取的行動。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.59,
+      "sha256": "a6d93bc80724d1b325a3fe188b40876af554f4f5265fe1df942153ea33285f34",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 7.175
+      },
+      "loudness": {
+        "integrated_lufs": -22.41,
+        "true_peak_dbfs": -3.56,
+        "lra_lu": 3.7,
+        "threshold_lufs": -32.8
+      },
+      "boundary_peaks": {
+        "leading_40ms": 3e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-p01-en.mp3",
+      "text": "Can I bring my water bottle into the library?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -20.84,
+      "sha256": "aceedad2d381f87e1b5c226a43a6ab53de7d28365b02f92fa50d4bd9bb447607",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 4.684
+      },
+      "loudness": {
+        "integrated_lufs": -22.32,
+        "true_peak_dbfs": -5.66,
+        "lra_lu": 5.4,
+        "threshold_lufs": -33.09
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.84444444,
+        "word_count": 9,
+        "verified_wpm": 120.4
+      }
+    },
+    {
+      "file": "s22-p01-zh.mp3",
+      "text": "用來詢問某樣物品可不可以帶進特定場所。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.73,
+      "sha256": "9b6f69ff4d4fd90fa49c6b56899bf789963acd26c032ffbb3317b4dc94a51989",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.6
+      },
+      "loudness": {
+        "integrated_lufs": -22.46,
+        "true_peak_dbfs": -3.82,
+        "lra_lu": 3.4,
+        "threshold_lufs": -33.02
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.5e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-p02-en.mp3",
+      "text": "You may bring the bottle in as long as the lid fits tightly.",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -20.69,
+      "sha256": "b2e611ba1bb1ecb796705852c0c7c4c405087540ee5e1fee825a33c3c32cf625",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 6.681
+      },
+      "loudness": {
+        "integrated_lufs": -22.31,
+        "true_peak_dbfs": -4.03,
+        "lra_lu": 6.1,
+        "threshold_lufs": -33.03
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.73076923,
+        "word_count": 13,
+        "verified_wpm": 120.4
+      }
+    },
+    {
+      "file": "s22-p02-zh.mp3",
+      "text": "用來說明只要符合後面提到的條件，就可以做前面那件事。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.76,
+      "sha256": "1ddf3ef9202d0fafa7f2b505d2ee4b6db4877598ea53d1e12cd7ece45a950249",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 6.5
+      },
+      "loudness": {
+        "integrated_lufs": -22.51,
+        "true_peak_dbfs": -3.88,
+        "lra_lu": 3.4,
+        "threshold_lufs": -32.85
+      },
+      "boundary_peaks": {
+        "leading_40ms": 3.2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-p03-en.mp3",
+      "text": "If you'll be away for thirty minutes or more, please take your bag with you.",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -20.45,
+      "sha256": "bf9f0994c419d74a138d78e9b8fa50cc15df24cb5d8d82d3ec4303464f14a243",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 7.674
+      },
+      "loudness": {
+        "integrated_lufs": -22.32,
+        "true_peak_dbfs": -4.05,
+        "lra_lu": 5.9,
+        "threshold_lufs": -32.81
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.70333333,
+        "word_count": 15,
+        "verified_wpm": 120.4
+      }
+    },
+    {
+      "file": "s22-p03-zh.mp3",
+      "text": "用來提醒讀者，離開達到特定時間時要採取什麼行動。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.3,
+      "sha256": "de2384991c4a16cae74678066f4295dbee525b7ebdd9cad6db7863f953dbef79",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 6.3
+      },
+      "loudness": {
+        "integrated_lufs": -22.53,
+        "true_peak_dbfs": -3.89,
+        "lra_lu": 4.1,
+        "threshold_lufs": -32.76
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.7e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-t01-en.mp3",
+      "text": "Can I bring this cup of tea into the library? It has a lid .",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_fenrir",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "ee68d34e21b3bc4d3223f199d706b470c3604d187d2a00aaecd72fad264f1713",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 7.174
+      },
+      "loudness": {
+        "integrated_lufs": -23.08,
+        "true_peak_dbfs": -4.24,
+        "lra_lu": 4.7,
+        "threshold_lufs": -34.13
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.73571429,
+        "word_count": 14,
+        "verified_wpm": 120.4
+      }
+    },
+    {
+      "file": "s22-t01-zh.mp3",
+      "text": "我可以把這杯茶帶進圖書館嗎？它有蓋子。",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.43,
+      "sha256": "d0ea07db1943210deaa92f1da8d8ce94be56bf7e1bf66689d79260a3de3ac5ef",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.45
+      },
+      "loudness": {
+        "integrated_lufs": -22.48,
+        "true_peak_dbfs": -3.76,
+        "lra_lu": 4.9,
+        "threshold_lufs": -33.05
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.4e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-t02-en.mp3",
+      "text": "I'm sorry, that kind of takeout cup isn't allowed, even with a lid. You may bring a nonalcoholic drink in a spillproof bottle with a tight lid and a drinking opening that can be closed.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
+      "model": "v1.1-zh",
+      "voice": "af_maple",
+      "speed": 0.8,
+      "applied_target_lufs": -20.5,
+      "sha256": "69ac63ab103c5fed62a730063976ca4c92c1ef8fab0c6882df3b81e375195d5a",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 17.691
+      },
+      "loudness": {
+        "integrated_lufs": -22.37,
+        "true_peak_dbfs": -3.91,
+        "lra_lu": 4.9,
+        "threshold_lufs": -32.96
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.75428571,
+        "word_count": 35,
+        "verified_wpm": 120.1
+      }
+    },
+    {
+      "file": "s22-t02-zh.mp3",
+      "text": "不好意思，外帶杯即使有蓋也不能帶入。無酒精飲料可裝在有密合蓋、飲水口可關閉的防溢瓶裡帶入。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.61,
+      "sha256": "d5f88449d309451ad1c4a91f847c3204144cf6faaa78161448d13dff14d0b692",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 10.575
+      },
+      "loudness": {
+        "integrated_lufs": -22.44,
+        "true_peak_dbfs": -3.82,
+        "lra_lu": 4.5,
+        "threshold_lufs": -32.83
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.4e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-t03-en.mp3",
+      "text": "Does that mean I can bring water in my reusable bottle?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_fenrir",
+      "speed": 0.8,
+      "applied_target_lufs": -20.55,
+      "sha256": "b384829237a83deac914061884216b41d27ac7ae5ca2a78d40cfae29810782de",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.693
+      },
+      "loudness": {
+        "integrated_lufs": -22.32,
+        "true_peak_dbfs": -4.04,
+        "lra_lu": 4.7,
+        "threshold_lufs": -32.88
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.86818182,
+        "word_count": 11,
+        "verified_wpm": 120.2
+      }
+    },
+    {
+      "file": "s22-t03-zh.mp3",
+      "text": "所以我可以用自己的可重複使用水瓶裝水帶進來嗎？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.83,
+      "sha256": "d035943f76cc98b5358fa8233e2b7d0d84fd6f13d7c3d7805af1bea13ba627cf",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 6.175
+      },
+      "loudness": {
+        "integrated_lufs": -22.53,
+        "true_peak_dbfs": -3.92,
+        "lra_lu": 3.2,
+        "threshold_lufs": -32.82
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.7e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-t04-en.mp3",
+      "text": "Yes, as long as the lid fits tightly and you can close the drinking opening.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
+      "model": "v1.1-zh",
+      "voice": "af_maple",
+      "speed": 0.8,
+      "applied_target_lufs": -20.78,
+      "sha256": "80724941ff162c2856d2b9e2d5be081bc8cc1539935ac7b27d5a18e25cf4b04b",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 7.682
+      },
+      "loudness": {
+        "integrated_lufs": -22.31,
+        "true_peak_dbfs": -3.97,
+        "lra_lu": 5.1,
+        "threshold_lufs": -32.99
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.82666667,
+        "word_count": 15,
+        "verified_wpm": 120.3
+      }
+    },
+    {
+      "file": "s22-t04-zh.mp3",
+      "text": "可以，只要瓶蓋密合，飲水口也能關閉。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "3e733bb0a4e6f1730445014b6a64effb4a647cdcae542328d335675a82bf832f",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.175
+      },
+      "loudness": {
+        "integrated_lufs": -23.13,
+        "true_peak_dbfs": -3.85,
+        "lra_lu": 2.7,
+        "threshold_lufs": -33.55
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.9e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-t05-en.mp3",
+      "text": "Can I leave my bag here to save a seat while I go out for lunch?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_fenrir",
+      "speed": 0.8,
+      "applied_target_lufs": -20.85,
+      "sha256": "3916a5e2784407e6f1f22fd53fe8d3d40dbfbf9597612c60bad176f102c26b15",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 8.168
+      },
+      "loudness": {
+        "integrated_lufs": -22.33,
+        "true_peak_dbfs": -3.74,
+        "lra_lu": 4.6,
+        "threshold_lufs": -32.62
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.6,
+        "word_count": 16,
+        "verified_wpm": 120.5
+      }
+    },
+    {
+      "file": "s22-t05-zh.mp3",
+      "text": "我出去吃午餐時，可以把包包留在這裡占位嗎？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -21.03,
+      "sha256": "e22688ad00377edc3c2a1749e42fe8a09aa7083b8c56d3b2e95773c4aff6231a",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.65
+      },
+      "loudness": {
+        "integrated_lufs": -22.55,
+        "true_peak_dbfs": -3.87,
+        "lra_lu": 2.8,
+        "threshold_lufs": -32.86
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.1e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-t06-en.mp3",
+      "text": "Please don't save a seat with your belongings . If you'll be away for thirty minutes or more, take them with you.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
+      "model": "v1.1-zh",
+      "voice": "af_maple",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "047ea4395b52edf539501035a3a2b1afb93d6dfa994c1e3ad0b6dc248cd53711",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 10.674
+      },
+      "loudness": {
+        "integrated_lufs": -23.02,
+        "true_peak_dbfs": -4.18,
+        "lra_lu": 8.8,
+        "threshold_lufs": -33.72
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.65714286,
+        "word_count": 21,
+        "verified_wpm": 120.3
+      }
+    },
+    {
+      "file": "s22-t06-zh.mp3",
+      "text": "請勿用個人物品占位。如果要離座三十分鐘以上，請把物品帶走。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.22,
+      "sha256": "31aa81504fa177aa19ef9c25595955cf99bcfd2a968dc792e6c727951880fc1f",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 6.95
+      },
+      "loudness": {
+        "integrated_lufs": -22.37,
+        "true_peak_dbfs": -4.06,
+        "lra_lu": 5.5,
+        "threshold_lufs": -32.73
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v01-meaning.mp3",
+      "text": "蓋子，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "501dde8d6611d851b50bb50be4ed34127404b03621b90662d6117b257ef851e4",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.4
+      },
+      "loudness": {
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -3.76,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.0
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.4e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v01-word.mp3",
+      "text": "lid",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "d48f6308bb7c802d19e367d703997604dcc2487ef0ab5bcb931c9e9f9cbc3541",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.45
+      },
+      "loudness": {
+        "integrated_lufs": -22.8,
+        "true_peak_dbfs": -8.03,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.54
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v02-meaning.mp3",
+      "text": "瓶子，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "17c42fa9ee6b08593202e9f2c312197c2a792daa908149b5aba44ab49cb039e7",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.4
+      },
+      "loudness": {
+        "integrated_lufs": -22.98,
+        "true_peak_dbfs": -3.91,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.51
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v02-word.mp3",
+      "text": "bottle",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "68a8414652bc71907f00427cb89f6f81b2c03a8e573a20914f2358eafc6446e4",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.775
+      },
+      "loudness": {
+        "integrated_lufs": -22.75,
+        "true_peak_dbfs": -7.4,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.2
+      },
+      "boundary_peaks": {
+        "leading_40ms": 7e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v03-meaning.mp3",
+      "text": "溢出、灑出，動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "0ea4250c767f5538119153f7c58308bfef13e67cf489da2e02da56f311fd3023",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 3.0
+      },
+      "loudness": {
+        "integrated_lufs": -21.36,
+        "true_peak_dbfs": -3.82,
+        "lra_lu": 0.5,
+        "threshold_lufs": -31.75
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.9e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v03-word.mp3",
+      "text": "spill",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "ac9ae99fa30a1f9c3c62765923e9eaea350a3a61fd111164448e0d91aab2fe31",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.575
+      },
+      "loudness": {
+        "integrated_lufs": -22.66,
+        "true_peak_dbfs": -6.64,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.2
+      },
+      "boundary_peaks": {
+        "leading_40ms": 4e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v04-meaning.mp3",
+      "text": "只要，片語",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "763097eab079eaa22df24f6718bc4dee80dc73f6dcc4e70f52d9ab5f6d2120ad",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.325
+      },
+      "loudness": {
+        "integrated_lufs": -22.76,
+        "true_peak_dbfs": -5.32,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.64
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.9e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v04-word.mp3",
+      "text": "as long as",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "ba2bc33a042bd497efd938e46a172bf4593795d96f6c67ab6c7e2e7a6254c38f",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.975
+      },
+      "loudness": {
+        "integrated_lufs": -22.71,
+        "true_peak_dbfs": -7.14,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.48
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v05-meaning.mp3",
+      "text": "座位，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "b6ec51a18aacf87cd9b94cabfc4232869449ccb76dc34b915e1ffe9d01ba10d8",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.426
+      },
+      "loudness": {
+        "integrated_lufs": -22.75,
+        "true_peak_dbfs": -6.08,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.57
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.3e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v05-word.mp3",
+      "text": "seat",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "82bf46753a211a2faea4baa14524fa4b934c1773847bd17a41a24666fc06899e",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.45
+      },
+      "loudness": {
+        "integrated_lufs": -22.8,
+        "true_peak_dbfs": -8.3,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.55
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v06-meaning.mp3",
+      "text": "個人物品，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "7fe06deaf2f42ca45b77ac132a985f661a4c2dd8e2cf97642baa2cb06f8bc86f",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.875
+      },
+      "loudness": {
+        "integrated_lufs": -22.85,
+        "true_peak_dbfs": -4.05,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.06
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.9e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s22-v06-word.mp3",
+      "text": "belongings",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "9b615e0e9521100ca52ac69046974aea702f0872c81fe5b594f664e4e4389510",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.95
+      },
+      "loudness": {
+        "integrated_lufs": -22.71,
+        "true_peak_dbfs": -8.47,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.39
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-g01-zh.mp3",
+      "text": "用情態助動詞禮貌詢問。詢問能否看證件或辦理服務時，可用情態助動詞引導問句，語氣較有禮貌。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "0b6c473519d9eddca12f3488f1de75954228bd3c82b285d329bd50c05a20e8d7",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 10.575
+      },
+      "loudness": {
+        "integrated_lufs": -23.28,
+        "true_peak_dbfs": -3.8,
+        "lra_lu": 2.5,
+        "threshold_lufs": -33.69
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.5e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-g02-zh.mp3",
+      "text": "間接問句語序。把需要確認的內容放在確認動詞之後，從屬問句維持陳述句語序。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.37,
+      "sha256": "e3dbc8de5f2bcac773a254586ab1b25c2f81890d371ba4f416e679284cdf959e",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 8.5
+      },
+      "loudness": {
+        "integrated_lufs": -22.42,
+        "true_peak_dbfs": -3.92,
+        "lra_lu": 3.8,
+        "threshold_lufs": -32.67
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.5e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-p01-en.mp3",
+      "text": "Can I use my passport to get a temporary library pass?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -20.85,
+      "sha256": "d7ca82ce9079ca08eebaa02aa4398398998b5d4892c7e9f392d0e850cd5bba2d",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.681
+      },
+      "loudness": {
+        "integrated_lufs": -22.28,
+        "true_peak_dbfs": -5.14,
+        "lra_lu": 3.9,
+        "threshold_lufs": -32.47
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.85,
+        "word_count": 11,
+        "verified_wpm": 120.4
+      }
+    },
+    {
+      "file": "s23-p01-zh.mp3",
+      "text": "用來詢問能否用某種證件辦理另一張證件。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.68,
+      "sha256": "59155484da087426623d5b3f4eac711fdfe40eb4d02cfce8892fc090d85ed795",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.65
+      },
+      "loudness": {
+        "integrated_lufs": -22.52,
+        "true_peak_dbfs": -3.71,
+        "lra_lu": 4.9,
+        "threshold_lufs": -33.14
+      },
+      "boundary_peaks": {
+        "leading_40ms": 3.2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-p02-en.mp3",
+      "text": "I also have a residence permit. Would that work instead?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "4d46c67bf65ac3a33f3dd999656dd475ba17596f7b0756101812ddac4f2ebd53",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.188
+      },
+      "loudness": {
+        "integrated_lufs": -23.29,
+        "true_peak_dbfs": -5.08,
+        "lra_lu": 4.3,
+        "threshold_lufs": -34.12
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.93,
+        "word_count": 10,
+        "verified_wpm": 120.3
+      }
+    },
+    {
+      "file": "s23-p02-zh.mp3",
+      "text": "提出另一個選項後，用來詢問是否可替代原先的選項。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.98,
+      "sha256": "a41667d3cea7b72a545a20e3509082f66fa6706333382bb904a8e27cf71c9de0",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 6.35
+      },
+      "loudness": {
+        "integrated_lufs": -22.39,
+        "true_peak_dbfs": -3.7,
+        "lra_lu": 3.2,
+        "threshold_lufs": -32.61
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.4e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-p03-en.mp3",
+      "text": "Where is the Muslim Prayer Room?",
+      "language": "en",
+      "role": "explainer",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -23.86,
+      "sha256": "18951707a4b775c7919d162d6513d733ac648cad7179f744c0aca886dfdd89fb",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 3.188
+      },
+      "loudness": {
+        "integrated_lufs": -22.3,
+        "true_peak_dbfs": -6.99,
+        "lra_lu": 0.1,
+        "threshold_lufs": -33.12
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.88333333,
+        "word_count": 6,
+        "verified_wpm": 120.5
+      }
+    },
+    {
+      "file": "s23-p03-zh.mp3",
+      "text": "用來詢問空間、設備或服務櫃台的位置。",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "639fa948e8f1aa6c20136b47ccfef2cd8c86cd30e8458116eba375aea80d42c0",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.2
+      },
+      "loudness": {
+        "integrated_lufs": -23.24,
+        "true_peak_dbfs": -3.69,
+        "lra_lu": 3.0,
+        "threshold_lufs": -33.9
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-t01-en.mp3",
+      "text": "I'm visiting the library. Can I use my passport to get a temporary library pass?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_fenrir",
+      "speed": 0.8,
+      "applied_target_lufs": -20.78,
+      "sha256": "9548a5f490935b4a7222e7703d219a78170accab89836b0e8524910ec093e8ee",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 7.706
+      },
+      "loudness": {
+        "integrated_lufs": -22.31,
+        "true_peak_dbfs": -4.05,
+        "lra_lu": 3.2,
+        "threshold_lufs": -32.68
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.92666667,
+        "word_count": 15,
+        "verified_wpm": 119.9
+      }
+    },
+    {
+      "file": "s23-t01-zh.mp3",
+      "text": "我是來圖書館參觀的。請問可以用護照換臨時閱覽證嗎？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.75,
+      "sha256": "594e87a9dfa97779a5a754ee8e566600cfc5b6325d0bfa6dc6f4edef52bfb680",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 6.375
+      },
+      "loudness": {
+        "integrated_lufs": -22.52,
+        "true_peak_dbfs": -3.83,
+        "lra_lu": 3.9,
+        "threshold_lufs": -32.91
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.8e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-t02-en.mp3",
+      "text": "May I see your passport? I'll check with the entrance desk to see which documents we can accept.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
+      "model": "v1.1-zh",
+      "voice": "af_maple",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "e255084a1833508c9321b7bd8555298149300892cf56a9bf58905bffe69d91eb",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 9.176
+      },
+      "loudness": {
+        "integrated_lufs": -23.26,
+        "true_peak_dbfs": -4.7,
+        "lra_lu": 6.2,
+        "threshold_lufs": -34.04
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.74722222,
+        "word_count": 18,
+        "verified_wpm": 120.3
+      }
+    },
+    {
+      "file": "s23-t02-zh.mp3",
+      "text": "可以請您出示護照嗎？我會向入館櫃台確認可以接受哪些證件。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.69,
+      "sha256": "7939f2664f1b0d32fe5139d76b6d329641b7b9cdfad316dba6bbaadb7443f3fb",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 7.05
+      },
+      "loudness": {
+        "integrated_lufs": -22.46,
+        "true_peak_dbfs": -3.7,
+        "lra_lu": 3.3,
+        "threshold_lufs": -32.66
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.7e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-t03-en.mp3",
+      "text": "I also have a residence permit . Would that work instead?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_fenrir",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "889874baa501caae880a01507a4aecdd96c866a24be67720c9af2660a0a85e56",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.187
+      },
+      "loudness": {
+        "integrated_lufs": -23.04,
+        "true_peak_dbfs": -5.69,
+        "lra_lu": 2.7,
+        "threshold_lufs": -33.82
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.95,
+        "word_count": 10,
+        "verified_wpm": 120.3
+      }
+    },
+    {
+      "file": "s23-t03-zh.mp3",
+      "text": "我也有居留證。可以改用居留證嗎？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "1c34b1cdac86cee54f65db2511464335974009538612f9d040ef4cb827009750",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 4.7
+      },
+      "loudness": {
+        "integrated_lufs": -23.29,
+        "true_peak_dbfs": -4.19,
+        "lra_lu": 3.6,
+        "threshold_lufs": -33.81
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.1e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-t04-en.mp3",
+      "text": "Let me confirm that for you before we issue a pass.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
+      "model": "v1.1-zh",
+      "voice": "af_maple",
+      "speed": 0.8,
+      "applied_target_lufs": -21.24,
+      "sha256": "f447ad647374f1e02cd748a4cf800a52191df7c02eba6a324c35245177d2c8a2",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.678
+      },
+      "loudness": {
+        "integrated_lufs": -22.32,
+        "true_peak_dbfs": -3.63,
+        "lra_lu": 3.6,
+        "threshold_lufs": -32.73
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.76818182,
+        "word_count": 11,
+        "verified_wpm": 120.5
+      }
+    },
+    {
+      "file": "s23-t04-zh.mp3",
+      "text": "換發臨時閱覽證前，我先幫您確認。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -21.19,
+      "sha256": "e5953256bfedf5b665931ae21d18ad21c1994d3cd7dfdf271154c1700a6a6532",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.0
+      },
+      "loudness": {
+        "integrated_lufs": -22.53,
+        "true_peak_dbfs": -3.89,
+        "lra_lu": 3.1,
+        "threshold_lufs": -33.22
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.6e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-t05-en.mp3",
+      "text": "Thank you. Where is the Muslim Prayer Room? Do I need to sign in?",
+      "language": "en",
+      "role": "reader",
+      "kind": "english_long",
+      "model": "v1.0",
+      "voice": "am_fenrir",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "d4792cbd6c61751405ca776e7babcd45c25299f5c4dd1b96184eed13aa0bb5de",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 7.188
+      },
+      "loudness": {
+        "integrated_lufs": -23.25,
+        "true_peak_dbfs": -5.34,
+        "lra_lu": 3.8,
+        "threshold_lufs": -34.0
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.725,
+        "word_count": 14,
+        "verified_wpm": 120.2
+      }
+    },
+    {
+      "file": "s23-t05-zh.mp3",
+      "text": "謝謝。請問穆斯林祈禱室在哪裡？需要登記嗎？",
+      "language": "zh",
+      "role": "reader",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.65,
+      "sha256": "5a1ca1d0124a536386147f9ee3b3fa52bce43d4cbc48cf76579880c571da8183",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.45
+      },
+      "loudness": {
+        "integrated_lufs": -22.49,
+        "true_peak_dbfs": -3.83,
+        "lra_lu": 4.1,
+        "threshold_lufs": -33.06
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.4e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-t06-en.mp3",
+      "text": "It's on the third floor of the Main Library. Let me check how you can use the room today.",
+      "language": "en",
+      "role": "librarian",
+      "kind": "english_long",
+      "model": "v1.1-zh",
+      "voice": "af_maple",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "2648749a77639a58fd1c363c06a4544d706f4d4e3d606beab38484d78b6b6fdf",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 9.691
+      },
+      "loudness": {
+        "integrated_lufs": -23.25,
+        "true_peak_dbfs": -4.51,
+        "lra_lu": 5.9,
+        "threshold_lufs": -34.02
+      },
+      "boundary_peaks": {
+        "leading_40ms": 0.0,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true,
+        "english_wpm_within_range": true
+      },
+      "timing": {
+        "base_kokoro_speed": 0.8,
+        "target_wpm": 120.0,
+        "postprocess_atempo": 0.64473684,
+        "word_count": 19,
+        "verified_wpm": 120.1
+      }
+    },
+    {
+      "file": "s23-t06-zh.mp3",
+      "text": "它在總圖書館三樓。我幫您確認今天要怎麼使用。",
+      "language": "zh",
+      "role": "librarian",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -20.76,
+      "sha256": "dc035cfbfdc5b5b96a1513d6abab622f82c6cbd2bb46ae4b8885015c50f645ce",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 5.9
+      },
+      "loudness": {
+        "integrated_lufs": -22.4,
+        "true_peak_dbfs": -3.78,
+        "lra_lu": 3.1,
+        "threshold_lufs": -32.75
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v01-meaning.mp3",
+      "text": "入館櫃台，片語",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "2869ec8be67566a6b245ccb926373e16fcf108cf0b94bdf9e276c2e8505463c6",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.975
+      },
+      "loudness": {
+        "integrated_lufs": -22.75,
+        "true_peak_dbfs": -5.64,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.85
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.8e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v01-word.mp3",
+      "text": "entrance desk",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "80dd62134a26219f4301fc33b380c28c8ad47e7494089fc329c3c87726bf207b",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.075
+      },
+      "loudness": {
+        "integrated_lufs": -22.66,
+        "true_peak_dbfs": -6.56,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.7
+      },
+      "boundary_peaks": {
+        "leading_40ms": 4e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v02-meaning.mp3",
+      "text": "護照，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "9b5cc427ab5bf01cc0cc2a0fc5dfea1726d99e4bb0b694d4896f35d2c15c3afe",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.45
+      },
+      "loudness": {
+        "integrated_lufs": -22.72,
+        "true_peak_dbfs": -4.31,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.25
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.4e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v02-word.mp3",
+      "text": "passport",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "041874a3fafdf2bbd27d7792e96829599b0d62589b270bcab65a8b6deb596cee",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.826
+      },
+      "loudness": {
+        "integrated_lufs": -22.74,
+        "true_peak_dbfs": -7.86,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.95
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v03-meaning.mp3",
+      "text": "圖書館閱覽證，片語",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "94f0ff13b07807b198305827808b2f7e3476e19bc3a5d3035011ac1e0a6ecea6",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 3.375
+      },
+      "loudness": {
+        "integrated_lufs": -21.43,
+        "true_peak_dbfs": -4.0,
+        "lra_lu": 0.4,
+        "threshold_lufs": -32.24
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2.2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v03-word.mp3",
+      "text": "library pass",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "24db9daadff786e0d51b61dd061de7dbc048d112f8fe6cc4f2b059bb7329ec8a",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.125
+      },
+      "loudness": {
+        "integrated_lufs": -22.77,
+        "true_peak_dbfs": -8.37,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.17
+      },
+      "boundary_peaks": {
+        "leading_40ms": 5e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v04-meaning.mp3",
+      "text": "文件、證明文件，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "5ef56e31f5a0b0eff7472fc77374edf9e091a1e873202e9a9b7bba9ab124ce80",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 3.475
+      },
+      "loudness": {
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -3.86,
+        "lra_lu": 2.1,
+        "threshold_lufs": -33.15
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.7e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v04-word.mp3",
+      "text": "document",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "ff0989355864e3f6eff6c9340546810c60459c1363bc23df9cd61288f201a7be",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.9
+      },
+      "loudness": {
+        "integrated_lufs": -22.7,
+        "true_peak_dbfs": -6.23,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.93
+      },
+      "boundary_peaks": {
+        "leading_40ms": 8e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v05-meaning.mp3",
+      "text": "許可證，名詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "b9d04f7e50128ae39925f8dd68599e58ecba910100c72f35dc157b9265c17bcf",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.625
+      },
+      "loudness": {
+        "integrated_lufs": -22.78,
+        "true_peak_dbfs": -5.14,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.26
+      },
+      "boundary_peaks": {
+        "leading_40ms": 2e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v05-word.mp3",
+      "text": "permit",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "88c6d727fa3b61d78cf1496acaee9f3dcbb033e6239934e7de827398b5925cb4",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.675
+      },
+      "loudness": {
+        "integrated_lufs": -22.73,
+        "true_peak_dbfs": -8.07,
+        "lra_lu": 0.0,
+        "threshold_lufs": -34.27
+      },
+      "boundary_peaks": {
+        "leading_40ms": 6e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v06-meaning.mp3",
+      "text": "核發、發給，動詞",
+      "language": "zh",
+      "role": "explainer",
+      "kind": "chinese",
+      "model": "v1.1-zh",
+      "voice": "zm_010",
+      "speed": 0.9,
+      "applied_target_lufs": -22.3,
+      "sha256": "71011cba7326de1c5e7d34d47e3bfe649d81845f322389082ce1aedc5473c54e",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 2.925
+      },
+      "loudness": {
+        "integrated_lufs": -22.79,
+        "true_peak_dbfs": -6.03,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.41
+      },
+      "boundary_peaks": {
+        "leading_40ms": 1.7e-07,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
+    },
+    {
+      "file": "s23-v06-word.mp3",
+      "text": "issue",
+      "language": "en",
+      "role": "explainer",
+      "kind": "word",
+      "model": "v1.0",
+      "voice": "am_puck",
+      "speed": 0.8,
+      "applied_target_lufs": -22.3,
+      "sha256": "e6ad87a09bb3392c024be667986086505d94a78ebbdb2321e70ec8bd3e0620cf",
+      "technical": {
+        "codec": "mp3",
+        "sample_rate": 24000,
+        "channels": 1,
+        "bit_rate": 48000,
+        "duration_seconds": 1.725
+      },
+      "loudness": {
+        "integrated_lufs": -22.71,
+        "true_peak_dbfs": -6.87,
+        "lra_lu": 0.0,
+        "threshold_lufs": -33.17
+      },
+      "boundary_peaks": {
+        "leading_40ms": 7e-08,
+        "trailing_60ms": 0.0
+      },
+      "checks": {
+        "codec_mp3": true,
+        "sample_rate_24000": true,
+        "mono": true,
+        "bit_rate_near_48000": true,
+        "duration_valid": true,
+        "loudness_within_1_lu": true,
+        "true_peak_not_over_limit": true,
+        "leading_safety_silence": true,
+        "trailing_safety_silence": true
+      }
     }
   ],
   "last_partial_regeneration": {
-    "generated_at": "2026-11-23T15:41:25+08:00",
-    "clip_count": 2,
-    "staging_manifest_sha256": "ab2075c2e06bd1265b73cc3e20ef1686feae8267b178bfc03a5769da3d8cd695",
-    "transcript_manifest_sha256": "0ae56a3cd517dc3a422aa34721b42733ee6ef7be7651bc4aa3f3ef9bb51c5873",
+    "generated_at": "2026-11-25T19:39:22+08:00",
+    "clip_count": 96,
+    "staging_manifest_sha256": "4b54c46f8943d7071d239ec1ba0c4cc8e66d86290ddd48c444d4b3c4ffc6944f",
+    "transcript_manifest_sha256": "7250b158e54297e2e201130595df0884f8e246c953a7ece99e7aa94d76ec23e0",
     "files": [
-      "s10-p01-zh.mp3",
-      "s16-t02-zh.mp3"
+      "s21-g01-zh.mp3",
+      "s21-g02-zh.mp3",
+      "s21-p01-en.mp3",
+      "s21-p01-zh.mp3",
+      "s21-p02-en.mp3",
+      "s21-p02-zh.mp3",
+      "s21-p03-en.mp3",
+      "s21-p03-zh.mp3",
+      "s21-t01-en.mp3",
+      "s21-t01-zh.mp3",
+      "s21-t02-en.mp3",
+      "s21-t02-zh.mp3",
+      "s21-t03-en.mp3",
+      "s21-t03-zh.mp3",
+      "s21-t04-en.mp3",
+      "s21-t04-zh.mp3",
+      "s21-t05-en.mp3",
+      "s21-t05-zh.mp3",
+      "s21-t06-en.mp3",
+      "s21-t06-zh.mp3",
+      "s21-v01-meaning.mp3",
+      "s21-v01-word.mp3",
+      "s21-v02-meaning.mp3",
+      "s21-v02-word.mp3",
+      "s21-v03-meaning.mp3",
+      "s21-v03-word.mp3",
+      "s21-v04-meaning.mp3",
+      "s21-v04-word.mp3",
+      "s21-v05-meaning.mp3",
+      "s21-v05-word.mp3",
+      "s21-v06-meaning.mp3",
+      "s21-v06-word.mp3",
+      "s22-g01-zh.mp3",
+      "s22-g02-zh.mp3",
+      "s22-p01-en.mp3",
+      "s22-p01-zh.mp3",
+      "s22-p02-en.mp3",
+      "s22-p02-zh.mp3",
+      "s22-p03-en.mp3",
+      "s22-p03-zh.mp3",
+      "s22-t01-en.mp3",
+      "s22-t01-zh.mp3",
+      "s22-t02-en.mp3",
+      "s22-t02-zh.mp3",
+      "s22-t03-en.mp3",
+      "s22-t03-zh.mp3",
+      "s22-t04-en.mp3",
+      "s22-t04-zh.mp3",
+      "s22-t05-en.mp3",
+      "s22-t05-zh.mp3",
+      "s22-t06-en.mp3",
+      "s22-t06-zh.mp3",
+      "s22-v01-meaning.mp3",
+      "s22-v01-word.mp3",
+      "s22-v02-meaning.mp3",
+      "s22-v02-word.mp3",
+      "s22-v03-meaning.mp3",
+      "s22-v03-word.mp3",
+      "s22-v04-meaning.mp3",
+      "s22-v04-word.mp3",
+      "s22-v05-meaning.mp3",
+      "s22-v05-word.mp3",
+      "s22-v06-meaning.mp3",
+      "s22-v06-word.mp3",
+      "s23-g01-zh.mp3",
+      "s23-g02-zh.mp3",
+      "s23-p01-en.mp3",
+      "s23-p01-zh.mp3",
+      "s23-p02-en.mp3",
+      "s23-p02-zh.mp3",
+      "s23-p03-en.mp3",
+      "s23-p03-zh.mp3",
+      "s23-t01-en.mp3",
+      "s23-t01-zh.mp3",
+      "s23-t02-en.mp3",
+      "s23-t02-zh.mp3",
+      "s23-t03-en.mp3",
+      "s23-t03-zh.mp3",
+      "s23-t04-en.mp3",
+      "s23-t04-zh.mp3",
+      "s23-t05-en.mp3",
+      "s23-t05-zh.mp3",
+      "s23-t06-en.mp3",
+      "s23-t06-zh.mp3",
+      "s23-v01-meaning.mp3",
+      "s23-v01-word.mp3",
+      "s23-v02-meaning.mp3",
+      "s23-v02-word.mp3",
+      "s23-v03-meaning.mp3",
+      "s23-v03-word.mp3",
+      "s23-v04-meaning.mp3",
+      "s23-v04-word.mp3",
+      "s23-v05-meaning.mp3",
+      "s23-v05-word.mp3",
+      "s23-v06-meaning.mp3",
+      "s23-v06-word.mp3"
     ],
-    "method": "Adopt reviewed-technical Mandarin candidates for two retest reports. Human listening pending."
+    "method": "New lesson 21–23 audio using pinned existing voices. Human review pending."
   }
 }

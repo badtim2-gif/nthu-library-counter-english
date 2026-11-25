@@ -31,6 +31,7 @@ export type Scenario = {
   summary: string;
   sourceLabel: string;
   sourceUrl: string;
+  additionalSources?: { label: string; url: string }[];
   sourceCheckedAt?: string;
   dialogue: DialogueTurn[];
   patterns: Pattern[];
@@ -1358,7 +1359,350 @@ export const scenarios: Scenario[] = [
       { word: "terminate", kk: "ˋtɝmə͵net", meaning: "終止", pos: "v." },
     ],
   },
+  {
+    "id": 21,
+    "shortTitle": "證件遺失",
+    "title": "學生證遺失與補發",
+    "summary": "練習協助遺失學生證的讀者報失、申請補發，並詢問等候領卡期間如何入館。",
+    "sourceLabel": "圖書館入館須知",
+    "sourceUrl": "https://www.lib.nthu.edu.tw/use/in_lib_service.html",
+    "additionalSources": [
+      {
+        "label": "註冊組學生證補發指引",
+        "url": "https://registra.site.nthu.edu.tw/p/404-1211-5142.php"
+      }
+    ],
+    "sourceCheckedAt": "2026-11-25",
+    "dialogue": [
+      {
+        "role": "reader",
+        "en": "I lost my student ID. What should I do first?",
+        "zh": "我的學生證不見了。請問我該先做什麼？"
+      },
+      {
+        "role": "librarian",
+        "en": "Please report [rɪˋpɔrt] the loss to the library right away.",
+        "zh": "請立即向圖書館報失。"
+      },
+      {
+        "role": "reader",
+        "en": "How do I apply for a replacement [rɪˋplesmənt] card?",
+        "zh": "我要怎麼申請補發學生證？"
+      },
+      {
+        "role": "librarian",
+        "en": "Report the card lost in the Academic Information System, pay the replacement fee [fi], and pick up the new card at the Card Distribution Center.",
+        "zh": "請在校務資訊系統辦理掛失，繳交補發費用，再到發卡中心領取新證。"
+      },
+      {
+        "role": "reader",
+        "en": "Can I still use the app to enter while I wait for my new card?",
+        "zh": "等新證的期間，我還能用手機程式入館嗎？"
+      },
+      {
+        "role": "librarian",
+        "en": "Let me check whether [ˋhwɛðɚ] the app will work for you after your card is reported lost.",
+        "zh": "我幫您確認掛失後是否還能用手機程式入館。"
+      }
+    ],
+    "patterns": [
+      {
+        "form": "What should I do first?",
+        "example": "I lost my student ID. What should I do first?",
+        "explanation": "用來詢問遇到問題時要先採取哪一步。"
+      },
+      {
+        "form": "How do I apply for...?",
+        "example": "How do I apply for a replacement card?",
+        "explanation": "用來詢問申請證件或服務的方式。"
+      },
+      {
+        "form": "Can I still... while I wait for...?",
+        "example": "Can I still enter while I wait for my new card?",
+        "explanation": "用來確認等待某件事期間，是否還能使用原本的服務。"
+      }
+    ],
+    "grammar": [
+      {
+        "title": "有禮貌的處理指示",
+        "explanation": "在祈使句前加上禮貌用語，讓請讀者報失、繳費或領證的指示更客氣。"
+      },
+      {
+        "title": "時間連接詞",
+        "explanation": "用表示等待期間或事後的連接詞，說明哪一件事先發生，哪一項服務在等待時適用。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "lost",
+        "kk": "lɔst",
+        "meaning": "遺失的",
+        "pos": "adj."
+      },
+      {
+        "word": "report",
+        "kk": "rɪˋpɔrt",
+        "meaning": "通報、申報",
+        "pos": "v."
+      },
+      {
+        "word": "replacement card",
+        "kk": "rɪˋplesmənt kɑrd",
+        "meaning": "補發的證件",
+        "pos": "phr."
+      },
+      {
+        "word": "replacement fee",
+        "kk": "rɪˋplesmənt fi",
+        "meaning": "補發費用",
+        "pos": "phr."
+      },
+      {
+        "word": "pick up",
+        "kk": "pɪk ʌp",
+        "meaning": "領取",
+        "pos": "phr. v."
+      },
+      {
+        "word": "whether",
+        "kk": "ˋhwɛðɚ",
+        "meaning": "是否",
+        "pos": "conj."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "shortTitle": "館內規範",
+    "title": "館內飲食與座位使用",
+    "summary": "練習說明哪些飲料容器可以帶入，以及離座時如何處理個人物品。",
+    "sourceLabel": "圖書館入館須知",
+    "sourceUrl": "https://www.lib.nthu.edu.tw/use/in_lib_service.html",
+    "additionalSources": [
+      {
+        "label": "清大圖書館閱覽規則",
+        "url": "https://www.lib.nthu.edu.tw/use/policies/policy24.html"
+      }
+    ],
+    "sourceCheckedAt": "2026-11-25",
+    "dialogue": [
+      {
+        "role": "reader",
+        "en": "Can I bring this cup of tea into the library? It has a lid [lɪd].",
+        "zh": "我可以把這杯茶帶進圖書館嗎？它有蓋子。"
+      },
+      {
+        "role": "librarian",
+        "en": "I'm sorry, that kind of takeout cup isn't allowed, even with a lid. You may bring a nonalcoholic drink in a spillproof bottle [ˋbɑtəl] with a tight lid and a drinking opening that can be closed.",
+        "zh": "不好意思，外帶杯即使有蓋也不能帶入。無酒精飲料可裝在有密合蓋、飲水口可關閉的防溢瓶裡帶入。"
+      },
+      {
+        "role": "reader",
+        "en": "Does that mean I can bring water in my reusable bottle?",
+        "zh": "所以我可以用自己的可重複使用水瓶裝水帶進來嗎？"
+      },
+      {
+        "role": "librarian",
+        "en": "Yes, as long as [æz lɔŋ æz] the lid fits tightly and you can close the drinking opening.",
+        "zh": "可以，只要瓶蓋密合，飲水口也能關閉。"
+      },
+      {
+        "role": "reader",
+        "en": "Can I leave my bag here to save a seat [sit] while I go out for lunch?",
+        "zh": "我出去吃午餐時，可以把包包留在這裡占位嗎？"
+      },
+      {
+        "role": "librarian",
+        "en": "Please don't save a seat with your belongings [bɪˋlɔŋɪŋz]. If you'll be away for thirty minutes or more, take them with you.",
+        "zh": "請勿用個人物品占位。如果要離座三十分鐘以上，請把物品帶走。"
+      }
+    ],
+    "patterns": [
+      {
+        "form": "Can I bring ... into ...?",
+        "example": "Can I bring my water bottle into the library?",
+        "explanation": "用來詢問某樣物品可不可以帶進特定場所。"
+      },
+      {
+        "form": "... as long as ...",
+        "example": "You may bring the bottle in as long as the lid fits tightly.",
+        "explanation": "用來說明只要符合後面提到的條件，就可以做前面那件事。"
+      },
+      {
+        "form": "If you'll be away for ..., please ...",
+        "example": "If you'll be away for thirty minutes or more, please take your bag with you.",
+        "explanation": "用來提醒讀者，離開達到特定時間時要採取什麼行動。"
+      }
+    ],
+    "grammar": [
+      {
+        "title": "被動語態說明規定",
+        "explanation": "用表示允許的動詞構成被動式，可以將重點放在某項物品或行為是否符合規定。"
+      },
+      {
+        "title": "條件子句",
+        "explanation": "先說明適用條件，再說明讀者可以或應該採取的行動。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "lid",
+        "kk": "lɪd",
+        "meaning": "蓋子",
+        "pos": "n."
+      },
+      {
+        "word": "bottle",
+        "kk": "ˋbɑtəl",
+        "meaning": "瓶子",
+        "pos": "n."
+      },
+      {
+        "word": "spill",
+        "kk": "spɪl",
+        "meaning": "溢出、灑出",
+        "pos": "v."
+      },
+      {
+        "word": "as long as",
+        "kk": "æz lɔŋ æz",
+        "meaning": "只要",
+        "pos": "phr."
+      },
+      {
+        "word": "seat",
+        "kk": "sit",
+        "meaning": "座位",
+        "pos": "n."
+      },
+      {
+        "word": "belongings",
+        "kk": "bɪˋlɔŋɪŋz",
+        "meaning": "個人物品",
+        "pos": "n."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "shortTitle": "外籍訪客",
+    "title": "外籍訪客入館與祈禱室指路",
+    "summary": "練習先確認訪客所持證件與入館方式，再說明穆斯林祈禱室的位置。",
+    "sourceLabel": "清大圖書館校外人士服務",
+    "sourceUrl": "https://www.lib.nthu.edu.tw/use/identity/visitor.html",
+    "additionalSources": [
+      {
+        "label": "總圖書館樓層導覽",
+        "url": "https://www.lib.nthu.edu.tw/library/libtour.html"
+      }
+    ],
+    "sourceCheckedAt": "2026-11-25",
+    "dialogue": [
+      {
+        "role": "reader",
+        "en": "I'm visiting the library. Can I use my passport [ˋpæs͵pɔrt] to get a temporary [ˋtɛmpə͵rɛrɪ] library pass?",
+        "zh": "我是來圖書館參觀的。請問可以用護照換臨時閱覽證嗎？"
+      },
+      {
+        "role": "librarian",
+        "en": "May I see your passport? I'll check with the entrance desk to see which documents [ˋdɑkjəmənts] we can accept.",
+        "zh": "可以請您出示護照嗎？我會向入館櫃台確認可以接受哪些證件。"
+      },
+      {
+        "role": "reader",
+        "en": "I also have a residence permit [ˋpɝmɪt]. Would that work instead?",
+        "zh": "我也有居留證。可以改用居留證嗎？"
+      },
+      {
+        "role": "librarian",
+        "en": "Let me confirm [kənˋfɝm] that for you before we issue a pass.",
+        "zh": "換發臨時閱覽證前，我先幫您確認。"
+      },
+      {
+        "role": "reader",
+        "en": "Thank you. Where is the Muslim Prayer Room? Do I need to sign in?",
+        "zh": "謝謝。請問穆斯林祈禱室在哪裡？需要登記嗎？"
+      },
+      {
+        "role": "librarian",
+        "en": "It's on the third floor of the Main Library. Let me check how you can use the room today.",
+        "zh": "它在總圖書館三樓。我幫您確認今天要怎麼使用。"
+      }
+    ],
+    "patterns": [
+      {
+        "form": "Can I use ... to get ...?",
+        "example": "Can I use my passport to get a temporary library pass?",
+        "explanation": "用來詢問能否用某種證件辦理另一張證件。"
+      },
+      {
+        "form": "Would that work instead?",
+        "example": "I also have a residence permit. Would that work instead?",
+        "explanation": "提出另一個選項後，用來詢問是否可替代原先的選項。"
+      },
+      {
+        "form": "Where is ...?",
+        "example": "Where is the Muslim Prayer Room?",
+        "explanation": "用來詢問空間、設備或服務櫃台的位置。"
+      }
+    ],
+    "grammar": [
+      {
+        "title": "用情態助動詞禮貌詢問",
+        "explanation": "詢問能否看證件或辦理服務時，可用情態助動詞引導問句，語氣較有禮貌。"
+      },
+      {
+        "title": "間接問句語序",
+        "explanation": "把需要確認的內容放在確認動詞之後，從屬問句維持陳述句語序。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "entrance desk",
+        "kk": "ˋɛntrəns dɛsk",
+        "meaning": "入館櫃台",
+        "pos": "phr."
+      },
+      {
+        "word": "passport",
+        "kk": "ˋpæs͵pɔrt",
+        "meaning": "護照",
+        "pos": "n."
+      },
+      {
+        "word": "library pass",
+        "kk": "ˋlaɪbrɛrɪ pæs",
+        "meaning": "圖書館閱覽證",
+        "pos": "phr."
+      },
+      {
+        "word": "document",
+        "kk": "ˋdɑkjəmənt",
+        "meaning": "文件、證明文件",
+        "pos": "n."
+      },
+      {
+        "word": "permit",
+        "kk": "ˋpɝmɪt",
+        "meaning": "許可證",
+        "pos": "n."
+      },
+      {
+        "word": "issue",
+        "kk": "ˋɪʃu",
+        "meaning": "核發、發給",
+        "pos": "v."
+      }
+    ]
+  },
 ];
+
+export function scenarioSources(scenario: Scenario) {
+  return [
+    { label: scenario.sourceLabel, url: scenario.sourceUrl },
+    ...(scenario.additionalSources ?? []),
+  ];
+}
 
 export const posSpeech: Record<VocabularyItem["pos"], string> = {
   "n.": "名詞",

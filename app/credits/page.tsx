@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { assetPath } from "../paths";
-import { CHECKED_AT, scenarios } from "../scenarios";
+import { allAudioPaths, CHECKED_AT, scenarioSources, scenarios } from "../scenarios";
 import visualAssets from "../../public/visual-assets.json";
 
 export const metadata: Metadata = {
@@ -10,10 +10,7 @@ export const metadata: Metadata = {
 
 const officialSources = Array.from(
   new Map(
-    scenarios.map((scenario) => [
-      scenario.sourceUrl,
-      { label: scenario.sourceLabel, url: scenario.sourceUrl },
-    ]),
+    scenarios.flatMap(scenarioSources).map((source) => [source.url, source]),
   ).values(),
 ).sort((a, b) => a.label.localeCompare(b.label, "zh-Hant"));
 
@@ -52,7 +49,7 @@ export default function CreditsPage() {
         <section className="credits-card" aria-labelledby="content-heading">
           <h2 id="content-heading">教學內容與政策資料</h2>
           <p>
-            二十個情境依清大圖書館公開服務資訊重新整理及改寫，並非官方規章原文。
+            {scenarios.length} 個情境依清大圖書館公開服務資訊重新整理及改寫，並非官方規章原文。
             每一課均附資料來源；服務資格、期限與流程如有變動，仍以官方網站最新公告為準。
           </p>
           <ul className="source-list">
@@ -68,7 +65,7 @@ export default function CreditsPage() {
           <h2 id="audio-heading">語音素材</h2>
           <h3>教學合成語音</h3>
           <p>
-            對話、句型、文法及單字的 682 個預錄音檔，由本專案自行編寫或改寫的文字稿，
+            對話、句型、文法及單字的 {allAudioPaths.filter((path) => !path.includes("/alphabet-")).length} 個預錄音檔，由本專案自行編寫或改寫的文字稿，
             以本機執行的 Kokoro 開源語音模型產生，並非擷取自有聲書、影片或真人錄音。
           </p>
           <dl className="voice-list">

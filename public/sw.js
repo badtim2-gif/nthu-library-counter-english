@@ -1,5 +1,5 @@
-const SHELL_CACHE = "nthu-library-shell-v35";
-const AUDIO_CACHE = "nthu-library-audio-v30";
+const SHELL_CACHE = "nthu-library-shell-v36";
+const AUDIO_CACHE = "nthu-library-audio-v31";
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const withBase = (path) => `${BASE_PATH}${path}`;
 const SHELL_FILES = [

@@ -11,14 +11,14 @@
       "explainer": "kokoro-v1.1-zh/zm_010"
     }
   },
-  "clip_count": 708,
-  "synthetic_clip_count": 682,
+  "clip_count": 804,
+  "synthetic_clip_count": 778,
   "alphabet_clip_count": 26,
-  "english_long_count": 180,
+  "english_long_count": 207,
   "english_wpm_target": 120.0,
   "english_wpm_min": 115.4,
   "english_wpm_max": 120.8,
-  "english_wpm_average": 120.1,
+  "english_wpm_average": 120.2,
   "outside_115_125": [],
   "loudness_target_lufs": -22.3,
   "loudness_min_lufs": -23.3,
@@ -924,7 +924,142 @@
       "s20-t06-en.mp3",
       120.2,
       "kokoro-v1.1-zh/af_maple"
+    ],
+    [
+      "s21-p01-en.mp3",
+      120.4,
+      "kokoro-v1.0/am_puck"
+    ],
+    [
+      "s21-p02-en.mp3",
+      120.5,
+      "kokoro-v1.0/am_puck"
+    ],
+    [
+      "s21-p03-en.mp3",
+      120.5,
+      "kokoro-v1.0/am_puck"
+    ],
+    [
+      "s21-t01-en.mp3",
+      120.4,
+      "kokoro-v1.0/am_fenrir"
+    ],
+    [
+      "s21-t02-en.mp3",
+      120.3,
+      "kokoro-v1.1-zh/af_maple"
+    ],
+    [
+      "s21-t03-en.mp3",
+      120.5,
+      "kokoro-v1.0/am_fenrir"
+    ],
+    [
+      "s21-t04-en.mp3",
+      120.2,
+      "kokoro-v1.1-zh/af_maple"
+    ],
+    [
+      "s21-t05-en.mp3",
+      120.0,
+      "kokoro-v1.0/am_fenrir"
+    ],
+    [
+      "s21-t06-en.mp3",
+      120.4,
+      "kokoro-v1.1-zh/af_maple"
+    ],
+    [
+      "s22-p01-en.mp3",
+      120.4,
+      "kokoro-v1.0/am_puck"
+    ],
+    [
+      "s22-p02-en.mp3",
+      120.4,
+      "kokoro-v1.0/am_puck"
+    ],
+    [
+      "s22-p03-en.mp3",
+      120.4,
+      "kokoro-v1.0/am_puck"
+    ],
+    [
+      "s22-t01-en.mp3",
+      120.4,
+      "kokoro-v1.0/am_fenrir"
+    ],
+    [
+      "s22-t02-en.mp3",
+      120.1,
+      "kokoro-v1.1-zh/af_maple"
+    ],
+    [
+      "s22-t03-en.mp3",
+      120.2,
+      "kokoro-v1.0/am_fenrir"
+    ],
+    [
+      "s22-t04-en.mp3",
+      120.3,
+      "kokoro-v1.1-zh/af_maple"
+    ],
+    [
+      "s22-t05-en.mp3",
+      120.5,
+      "kokoro-v1.0/am_fenrir"
+    ],
+    [
+      "s22-t06-en.mp3",
+      120.3,
+      "kokoro-v1.1-zh/af_maple"
+    ],
+    [
+      "s23-p01-en.mp3",
+      120.4,
+      "kokoro-v1.0/am_puck"
+    ],
+    [
+      "s23-p02-en.mp3",
+      120.3,
+      "kokoro-v1.0/am_puck"
+    ],
+    [
+      "s23-p03-en.mp3",
+      120.5,
+      "kokoro-v1.0/am_puck"
+    ],
+    [
+      "s23-t01-en.mp3",
+      119.9,
+      "kokoro-v1.0/am_fenrir"
+    ],
+    [
+      "s23-t02-en.mp3",
+      120.3,
+      "kokoro-v1.1-zh/af_maple"
+    ],
+    [
+      "s23-t03-en.mp3",
+      120.3,
+      "kokoro-v1.0/am_fenrir"
+    ],
+    [
+      "s23-t04-en.mp3",
+      120.5,
+      "kokoro-v1.1-zh/af_maple"
+    ],
+    [
+      "s23-t05-en.mp3",
+      120.2,
+      "kokoro-v1.0/am_fenrir"
+    ],
+    [
+      "s23-t06-en.mp3",
+      120.1,
+      "kokoro-v1.1-zh/af_maple"
     ]
   ],
-  "loudness_scope": "682 synthetic speech clips; alphabet recordings use their separately approved levels"
+  "loudness_scope": "778 synthetic speech clips; alphabet recordings use their separately approved levels"
 }

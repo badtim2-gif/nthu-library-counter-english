@@ -7,6 +7,7 @@ import {
   CHECKED_AT,
   posSpeech,
   scenarios,
+  scenarioSources,
   type Role,
   type Scenario,
 } from "./scenarios";
@@ -67,7 +68,7 @@ type RolePlayMode = Role | "all" | null;
 
 const roleIsHidden = (mode: RolePlayMode, role: Role) => mode === "all" || mode === role;
 
-const AUDIO_CACHE_NAME = "nthu-library-audio-v30";
+const AUDIO_CACHE_NAME = "nthu-library-audio-v31";
 const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v1",
   "nthu-library-audio-v2",
@@ -98,6 +99,7 @@ const LEGACY_AUDIO_CACHE_NAMES = [
   "nthu-library-audio-v27",
   "nthu-library-audio-v28",
   "nthu-library-audio-v29",
+  "nthu-library-audio-v30",
 ];
 
 
@@ -932,7 +934,7 @@ export default function Home() {
             <p className="kicker">櫃台英語，一句一句練到能用</p>
             <h1>清大圖書館<br />英語情境練習室</h1>
             <p className="hero__copy">
-              二十個真實服務情境，從權益聲明、借還館藏到空間與網路服務。
+              {scenarios.length} 個真實服務情境，從權益聲明、借還館藏到空間與網路服務。
               跟著讀者與館員的對話慢速聽、逐句看，再關掉英文提示親自說一次。
             </p>
             <div className="hero__actions">
@@ -959,7 +961,7 @@ export default function Home() {
 
       <section className="scenario-strip" aria-labelledby="scenario-heading">
         <div className="section-heading">
-          <div><p className="section-label">LEARNING MAP</p><h2 id="scenario-heading">二十個櫃台任務</h2></div>
+          <div><p className="section-label">LEARNING MAP</p><h2 id="scenario-heading">{scenarios.length} 個櫃台任務</h2></div>
           <button className="settings-trigger" onClick={openReviewSettings}>⚙ 複習設定</button>
         </div>
 
@@ -1316,7 +1318,9 @@ export default function Home() {
           )}
 
           <footer className="lesson-source">
-            <div><span>官方資料來源</span><a href={scenario.sourceUrl} target="_blank" rel="noreferrer">{scenario.sourceLabel} ↗</a></div>
+            {scenarioSources(scenario).map((source, index) => (
+              <div key={source.url}><span>{index === 0 ? "官方資料來源" : "補充來源"}</span><a href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a></div>
+            ))}
             <p>資料查核日期：<time dateTime={scenario.sourceCheckedAt ?? CHECKED_AT}>{scenario.sourceCheckedAt ?? CHECKED_AT}</time>。實際資格、費用與作業方式請以清大圖書館最新公告為準。</p>
           </footer>
         </article>

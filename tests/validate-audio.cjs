@@ -39,8 +39,8 @@ const kokoroSources = JSON.parse(
   ),
 );
 
-assert.equal(allAudioPaths.length, 708);
-assert.equal(new Set(allAudioPaths).size, 708);
+assert.equal(allAudioPaths.length, 804);
+assert.equal(new Set(allAudioPaths).size, 804);
 for (const publicPath of allAudioPaths) {
   const file = path.join(project, "public", publicPath.replace(/^\//, ""));
   assert.ok(fs.existsSync(file), `Missing audio: ${publicPath}`);
@@ -59,7 +59,7 @@ assert.deepEqual(manifest.voices, {
     explainer: "kokoro-v1.1-zh/zm_010",
   },
 });
-assert.equal(manifest.entries.length, 708);
+assert.equal(manifest.entries.length, 804);
 
 const visitorLesson = scenarios.find((scenario) => scenario.id === 11);
 assert.equal(visitorLesson.dialogue[5].en, "The card is for entry and reading only, and you must return it on the same day to avoid a late fee or a lost-card handling [ˋhændlɪŋ] charge.");
@@ -100,18 +100,18 @@ for (const scenario of scenarios) {
     addTranscript(audioPaths.vocabMeaning(scenario.id, index), `${item.meaning}，${posSpeech[item.pos]}`);
   });
 }
-assert.equal(expectedTranscripts.size, 682);
+assert.equal(expectedTranscripts.size, 778);
 for (const entry of manifest.entries.filter((item) => item.kind !== "letter")) {
   assert.equal(entry.text, expectedTranscripts.get(entry.file), `Speech text differs from lesson: ${entry.file}`);
 }
 
-assert.equal(report.clip_count, 708);
-assert.equal(report.english_long_count, 180);
+assert.equal(report.clip_count, 804);
+assert.equal(report.english_long_count, 207);
 assert.equal(report.english_wpm_target, 120);
 assert.ok(report.english_wpm_min >= 115);
 assert.ok(report.english_wpm_max <= 125);
 assert.deepEqual(report.outside_115_125, []);
-assert.equal(report.synthetic_clip_count, 682);
+assert.equal(report.synthetic_clip_count, 778);
 assert.equal(report.alphabet_clip_count, 26);
 assert.ok(report.loudness_min_lufs >= -23.3);
 assert.ok(report.loudness_max_lufs <= -21.3);
@@ -119,12 +119,12 @@ assert.ok(report.maximum_true_peak_dbfs <= -3);
 
 assert.equal(kokoroSources.status, "approved-production");
 assert.equal(kokoroSources.license, "Apache-2.0");
-assert.equal(kokoroSources.clip_count, 682);
-assert.equal(kokoroSources.unique_sha256_count, 682);
-assert.equal(kokoroSources.records.length, 682);
+assert.equal(kokoroSources.clip_count, 778);
+assert.equal(kokoroSources.unique_sha256_count, 778);
+assert.equal(kokoroSources.records.length, 778);
 assert.equal(kokoroSources.models["v1.0"].revision, "f3ff3571791e39611d31c381e3a41a3af07b4987");
 assert.equal(kokoroSources.models["v1.1-zh"].revision, "8913be6a3a2d1b410c83c24fb7b8821a8843b0c5");
-assert.equal(new Set(kokoroSources.records.map((record) => record.sha256)).size, 682);
+assert.equal(new Set(kokoroSources.records.map((record) => record.sha256)).size, 778);
 
 const kokoroRecords = new Map(
   kokoroSources.records.map((record) => [record.file, record]),
@@ -354,5 +354,5 @@ console.log(
   `Audio validation passed: ${report.clip_count} clips, ` +
     `${report.english_long_count} English clips at ` +
     `${report.english_wpm_min}-${report.english_wpm_max} WPM; ` +
-    `all 682 synthetic clips match the approved Kokoro hashes.`,
+    `all 778 synthetic clips match the approved Kokoro hashes.`,
 );
